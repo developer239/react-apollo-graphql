@@ -1,0 +1,22 @@
+exports[`component renders 1`] = `
+<Grid
+  bsClass="container"
+  componentClass="div"
+  fluid={false}>
+  <Jumbotron
+    bsClass="jumbotron"
+    componentClass="div">
+    <h1>
+      Boilerplate
+    </h1>
+  </Jumbotron>
+  <img
+    role="presentation"
+    src="pathToImage"
+    style={
+      Object {
+        "width": "100%",
+      }
+    } />
+</Grid>
+`;
