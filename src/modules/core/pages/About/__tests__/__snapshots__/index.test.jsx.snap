@@ -151,14 +151,14 @@ exports[`component renders 1`] = `
     <input
       disabled={true}
       type="checkbox" />
-     Add support for continuous integration with 
+     Add support for continuous integration with
     <a
       href="https://github.com/jenkinsci"
       rel="noopener noreferrer"
       target="_blank">
-      jenkins
+       jenkins 
     </a>
-     or 
+    or 
     <a
       href="https://github.com/travis-ci/travis-ci"
       rel="noopener noreferrer"
@@ -195,24 +195,24 @@ exports[`component renders 1`] = `
     <input
       disabled={true}
       type="checkbox" />
-     Create separate branch with 
+     Create separate branch with
     <a
       href="https://github.com/facebook/flow"
       rel="noopener noreferrer"
       target="_blank">
-      flow
+       flow
     </a>
   </span>
   <span>
     <input
       disabled={true}
       type="checkbox" />
-     Add 
+     Add
     <a
       href="https://github.com/stylelint/stylelint"
       rel="noopener noreferrer"
       target="_blank">
-      stylelint
+       stylelint
     </a>
   </span>
   <span>
