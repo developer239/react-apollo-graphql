@@ -7,7 +7,6 @@ const About = () => (
   <Grid>
     <PageHeader>React Redux Apollo GraphQL Hot Boilerplate</PageHeader>
     <h1>About</h1>
-    <p>There was no boilerplate that would meet my expectations so I created my own.</p>
     <p>Backend is provided by <a
       href="https://www.graph.cool/" target="_blank"
       rel="noopener noreferrer"

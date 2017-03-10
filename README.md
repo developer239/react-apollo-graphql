@@ -2,8 +2,6 @@
 
 ## About
 
-There was no boilerplate that would meet my expectations so I created my own.
-
 Backend is provided by **[graph.cool](https://www.graph.cool/)**.
 
 * Hot reloading
