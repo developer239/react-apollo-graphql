@@ -136,6 +136,25 @@ exports[`component renders 1`] = `
     .
   </p>
   <h1>
+    Production
+  </h1>
+  <p>
+    If you want to run production with 
+    <code>
+      webpack-dev-server
+    </code>
+    .
+  </p>
+  <code>
+    production:webpack
+  </code>
+  <p>
+    If you would rather use static files use the build command.
+  </p>
+  <code>
+    production:build
+  </code>
+  <h1>
     Running tests
   </h1>
   <code>
@@ -220,9 +239,10 @@ exports[`component renders 1`] = `
   </span>
   <span>
     <input
+      checked={true}
       disabled={true}
       type="checkbox" />
-     Create webpack config file for production
+     Optimize production build
   </span>
 </Grid>
 `;

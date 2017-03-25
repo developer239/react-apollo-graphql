@@ -52,6 +52,13 @@ const About = () => (
       run the <code>npm run dev</code> command. If you want to work with your own backend
       change the <code>API_URL</code> value in <code>src/config/index.js</code>.
     </p>
+    <h1>Production</h1>
+    <p>
+      If you want to run production with <code>webpack-dev-server</code>.
+    </p>
+    <code className={styles.code_block}>production:webpack</code>
+    <p>If you would rather use static files use the build command.</p>
+    <code className={styles.code_block}>production:build</code>
     <h1>Running tests</h1>
     <code className={styles.code_block}>npm run test</code>
     <h1>To do</h1>
@@ -88,7 +95,7 @@ const About = () => (
       <input type="checkbox" disabled /> Add form validation
     </span>
     <span className={styles.todo_item}>
-      <input type="checkbox" disabled /> Create webpack config file for production
+      <input type="checkbox" checked disabled /> Optimize production build
     </span>
   </Grid>
 )

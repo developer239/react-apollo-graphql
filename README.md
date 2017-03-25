@@ -26,6 +26,20 @@ npm install
 
 You do **NOT** need to run your own GraphQL server. Simply run the `npm run dev` command. If you want to work with your own backend change the `API_URL` value in `src/config/index.js`.
 
+## Production
+
+If you want to run production with `webpack-dev-server`.
+
+```bash
+production:webpack
+```
+
+If you would rather use static files use the build command.
+
+```bash
+production:build
+```
+
 ## Running tests
 
 ```bash
@@ -41,4 +55,4 @@ npm run test
 - [ ] Add [stylelint](https://github.com/stylelint/stylelint)
 - [ ] Write tests for blog/pages
 - [ ] Add form validation
-- [ ] Create webpack config file for production
+- [x] Optimize production build
