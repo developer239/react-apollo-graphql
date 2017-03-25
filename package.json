@@ -95,10 +95,10 @@
     "webpack-dev-server": "^2.1.0-beta.0"
   },
   "scripts": {
-    "dev": "set NODE_ENV=develop && webpack-dev-server",
-    "production:build": "set NODE_ENV=production && webpack -p",
-    "production:run": "php -S localhost:8888 -t dist",
-    "production": "npm run production:build && npm run production:run",
+    "dev": "webpack-dev-server",
+    "production:build": "set NODE_ENV=production && webpack --env.prod=true",
+    "production:webpack": "set NODE_ENV=production && webpack-dev-server --env.prod=true",
+    "production:php": "php -S localhost:3000 -t dist",
     "test": "set BABEL_DISABLE_CACHE=1 && set NODE_ENV=test && jest"
   }
 }
