@@ -63,7 +63,7 @@ const About = () => (
     <code className={styles.code_block}>npm run test</code>
     <h1>To do</h1>
     <span className={styles.todo_item}>
-      <input type="checkbox" disabled /> Add support for continuous integration with
+      <input type="checkbox" checked disabled /> Add support for continuous integration with
       <a href="https://github.com/jenkinsci" target="_blank" rel="noopener noreferrer"> jenkins </a>
       or <a href="https://github.com/travis-ci/travis-ci" target="_blank" rel="noopener noreferrer">travis</a>
     </span>
