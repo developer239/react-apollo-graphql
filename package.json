@@ -97,6 +97,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server",
+    "production:clean": "rm -rf ./dist/*bundle.js",
     "production:build": "set NODE_ENV=production && webpack --env.prod=true",
     "production:webpack": "set NODE_ENV=production && webpack-dev-server --env.prod=true",
     "production:php": "php -S localhost:3000 -t dist",
