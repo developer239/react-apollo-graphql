@@ -1,8 +1,8 @@
 {
   "name": "React-Redux-Apollo-GraphQL-Hot-Boilerplate",
   "author": {
-    "name" : "Michal Jarnot",
-    "email" : "m.jarnot@yahoo.com"
+    "name": "Michal Jarnot",
+    "email": "m.jarnot@yahoo.com"
   },
   "license": "MIT",
   "babel": {
@@ -38,6 +38,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-2": "^6.13.0",
     "css-loader": "^0.23.1",
+    "file-loader": "^0.11.1",
     "graphql-tag": "^1.2.3",
     "immutability-helper": "^2.1.2",
     "path": "^0.12.7",
