@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router'
 import { Row, Col, Button, Grid } from 'react-bootstrap'
 import nl2br from 'react-nl2br'
@@ -30,14 +31,14 @@ export const PostListComponent = ({ items, client }) => {
 }
 
 PostListComponent.propTypes = {
-  items: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      title: React.PropTypes.string.isRequired,
-      text: React.PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
     })
   ).isRequired,
-  client: React.PropTypes.shape({
-    query: React.PropTypes.func.isRequired,
+  client: PropTypes.shape({
+    query: PropTypes.func.isRequired,
   }),
 }
 

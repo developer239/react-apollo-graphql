@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { reduxForm, Field } from 'redux-form'
 import { Button, FormGroup, FormControl, ControlLabel } from 'react-bootstrap'
 import styles from './styles.scss'
@@ -61,10 +62,10 @@ const PostForm = (props) => {
 }
 
 PostForm.propTypes = {
-  handleSubmit: React.PropTypes.func,
-  submitting: React.PropTypes.bool,
-  handleDelete: React.PropTypes.func,
-  isDeleting: React.PropTypes.bool,
+  handleSubmit: PropTypes.func,
+  submitting: PropTypes.bool,
+  handleDelete: PropTypes.func,
+  isDeleting: PropTypes.bool,
 }
 
 export default reduxForm({

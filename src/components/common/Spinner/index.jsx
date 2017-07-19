@@ -6,7 +6,5 @@ const Spinner = () => (
   <div className={styles.loader} />
 )
 
-Spinner.propTypes = {}
-
 
 export default Spinner

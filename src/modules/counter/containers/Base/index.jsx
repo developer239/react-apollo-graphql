@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Grid, Button, PageHeader } from 'react-bootstrap'
 import { incrementCounter, decrementCounter } from 'modules/counter/ducks'
@@ -22,9 +23,9 @@ export const CounterContainer = ({ increment, decrement, counterValue }) => (
 )
 
 CounterContainer.propTypes = {
-  increment: React.PropTypes.func.isRequired,
-  decrement: React.PropTypes.func.isRequired,
-  counterValue: React.PropTypes.number.isRequired,
+  increment: PropTypes.func.isRequired,
+  decrement: PropTypes.func.isRequired,
+  counterValue: PropTypes.number.isRequired,
 }
 
 const mapStateToProps = state => ({

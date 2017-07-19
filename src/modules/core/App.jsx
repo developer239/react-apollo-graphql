@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Navigation from 'components/layout/Navigation'
 import styles from './styles.scss'
 
@@ -30,9 +31,9 @@ const App = props => (
 )
 
 App.propTypes = {
-  children: React.PropTypes.oneOfType([
-    React.PropTypes.node,
-    React.PropTypes.arrayOf(React.PropTypes.node),
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node),
   ]).isRequired,
 }
 

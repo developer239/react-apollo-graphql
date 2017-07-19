@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { graphql, compose } from 'react-apollo'
 import { Grid, PageHeader, Alert } from 'react-bootstrap'
 import update from 'immutability-helper'
@@ -49,9 +50,9 @@ class PostCreate extends Component {
 }
 
 PostCreate.propTypes = {
-  submit: React.PropTypes.func,
-  router: React.PropTypes.shape({
-    push: React.PropTypes.func.isRequired,
+  submit: PropTypes.func,
+  router: PropTypes.shape({
+    push: PropTypes.func.isRequired,
   }).isRequired,
 }
 
