@@ -4,12 +4,12 @@ exports[`component renders with all props 1`] = `
   collapseOnSelect={true}>
   <NavbarHeader>
     <NavbarBrand>
-      <Link
+      <Component
         onlyActiveOnIndex={false}
         style={Object {}}
         to="/">
         Navigation title
-      </Link>
+      </Component>
     </NavbarBrand>
     <NavbarToggle />
   </NavbarHeader>
