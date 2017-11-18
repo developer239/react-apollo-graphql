@@ -1,6 +1,0 @@
-node_modules/
-.idea/
-coverage/
-dist/**/*
-!dist/index.html
-!dist/.htaccess

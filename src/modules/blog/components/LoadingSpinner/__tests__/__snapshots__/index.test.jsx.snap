@@ -1,8 +1,0 @@
-exports[`component renders 1`] = `
-<Grid
-  bsClass="container"
-  componentClass="div"
-  fluid={false}>
-  <Spinner />
-</Grid>
-`;
