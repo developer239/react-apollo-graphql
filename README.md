@@ -4,6 +4,8 @@ Updated version of the old apollo graphql boilerplate. This one is cleaner and f
 
 [Try it here](https://react-redux-apollo-graphql.herokuapp.com/) (it might take a while before the free server wakes up)
 
+Backend is provided by [graphq.cool](https://www.graph.cool/) :heart:
+
 __Uses:__
 
  * [React Apollo](https://github.com/apollographql/react-apollo) 2.0.2
