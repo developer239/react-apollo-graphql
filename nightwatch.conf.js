@@ -1,41 +1,39 @@
-/* eslint-disable */
 const SCREENSHOT_PATH = './screenshots/'
 const BINPATH = './node_modules/nightwatch/bin/'
 const WEB_URL = 'http://localhost:3000'
 
 
-// we use a nightwatch.conf.js file so we can include comments and helper functions
 module.exports = {
-  'src_folders': [
-    'test/e2e'// Where you are storing your Nightwatch e2e tests
+  src_folders: [
+    'tests/e2e',
   ],
-  'output_folder': './reports', // reports (test outcome) output by nightwatch
-  'selenium': { // downloaded by selenium-download module (see readme)
-    'start_process': true, // tells nightwatch to start/stop the selenium process
-    'server_path': './node_modules/nightwatch/bin/selenium.jar',
-    'host': '127.0.0.1',
-    'port': 4444, // standard selenium port
-    'cli_args': { // chromedriver is downloaded by selenium-download (see readme)
+  output_folder: './tests/.reports',
+  selenium: {
+    start_process: true,
+    server_path: './node_modules/nightwatch/bin/selenium.jar',
+    host: '127.0.0.1',
+    port: 4444,
+    cli_args: {
       'webdriver.chrome.driver': './node_modules/nightwatch/bin/chromedriver',
     },
   },
-  'test_settings': {
-    'default': {
-      'screenshots': {
-        'enabled': true, // if you want to keep screenshots
-        'path': './screenshots' // save screenshots here
+  test_settings: {
+    default: {
+      screenshots: {
+        enabled: true,
+        path: './tests/.screenshots',
       },
-      'globals': {
-        'waitForConditionTimeout': 5000, // sometimes internet is slow so wait.
+      globals: {
+        waitForConditionTimeout: 5000,
       },
-      'desiredCapabilities': { // use Chrome as the default browser for tests
-        'browserName': 'chrome',
+      desiredCapabilities: {
+        browserName: 'chrome',
       },
     },
-    'chrome': {
-      'desiredCapabilities': {
-        'browserName': 'chrome',
-        'javascriptEnabled': true // turn off to test progressive enhancement
+    chrome: {
+      desiredCapabilities: {
+        browserName: 'chrome',
+        avascriptEnabled: true,
       },
     },
   },
@@ -47,9 +45,9 @@ module.exports = {
  * on your localhost where it will be used by Nightwatch.
  /the following code checks for the existence of `selenium.jar` before trying to run our tests.
  */
-require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) { // got it?
+require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) { // eslint-disable-line
   if (err || !stat || stat.size < 1) {
-    require('selenium-download').ensure(BINPATH, function (error) {
+    require('selenium-download').ensure(BINPATH, function (error) { // eslint-disable-line
       if (error) throw new Error(error) // no point continuing so exit!
       console.log('✔ Selenium & Chromedriver downloaded to:', BINPATH)
     })
@@ -58,7 +56,7 @@ require('fs').stat(BINPATH + 'selenium.jar', function (err, stat) { // got it?
 
 
 function padLeft(count) { // theregister.co.uk/2016/03/23/npm_left_pad_chaos/
-  return count < 10 ? '0' + count : count.toString()
+  return count < 10 ? '0' + count : count.toString() // eslint-disable-line
 }
 
 let FILECOUNT = 0 // "global" screenshot file count
@@ -77,7 +75,7 @@ function imgpath(browser) {
   meta.push(a.version ? a.version : 'any')
   meta.push(a.name) // this is the test filename so always exists.
   const metadata = meta.join('~').toLowerCase().replace(/ /g, '')
-  return SCREENSHOT_PATH + metadata + '_' + padLeft(FILECOUNT++) + '_'
+  return SCREENSHOT_PATH + metadata + '_' + padLeft(FILECOUNT++) + '_' // eslint-disable-line
 }
 
 module.exports.imgpath = imgpath

@@ -2,3 +2,5 @@
 /public
 /.idea
 /selenium-debug.log
+/tests/.reports
+/tests/.screenshots
