@@ -13,7 +13,7 @@ import { queryAllPosts } from 'modules/blog/qql'
 export const ListPostsPage = ({ data: { allPosts } }) => (
   <Grid>
     <PageHeader>All posts</PageHeader>
-    <Link to="/posts/create">
+    <Link id="createNewPost" to="/posts/create">
       <Button bsStyle="primary">Create New Post</Button>
     </Link>
     <List items={allPosts} />
