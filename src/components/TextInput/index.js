@@ -3,8 +3,7 @@ import PropTypes from 'prop-types'
 import { FormGroup, FormControl, ControlLabel, HelpBlock } from 'react-bootstrap'
 
 
-const TextInput = ({ className, id, componentProps, label, placeholder, type }) => {
-  const { input, meta } = componentProps
+const TextInput = ({ className, id, input, meta, label, placeholder, type }) => {
   const hasInvalidState = meta.invalid && meta.touched
 
   return (
@@ -29,21 +28,19 @@ TextInput.defaultProps = {
 }
 
 TextInput.propTypes = {
-  componentProps: PropTypes.shape({
-    input: PropTypes.shape({
-      value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-      ]).isRequired,
-      onChange: PropTypes.func.isRequired,
-      onBlur: PropTypes.func,
-    }).isRequired,
-    meta: PropTypes.shape({
-      error: PropTypes.string,
-      dirty: PropTypes.bool,
-      invalid: PropTypes.bool,
-    }),
+  input: PropTypes.shape({
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]).isRequired,
+    onChange: PropTypes.func.isRequired,
+    onBlur: PropTypes.func,
   }).isRequired,
+  meta: PropTypes.shape({
+    error: PropTypes.string,
+    dirty: PropTypes.bool,
+    invalid: PropTypes.bool,
+  }),
   label: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,
