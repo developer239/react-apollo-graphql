@@ -13,7 +13,10 @@ const DIST_DIR = path.resolve(__dirname, '..', 'public')
 const app = express()
 
 const compiler = webpack(webpackDevConfig)
-app.use(webpackDevMiddleware(compiler, { publicPath: webpackDevConfig.output.publicPath }))
+app.use(webpackDevMiddleware(compiler, {
+  publicPath: webpackDevConfig.output.publicPath,
+  quiet: true,
+}))
 app.use(webpackHotMiddleware(compiler, { log: false }))
 
 // Serve static files from /public directory
