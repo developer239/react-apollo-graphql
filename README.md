@@ -56,7 +56,7 @@ __Uses:__
   
   2) Run `yarn dev`
   
-  3) Run `yarn e2e` in order to start testing
+  3) Run `yarn e2e` so that you start testing
 
 #### Other tips
 
