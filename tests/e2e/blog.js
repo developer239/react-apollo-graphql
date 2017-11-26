@@ -1,13 +1,18 @@
+const config = require('../../nightwatch.conf')
 const clientHelper = require('../helpers/client')
 const assertHelper = require('../helpers/assert')
 const blog = require('../selectors/blog')
-const config = require('../../nightwatch.conf')
 
 
 const newPost = {
   id: null,
   title: 'New Post Title',
   description: 'New Post Description',
+}
+
+const editedPost = {
+  title: 'New Post Title [edited]',
+  description: 'New Post Description [edited]',
 }
 
 module.exports = {
@@ -54,6 +59,31 @@ module.exports = {
     })
   },
 
+  // Edit post
+  'Required elements exist for post edit': () => {
+    this.client.click(blog.detail.buttonEdit) // navigate using the edit post button
+    this.client.waitForElementVisible(blog.create.header)
+    this.assert.containsText(blog.create.header, 'Update Posts')
+    this.client.waitForElementVisible(blog.create.inputTitle)
+    this.client.waitForElementVisible(blog.create.inputDescription)
+    this.client.waitForElementVisible(blog.create.buttonSubmit)
+  },
+
+  'Can edit existing post': () => {
+    this.client.pause(500)
+    this.client
+      .clearValue(blog.create.inputTitle)
+      .clearValue(blog.create.inputDescription)
+      .setValue(blog.create.inputTitle, editedPost.title)
+      .setValue(blog.create.inputDescription, editedPost.description)
+    this.client.click(blog.create.buttonSubmit)
+    this.client.pause(1000)
+    // TODO: Find out why is post detail not being updated
+    // this.assert.containsText(blog.detail.title, editedPost.title)
+    // this.assert.containsText(blog.detail.description, editedPost.description)
+  },
+
+  // List posts
   'Required elements exist for posts list': () => {
     this.client.goToPage('/posts')
     this.client.waitForElementVisible(blog.list.header)
@@ -61,9 +91,9 @@ module.exports = {
     this.client.waitForElementVisible(blog.list.buttonCreate)
   },
 
-  'New post is listed in post list': () => {
-    this.assert.containsText(blog.list.post.title, newPost.title)
-    this.assert.containsText(blog.list.post.description, newPost.description)
+  'New (edited) post is listed in post list': () => {
+    this.assert.containsText(blog.list.post.title, editedPost.title)
+    this.assert.containsText(blog.list.post.description, editedPost.description)
   },
 
   // Delete post
