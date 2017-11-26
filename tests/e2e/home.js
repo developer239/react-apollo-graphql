@@ -1,4 +1,4 @@
-const clientService = require('../helpers/client')
+const clientHelper = require('../helpers/client')
 const assertHelper = require('../helpers/assert')
 const selectors = require('../selectors')
 
@@ -7,7 +7,7 @@ module.exports = {
   client: null,
 
   beforeEach: (browser, done) => {
-    this.client = clientService(browser)
+    this.client = clientHelper(browser)
     this.assert = assertHelper(browser)
     done()
   },
