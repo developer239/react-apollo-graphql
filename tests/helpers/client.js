@@ -24,13 +24,18 @@ module.exports = browser => ({
     callback(result)
   }),
 
-  // TODO: Refactor
   elementsText: (element, callback) => {
-    browser.elements('css selector', element, (result) => {
-      const els = result.value
-      els.forEach((el, index) => {
-        browser.elementIdText(el.ELEMENT, (text) => {
-          callback(index, text, els.length) // TODO: Refactor
+    const values = []
+    browser.perform((client, done) => {
+      browser.elements('css selector', element, (result) => {
+        result.value.forEach((el, index) => {
+          browser.elementIdText(el.ELEMENT, (text) => {
+            values.push(text)
+            if (index === result.value.length - 1) {
+              callback(values)
+              done()
+            }
+          })
         })
       })
     })
