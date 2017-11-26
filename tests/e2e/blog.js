@@ -1,6 +1,7 @@
 const clientHelper = require('../helpers/client')
 const assertHelper = require('../helpers/assert')
 const blog = require('../selectors/blog')
+const config = require('../../nightwatch.conf')
 
 
 const newPost = {
@@ -18,7 +19,7 @@ module.exports = {
     done()
   },
 
-  // Create post page
+  // Create post
   'Required elements exist for post create': () => {
     this.client.goToPage('/posts/create')
     this.assert.containsText(blog.create.header, 'Create Posts')
@@ -53,7 +54,6 @@ module.exports = {
     })
   },
 
-  // Lists post page
   'Required elements exist for posts list': () => {
     this.client.goToPage('/posts')
     this.client.waitForElementVisible(blog.list.header)
@@ -61,27 +61,26 @@ module.exports = {
     this.client.waitForElementVisible(blog.list.buttonCreate)
   },
 
-  'Can navigate to create new post page': () => {
-    this.client.waitForElementVisible(blog.list.buttonCreate)
-    this.client.click(blog.list.buttonCreate)
+  'New post is listed in post list': () => {
+    this.assert.containsText(blog.list.post.title, newPost.title)
+    this.assert.containsText(blog.list.post.description, newPost.description)
   },
 
-  /*
-  'New post is listed in post list': () => {
-    // TODO: Refactor
-    this.client.elementsText(blog.list.postTitle, (index, text, length) => {
-      if (index === length - 1) {
-        this.assert.equal(text.value, newPost.title)
-      }
-    })
-    // TODO: Refactor
-    this.client.elementsText(blog.list.postDescription, (index, text, length) => {
-      if (index === length - 1) {
-        this.assert.equal(text.value, newPost.description)
-      }
+  // Delete post
+  'Can go to post detail from post list': () => {
+    this.client.click(blog.list.post.button)
+  },
+
+  'Can delete post from post detail': () => {
+    this.client.waitForElementVisible(blog.detail.buttonDelete)
+    this.client.click(blog.detail.buttonDelete)
+    this.client.pause(1500)
+    this.client.url((result) => {
+      this.assert.equal(result.value, `${config.WEB_URL}/posts`)
+      this.assert.notContainsText(blog.list.post.title, newPost.title)
+      this.assert.notContainsText(blog.list.post.description, newPost.description)
     })
   },
-  */
 
   'End testing blog': () => {
     this.client.end()

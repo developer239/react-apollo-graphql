@@ -7,4 +7,5 @@ module.exports = browser => ({
     browser.assert.equal(result.value, `${config.WEB_URL}${uri}`)
   }),
   containsText: (element, text) => browser.assert.containsText(element, text),
+  notContainsText: (element, text) => browser.expect.element(element).text.to.not.contain(text),
 })

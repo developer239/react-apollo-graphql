@@ -14,7 +14,7 @@ export const PostDetailPage = ({ match, handleDeletePost, data: { Post } }) => (
   <Grid>
     <PageHeader>{Post.title}</PageHeader>
     <p>{nl2br(Post.text)}</p>
-    <Button bsStyle="danger" onClick={handleDeletePost}>Delete Post</Button>
+    <Button id="deletePost" bsStyle="danger" onClick={handleDeletePost}>Delete Post</Button>
     <Link to={`/posts/${match.params.postId}/edit`}><Button>Edit Post</Button></Link>
   </Grid>
 )

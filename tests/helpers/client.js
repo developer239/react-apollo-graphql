@@ -32,7 +32,7 @@ module.exports = browser => ({
           browser.elementIdText(el.ELEMENT, (text) => {
             values.push(text)
             if (index === result.value.length - 1) {
-              callback(values)
+              callback(values, index)
               done()
             }
           })

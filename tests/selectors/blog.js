@@ -2,8 +2,11 @@ module.exports = {
   list: {
     header: 'h1',
     buttonCreate: '#createNewPost',
-    postTitle: 'h3',
-    postDescription: 'p',
+    post: {
+      title: '#posts > div:last-child > h3',
+      description: '#posts > div:last-child > p',
+      button: '#posts > div:last-child > a > button',
+    },
   },
   create: {
     header: 'h1',
@@ -15,5 +18,6 @@ module.exports = {
   detail: {
     title: 'h1',
     description: 'p',
+    buttonDelete: '#deletePost',
   },
 }
