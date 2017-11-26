@@ -44,6 +44,19 @@ __Uses:__
  * .editorconfig
  * [eslint](https://github.com/eslint/eslint) 4.11.0
  * [airbnb](https://www.npmjs.com/package/eslint-config-airbnb) 16.1.0
+ 
+ #### Testing
+ 
+ * [nightwatch](https://github.com/nightwatchjs/nightwatch) 0.9.16
+ * [selenium-download](https://github.com/groupon/selenium-download) 2.0.10
+
+  You don't have to install any global dependencies. Selenium server will be downloaded into `node_modules` and nightwatch will be run from `node_modules/.bin`.
+
+  1) Run `yarn e2e:download` in order to download selenium jar file
+  
+  2) Run `yarn dev`
+  
+  3) Run `yarn e2e` in order to start testing
 
 #### Other tips
 
@@ -54,4 +67,4 @@ __Uses:__
 ## To do
 
 - [ ] Write unit tests with at least 80% coverage
-- [ ] Add [nightwatch](https://github.com/nightwatchjs/nightwatch) in order to support E2E testing
+- [x] Add [nightwatch](https://github.com/nightwatchjs/nightwatch) in order to support E2E testing
