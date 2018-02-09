@@ -7,11 +7,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack/webpack.prod.babel.js -p",
+    "build": "webpack --config webpack/webpack.prod.js -p",
     "prod": "NODE_ENV=production node server/server.prod.js",
     "dev": "NODE_ENV=development node_modules/.bin/babel-node server/server.dev.js",
     "lint": "eslint . --fix",
-    "postinstall": "webpack --config webpack/webpack.dll.babel.js",
+    "postinstall": "webpack --config webpack/webpack.dll.js",
     "heroku-postbuild": "npm run build",
     "e2e": "nightwatch",
     "e2e:download": "node nightwatch.conf.js"

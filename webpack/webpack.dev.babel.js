@@ -1,6 +1,6 @@
 import webpack from 'webpack'
 import merge from 'webpack-merge'
-import common from './webpack.common.babel'
+import common from './webpack.common'
 
 
 const DEV_PORT = 3000
