@@ -1,7 +1,4 @@
+/.idea
 /node_modules
 /public
-/.idea
-/selenium-debug.log
-/tests/.reports
-/tests/.screenshots
 /yarn-error.log

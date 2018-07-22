@@ -1,7 +1,7 @@
 const webpack = require('webpack')
 const path = require('path')
 
-
+// TODO: Update modules
 const vendors = [
   'apollo-cache-inmemory',
   'apollo-client',
@@ -10,15 +10,9 @@ const vendors = [
   'graphql-tag',
   'react',
   'react-apollo',
-  'react-bootstrap',
   'react-dom',
-  'react-nl2br',
-  'react-redux',
-  'react-router-bootstrap',
   'react-router-dom',
   'recompose',
-  'redux',
-  'redux-form',
 ]
 
 module.exports = {
