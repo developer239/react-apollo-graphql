@@ -1,10 +1,8 @@
-const webpack = require('webpack')
+const DllLinkPlugin = require("dll-link-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const path = require('path')
-
-const dllManifest = require('../public/vendor/vendor-manifest.json')
 
 
 const DIST_DIR = 'public'
@@ -23,14 +21,14 @@ module.exports = {
         exclude: ['vendor'],
       },
     ),
-    new webpack.DllReferencePlugin({
-      context: '.',
-      manifest: dllManifest,
-    }),
     new HtmlWebpackPlugin({
       template: 'src/static/index.html',
       inject: 'body',
       filename: 'index.html',
+    }),
+    new DllLinkPlugin({
+      config: require('./webpack.dll'),
+      htmlMode: true,
     }),
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, '..', SRC_DIR, 'static'), to: '.' },

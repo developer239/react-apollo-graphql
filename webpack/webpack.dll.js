@@ -6,16 +6,7 @@ const MODE = process.env.NODE_ENV === 'production' ? 'production' : 'development
 
 // TODO: Update modules
 const vendors = [
-  'apollo-cache-inmemory',
-  'apollo-client',
-  'apollo-link-http',
-  'graphql',
-  'graphql-tag',
   'react',
-  'react-apollo',
-  'react-dom',
-  'react-router-dom',
-  'recompose',
 ]
 
 module.exports = {
@@ -33,7 +24,7 @@ module.exports = {
     ],
   },
   output: {
-    filename: 'vendors.js',
+    filename: 'vendors-[hash].js',
     path: path.resolve(__dirname, '..', 'public', 'vendor'),
     library: 'vendor',
   },
