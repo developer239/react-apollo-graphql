@@ -1,30 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 
 const Navigation = props => (
-  <Navbar collapseOnSelect>
-    <Navbar.Header>
-      <Navbar.Brand>
-        <Link to="/">
-          {props.title}
-        </Link>
-      </Navbar.Brand>
-      <Navbar.Toggle />
-    </Navbar.Header>
-    <Navbar.Collapse>
-      <Nav>
-        {props.links.map(item => (
-          <LinkContainer key={item.id} to={item.href}>
-            <NavItem>{item.label}</NavItem>
-          </LinkContainer>
-        ))}
-      </Nav>
-    </Navbar.Collapse>
-  </Navbar>
+  <ul>
+    <li>
+      <Link to="/">
+        {props.title}
+      </Link>
+    </li>
+    <li>
+      {props.links.map(item => (
+        <li key={item.id}>
+          <Link to={item.href}>{item.label}</Link>
+        </li>
+      ))}
+    </li>
+  </ul>
 )
 
 Navigation.propTypes = {

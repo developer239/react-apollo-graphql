@@ -2,26 +2,22 @@
   "parser": "babel-eslint",
   "extends": [
     "@strv/javascript/environments/react/v16",
-    "@strv/javascript/environments/react/v15",
-    "@strv/javascript/environments/react/optional",
-    "@strv/javascript/environments/react/accessibility"
+    "@strv/javascript/environments/react/v15"
   ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack/webpack.common.js"
+      }
+    }
+  },
   "rules": {
-    "consistent-return": 0,
-    "id-length": 0,
-    "no-mixed-operators": 0,
-    "max-params": 0,
-    "valid-jsdoc": 0,
-    "no-inline-comments": 0,
-    "import/namespace": 0,
-    "arrow-parens": "error",
-    "react/sort-prop-types": 0,
-    "react/require-default-props": 0
+    "max-classes-per-file": 0
   },
   "globals": {
-    "describe": true,
-    "it": true,
-    "expect": true,
-    "jest": true
+    "require": true,
+    "process": true,
+    "module": true,
+    "__dirname": true
   }
 }

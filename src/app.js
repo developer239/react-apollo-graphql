@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Header } from 'components'
 import { renderRoutes } from 'react-router-config'
+import { Header } from 'components'
 
 
 const App = ({ route }) => (
