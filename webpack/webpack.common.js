@@ -33,8 +33,7 @@ module.exports = {
       filename: 'index.html',
     }),
     new CopyWebpackPlugin([
-      { from: path.resolve(__dirname, '..', SRC_DIR, 'static', 'favicon.ico'), to: 'favicon.ico' },
-      { from: path.resolve(__dirname, '..', SRC_DIR, 'static', 'index.html'), to: 'index.html' },
+      { from: path.resolve(__dirname, '..', SRC_DIR, 'static'), to: '.' },
     ]),
   ],
   module: {

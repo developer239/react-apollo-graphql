@@ -1,10 +1,10 @@
 const webpack = require('webpack')
 const merge = require('webpack-merge')
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 const common = require('./webpack.common')
 
 
 module.exports = merge(common, {
+  mode: 'production',
   entry: {
     app: './src/index.js',
   },
@@ -14,6 +14,5 @@ module.exports = merge(common, {
         NODE_ENV: '"production"',
       },
     }),
-    new UglifyJSPlugin(),
   ],
 })

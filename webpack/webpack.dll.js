@@ -1,6 +1,9 @@
 const webpack = require('webpack')
 const path = require('path')
 
+
+const MODE = process.env.NODE_ENV === 'production' ? 'production' : 'development'
+
 // TODO: Update modules
 const vendors = [
   'apollo-cache-inmemory',
@@ -16,6 +19,7 @@ const vendors = [
 ]
 
 module.exports = {
+  mode: MODE,
   devtool: 'source-map',
   entry: {
     vendors,
