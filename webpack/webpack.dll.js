@@ -25,6 +25,7 @@ module.exports = {
     ],
   },
   output: {
+    publicPath: '/',
     filename: 'vendors-[hash].js',
     path: path.resolve(__dirname, '..', 'public', 'vendor'),
     library: 'vendor',

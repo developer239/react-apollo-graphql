@@ -19,7 +19,7 @@ export const ListPostsPage = () => (
               <div key={post.id}>
                 <h3>{post.title}</h3>
                 <p>{post.text}</p>
-                <Link to={`/post/${post.id}`}>edit</Link>
+                <Link to={`/posts/${post.id}`}>edit</Link>
               </div>
             ))}
           </div>
