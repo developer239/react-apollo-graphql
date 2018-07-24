@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 
+// TODO: Make lazy blurred loading
 export default styled.img`
-  width: 100%;
+  max-width: 100%;
 `

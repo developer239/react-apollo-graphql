@@ -13,6 +13,7 @@
   },
   "rules": {
     "max-classes-per-file": 0,
+    "import/no-named-as-default": 0,
     "react/jsx-key": "error",
     "import/newline-after-import": ["error", { "count": 2 }]
   },

@@ -12,7 +12,6 @@
     "lint:js:fix": "eslint . --fix",
     "lint:css": "node node_modules/.bin/stylelint ./src",
     "build:production": "NODE_ENV=production webpack --config webpack/webpack.prod.js -p",
-    "build:dll": "webpack --config webpack/webpack.dll.js",
     "heroku-postbuild": "npm run build:production",
     "prod": "NODE_ENV=production node server/server.prod.js"
   },
