@@ -1,7 +1,5 @@
-import React from 'react'
 import { withProps } from 'recompose'
 import styled from 'styled-components'
-import { Link as RouterLink } from 'react-router-dom'
 import { mediaQueries } from 'styles'
 
 
@@ -106,10 +104,3 @@ export const A = withProps({ target: '_blank', rel: 'noopener noreferrer' })(sty
     text-decoration: none;
   }
 `)
-
-// eslint-disable-next-line react/prop-types
-export const Link = ({ children, ...rest }) => (
-  <RouterLink {...rest}>
-    {children}
-  </RouterLink>
-)

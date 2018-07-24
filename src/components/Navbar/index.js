@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { compose, withState, withHandlers } from 'recompose'
 import { mediaQueries } from 'styles'
-import { Link as TypoLink } from 'components/Typography'
 import Hamburger from './Hamburger'
+import Link from '../Link'
 
 
 const Container = styled.nav`
@@ -42,7 +42,7 @@ export const Links = styled.div`
   }
 `
 
-export const Link = styled(TypoLink)`
+export const StyledLink = styled(Link)`
   display: block;
   color: black;
   padding: 15px 20px;
@@ -57,7 +57,7 @@ const Navbar = ({ isOpen, toggleOpen, links }) => (
   <Container>
     <Content>
       <Links isOpen={isOpen}>
-        {links.map(link => <Link key={link.id} to={link.to}>{link.label}</Link>)}
+        {links.map(link => <StyledLink key={link.id} to={link.to}>{link.label}</StyledLink>)}
       </Links>
       <Hamburger isOpen={isOpen} toggleIsOpen={toggleOpen} />
     </Content>
