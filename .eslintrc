@@ -12,7 +12,9 @@
     }
   },
   "rules": {
-    "max-classes-per-file": 0
+    "max-classes-per-file": 0,
+    "react/jsx-key": "error",
+    "import/newline-after-import": ["error", { "count": 2 }]
   },
   "globals": {
     "require": true,

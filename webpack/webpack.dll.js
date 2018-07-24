@@ -5,6 +5,7 @@ const path = require('path')
 const MODE = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
 // TODO: Update modules
+// These libraries are built only once.
 const vendors = [
   'react',
 ]

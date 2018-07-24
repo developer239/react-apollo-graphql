@@ -25,7 +25,6 @@ app.use(express.static(DIST_DIR))
 // This is kind of a History Api Fallback
 app.use('*', (req, res, next) => {
   const filename = path.join(compiler.outputPath, 'index.html')
-  // eslint-disable-next-line
   compiler.outputFileSystem.readFile(filename, (err, result) => {
     if (err) {
       return next(err)

@@ -10,13 +10,11 @@ const Navigation = props => (
         {props.title}
       </Link>
     </li>
-    <li>
-      {props.links.map(item => (
-        <li key={item.id}>
-          <Link to={item.href}>{item.label}</Link>
-        </li>
-      ))}
-    </li>
+    {props.links.map(item => (
+      <li key={item.id}>
+        <Link to={item.href}>{item.label}</Link>
+      </li>
+    ))}
   </ul>
 )
 

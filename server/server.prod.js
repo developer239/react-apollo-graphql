@@ -9,7 +9,7 @@ const DIST_DIR = path.resolve(__dirname, '..', 'public')
 
 const app = express()
 
-// require https
+// Automatic https redirect
 app.use((req, res, next) => {
   if (req.hostname !== 'localhost' && req.get('X-Forwarded-Proto') !== 'https') {
     return res.redirect(`https://${req.hostname}${req.url}`)
@@ -20,6 +20,7 @@ app.use((req, res, next) => {
 // https://github.com/expressjs/compression
 app.use(compression())
 
+// Serve static files from /public directory
 app.use(express.static(DIST_DIR))
 
 app.get('*', (req, res) => {
