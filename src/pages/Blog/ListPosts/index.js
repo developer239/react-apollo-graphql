@@ -1,8 +1,14 @@
 import React from 'react'
+import styled from 'styled-components'
 import { Query } from 'react-apollo'
-import { Link } from 'components'
+import { H2, P } from 'components/Typography'
+import { Button, Link } from 'components'
 import { ALL_POSTS } from 'modules/blog/gql'
 
+
+const PostContainer = styled.div`
+  margin-bottom: 25px;
+`
 
 export const ListPostsPage = () => (
   <div>
@@ -16,11 +22,11 @@ export const ListPostsPage = () => (
         return (
           <div>
             {data.allPosts.map(post => (
-              <div key={post.id}>
-                <h3>{post.title}</h3>
-                <p>{post.text}</p>
-                <Link to={`/posts/${post.id}`}>edit</Link>
-              </div>
+              <PostContainer key={post.id}>
+                <H2>{post.title}</H2>
+                <P>{post.text}</P>
+                <Link to={`/posts/${post.id}`}><Button>edit</Button></Link>
+              </PostContainer>
             ))}
           </div>
         )

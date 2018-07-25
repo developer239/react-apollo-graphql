@@ -6,9 +6,9 @@ import { Content, Navbar } from 'components'
 
 
 const NAV_LINKS = [
-  { id: 1, to: '/', label: 'Home' },
-  { id: 2, to: '/counter', label: 'Counter' },
-  { id: 3, to: '/posts', label: 'Blog' },
+  { id: 1, to: '/', label: 'home' },
+  { id: 2, to: '/counter', label: 'counter' },
+  { id: 3, to: '/posts', label: 'blog' },
 ]
 
 const Container = styled.div`

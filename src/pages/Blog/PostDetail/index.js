@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Query } from 'react-apollo'
+import { H2, P } from 'components/Typography'
 import { POST_DETAIL } from 'modules/blog/gql'
 
 
@@ -15,8 +16,8 @@ export const PostDetailPage = ({ match: { params: { postId } } }) => (
         if (error) return `Error! ${error.message}`
         return (
           <div>
-            <h2>{data.Post.title}</h2>
-            <p>{data.Post.text}</p>
+            <H2>{data.Post.title}</H2>
+            <P>{data.Post.text}</P>
           </div>
         )
       }}

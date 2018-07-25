@@ -6,9 +6,14 @@ export const theme = {
     maxWidth: `${1000 / 16}rem`,
   },
   color: {
-    primary: 'lightgrey',
-    white: '#FFFFFF',
-    black: '#000000',
+    primary: '#5d9cec',
+    secondary: '#4a89dc',
+    mintLight: '#48cfad',
+    mintDark: '#37bc9b',
+    white: '#fff',
+    lightGrey: '#ccd1d9',
+    darkGrey: '#aab2bd',
+    black: '#000',
   },
 }
 
@@ -41,8 +46,7 @@ const injectGlobalStyles = () => injectGlobal`
   input,
   button,
   label {
-    font-family: Montserrat, sans-serif;
-    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', sans-serif;
   }
 `
 

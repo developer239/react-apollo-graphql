@@ -13,7 +13,7 @@ const Container = styled.nav`
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: lightgrey;
+  background-color: ${props => props.theme.color.primary};
 `
 
 const Content = styled.div`
@@ -24,7 +24,6 @@ const Content = styled.div`
   width: 100%;
   
   ${mediaQueries.lg} {
-    width: ${props => props.theme.layout.maxWidth};
     flex-direction: row;
   }
 `
@@ -44,12 +43,19 @@ export const Links = styled.div`
 
 export const StyledLink = styled(Link)`
   display: block;
-  color: black;
-  padding: 15px 20px;
+  color: ${props => props.theme.color.white};
+  text-decoration: none;
+  padding: 20px 15px;
+  transition: background-color 150ms linear;
+  font-size: 14px;
   
   &:hover {
-    background-color: grey;
-    color: black;
+    background-color: ${props => props.theme.color.secondary};;
+  }
+  
+  ${mediaQueries.md} {
+    font-size: 16px;
+    padding: 20px 25px;
   }
 `
 

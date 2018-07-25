@@ -68,7 +68,7 @@ export const H3 = styled.h1`
 
 export const P = styled.p`
   font-weight: lighter;
-  margin: 0 0 12px 0;
+  margin: 0 0 25px 0;
   font-size: 16px;
   line-height: 1.5;
   
@@ -83,19 +83,20 @@ export const HR = styled.hr`
   display: block;
   unicode-bidi: isolate;
   overflow: hidden;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   border: 0;
   border-top: 1px solid #f2f2f4;
 `
 
 
 export const A = withProps({ target: '_blank', rel: 'noopener noreferrer' })(styled.a`
-  color: ${props => props.theme.color.primary};
+  color: ${props => props.theme.color.secondary};
   text-decoration: none;
 
   &:hover {
     text-decoration: none;
+    color: ${props => props.theme.color.primary};
   }
 
   &:active,

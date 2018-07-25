@@ -5,16 +5,15 @@ import { mediaQueries } from 'styles'
 const Content = styled.div`
   background: white;
   min-height: 100%;
-  padding: 10px 15px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   flex: 1;
   margin-top: 10px;
   
-  ${mediaQueries.lg} {
-    width: ${props => props.theme.layout.maxWidth};
-    padding: 20px 0;
-    margin: 0 auto;
+  ${mediaQueries.md} {
+    padding: 25px 25px;
+    max-width: ${props => props.theme.layout.maxWidth};
   }
 `
 

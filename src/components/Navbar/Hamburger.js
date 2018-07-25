@@ -64,10 +64,10 @@ const HamburgerLine = styled.span`
   left: 0;
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
-  background: black;
+  background: ${props => props.theme.color.white};
   
   ${mediaQueries.md} {
-    background: black;
+    background: ${props => props.theme.color.white};
   }
 `
 
