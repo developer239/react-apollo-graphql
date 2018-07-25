@@ -1,8 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import { Query } from 'react-apollo'
 import { H2, P } from 'components/Typography'
-import { Button, Link } from 'components'
+import { Button, Link, Query } from 'components'
 import { nl2br } from 'utils/typography'
 import { ALL_POSTS } from 'modules/blog/gql'
 
@@ -12,28 +11,21 @@ const PostContainer = styled.div`
 `
 
 export const ListPostsPage = () => (
-  <div>
-    <Query
-      query={ALL_POSTS}
-    >
-      {({ loading, error, data }) => {
-        if (loading) return 'Loading...'
-        if (error) return `Error! ${error.message}`
-        console.log('data ', data)
-        return (
-          <div>
-            {data.allPosts.map(post => (
-              <PostContainer key={post.id}>
-                <H2>{post.title}</H2>
-                <P>{nl2br(post.text)}</P>
-                <Link to={`/posts/${post.id}`}><Button>edit</Button></Link>
-              </PostContainer>
-            ))}
-          </div>
-        )
-      }}
-    </Query>
-  </div>
+  <Query
+    query={ALL_POSTS}
+  >
+    {({ data: { allPosts } }) => (
+      <Fragment>
+        {allPosts.map(({ id, title, text }) => (
+          <PostContainer key={id}>
+            <H2>{title}</H2>
+            <P>{nl2br(text)}</P>
+            <Link to={`/posts/${id}`}><Button>edit</Button></Link>
+          </PostContainer>
+        ))}
+      </Fragment>
+    )}
+  </Query>
 )
 
 ListPostsPage.propTypes = {}
