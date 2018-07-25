@@ -50,7 +50,7 @@ export const StyledLink = styled(Link)`
   font-size: 14px;
   
   &:hover {
-    background-color: ${props => props.theme.color.secondary};;
+    background-color: ${props => props.theme.color.secondary};
   }
   
   ${mediaQueries.md} {
