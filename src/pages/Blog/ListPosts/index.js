@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Query } from 'react-apollo'
 import { H2, P } from 'components/Typography'
 import { Button, Link } from 'components'
+import { nl2br } from 'utils/typography'
 import { ALL_POSTS } from 'modules/blog/gql'
 
 
@@ -24,7 +25,7 @@ export const ListPostsPage = () => (
             {data.allPosts.map(post => (
               <PostContainer key={post.id}>
                 <H2>{post.title}</H2>
-                <P>{post.text}</P>
+                <P>{nl2br(post.text)}</P>
                 <Link to={`/posts/${post.id}`}><Button>edit</Button></Link>
               </PostContainer>
             ))}

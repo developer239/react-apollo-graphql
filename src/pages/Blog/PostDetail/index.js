@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Query } from 'react-apollo'
 import { H2, P } from 'components/Typography'
+import { nl2br } from 'utils/typography'
 import { POST_DETAIL } from 'modules/blog/gql'
 
 
@@ -17,7 +18,7 @@ export const PostDetailPage = ({ match: { params: { postId } } }) => (
         return (
           <div>
             <H2>{data.Post.title}</H2>
-            <P>{data.Post.text}</P>
+            <P>{nl2br(data.Post.text)}</P>
           </div>
         )
       }}
