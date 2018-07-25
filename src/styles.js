@@ -8,8 +8,10 @@ export const theme = {
   color: {
     primary: '#5d9cec',
     secondary: '#4a89dc',
-    mintLight: '#48cfad',
-    mintDark: '#37bc9b',
+    lightGreen: '#48cfad',
+    darkGreen: '#37bc9b',
+    lightRed: '#ed5565',
+    darkRed: '#da4453',
     white: '#fff',
     lightGrey: '#ccd1d9',
     darkGrey: '#aab2bd',
