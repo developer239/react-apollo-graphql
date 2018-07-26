@@ -48,7 +48,9 @@ export const StyledLink = styled(Link)`
   padding: 20px 15px;
   transition: background-color 150ms linear;
   font-size: 14px;
+  background-color: ${props => props.isActive ? props.theme.color.secondary : 'transparent'};
   
+  &:active,
   &:hover {
     background-color: ${props => props.theme.color.secondary};
   }
@@ -59,11 +61,20 @@ export const StyledLink = styled(Link)`
   }
 `
 
-const Navbar = ({ isOpen, toggleOpen, links }) => (
+const Navbar = ({ isOpen, toggleOpen, links, activeRoute }) => (
   <Container>
     <Content>
       <Links isOpen={isOpen}>
-        {links.map(link => <StyledLink key={link.id} to={link.to}>{link.label}</StyledLink>)}
+        {links.map(link => (
+          <StyledLink
+            onClick={toggleOpen}
+            key={link.id}
+            to={link.to}
+            isActive={activeRoute === link.to}
+          >
+            {link.label}
+          </StyledLink>
+        ))}
       </Links>
       <Hamburger isOpen={isOpen} toggleIsOpen={toggleOpen} />
     </Content>
@@ -71,6 +82,7 @@ const Navbar = ({ isOpen, toggleOpen, links }) => (
 )
 
 Navbar.propTypes = {
+  activeRoute: PropTypes.string.isRequired,
   isOpen: PropTypes.bool.isRequired,
   toggleOpen: PropTypes.func.isRequired,
   links: PropTypes.arrayOf(PropTypes.shape({
@@ -81,7 +93,7 @@ Navbar.propTypes = {
 }
 
 const enhance = compose(
-  withState('isOpen', 'setIsOpen', true),
+  withState('isOpen', 'setIsOpen', false),
   withHandlers({
     toggleOpen: ({ setIsOpen }) => () => setIsOpen(value => !value),
   }),

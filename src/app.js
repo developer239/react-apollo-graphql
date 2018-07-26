@@ -17,9 +17,9 @@ const Container = styled.div`
   min-height: 100%;
 `
 
-const App = ({ route }) => (
+const App = ({ route, location }) => (
   <Container>
-    <Navbar links={NAV_LINKS} />
+    <Navbar links={NAV_LINKS} activeRoute={location.pathname} />
     <Content>
       {renderRoutes(route.routes)}
     </Content>
@@ -29,6 +29,9 @@ const App = ({ route }) => (
 App.propTypes = {
   route: PropTypes.shape({
     routes: PropTypes.array.isRequired,
+  }).isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
   }).isRequired,
 }
 
