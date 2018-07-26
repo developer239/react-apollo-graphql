@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Query } from 'react-apollo'
-import { Spinner, Message } from 'components'
+import Spinner from '../Spinner'
+import Message from '../Message'
 
 
 export const QueryWrapper = ({ query, variables, children }) => (
