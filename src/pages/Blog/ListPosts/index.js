@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import { H2, P } from 'components/Typography'
-import { Button, Link, Query } from 'components'
+import { Button, Link, Query, DeleteButton } from 'components'
 import { nl2br } from 'utils/typography'
-import { ALL_POSTS } from 'modules/blog/gql'
+import { ALL_POSTS, DELETE_POST } from 'modules/blog/gql'
 
 
 const PostContainer = styled.div`
@@ -16,7 +16,9 @@ const CreateNewLink = styled(Link)`
 
 export const ListPostsPage = () => (
   <Fragment>
-    <CreateNewLink to={`/posts/new`}><Button bgType="success">create new post</Button></CreateNewLink>
+    <CreateNewLink to={`/posts/new`}>
+      <Button bgType="success">create new post</Button>
+    </CreateNewLink>
     <Query
       query={ALL_POSTS}
     >
@@ -28,6 +30,7 @@ export const ListPostsPage = () => (
               <P>{nl2br(text)}</P>
               <Link to={`/posts/${id}`}><Button>detail</Button></Link>
               <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
+              <DeleteButton mutation={DELETE_POST} variables={{ id }} />
             </PostContainer>
           ))}
         </Fragment>
@@ -35,7 +38,5 @@ export const ListPostsPage = () => (
     </Query>
   </Fragment>
 )
-
-ListPostsPage.propTypes = {}
 
 export default ListPostsPage
