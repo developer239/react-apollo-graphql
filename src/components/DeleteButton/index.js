@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Mutation, Button } from 'components'
+import Mutation from 'components/Mutation'
+import Button from 'components/Button'
 
 
 const DeleteButton = ({ mutation, variables, update }) => (

@@ -9,7 +9,6 @@ const TextArea = ({
   values,
   touched,
   errors,
-  type,
   placeholder,
   handleChange,
   handleBlur
