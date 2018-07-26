@@ -15,7 +15,7 @@ const CreateNewLink = styled(Link)`
 `
 
 export const ListPostsPage = () => (
-  <Fragment>
+  <section>
     <CreateNewLink to={`/posts/new`}>
       <Button bgType="success">create new post</Button>
     </CreateNewLink>
@@ -48,7 +48,7 @@ export const ListPostsPage = () => (
         </Fragment>
       )}
     </Query>
-  </Fragment>
+  </section>
 )
 
 export default ListPostsPage

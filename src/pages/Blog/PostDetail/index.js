@@ -7,17 +7,19 @@ import { POST_DETAIL } from 'modules/blog/gql'
 
 
 export const PostDetailPage = ({ match: { params: { postId } } }) => (
-  <Query
-    query={POST_DETAIL}
-    variables={{ id: postId }}
-  >
-    {({ data: { Post: { title, text } } }) => (
-      <Fragment>
-        <H2>{title}</H2>
-        <P>{nl2br(text)}</P>
-      </Fragment>
-    )}
-  </Query>
+  <section>
+    <Query
+      query={POST_DETAIL}
+      variables={{ id: postId }}
+    >
+      {({ data: { Post: { title, text } } }) => (
+        <Fragment>
+          <H2>{title}</H2>
+          <P>{nl2br(text)}</P>
+        </Fragment>
+      )}
+    </Query>
+  </section>
 )
 
 PostDetailPage.propTypes = {

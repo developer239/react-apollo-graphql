@@ -7,24 +7,26 @@ import PostForm from 'modules/blog/forms/Post'
 
 
 export const PostEditPage = ({ history, match: { params: { postId } } }) => (
-  <Query
-    query={POST_DETAIL}
-    variables={{ id: postId }}
-  >
-    {({ data: { Post } }) => (
-      <Fragment>
-        <H2>Edit Post</H2>
-        <Mutation mutation={UPDATE_POST} onCompleted={() => history.push(`/posts/${postId}`)}>
-          {mutate => (
-            <PostForm
-              initialValues={Post}
-              submit={values => mutate({ variables: values })}
-            />
-          )}
-        </Mutation>
-      </Fragment>
-    )}
-  </Query>
+  <section>
+    <Query
+      query={POST_DETAIL}
+      variables={{ id: postId }}
+    >
+      {({ data: { Post } }) => (
+        <Fragment>
+          <H2>Edit Post</H2>
+          <Mutation mutation={UPDATE_POST} onCompleted={() => history.push(`/posts/${postId}`)}>
+            {mutate => (
+              <PostForm
+                initialValues={Post}
+                submit={values => mutate({ variables: values })}
+              />
+            )}
+          </Mutation>
+        </Fragment>
+      )}
+    </Query>
+  </section>
 )
 
 PostEditPage.propTypes = {

@@ -4,7 +4,7 @@ import { Button } from 'components'
 
 
 export const CounterPage = () => (
-  <div>
+  <section>
     <H2>Counter Page</H2>
     <P>
       Fusce nibh. Phasellus rhoncus. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum
@@ -18,7 +18,7 @@ export const CounterPage = () => (
     </P>
     <Button>increment</Button>
     <Button>decrement</Button>
-  </div>
+  </section>
 )
 
 CounterPage.propTypes = {}

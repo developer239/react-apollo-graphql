@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Mutation } from 'components'
 import PostForm from 'modules/blog/forms/Post'
@@ -7,7 +7,7 @@ import { H2 } from 'components/Typography'
 
 
 export const PostCreatePage = ({ history }) => (
-  <Fragment>
+  <section>
     <H2>Create New Post</H2>
     <Mutation
       mutation={CREATE_POST}
@@ -24,7 +24,7 @@ export const PostCreatePage = ({ history }) => (
     >
       {mutate => <PostForm submit={values => mutate({ variables: values })} />}
     </Mutation>
-  </Fragment>
+  </section>
 )
 
 PostCreatePage.propTypes = {

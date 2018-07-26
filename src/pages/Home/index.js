@@ -3,7 +3,7 @@ import { H2, P, A } from 'components/Typography'
 
 
 const HomePage = () => (
-  <div>
+  <section>
     <H2>React Redux Apollo Graphql</H2>
     <P>
       The third version of this minimal react apollo boilerplate. Originally this application was
@@ -19,7 +19,7 @@ const HomePage = () => (
       You can find the source code of this application
       <A href="https://github.com/developer239/react-redux-apollo-graphql"> here</A>
     </P>
-  </div>
+  </section>
 )
 
 export default HomePage
