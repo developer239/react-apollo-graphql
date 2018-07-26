@@ -11,7 +11,7 @@ const updatePostCache = (cache, { data: { createPost } }) => {
   cache.writeQuery({
     query: ALL_POSTS,
     data: {
-      allPosts: postsCache.allPosts.concat([createPost]),
+      allPosts: [createPost, ...postsCache.allPosts],
     },
   })
 }

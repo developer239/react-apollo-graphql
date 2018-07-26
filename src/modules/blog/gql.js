@@ -3,7 +3,7 @@ import gql from 'graphql-tag'
 
 export const ALL_POSTS = gql`
   query allPosts{
-    allPosts{
+    allPosts(orderBy: createdAt_DESC) {
       id
       title
       text
@@ -12,7 +12,7 @@ export const ALL_POSTS = gql`
 `
 
 export const POST_DETAIL = gql`
-  query PostDetail($id: ID!){
+  query PostDetail($id: ID!) {
     Post(id: $id){
       id
       title
