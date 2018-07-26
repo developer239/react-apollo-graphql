@@ -5,6 +5,7 @@ import {
   ListPosts,
   PostCreate,
   PostDetail,
+  PostEdit,
 } from 'pages/Blog'
 import App from './app'
 
@@ -25,6 +26,10 @@ export default [
       {
         path: '/posts/new',
         component: PostCreate,
+      },
+      {
+        path: '/posts/:postId/edit',
+        component: PostEdit,
       },
       {
         path: '/posts/:postId',
