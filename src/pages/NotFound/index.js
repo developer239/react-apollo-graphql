@@ -1,13 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { H2, P } from 'components/Typography'
+import { Link } from 'components'
 
 
 const NotFoundPage = () => (
   <section>
-    <h2>Page Not Found :(</h2>
-    <p>
+    <H2>Page Not Found :(</H2>
+    <P>
       Please go back <Link to="/">home</Link>
-    </p>
+    </P>
   </section>
 )
 
