@@ -3,6 +3,7 @@ import Counter from 'pages/Counter'
 import NotFound from 'pages/NotFound'
 import {
   ListPosts,
+  PostCreate,
   PostDetail,
 } from 'pages/Blog'
 import App from './app'
@@ -20,6 +21,10 @@ export default [
       {
         path: '/counter',
         component: Counter,
+      },
+      {
+        path: '/posts/new',
+        component: PostCreate,
       },
       {
         path: '/posts/:postId',

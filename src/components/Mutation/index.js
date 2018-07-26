@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Query } from 'react-apollo'
+import { Mutation } from 'react-apollo'
 import Spinner from '../Spinner'
 import Message from '../Message'
 
 
-export const QueryWrapper = ({ children, ...rest }) => (
-  <Query {...rest}>
-    {({ loading, error, data }) => {
+export const MutationWrapper = ({ children, ...rest }) => (
+  <Mutation {...rest}>
+    {(mutate, { loading, error, data }) => {
       if (loading) {
         return <Spinner />
       }
@@ -16,13 +16,13 @@ export const QueryWrapper = ({ children, ...rest }) => (
         return <Message type="error" text={`Error! ${error.message}`} />
       }
 
-      return children({ loading, error, data })
+      return children(mutate, { loading, error, data })
     }}
-  </Query>
+  </Mutation>
 )
 
-QueryWrapper.propTypes = {
+MutationWrapper.propTypes = {
   children: PropTypes.func.isRequired,
 }
 
-export default QueryWrapper
+export default MutationWrapper
