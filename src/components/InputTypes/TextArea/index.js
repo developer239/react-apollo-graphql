@@ -1,7 +1,18 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import Label from '../Label'
+import ErrorText from '../ErrorText'
 
+
+const StyledTextArea = styled.textarea`
+  padding: 10px 10px;
+  border: 1px solid ${props => props.theme.color.lightGrey};
+  margin-top: 10px;
+  width: 400px;
+  height: 200px;
+  background-color: transparent;
+`
 
 const TextArea = ({
   id,
@@ -11,20 +22,20 @@ const TextArea = ({
   errors,
   placeholder,
   handleChange,
-  handleBlur
+  handleBlur,
 }) => (
   <Fragment>
     {label && (
       <Label htmlFor={id}>
         {label}
-        <textarea
+        <StyledTextArea
           id={id}
           value={values[id]}
           placeholder={placeholder}
           onChange={handleChange}
           onBlur={handleBlur}
         />
-        {errors[id] && touched[id] && <div>{errors[id]}</div>}
+        {errors[id] && touched[id] && <ErrorText>{errors[id]}</ErrorText>}
       </Label>
     )}
   </Fragment>

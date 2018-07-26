@@ -22,7 +22,7 @@ export const PostCreatePage = ({ history }) => (
     <Mutation
       mutation={CREATE_POST}
       update={updatePostCache}
-      onCompleted={() => history.push('/posts')}
+      onCompleted={({ createPost: { id }}) => history.push(`/posts/${id}`)}
     >
       {mutate => <PostForm submit={values => mutate({ variables: values })} />}
     </Mutation>

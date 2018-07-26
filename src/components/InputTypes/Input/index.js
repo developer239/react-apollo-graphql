@@ -1,7 +1,15 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import Label from '../Label'
+import ErrorText from '../ErrorText'
 
+
+const StyledInput = styled.input`
+  padding: 10px 10px;
+  border: 1px solid ${props => props.theme.color.lightGrey};
+  margin-top: 10px;
+`
 
 const Input = ({
   id,
@@ -12,13 +20,13 @@ const Input = ({
   type,
   placeholder,
   handleChange,
-  handleBlur
+  handleBlur,
 }) => (
   <Fragment>
     {label && (
       <Label htmlFor={id}>
         {label}
-        <input
+        <StyledInput
           id={id}
           value={values[id]}
           type={type}
@@ -26,7 +34,7 @@ const Input = ({
           onChange={handleChange}
           onBlur={handleBlur}
         />
-        {errors[id] && touched[id] && <div>{errors[id]}</div>}
+        {errors[id] && touched[id] && <ErrorText>{errors[id]}</ErrorText>}
       </Label>
     )}
   </Fragment>
