@@ -16,7 +16,7 @@ const CreateNewLink = styled(Link)`
 
 export const ListPostsPage = () => (
   <Fragment>
-    <CreateNewLink to={`/posts/new`}><Button type="success">create new post</Button></CreateNewLink>
+    <CreateNewLink to={`/posts/new`}><Button bgType="success">create new post</Button></CreateNewLink>
     <Query
       query={ALL_POSTS}
     >

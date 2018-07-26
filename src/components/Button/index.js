@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 
-export const getButtonColor = ({ type, theme: { color } }) => {
-  switch (type) {
+export const getButtonColor = ({ bgType, theme: { color } }) => {
+  switch (bgType) {
     case 'success':
       return {
         background: color.lightGreen,
@@ -45,23 +45,23 @@ const StyledButton = styled.button`
   }
   
   &:active {
-    background-color: ${({ type, theme: { color } }) => type ? color.lightGrey : color.primary};
+    background-color: ${({ bgType, theme: { color } }) => bgType ? color.lightGrey : color.primary};
   }
 `
 
-const Button = ({ type, children, ...rest }) => (
-  <StyledButton {...rest} type={type}>
+const Button = ({ bgType, children, ...rest }) => (
+  <StyledButton {...rest} bgType={bgType}>
     {children}
   </StyledButton>
 )
 
 Button.defaultProps = {
-  type: null,
+  bgType: null,
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
-  type: PropTypes.oneOf(['success', 'error']),
+  bgType: PropTypes.oneOf(['success', 'error']),
 }
 
 export default Button

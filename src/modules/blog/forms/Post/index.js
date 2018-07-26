@@ -36,7 +36,7 @@ const PostForm = ({
       handleChange={handleChange}
       handleBlur={handleBlur}
     />
-    <Button>Submit</Button>
+    <Button type="submit">Submit</Button>
   </form>
 )
 
