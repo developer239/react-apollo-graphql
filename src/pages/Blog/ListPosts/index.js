@@ -10,15 +10,15 @@ const PostContainer = styled.div`
   margin-bottom: 25px;
 `
 
-const CreateNewLink = styled(Link)`
+const CreateNewButton = styled(Button)`
   margin-bottom: 25px;
 `
 
 export const ListPostsPage = () => (
   <section>
-    <CreateNewLink to={`/posts/new`}>
-      <Button bgType="success">create new post</Button>
-    </CreateNewLink>
+    <Link to={`/posts/new`}>
+      <CreateNewButton bgType="success">create new post</CreateNewButton>
+    </Link>
     <Query
       query={ALL_POSTS}
     >
