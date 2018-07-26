@@ -30,7 +30,19 @@ export const ListPostsPage = () => (
               <P>{nl2br(text)}</P>
               <Link to={`/posts/${id}`}><Button>detail</Button></Link>
               <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
-              <DeleteButton mutation={DELETE_POST} variables={{ id }} />
+              <DeleteButton
+                mutation={DELETE_POST}
+                variables={{ id }}
+                update={(cache, { data: { deletePost } }) => {
+                  const postsCache = cache.readQuery({ query: ALL_POSTS })
+                  cache.writeQuery({
+                    query: ALL_POSTS,
+                    data: {
+                      allPosts: postsCache.allPosts.filter(post => post.id !== deletePost.id),
+                    },
+                  })
+                }}
+              />
             </PostContainer>
           ))}
         </Fragment>
