@@ -6,20 +6,22 @@ import { CREATE_POST, ALL_POSTS } from 'modules/blog/gql'
 import { H2 } from 'components/Typography'
 
 
+const updatePostCache = (cache, { data: { createPost } }) => {
+  const postsCache = cache.readQuery({ query: ALL_POSTS })
+  cache.writeQuery({
+    query: ALL_POSTS,
+    data: {
+      allPosts: postsCache.allPosts.concat([createPost]),
+    },
+  })
+}
+
 export const PostCreatePage = ({ history }) => (
   <section>
     <H2>Create New Post</H2>
     <Mutation
       mutation={CREATE_POST}
-      update={(cache, { data: { createPost } }) => {
-        const postsCache = cache.readQuery({ query: ALL_POSTS })
-        cache.writeQuery({
-          query: ALL_POSTS,
-          data: {
-            allPosts: postsCache.allPosts.concat([createPost]),
-          },
-        })
-      }}
+      update={updatePostCache}
       onCompleted={() => history.push('/posts')}
     >
       {mutate => <PostForm submit={values => mutate({ variables: values })} />}
