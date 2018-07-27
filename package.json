@@ -18,7 +18,9 @@
   "dependencies": {
     "apollo-cache-inmemory": "^1.2.5",
     "apollo-client": "^2.3.5",
+    "apollo-link": "^1.2.2",
     "apollo-link-http": "^1.5.4",
+    "apollo-link-state": "^0.4.1",
     "compression": "^1.7.2",
     "express": "^4.16.3",
     "formik": "^1.0.2",

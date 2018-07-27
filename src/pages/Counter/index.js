@@ -1,6 +1,12 @@
 import React from 'react'
 import { H2, P } from 'components/Typography'
-import { Button } from 'components'
+import { Query, DeleteButton } from 'components'
+import {
+  COUNTER_VALUE,
+  INCREMENT_COUNTER,
+  DECREMENT_COUNTER,
+  DOUBLE_COUNTER,
+} from 'modules/counter/gql'
 
 
 export const CounterPage = () => (
@@ -13,11 +19,24 @@ export const CounterPage = () => (
       pariatur. Nullam rhoncus aliquam metus. Curabitur sagittis hendrerit ante. Nullam faucibus mi
       quis velit.
     </P>
-    <P>
-      Current counter value is: <strong id="value">123</strong>
-    </P>
-    <Button>increment</Button>
-    <Button>decrement</Button>
+    <Query query={COUNTER_VALUE}>
+      {({ data: { counterValue } }) => (
+        <P>
+          Current counter value is: <strong id="value">{counterValue}</strong>
+        </P>
+      )}
+    </Query>
+    <DeleteButton btnBgType={null} mutation={INCREMENT_COUNTER} label="increment" />
+    <DeleteButton btnBgType={null} mutation={DECREMENT_COUNTER} label="decrement" />
+    <DeleteButton
+      btnBgType={null}
+      mutation={DOUBLE_COUNTER}
+      label="double (async)"
+      onCompleted={({ doubleCounterValueAsync }) => {
+        // If you need to work with the counter value when the action is complete:
+        console.log('new value ', doubleCounterValueAsync.counterValue)
+      }}
+    />
   </section>
 )
 
