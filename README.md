@@ -4,7 +4,7 @@
 
  Backend is provided by [graphq.cool](https://www.graph.cool/) ❤️
 
-#### Demo
+## Demo
 
  You can try the application [here](https://react-redux-apollo-graphql.herokuapp.com/) (it might take a while before the free server wakes up)
 
@@ -40,7 +40,7 @@
  Run
  ```yarn install```
  
- Vendor dll files should be generated automatically in `/public/vendor/vendors.js` every time you change your dependencies.
+ Vendors dll files should be generated automatically in `/public/vendors-[hash].js` every time you change your dependencies.
 
 ## Development
 
@@ -50,8 +50,8 @@
  
  #### Production server
   
- Project files are generated into the `/public` folder using `yarn build` command.
+ Project files are generated into the `/public` folder using `yarn build:production` command.
  
- 1) Use `yarn build` in order to build the static files.
+ 1) Use `yarn build:production` in order to build the static files.
  
  2) Use `yarn prod` command in order to start the app. This will start express server.

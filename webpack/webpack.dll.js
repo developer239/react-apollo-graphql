@@ -4,10 +4,23 @@ const path = require('path')
 
 const MODE = process.env.NODE_ENV === 'production' ? 'production' : 'development'
 
-// TODO: Update modules
 // These libraries are built only once.
 const vendors = [
+  'apollo-client',
+  'apollo-link',
+  'apollo-link-http',
+  'apollo-link-state',
+  'formik',
+  'graphql',
+  'graphql-tag',
   'react',
+  'react-apollo',
+  'react-dom',
+  'react-router-config',
+  'react-router-dom',
+  'recompose',
+  'styled-components',
+  'yup',
 ]
 
 module.exports = {

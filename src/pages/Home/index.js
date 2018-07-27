@@ -12,10 +12,6 @@ const HomePage = () => (
       I hope this one will make learning Apollo and GraphQl easier for you.
     </P>
     <P>
-      Backend is provided by
-      <A href="https://www.graph.cool/"> graphq.cool</A>.
-    </P>
-    <P>
       Link to github repository
       <A href="https://github.com/developer239/react-redux-apollo-graphql"> is here</A>.
     </P>

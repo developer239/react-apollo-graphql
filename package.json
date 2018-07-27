@@ -92,6 +92,9 @@
     "yup",
     "jest",
     "enzyme",
-    "sinon"
+    "sinon",
+    "prisma",
+    "graphcool",
+    "cool"
   ]
 }
