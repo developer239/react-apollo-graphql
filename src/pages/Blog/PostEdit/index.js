@@ -13,17 +13,17 @@ export const PostEditPage = ({ history, match: { params: { postId } } }) => (
       variables={{ id: postId }}
     >
       {({ data: { Post } }) => (
-        <Fragment>
-          <H2>Edit Post</H2>
-          <Mutation mutation={UPDATE_POST} onCompleted={() => history.push(`/posts/${postId}`)}>
-            {mutate => (
+        <Mutation mutation={UPDATE_POST} onCompleted={() => history.push(`/posts/${postId}`)}>
+          {mutate => (
+            <Fragment>
+              <H2>Edit Post</H2>
               <PostForm
                 initialValues={Post}
                 submit={values => mutate({ variables: values })}
               />
-            )}
-          </Mutation>
-        </Fragment>
+            </Fragment>
+          )}
+        </Mutation>
       )}
     </Query>
   </section>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { Mutation } from 'components'
 import PostForm from 'modules/blog/forms/Post'
@@ -18,13 +18,17 @@ const updatePostCache = (cache, { data: { createPost } }) => {
 
 export const PostCreatePage = ({ history }) => (
   <section>
-    <H2>Create New Post</H2>
     <Mutation
       mutation={CREATE_POST}
       update={updatePostCache}
       onCompleted={({ createPost: { id }}) => history.push(`/posts/${id}`)}
     >
-      {mutate => <PostForm submit={values => mutate({ variables: values })} />}
+      {mutate => (
+        <Fragment>
+          <H2>Create New Post</H2>
+          <PostForm submit={values => mutate({ variables: values })} />
+        </Fragment>
+      )}
     </Mutation>
   </section>
 )
