@@ -70,7 +70,10 @@ const Navbar = ({ isOpen, toggleOpen, links, activeRoute }) => (
             onClick={toggleOpen}
             key={link.id}
             to={link.to}
-            isActive={activeRoute === link.to}
+            isActive={
+              (activeRoute.startsWith(link.to) && link.to.length > 1)
+              || link.to === activeRoute
+            }
           >
             {link.label}
           </StyledLink>
