@@ -42,13 +42,13 @@
  
  Vendors dll files should be generated automatically in `/public/vendors-[hash].js` every time you change your dependencies.
 
-## Development
+ ## Development
 
  Development server is provided by [express framework](https://github.com/expressjs/express). Webpack is injected to the app through [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware).
  
  To start the server just run: `yarn dev`
  
- #### Production server
+ ## Production
   
  Project files are generated into the `/public` folder using `yarn build:production` command.
  
