@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Mutation from 'components/Mutation'
+import { Mutation } from 'react-apollo'
 import Button from 'components/Button'
 
 
 const DeleteButton = ({ mutation, variables, update }) => (
   <Mutation mutation={mutation} variables={variables} update={update}>
-    {(mutate) => <Button onClick={mutate} bgType="error">delete</Button>}
+    {(mutate, { loading }) => (
+      <Button onClick={mutate} bgType="error">{loading ? '...' : 'delete'}</Button>
+    )}
   </Mutation>
 )
 
