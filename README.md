@@ -1,6 +1,6 @@
 ## React Apollo GraphQl
 
- The third version of minimal react apollo boilerplate. I was learning GraphQl several years ago. However, I couldn't find many react-apollo examples. The situation changed a lot since then, but I am trying to keep this repository alive. There is never enough of simple examples. I hope this one will make learning Apollo and GraphQl easier for you.
+ The third version of minimal react apollo boilerplate. I was learning GraphQl several years ago. However, I couldn't find many react-apollo examples. The situation changed a lot since then, but I am trying to keep this repository alive. It is always nice to see a good example. I hope this one will make learning Apollo and GraphQl easier for you.
 
  Backend is provided by [graphq.cool](https://www.graph.cool/) ❤️
 
@@ -55,3 +55,8 @@
  1) Use `yarn build:production` in order to build the static files.
  
  2) Use `yarn prod` command in order to start the app. This will start express server.
+
+ ## Deployment on Heroku
+ 
+ This application is Heroku ready. All you have to do is set `config:set NPM_CONFIG_PRODUCTION=false` in your your config. Everything else is prepared.
+ 
