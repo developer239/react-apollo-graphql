@@ -7,7 +7,7 @@ import Hamburger from './Hamburger'
 import Link from '../Link'
 
 
-const Container = styled.nav`
+export const Container = styled.nav`
   position: relative;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ const Container = styled.nav`
   background-color: ${props => props.theme.color.primary};
 `
 
-const Content = styled.div`
+export const Content = styled.div`
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;

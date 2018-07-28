@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography Components A has correct default styles 1`] = `
+<styled.a
+  rel="noopener noreferrer"
+  target="_blank"
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+/>
+`;
+
+exports[`Typography Components H1 has correct default styles 1`] = `
+.c0 {
+  font-weight: 500;
+  margin: 0 0 24px 0;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.c0::selection {
+  background: #5d9cec;
+}
+
+@media (min-width:34.375rem) {
+  .c0 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width:48rem) {
+  .c0 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+<h1
+  className="c0"
+/>
+`;
+
+exports[`Typography Components H2 has correct default styles 1`] = `
+.c0 {
+  font-weight: 500;
+  margin: 0 0 24px 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.c0::selection {
+  background: #5d9cec;
+}
+
+@media (min-width:34.375rem) {
+  .c0 {
+    font-size: 21px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width:48rem) {
+  .c0 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+<h1
+  className="c0"
+/>
+`;
+
+exports[`Typography Components H3 has correct default styles 1`] = `
+.c0 {
+  font-weight: 500;
+  margin: 0 0 24px 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.c0::selection {
+  background: #5d9cec;
+}
+
+@media (min-width:34.375rem) {
+  .c0 {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width:48rem) {
+  .c0 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+}
+
+<h1
+  className="c0"
+/>
+`;
+
+exports[`Typography Components HR has correct default styles 1`] = `
+.c0 {
+  box-sizing: content-box;
+  height: 0;
+  display: block;
+  unicode-bidi: isolate;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #f2f2f4;
+}
+
+<hr
+  className="c0"
+/>
+`;
+
+exports[`Typography Components P has correct default styles 1`] = `
+.c0 {
+  font-weight: lighter;
+  margin: 0 0 25px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.c0::selection {
+  background: #5d9cec;
+}
+
+<p
+  className="c0"
+/>
+`;
+
+exports[`Typography Components StyledA has correct default styles 1`] = `
+.c0 {
+  color: #4a89dc;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #5d9cec;
+}
+
+.c0:active,
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<a
+  className="c0"
+/>
+`;

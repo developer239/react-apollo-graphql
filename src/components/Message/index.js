@@ -3,18 +3,20 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 
-const Container = styled.div`
-  background-color: ${({ theme: { color }, type }) => {
-    if (type === 'success') {
-      return color.lightGreen
-    }
-  
-    if (type === 'error') {
-      return color.lightRed
-    }
-  
-    return color.lightGrey
-  }};
+export const getBackgroundColor = ({ theme: { color }, type }) => {
+  if (type === 'success') {
+    return color.lightGreen
+  }
+
+  if (type === 'error') {
+    return color.lightRed
+  }
+
+  return color.lightGrey
+}
+
+export const Container = styled.div`
+  background-color: ${getBackgroundColor};
   color: ${props => props.theme.color.white};
   font-size: 14px;
   padding: 15px 20px;

@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hamburger Components Hamburger has correct default styles 1`] = `
+.c0 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin: 14px;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.c0 span:nth-child(1) {
+  top: 0;
+}
+
+.c0 span:nth-child(2),
+.c0 span:nth-child(3) {
+  top: 0.6rem;
+}
+
+.c0 span:nth-child(4) {
+  top: 1.2rem;
+}
+
+@media (min-width:62.5rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Hamburger Components Hamburger has correct default styles when open 1`] = `
+.c0 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin: 14px;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.c0 span:nth-child(1) {
+  top: 0;
+}
+
+.c0 span:nth-child(2),
+.c0 span:nth-child(3) {
+  top: 0.6rem;
+}
+
+.c0 span:nth-child(4) {
+  top: 1.2rem;
+}
+
+.c0 span:nth-child(1) {
+  top: 0.8rem;
+  width: 0%;
+  left: 50%;
+}
+
+.c0 span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.c0 span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.c0 span:nth-child(4) {
+  top: 0.8rem;
+  width: 0%;
+  left: 50%;
+}
+
+@media (min-width:62.5rem) {
+  .c0 {
+    display: none;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Hamburger Components HamburgerComponent renders with all props 1`] = `
+<styled.div
+  isOpen={true}
+  onClick={[Function]}
+>
+  <styled.span
+    isOpen={true}
+  />
+  <styled.span
+    isOpen={true}
+  />
+  <styled.span
+    isOpen={true}
+  />
+  <styled.span
+    isOpen={true}
+  />
+</styled.div>
+`;
+
+exports[`Hamburger Components HamburgerLine has correct default styles 1`] = `
+.c0 {
+  display: block;
+  position: absolute;
+  border-radius: 1.6rem;
+  height: 0.2rem;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  background: #fff;
+}
+
+@media (min-width:48rem) {
+  .c0 {
+    background: #fff;
+  }
+}
+
+<span
+  className="c0"
+/>
+`;

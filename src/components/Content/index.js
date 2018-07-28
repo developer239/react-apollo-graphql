@@ -3,8 +3,6 @@ import { mediaQueries } from 'styles'
 
 
 const Content = styled.div`
-  background: white;
-  min-height: 100%;
   padding: 15px;
   display: flex;
   flex-direction: column;

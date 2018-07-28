@@ -89,8 +89,7 @@ export const HR = styled.hr`
   border-top: 1px solid #f2f2f4;
 `
 
-
-export const A = withProps({ target: '_blank', rel: 'noopener noreferrer' })(styled.a`
+export const StyledA = styled.a`
   color: ${props => props.theme.color.secondary};
   text-decoration: none;
 
@@ -104,4 +103,6 @@ export const A = withProps({ target: '_blank', rel: 'noopener noreferrer' })(sty
     outline: none;
     text-decoration: none;
   }
-`)
+`
+
+export const A = withProps({ target: '_blank', rel: 'noopener noreferrer' })(StyledA)

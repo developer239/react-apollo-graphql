@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 
-const Spinner = styled.div`
+export const Spinner = styled.div`
   height: 100%;
   text-align: center;
     

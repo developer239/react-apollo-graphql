@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Label Component has correct default styles 1`] = `
+.c0 {
+  display: block;
+  font-weight: bolder;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.c0 input,
+.c0 textarea {
+  display: block;
+}
+
+<label
+  className="c0"
+>
+  Test Label
+</label>
+`;

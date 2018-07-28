@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 import { mediaQueries } from 'styles'
 
 
-const Hamburger = styled.div`
+export const Hamburger = styled.div`
   align-self: flex-end;
   margin: 14px;
   width: 2rem;
@@ -54,7 +54,7 @@ const Hamburger = styled.div`
   }
 `
 
-const HamburgerLine = styled.span`
+export const HamburgerLine = styled.span`
   display: block;
   position: absolute;
   border-radius: 1.6rem;
@@ -71,7 +71,7 @@ const HamburgerLine = styled.span`
   }
 `
 
-const Header = ({ isOpen, toggleIsOpen }) => (
+const HamburgerComponent = ({ isOpen, toggleIsOpen }) => (
   <Hamburger isOpen={isOpen} onClick={toggleIsOpen}>
     <HamburgerLine isOpen={isOpen} />
     <HamburgerLine isOpen={isOpen} />
@@ -80,9 +80,9 @@ const Header = ({ isOpen, toggleIsOpen }) => (
   </Hamburger>
 )
 
-Header.propTypes = {
+HamburgerComponent.propTypes = {
   toggleIsOpen: PropTypes.func.isRequired,
   isOpen: PropTypes.bool.isRequired,
 }
 
-export default Header
+export default HamburgerComponent

@@ -23,7 +23,7 @@ export const getButtonColor = ({ bgType, theme: { color } }) => {
   }
 }
 
-const StyledButton = styled.button`
+export const StyledButton = styled.button`
   background-color: ${props => getButtonColor(props).background};
   border: none;
   color: white;
@@ -32,9 +32,9 @@ const StyledButton = styled.button`
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  margin: 4px 2px;
   cursor: pointer;
   transition: background-color 150ms linear;
+  margin-right: 2px;
   
   &:hover {
     background-color: ${props => getButtonColor(props).hover};
@@ -50,7 +50,7 @@ const StyledButton = styled.button`
 `
 
 const Button = ({ bgType, children, ...rest }) => (
-  <StyledButton {...rest} bgType={bgType}>
+  <StyledButton bgType={bgType} {...rest}>
     {children}
   </StyledButton>
 )

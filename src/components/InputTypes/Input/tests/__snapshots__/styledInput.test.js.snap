@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledInput Component has correct default styles 1`] = `
+.c0 {
+  padding: 10px 10px;
+  border: 1px solid #ccd1d9;
+  margin-top: 10px;
+}
+
+<input
+  className="c0"
+>
+  Button Text
+</input>
+`;

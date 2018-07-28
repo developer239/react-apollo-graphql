@@ -13,7 +13,8 @@
     "lint:css": "node node_modules/.bin/stylelint ./src",
     "build:production": "NODE_ENV=production webpack --config webpack/webpack.prod.js -p",
     "heroku-postbuild": "npm run build:production",
-    "prod": "NODE_ENV=production node server/server.prod.js"
+    "prod": "NODE_ENV=production node server/server.prod.js",
+    "test": "node ./node_modules/.bin/jest"
   },
   "dependencies": {
     "apollo-cache-inmemory": "^1.2.6",
@@ -61,6 +62,9 @@
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^23.4.1",
+    "jest-styled-components": "^5.0.1",
+    "jsdom": "^11.12.0",
+    "jsdom-global": "^3.0.2",
     "prop-types": "^15.6.2",
     "sinon": "^6.1.4",
     "stylelint": "^9.4.0",

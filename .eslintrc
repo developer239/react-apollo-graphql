@@ -32,6 +32,10 @@
     "require": true,
     "process": true,
     "module": true,
-    "__dirname": true
+    "__dirname": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "jest": true
   }
 }

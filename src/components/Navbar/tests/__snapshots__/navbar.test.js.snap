@@ -1,0 +1,523 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar Components Container has correct default styles 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #5d9cec;
+}
+
+<nav
+  className="c0"
+/>
+`;
+
+exports[`Navbar Components Content has correct default styles 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width:62.5rem) {
+  .c0 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Navbar Components Links has correct default styles 1`] = `
+.c0 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: 60px;
+  width: 100%;
+}
+
+@media (min-width:62.5rem) {
+  .c0 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Navbar Components Navbar renders with all props 1`] = `
+.c5 {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  margin: 14px;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.c5 span:nth-child(1) {
+  top: 0;
+}
+
+.c5 span:nth-child(2),
+.c5 span:nth-child(3) {
+  top: 0.6rem;
+}
+
+.c5 span:nth-child(4) {
+  top: 1.2rem;
+}
+
+.c6 {
+  display: block;
+  position: absolute;
+  border-radius: 1.6rem;
+  height: 0.2rem;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  background: #fff;
+}
+
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  background-color: #5d9cec;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.c2 {
+  display: none;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  top: 60px;
+  width: 100%;
+}
+
+.c4 {
+  display: block;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 20px 15px;
+  -webkit-transition: background-color 150ms linear;
+  transition: background-color 150ms linear;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.c4:active,
+.c4:hover {
+  background-color: #4a89dc;
+}
+
+.c3 {
+  display: block;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 20px 15px;
+  -webkit-transition: background-color 150ms linear;
+  transition: background-color 150ms linear;
+  font-size: 14px;
+  background-color: #4a89dc;
+}
+
+.c3:active,
+.c3:hover {
+  background-color: #4a89dc;
+}
+
+@media (min-width:62.5rem) {
+  .c5 {
+    display: none;
+  }
+}
+
+@media (min-width:48rem) {
+  .c6 {
+    background: #fff;
+  }
+}
+
+@media (min-width:62.5rem) {
+  .c1 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:62.5rem) {
+  .c2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:48rem) {
+  .c4 {
+    font-size: 16px;
+    padding: 20px 25px;
+  }
+}
+
+@media (min-width:48rem) {
+  .c3 {
+    font-size: 16px;
+    padding: 20px 25px;
+  }
+}
+
+<ThemeProvider
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <withState(withHandlers(Navbar))
+    activeRoute="/"
+    isOpen={true}
+    links={
+      Array [
+        Object {
+          "id": 1,
+          "label": "Home",
+          "to": "/",
+        },
+        Object {
+          "id": 2,
+          "label": "First",
+          "to": "/first",
+        },
+        Object {
+          "id": 3,
+          "label": "Second",
+          "to": "/second",
+        },
+      ]
+    }
+    toggleOpen={[Function]}
+  >
+    <withHandlers(Navbar)
+      activeRoute="/"
+      isOpen={false}
+      links={
+        Array [
+          Object {
+            "id": 1,
+            "label": "Home",
+            "to": "/",
+          },
+          Object {
+            "id": 2,
+            "label": "First",
+            "to": "/first",
+          },
+          Object {
+            "id": 3,
+            "label": "Second",
+            "to": "/second",
+          },
+        ]
+      }
+      setIsOpen={[Function]}
+      toggleOpen={[Function]}
+    >
+      <Navbar
+        activeRoute="/"
+        isOpen={false}
+        links={
+          Array [
+            Object {
+              "id": 1,
+              "label": "Home",
+              "to": "/",
+            },
+            Object {
+              "id": 2,
+              "label": "First",
+              "to": "/first",
+            },
+            Object {
+              "id": 3,
+              "label": "Second",
+              "to": "/second",
+            },
+          ]
+        }
+        setIsOpen={[Function]}
+        toggleOpen={[Function]}
+      >
+        <styled.nav>
+          <nav
+            className="c0"
+          >
+            <styled.div>
+              <div
+                className="c1"
+              >
+                <styled.div
+                  isOpen={false}
+                >
+                  <div
+                    className="c2"
+                  >
+                    <Styled(mockConstructor)
+                      isActive={true}
+                      key="1"
+                      onClick={[Function]}
+                      to="/"
+                    >
+                      <mockConstructor
+                        className="c3"
+                        isActive={true}
+                        onClick={[Function]}
+                        to="/"
+                      >
+                        <span>
+                          mock link
+                        </span>
+                      </mockConstructor>
+                    </Styled(mockConstructor)>
+                    <Styled(mockConstructor)
+                      isActive={false}
+                      key="2"
+                      onClick={[Function]}
+                      to="/first"
+                    >
+                      <mockConstructor
+                        className="c4"
+                        isActive={false}
+                        onClick={[Function]}
+                        to="/first"
+                      >
+                        <span>
+                          mock link
+                        </span>
+                      </mockConstructor>
+                    </Styled(mockConstructor)>
+                    <Styled(mockConstructor)
+                      isActive={false}
+                      key="3"
+                      onClick={[Function]}
+                      to="/second"
+                    >
+                      <mockConstructor
+                        className="c4"
+                        isActive={false}
+                        onClick={[Function]}
+                        to="/second"
+                      >
+                        <span>
+                          mock link
+                        </span>
+                      </mockConstructor>
+                    </Styled(mockConstructor)>
+                  </div>
+                </styled.div>
+                <HamburgerComponent
+                  isOpen={false}
+                  toggleIsOpen={[Function]}
+                >
+                  <styled.div
+                    isOpen={false}
+                    onClick={[Function]}
+                  >
+                    <div
+                      className="c5"
+                      onClick={[Function]}
+                    >
+                      <styled.span
+                        isOpen={false}
+                      >
+                        <span
+                          className="c6"
+                        />
+                      </styled.span>
+                      <styled.span
+                        isOpen={false}
+                      >
+                        <span
+                          className="c6"
+                        />
+                      </styled.span>
+                      <styled.span
+                        isOpen={false}
+                      >
+                        <span
+                          className="c6"
+                        />
+                      </styled.span>
+                      <styled.span
+                        isOpen={false}
+                      >
+                        <span
+                          className="c6"
+                        />
+                      </styled.span>
+                    </div>
+                  </styled.div>
+                </HamburgerComponent>
+              </div>
+            </styled.div>
+          </nav>
+        </styled.nav>
+      </Navbar>
+    </withHandlers(Navbar)>
+  </withState(withHandlers(Navbar))>
+</ThemeProvider>
+`;
+
+exports[`Navbar Components StyledLink has correct default styles 1`] = `
+.c0 {
+  display: block;
+  color: #fff;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding: 20px 15px;
+  -webkit-transition: background-color 150ms linear;
+  transition: background-color 150ms linear;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.c0:active,
+.c0:hover {
+  background-color: #4a89dc;
+}
+
+@media (min-width:48rem) {
+  .c0 {
+    font-size: 16px;
+    padding: 20px 25px;
+  }
+}
+
+<mockConstructor
+  className="c0"
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+/>
+`;
