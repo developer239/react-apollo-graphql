@@ -40,6 +40,7 @@ export const ListPostsPage = () => (
             <Link to={`/posts/${id}`}><Button>detail</Button></Link>
             <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
             <ActionButton
+              label="delete"
               btnBgType="error"
               mutation={DELETE_POST}
               variables={{ id }}

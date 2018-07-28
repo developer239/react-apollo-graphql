@@ -22,13 +22,12 @@ ActionButton.defaultProps = {
   onCompleted: null,
   update: null,
   variables: null,
-  label: 'delete',
   btnBgType: null,
 }
 
 ActionButton.propTypes = {
   mutation: PropTypes.object.isRequired,
-  label: PropTypes.string,
+  label: PropTypes.string.isRequired,
   btnBgType: PropTypes.string,
   variables: PropTypes.object,
   update: PropTypes.func,
