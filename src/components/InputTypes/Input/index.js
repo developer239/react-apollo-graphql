@@ -28,6 +28,7 @@ const Input = ({
         {label}
         <StyledInput
           id={id}
+          name={id}
           value={values[id]}
           type={type}
           placeholder={placeholder}

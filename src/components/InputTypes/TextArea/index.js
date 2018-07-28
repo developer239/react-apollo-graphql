@@ -30,6 +30,7 @@ const TextArea = ({
         {label}
         <StyledTextArea
           id={id}
+          name={id}
           value={values[id]}
           placeholder={placeholder}
           onChange={handleChange}
