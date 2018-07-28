@@ -1,6 +1,6 @@
 export { default as Button } from './Button'
 export { default as Content } from './Content'
-export { default as DeleteButton } from './DeleteButton'
+export { default as ActionButton } from './ActionButton'
 export { default as Link } from './Link'
 export { default as Message } from './Message'
 export { default as Mutation } from './Mutation'

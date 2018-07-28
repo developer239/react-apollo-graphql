@@ -4,7 +4,7 @@ import { Mutation } from 'react-apollo'
 import Button from 'components/Button'
 
 
-const DeleteButton = ({ mutation, variables, update, label, btnBgType, onCompleted }) => (
+const ActionButton = ({ mutation, variables, update, label, btnBgType, onCompleted }) => (
   <Mutation mutation={mutation} variables={variables} update={update} onCompleted={onCompleted}>
     {(mutate, { loading }) => (
       <Button
@@ -18,15 +18,15 @@ const DeleteButton = ({ mutation, variables, update, label, btnBgType, onComplet
   </Mutation>
 )
 
-DeleteButton.defaultProps = {
+ActionButton.defaultProps = {
   onCompleted: null,
   update: null,
   variables: null,
   label: 'delete',
-  btnBgType: 'error',
+  btnBgType: null,
 }
 
-DeleteButton.propTypes = {
+ActionButton.propTypes = {
   mutation: PropTypes.object.isRequired,
   label: PropTypes.string,
   btnBgType: PropTypes.string,
@@ -35,4 +35,4 @@ DeleteButton.propTypes = {
   onCompleted: PropTypes.func,
 }
 
-export default DeleteButton
+export default ActionButton

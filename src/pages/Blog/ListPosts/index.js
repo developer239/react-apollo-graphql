@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { H2, P } from 'components/Typography'
-import { Button, Link, Query, DeleteButton } from 'components'
+import { Button, Link, Query, ActionButton } from 'components'
 import { nl2br } from 'utils/typography'
 import { ALL_POSTS, DELETE_POST } from 'modules/blog/gql'
 
@@ -39,7 +39,8 @@ export const ListPostsPage = () => (
             <P>{nl2br(text)}</P>
             <Link to={`/posts/${id}`}><Button>detail</Button></Link>
             <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
-            <DeleteButton
+            <ActionButton
+              btnBgType="error"
               mutation={DELETE_POST}
               variables={{ id }}
               update={updatePostCache}

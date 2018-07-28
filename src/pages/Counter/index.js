@@ -1,6 +1,6 @@
 import React from 'react'
 import { H2, P } from 'components/Typography'
-import { Query, DeleteButton } from 'components'
+import { Query, ActionButton } from 'components'
 import {
   COUNTER_VALUE,
   INCREMENT_COUNTER,
@@ -26,10 +26,9 @@ export const CounterPage = () => (
         </P>
       )}
     </Query>
-    <DeleteButton btnBgType={null} mutation={INCREMENT_COUNTER} label="increment" />
-    <DeleteButton btnBgType={null} mutation={DECREMENT_COUNTER} label="decrement" />
-    <DeleteButton
-      btnBgType={null}
+    <ActionButton mutation={INCREMENT_COUNTER} label="increment" />
+    <ActionButton mutation={DECREMENT_COUNTER} label="decrement" />
+    <ActionButton
       mutation={DOUBLE_COUNTER}
       label="double (async)"
       onCompleted={({ doubleCounterValueAsync }) => {
