@@ -6,6 +6,7 @@ import common from './webpack.common'
 const DEV_PORT = 3000
 
 export default merge(common, {
+  mode: 'development',
   entry: [
     'webpack-hot-middleware/client?reload=true&overlay=false',
     './src/index.js',

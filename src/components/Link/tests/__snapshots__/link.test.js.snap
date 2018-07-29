@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link Component renders with all props 1`] = `
+<Link
+  replace={false}
+  to="/fake-link"
+>
+  Some Link
+</Link>
+`;

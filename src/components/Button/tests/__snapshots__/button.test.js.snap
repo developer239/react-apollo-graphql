@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component renders with all props 1`] = `
+<styled.button
+  bgType="success"
+>
+  Text
+</styled.button>
+`;

@@ -1,61 +1,43 @@
-import React from 'react'
-import { graphql } from 'react-apollo'
-import { Grid, PageHeader } from 'react-bootstrap'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { H2 } from 'components/Typography'
+import { Query, Mutation } from 'components'
+import { POST_DETAIL, UPDATE_POST } from 'modules/blog/gql'
 import PostForm from 'modules/blog/forms/Post'
-import { compose, withHandlers } from 'recompose'
-import { queryPostDetail, updatePost, queryAllPosts } from 'modules/blog/qql'
-import { showSpinnerWhileApolloLoading, showApolloError, showNoData } from 'common/helpers'
 
 
-const PostEditPage = ({ handleOnSubmit, data: { Post } }) => (
-  <Grid>
-    <PageHeader>Update Posts</PageHeader>
-    <PostForm initialValues={Post} onSubmit={handleOnSubmit} />
-  </Grid>
+export const PostEditPage = ({ history, match: { params: { postId } } }) => (
+  <section>
+    <Query
+      query={POST_DETAIL}
+      variables={{ id: postId }}
+    >
+      {({ data: { Post } }) => (
+        <Mutation mutation={UPDATE_POST} onCompleted={() => history.push(`/posts/${postId}`)}>
+          {mutate => (
+            <Fragment>
+              <H2>Edit Post</H2>
+              <PostForm
+                initialValues={Post}
+                submit={values => mutate({ variables: values })}
+              />
+            </Fragment>
+          )}
+        </Mutation>
+      )}
+    </Query>
+  </section>
 )
 
 PostEditPage.propTypes = {
-  data: PropTypes.shape({
-    loading: PropTypes.bool,
-    error: PropTypes.shape({
-      message: PropTypes.string.isRequired,
-    }),
-    Post: PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-    }),
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      postId: PropTypes.string.isRequired,
+    }).isRequired,
   }).isRequired,
-  handleOnSubmit: PropTypes.func.isRequired,
-  updatePostMutation: PropTypes.func.isRequired, // eslint-disable-line
-  history: PropTypes.shape({ // eslint-disable-line
+  history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
 }
 
-const enhance = compose(
-  graphql(updatePost, { name: 'updatePostMutation' }),
-  graphql(queryPostDetail, {
-    options: ownProps => ({
-      variables: {
-        id: ownProps.match.params.postId,
-      },
-    }),
-  }),
-  withHandlers({
-    handleOnSubmit: ({ history, updatePostMutation }) =>
-      data =>
-        updatePostMutation({
-          variables: data,
-          refetchQueries: [{ query: queryAllPosts }],
-        })
-          .then(response => history.push(`/posts/${response.data.updatePost.id}`))
-          .catch(() => global.alert('There was an error while updating your post.')),
-  }),
-  showApolloError(),
-  showSpinnerWhileApolloLoading(),
-  showNoData(props => !props.data.Post)('You can\'t edit post that does not exists.'),
-)
-
-export default enhance(PostEditPage)
+export default PostEditPage

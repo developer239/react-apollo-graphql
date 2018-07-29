@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Component renders with all props 1`] = `
+<styled.label
+  htmlFor="fakeId"
+>
+  <styled.textarea
+    id="fakeId"
+    name="fakeId"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="fake placeholder"
+    value="fakeValue"
+  />
+  <styled.span>
+    fake error message
+  </styled.span>
+</styled.label>
+`;
+
+exports[`Input Component renders without error message 1`] = `
+<styled.label
+  htmlFor="fakeId"
+>
+  <styled.textarea
+    id="fakeId"
+    name="fakeId"
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="fake placeholder"
+    value="fakeValue"
+  />
+</styled.label>
+`;

@@ -3,8 +3,8 @@ import Counter from 'pages/Counter'
 import NotFound from 'pages/NotFound'
 import {
   ListPosts,
-  PostDetail,
   PostCreate,
+  PostDetail,
   PostEdit,
 } from 'pages/Blog'
 import App from './app'
@@ -24,12 +24,12 @@ export default [
         component: Counter,
       },
       {
-        path: '/posts/:postId/edit',
-        component: PostEdit,
+        path: '/posts/new',
+        component: PostCreate,
       },
       {
-        path: '/posts/create',
-        component: PostCreate,
+        path: '/posts/:postId/edit',
+        component: PostEdit,
       },
       {
         path: '/posts/:postId',

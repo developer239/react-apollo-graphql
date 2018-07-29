@@ -1,26 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { ThemeProvider } from 'styled-components'
 import { BrowserRouter } from 'react-router-dom'
 import { ApolloProvider } from 'react-apollo'
 import { renderRoutes } from 'react-router-config'
-import { Provider } from 'react-redux'
-import store from './store'
 import routes from './routes'
 import client from './apolloClient'
+import injectGlobal, { theme } from './styles'
 
+
+injectGlobal()
 
 const render = () => {
   ReactDOM.render(
     (
-      <Provider store={store}>
-        <ApolloProvider client={client}>
+      <ApolloProvider client={client}>
+        <ThemeProvider theme={theme}>
           <BrowserRouter>
             {renderRoutes(routes)}
           </BrowserRouter>
-        </ApolloProvider>
-      </Provider>
+        </ThemeProvider>
+      </ApolloProvider>
     ),
-    // eslint-disable-next-line
     document.getElementById('root'),
   )
 }

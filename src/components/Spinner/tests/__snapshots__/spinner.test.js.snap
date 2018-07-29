@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner Component has correct default styles 1`] = `
+.c0 {
+  height: 100%;
+  text-align: center;
+}
+
+.c0 > div {
+  width: 12px;
+  height: 12px;
+  background-color: #5d9cec;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.c0 div:nth-child(1) {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.c0 div:nth-child(2) {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+<div
+  className="c0"
+/>
+`;
