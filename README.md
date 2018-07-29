@@ -6,7 +6,7 @@
 
 ## Demo
 
- You can try the application [here](https://react-redux-apollo-graphql.herokuapp.com/) (it might take a while before the free server wakes up)
+ You can try the application [here](https://react-apollo-graphql.herokuapp.com/posts) (it might take a while before the free server wakes up)
 
 
 #### Main Dependencies
