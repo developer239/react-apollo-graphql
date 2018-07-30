@@ -71,7 +71,7 @@
     "stylelint-config-standard": "^18.2.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.3.1",
-    "waait": "^1.0.2",
+    "wait-for-expect": "^1.0.0",
     "webpack": "4.16.3",
     "webpack-cli": "^3.0.8",
     "webpack-dev-middleware": "^3.1.3",
