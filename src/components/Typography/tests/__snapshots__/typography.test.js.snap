@@ -83,7 +83,7 @@ exports[`Typography Components H2 has correct default styles 1`] = `
   }
 }
 
-<h1
+<h2
   className="c0"
 />
 `;
@@ -114,7 +114,7 @@ exports[`Typography Components H3 has correct default styles 1`] = `
   }
 }
 
-<h1
+<h3
   className="c0"
 />
 `;
