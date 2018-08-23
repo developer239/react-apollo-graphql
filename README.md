@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/developer239/react-apollo-graphql.svg?style=svg)](https://circleci.com/gh/developer239/react-apollo-graphql) [![Test Coverage](https://api.codeclimate.com/v1/badges/8b605e0fb1af6dc86063/test_coverage)](https://codeclimate.com/github/developer239/react-apollo-graphql/test_coverage)
+
 ## React Apollo GraphQl
 
  The third version of minimal react apollo boilerplate. I was learning GraphQl several years ago. However, I couldn't find many react-apollo examples. The situation changed a lot since then, but I am trying to keep this repository alive. It is always nice to see a good example. I hope this one will make learning Apollo and GraphQl easier for you.
