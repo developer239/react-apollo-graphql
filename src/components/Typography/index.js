@@ -24,7 +24,7 @@ export const H1 = styled.h1`
   }
 `
 
-export const H2 = styled.h1`
+export const H2 = styled.h2`
   font-weight: 500;
   margin: 0 0 24px  0;
   font-size: 18px;
@@ -45,7 +45,7 @@ export const H2 = styled.h1`
   }
 `
 
-export const H3 = styled.h1`
+export const H3 = styled.h3`
   font-weight: 500;
   margin: 0 0 24px  0;
   font-size: 16px;
