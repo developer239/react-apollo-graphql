@@ -11,7 +11,7 @@ jobs:
             - yarn-packages-{{ checksum "yarn.lock" }}
       - run:
           name: Setup Dependencies
-          command: npm install
+          command: yarn install
       - run:
           name: Setup Code Climate test-reporter
           command: |
