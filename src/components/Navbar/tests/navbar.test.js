@@ -1,5 +1,5 @@
 import React from 'react'
-import { mount, shallow } from 'enzyme'
+import { mount } from 'enzyme'
 import { theme } from 'styles'
 import { ThemeProvider } from 'styled-components'
 import sinon from 'sinon'
@@ -18,28 +18,28 @@ jest.mock('../../Link', () => jest.fn().mockReturnValue(<span>mock link</span>))
 
 describe('Navbar Components', () => {
   it('Container has correct default styles', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Container theme={theme} />,
     )
     expect(wrapper).toMatchSnapshot()
   })
 
   it('Content has correct default styles', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Content theme={theme} />,
     )
     expect(wrapper).toMatchSnapshot()
   })
 
   it('Links has correct default styles', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <Links theme={theme} />,
     )
     expect(wrapper).toMatchSnapshot()
   })
 
   it('StyledLink has correct default styles', () => {
-    const wrapper = shallow(
+    const wrapper = mount(
       <StyledLink theme={theme} />,
     )
     expect(wrapper).toMatchSnapshot()

@@ -17,9 +17,9 @@ const Container = styled.div`
   min-height: 100%;
 `
 
-const App = ({ route, location }) => (
+const App = ({ route, location: { pathname } }) => (
   <Container>
-    <Navbar links={NAV_LINKS} activeRoute={location.pathname} />
+    <Navbar links={NAV_LINKS} activeRoute={pathname} />
     <Content>
       {renderRoutes(route.routes)}
     </Content>

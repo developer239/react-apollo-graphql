@@ -13,9 +13,11 @@ exports[`Label Component has correct default styles 1`] = `
   display: block;
 }
 
-<label
-  className="c0"
->
-  Test Label
-</label>
+<styled.label>
+  <label
+    className="c0"
+  >
+    Test Label
+  </label>
+</styled.label>
 `;

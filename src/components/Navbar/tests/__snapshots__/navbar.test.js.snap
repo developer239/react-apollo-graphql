@@ -19,9 +19,31 @@ exports[`Navbar Components Container has correct default styles 1`] = `
   background-color: #5d9cec;
 }
 
-<nav
-  className="c0"
-/>
+<styled.nav
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <nav
+    className="c0"
+  />
+</styled.nav>
 `;
 
 exports[`Navbar Components Content has correct default styles 1`] = `
@@ -52,9 +74,31 @@ exports[`Navbar Components Content has correct default styles 1`] = `
   }
 }
 
-<div
-  className="c0"
-/>
+<styled.div
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <div
+    className="c0"
+  />
+</styled.div>
 `;
 
 exports[`Navbar Components Links has correct default styles 1`] = `
@@ -80,9 +124,31 @@ exports[`Navbar Components Links has correct default styles 1`] = `
   }
 }
 
-<div
-  className="c0"
-/>
+<styled.div
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <div
+    className="c0"
+  />
+</styled.div>
 `;
 
 exports[`Navbar Components Navbar renders with all props 1`] = `
@@ -498,8 +564,7 @@ exports[`Navbar Components StyledLink has correct default styles 1`] = `
   }
 }
 
-<mockConstructor
-  className="c0"
+<Styled(mockConstructor)
   theme={
     Object {
       "color": Object {
@@ -519,5 +584,32 @@ exports[`Navbar Components StyledLink has correct default styles 1`] = `
       },
     }
   }
-/>
+>
+  <mockConstructor
+    className="c0"
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <span>
+      mock link
+    </span>
+  </mockConstructor>
+</Styled(mockConstructor)>
 `;

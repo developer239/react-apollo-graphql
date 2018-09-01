@@ -36,9 +36,31 @@ exports[`Hamburger Components Hamburger has correct default styles 1`] = `
   }
 }
 
-<div
-  className="c0"
-/>
+<styled.div
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <div
+    className="c0"
+  />
+</styled.div>
 `;
 
 exports[`Hamburger Components Hamburger has correct default styles when open 1`] = `
@@ -101,9 +123,32 @@ exports[`Hamburger Components Hamburger has correct default styles when open 1`]
   }
 }
 
-<div
-  className="c0"
-/>
+<styled.div
+  isOpen={true}
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <div
+    className="c0"
+  />
+</styled.div>
 `;
 
 exports[`Hamburger Components HamburgerComponent renders with all props 1`] = `
@@ -149,7 +194,29 @@ exports[`Hamburger Components HamburgerLine has correct default styles 1`] = `
   }
 }
 
-<span
-  className="c0"
-/>
+<styled.span
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <span
+    className="c0"
+  />
+</styled.span>
 `;
