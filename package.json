@@ -25,7 +25,7 @@
     "compression": "^1.7.2",
     "express": "^4.16.3",
     "formik": "^1.0.2",
-    "graphql": "^0.13.2",
+    "graphql": "^14.0.0",
     "graphql-tag": "^2.9.2",
     "invariant": "^2.2.4",
     "react": "^16.4.1",
