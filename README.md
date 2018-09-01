@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/developer239/react-apollo-graphql.svg?style=svg)](https://circleci.com/gh/developer239/react-apollo-graphql) [![Test Coverage](https://api.codeclimate.com/v1/badges/8b605e0fb1af6dc86063/test_coverage)](https://codeclimate.com/github/developer239/react-apollo-graphql/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/8b605e0fb1af6dc86063/maintainability)](https://codeclimate.com/github/developer239/react-apollo-graphql/maintainability)
+[![CircleCI](https://circleci.com/gh/developer239/react-apollo-graphql.svg?style=svg)](https://circleci.com/gh/developer239/react-apollo-graphql) [![Test Coverage](https://api.codeclimate.com/v1/badges/8b605e0fb1af6dc86063/test_coverage)](https://codeclimate.com/github/developer239/react-apollo-graphql/test_coverage) [![Maintainability](https://api.codeclimate.com/v1/badges/8b605e0fb1af6dc86063/maintainability)](https://codeclimate.com/github/developer239/react-apollo-graphql/maintainability) [![Greenkeeper badge](https://badges.greenkeeper.io/developer239/react-apollo-graphql.svg)](https://greenkeeper.io/)
 
 ## React Apollo GraphQl
 
