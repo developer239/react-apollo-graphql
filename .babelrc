@@ -1,14 +1,9 @@
 {
   "presets": [
-    "react",
+    "@babel/preset-react",
     [
-      "env",
+      "@babel/preset-env",
       {
-        "targets": {
-          "browsers": [
-            "defaults"
-          ]
-        },
         "useBuiltIns": "entry"
       }
     ]
