@@ -16,12 +16,12 @@ const updatePostCache = (cache, { data: { createPost } }) => {
   })
 }
 
-export const PostCreatePage = ({ history }) => (
+export const PostCreatePage = ({ history: { push } }) => (
   <section>
     <Mutation
       mutation={CREATE_POST}
       update={updatePostCache}
-      onCompleted={({ createPost: { id }}) => history.push(`/posts/${id}`)}
+      onCompleted={({ createPost: { id }}) => push(`/posts/${id}`)}
     >
       {mutate => (
         <Fragment>
