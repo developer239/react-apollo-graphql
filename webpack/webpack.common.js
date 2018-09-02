@@ -55,6 +55,7 @@ module.exports = {
     modules: [
       './node_modules',
       './src',
+      './__mocks__',
     ],
   },
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  'modulePaths': ['__tests__', 'src'],
+  'modulePaths': ['__tests__', '__mocks__', 'src'],
   testEnvironment: 'node',
   testPathIgnorePatterns: [
     '/assets',
