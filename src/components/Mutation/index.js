@@ -21,8 +21,12 @@ export const MutationWrapper = ({ children, ...rest }) => (
   </Mutation>
 )
 
+MutationWrapper.defaultProps = {
+  children: () => null,
+}
+
 MutationWrapper.propTypes = {
-  children: PropTypes.func.isRequired,
+  children: PropTypes.func,
 }
 
 export default MutationWrapper
