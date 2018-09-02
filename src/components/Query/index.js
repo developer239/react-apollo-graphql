@@ -21,8 +21,12 @@ export const QueryWrapper = ({ children, ...rest }) => (
   </Query>
 )
 
+QueryWrapper.defaultProps = {
+  children: () => null,
+}
+
 QueryWrapper.propTypes = {
-  children: PropTypes.func.isRequired,
+  children: PropTypes.func,
 }
 
 export default QueryWrapper
