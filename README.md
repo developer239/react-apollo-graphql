@@ -13,22 +13,22 @@
 
 #### Main Dependencies
 
- * [React](https://github.com/facebook/react) 16.4.1
- * [React Router](https://github.com/ReactTraining/react-router) 4.3.1
- * [Apollo](https://github.com/apollographql/react-apollo) 2.1.6
- * [Styled Components](https://github.com/styled-components/styled-components) 3.3.3
- * [Formik](https://github.com/jaredpalmer/formik) 1.0.2
- * [Yup](https://github.com/jquense/yup) 0.26.0
- * [Recompose](https://github.com/acdlite/recompose) 0.30.0
- * [Webpack](https://github.com/webpack/webpack) 4.17.1
- * [Babel](https://github.com/babel/babel) 7.0.0
+ * [React](https://github.com/facebook/react)
+ * [React Router](https://github.com/ReactTraining/react-router)
+ * [Apollo](https://github.com/apollographql/react-apollo)
+ * [Styled Components](https://github.com/styled-components/styled-components)
+ * [Formik](https://github.com/jaredpalmer/formik)
+ * [Yup](https://github.com/jquense/yup)
+ * [Recompose](https://github.com/acdlite/recompose)
+ * [Webpack](https://github.com/webpack/webpack)
+ * [Babel](https://github.com/babel/babel)
 
 #### Code Quality Tools
 
- * [eslint](https://github.com/eslint/eslint) 5.2.0
- * [stylelint](https://github.com/stylelint/stylelint) 9.4.0
- * [jest](https://github.com/facebook/jest) 23.4.1
- * [enzyme](https://github.com/airbnb/enzyme) 3.3.0
+ * [eslint](https://github.com/eslint/eslint)
+ * [stylelint](https://github.com/stylelint/stylelint)
+ * [jest](https://github.com/facebook/jest)
+ * [enzyme](https://github.com/airbnb/enzyme)
  * [.editorconfig](http://editorconfig.org/)
 
 
