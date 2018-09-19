@@ -8587,9 +8587,9 @@ yargs@~3.10.0:
     decamelize "^1.0.0"
     window-size "0.1.0"
 
-yup@0.26.5:
-  version "0.26.5"
-  resolved "https://registry.yarnpkg.com/yup/-/yup-0.26.5.tgz#f4d963665e30adbc1c96a2298ab12ff060b09bc0"
+yup@0.26.6:
+  version "0.26.6"
+  resolved "https://registry.yarnpkg.com/yup/-/yup-0.26.6.tgz#07e216a1424861f17958fef1d4775c64ef985724"
   dependencies:
     "@babel/runtime" "7.0.0"
     fn-name "~2.0.1"
