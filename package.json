@@ -46,7 +46,7 @@
     "@babel/preset-react": "7.0.0",
     "@strv/eslint-config-javascript": "8.3.0",
     "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "9.0.0",
+    "babel-eslint": "10.0.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.2",
     "clean-webpack-plugin": "0.1.19",
