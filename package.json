@@ -75,7 +75,7 @@
     "webpack-cli": "3.1.2",
     "webpack-dev-middleware": "3.4.0",
     "webpack-dev-server": "3.1.9",
-    "webpack-hot-middleware": "2.24.2",
+    "webpack-hot-middleware": "2.24.3",
     "webpack-merge": "4.1.4"
   },
   "keywords": [
