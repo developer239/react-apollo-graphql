@@ -801,9 +801,9 @@
   dependencies:
     array-from "^2.1.1"
 
-"@strv/eslint-config-javascript@8.3.0":
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/@strv/eslint-config-javascript/-/eslint-config-javascript-8.3.0.tgz#ff396418a8c1ccc1b50afe8a814c20fe1198bcf7"
+"@strv/eslint-config-javascript@8.3.1":
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/@strv/eslint-config-javascript/-/eslint-config-javascript-8.3.1.tgz#5f92228c4d1476cec67f906606fd3ee5ee1367f1"
   dependencies:
     eslint-plugin-flowtype "^2.39.1"
     eslint-plugin-import "^2.14.0"
