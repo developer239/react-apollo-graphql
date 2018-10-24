@@ -28,7 +28,7 @@
     "graphql": "14.0.2",
     "graphql-tag": "2.10.0",
     "invariant": "2.2.4",
-    "react": "16.5.2",
+    "react": "16.6.0",
     "react-apollo": "2.2.4",
     "react-dom": "16.5.2",
     "react-router-config": "4.4.0-beta.1",
