@@ -30,7 +30,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@7.1.2", "@babel/core@^7.0.0":
+"@babel/core@7.1.2", "@babel/core@^7.1.2":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.1.2.tgz#f8d2a9ceb6832887329a7b60f9d035791400ba4e"
   dependencies:
@@ -3132,6 +3132,12 @@ expand-range@^1.8.1:
   dependencies:
     fill-range "^2.1.0"
 
+expand-tilde@^2.0.0, expand-tilde@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/expand-tilde/-/expand-tilde-2.0.2.tgz#97e801aa052df02454de46b02bf621642cdc8502"
+  dependencies:
+    homedir-polyfill "^1.0.1"
+
 expect@^23.6.0:
   version "23.6.0"
   resolved "https://registry.yarnpkg.com/expect/-/expect-23.6.0.tgz#1e0c8d3ba9a581c87bd71fb9bc8862d443425f98"
@@ -3612,6 +3618,24 @@ global-modules-path@^2.3.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/global-modules-path/-/global-modules-path-2.3.0.tgz#b0e2bac6beac39745f7db5c59d26a36a0b94f7dc"
 
+global-modules@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/global-modules/-/global-modules-1.0.0.tgz#6d770f0eb523ac78164d72b5e71a8877265cc3ea"
+  dependencies:
+    global-prefix "^1.0.1"
+    is-windows "^1.0.1"
+    resolve-dir "^1.0.0"
+
+global-prefix@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/global-prefix/-/global-prefix-1.0.2.tgz#dbf743c6c14992593c655568cb66ed32c0122ebe"
+  dependencies:
+    expand-tilde "^2.0.2"
+    homedir-polyfill "^1.0.1"
+    ini "^1.3.4"
+    is-windows "^1.0.1"
+    which "^1.2.14"
+
 globals@^11.1.0, globals@^11.7.0:
   version "11.7.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-11.7.0.tgz#a583faa43055b1aca771914bf68258e2fc125673"
@@ -4062,7 +4086,7 @@ inherits@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.1.tgz#b17d08d326b4423e568eff719f91b0b1cbdf69f1"
 
-ini@~1.3.0:
+ini@^1.3.4, ini@~1.3.0:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
 
@@ -4400,7 +4424,7 @@ is-whitespace-character@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-whitespace-character/-/is-whitespace-character-1.0.2.tgz#ede53b4c6f6fb3874533751ec9280d01928d03ed"
 
-is-windows@^1.0.2:
+is-windows@^1.0.1, is-windows@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
 
@@ -4825,10 +4849,6 @@ jest@23.6.0:
     import-local "^1.0.0"
     jest-cli "^23.6.0"
 
-js-base64@^2.1.9:
-  version "2.4.9"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.9.tgz#748911fb04f48a60c4771b375cac45a80df11c03"
-
 js-levenshtein@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.3.tgz#3ef627df48ec8cf24bacf05c0f184ff30ef413c5"
@@ -5014,9 +5034,9 @@ kleur@^2.0.1:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-2.0.2.tgz#b704f4944d95e255d038f0cb05fb8a602c55a300"
 
-known-css-properties@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.8.0.tgz#2f62aaab90ece0c788d0c49e08c1e5d9b689238d"
+known-css-properties@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.9.0.tgz#28f8a7134cfa3b0aa08b1e5edf64a57f64fc23af"
 
 lazy-cache@^1.0.3:
   version "1.0.4"
@@ -6206,19 +6226,19 @@ postcss-html@^0.34.0:
   dependencies:
     htmlparser2 "^3.9.2"
 
-postcss-jsx@^0.34.0:
-  version "0.34.0"
-  resolved "https://registry.yarnpkg.com/postcss-jsx/-/postcss-jsx-0.34.0.tgz#5a122af914f911fab4a9b8fcf3adc73c2dfe1bdd"
+postcss-jsx@^0.35.0:
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/postcss-jsx/-/postcss-jsx-0.35.0.tgz#1d6cb82393994cdc7e9aa421648e3f0f3f98209b"
   dependencies:
-    "@babel/core" "^7.0.0"
+    "@babel/core" "^7.1.2"
   optionalDependencies:
     postcss-styled ">=0.34.0"
 
-postcss-less@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-less/-/postcss-less-2.0.0.tgz#5d190b8e057ca446d60fe2e2587ad791c9029fb8"
+postcss-less@^3.0.1:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-less/-/postcss-less-3.0.2.tgz#9cf94e2cc90f8566858939e278fb9f0b713908df"
   dependencies:
-    postcss "^5.2.16"
+    postcss "^7.0.3"
 
 postcss-markdown@^0.34.0:
   version "0.34.0"
@@ -6291,15 +6311,6 @@ postcss@6.0.22:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^5.2.16:
-  version "5.2.18"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.18.tgz#badfa1497d46244f6390f58b319830d9107853c5"
-  dependencies:
-    chalk "^1.1.3"
-    js-base64 "^2.1.9"
-    source-map "^0.5.6"
-    supports-color "^3.2.3"
-
 postcss@^6.0.14:
   version "6.0.23"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.23.tgz#61c82cc328ac60e677645f979054eb98bc0e3324"
@@ -6315,6 +6326,14 @@ postcss@^7.0.0, postcss@^7.0.2:
     chalk "^2.4.1"
     source-map "^0.6.1"
     supports-color "^5.4.0"
+
+postcss@^7.0.3:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.5.tgz#70e6443e36a6d520b0fd4e7593fcca3635ee9f55"
+  dependencies:
+    chalk "^2.4.1"
+    source-map "^0.6.1"
+    supports-color "^5.5.0"
 
 prelude-ls@~1.1.2:
   version "1.1.2"
@@ -6899,6 +6918,13 @@ resolve-cwd@^2.0.0:
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
   dependencies:
     resolve-from "^3.0.0"
+
+resolve-dir@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/resolve-dir/-/resolve-dir-1.0.1.tgz#79a40644c362be82f26effe739c9bb5382046f43"
+  dependencies:
+    expand-tilde "^2.0.0"
+    global-modules "^1.0.0"
 
 resolve-from@^1.0.0:
   version "1.0.1"
@@ -7547,9 +7573,9 @@ stylelint-processor-styled-components@1.5.0:
     "@babel/traverse" "^7.0.0"
     postcss "^6.0.14"
 
-stylelint@9.6.0:
-  version "9.6.0"
-  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.6.0.tgz#f0b366f33b6ccf3e5096d60722ed27b6470b41d8"
+stylelint@9.7.0:
+  version "9.7.0"
+  resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-9.7.0.tgz#d43de95ff5f875facfa31f811ea7b749020f1620"
   dependencies:
     autoprefixer "^9.0.0"
     balanced-match "^1.0.0"
@@ -7559,13 +7585,14 @@ stylelint@9.6.0:
     execall "^1.0.0"
     file-entry-cache "^2.0.0"
     get-stdin "^6.0.0"
+    global-modules "^1.0.0"
     globby "^8.0.0"
     globjoin "^0.1.4"
     html-tags "^2.0.0"
     ignore "^4.0.0"
     import-lazy "^3.1.0"
     imurmurhash "^0.1.4"
-    known-css-properties "^0.8.0"
+    known-css-properties "^0.9.0"
     leven "^2.1.0"
     lodash "^4.17.4"
     log-symbols "^2.0.0"
@@ -7576,8 +7603,8 @@ stylelint@9.6.0:
     pify "^4.0.0"
     postcss "^7.0.0"
     postcss-html "^0.34.0"
-    postcss-jsx "^0.34.0"
-    postcss-less "^2.0.0"
+    postcss-jsx "^0.35.0"
+    postcss-less "^3.0.1"
     postcss-markdown "^0.34.0"
     postcss-media-query-parser "^0.2.3"
     postcss-reporter "^6.0.0"
@@ -8374,7 +8401,7 @@ which-module@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-2.0.0.tgz#d9ef07dce77b9902b8a3a8fa4b31c3e3f7e6e87a"
 
-which@^1.2.12, which@^1.2.9, which@^1.3.0:
+which@^1.2.12, which@^1.2.14, which@^1.2.9, which@^1.3.0:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/which/-/which-1.3.1.tgz#a45043d54f5805316da8d62f9f50918d3da70b0a"
   dependencies:
