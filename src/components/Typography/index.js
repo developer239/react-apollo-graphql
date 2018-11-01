@@ -1,4 +1,3 @@
-import { withProps } from 'recompose'
 import styled from 'styled-components'
 import { mediaQueries } from 'styles'
 
@@ -89,7 +88,7 @@ export const HR = styled.hr`
   border-top: 1px solid #f2f2f4;
 `
 
-export const StyledA = styled.a`
+export const A = styled.a`
   color: ${props => props.theme.color.secondary};
   text-decoration: none;
 
@@ -104,5 +103,3 @@ export const StyledA = styled.a`
     text-decoration: none;
   }
 `
-
-export const A = withProps({ target: '_blank', rel: 'noopener noreferrer' })(StyledA)
