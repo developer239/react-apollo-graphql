@@ -1,7 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { compose, withState, withHandlers } from 'recompose'
 import { mediaQueries } from 'styles'
 import Hamburger from './Hamburger'
 import Link from '../Link'
@@ -61,33 +60,36 @@ export const StyledLink = styled(Link)`
   }
 `
 
-const Navbar = ({ isOpen, toggleOpen, links, activeRoute }) => (
-  <Container>
-    <Content>
-      <Links isOpen={isOpen}>
-        {links.map(link => (
-          <StyledLink
-            onClick={toggleOpen}
-            key={link.id}
-            to={link.to}
-            isActive={
-              (activeRoute.startsWith(link.to) && link.to.length > 1)
-              || link.to === activeRoute
-            }
-          >
-            {link.label}
-          </StyledLink>
-        ))}
-      </Links>
-      <Hamburger isOpen={isOpen} toggleIsOpen={toggleOpen} />
-    </Content>
-  </Container>
-)
+const Navbar = ({ links, activeRoute }) => {
+  const [isOpen, setIsOpen] = useState(false)
+  const handleToggleIsOpen = () => setIsOpen(!isOpen)
+
+  return (
+    <Container>
+      <Content>
+        <Links isOpen={isOpen}>
+          {links.map(link => (
+            <StyledLink
+              onClick={handleToggleIsOpen}
+              key={link.id}
+              to={link.to}
+              isActive={
+                (activeRoute.startsWith(link.to) && link.to.length > 1)
+                || link.to === activeRoute
+              }
+            >
+              {link.label}
+            </StyledLink>
+          ))}
+        </Links>
+        <Hamburger isOpen={isOpen} toggleIsOpen={handleToggleIsOpen} />
+      </Content>
+    </Container>
+  )
+}
 
 Navbar.propTypes = {
   activeRoute: PropTypes.string.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  toggleOpen: PropTypes.func.isRequired,
   links: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number.isRequired,
     to: PropTypes.string.isRequired,
@@ -95,11 +97,4 @@ Navbar.propTypes = {
   })).isRequired,
 }
 
-const enhance = compose(
-  withState('isOpen', 'setIsOpen', false),
-  withHandlers({
-    toggleOpen: ({ setIsOpen }) => () => setIsOpen(value => !value),
-  }),
-)
-
-export default enhance(Navbar)
+export default Navbar
