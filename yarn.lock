@@ -666,6 +666,12 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.1.2":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.1.2.tgz#81c89935f4647706fc54541145e6b4ecfef4b8e3"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
 "@babel/template@7.0.0-beta.51":
   version "7.0.0-beta.51"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.0.0-beta.51.tgz#9602a40aebcf357ae9677e2532ef5fc810f5fbff"
@@ -6562,9 +6568,11 @@ react-lifecycles-compat@^3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
-react-router-config@4.4.0-beta.1:
-  version "4.4.0-beta.1"
-  resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-4.4.0-beta.1.tgz#be8e8deb508b64f3e257444e432a47e84fe2531e"
+react-router-config@4.4.0-beta.5:
+  version "4.4.0-beta.5"
+  resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-4.4.0-beta.5.tgz#f62163e6fa2d3ab9d59564379bd15f90ca0822dc"
+  dependencies:
+    "@babel/runtime" "^7.1.2"
 
 react-router-dom@4.3.1:
   version "4.3.1"
