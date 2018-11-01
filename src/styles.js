@@ -1,4 +1,4 @@
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 
 export const theme = {
@@ -33,7 +33,7 @@ export const mediaQueries = Object.keys(breakpoints).reduce((obj, size) => {
   return obj
 }, {})
 
-const injectGlobalStyles = () => injectGlobal`
+const createGlobalStyles = () => createGlobalStyle`
   html,
   body,
   #__next {
@@ -52,4 +52,4 @@ const injectGlobalStyles = () => injectGlobal`
   }
 `
 
-export default injectGlobalStyles
+export default createGlobalStyles

@@ -1,9 +1,4 @@
-import * as styledComponents from 'styled-components'
-import injectGlobalStyles, { mediaQueries } from './styles'
-
-
-// Mock injectGlobal method
-styledComponents.injectGlobal = a => a[0].replace(/\s\s+/g, ' ').trim() //eslint-disable-line
+import { mediaQueries } from './styles'
 
 describe('Styles', () => {
   it('mediaQueries', () => {
@@ -15,9 +10,5 @@ describe('Styles', () => {
       xs: '@media (min-width: 21.25rem)',
       xxl: '@media (min-width: 100rem)',
     })
-  })
-  it('injectGlobalStyles', () => {
-    // eslint-disable-next-line max-len
-    expect(injectGlobalStyles()).toEqual('html, body, #__next { height: 100%; } body { min-width: 326px; } body, textarea, input, button, label { font-family: \'Open Sans\', sans-serif; }')
   })
 })
