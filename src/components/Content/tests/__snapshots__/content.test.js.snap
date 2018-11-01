@@ -44,10 +44,69 @@ exports[`Content Component has correct default styles 1`] = `
     }
   }
 >
-  <div
-    className="c0"
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 10px;
+  
+  ",
+            "@media (min-width: 48rem)",
+            " {
+    padding: 25px 25px;
+    max-width: ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
   >
-    Some Content
-  </div>
+    <div
+      className="c0"
+    >
+      Some Content
+    </div>
+  </StyledComponent>
 </styled.div>
 `;

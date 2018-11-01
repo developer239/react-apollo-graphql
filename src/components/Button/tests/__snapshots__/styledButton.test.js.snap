@@ -51,11 +51,86 @@ exports[`StyledButton Component has correct :active background-color for bgType 
     }
   }
 >
-  <button
-    className="c0"
+  <StyledComponent
+    bgType="success"
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  background-color: ",
+            [Function],
+            ";
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 150ms linear;
+  margin-right: 2px;
+  
+  &:hover {
+    background-color: ",
+            [Function],
+            ";
+  }
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:active {
+    background-color: ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.button",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "button",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
   >
-    Button Text
-  </button>
+    <button
+      className="c0"
+    >
+      Button Text
+    </button>
+  </StyledComponent>
 </styled.button>
 `;
 
@@ -109,10 +184,84 @@ exports[`StyledButton Component has correct default styles 1`] = `
     }
   }
 >
-  <button
-    className="c0"
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  background-color: ",
+            [Function],
+            ";
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 150ms linear;
+  margin-right: 2px;
+  
+  &:hover {
+    background-color: ",
+            [Function],
+            ";
+  }
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:active {
+    background-color: ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.button",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "button",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
   >
-    Button Text
-  </button>
+    <button
+      className="c0"
+    >
+      Button Text
+    </button>
+  </StyledComponent>
 </styled.button>
 `;

@@ -14,10 +14,45 @@ exports[`Label Component has correct default styles 1`] = `
 }
 
 <styled.label>
-  <label
-    className="c0"
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  display: block;
+  font-weight: bolder;
+  padding: 0;
+  margin-bottom: 20px;
+  
+  input,
+  textarea {
+    display: block;
+  }
+",
+          ],
+        },
+        "displayName": "styled.label",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "label",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
   >
-    Test Label
-  </label>
+    <label
+      className="c0"
+    >
+      Test Label
+    </label>
+  </StyledComponent>
 </styled.label>
 `;
