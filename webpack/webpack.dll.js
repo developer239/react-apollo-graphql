@@ -18,7 +18,6 @@ const vendors = [
   'react-dom',
   'react-router-config',
   'react-router-dom',
-  'recompose',
   'styled-components',
   'yup',
 ]
