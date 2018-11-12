@@ -33,7 +33,7 @@
     "react-dom": "^16.7.0-alpha.0",
     "react-router-config": "4.4.0-beta.6",
     "react-router-dom": "4.3.1",
-    "styled-components": "4.0.3",
+    "styled-components": "4.1.0",
     "yup": "0.26.6"
   },
   "devDependencies": {
