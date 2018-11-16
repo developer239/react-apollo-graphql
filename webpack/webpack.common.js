@@ -51,6 +51,10 @@ module.exports = {
     ],
   },
   resolve: {
+    alias: {
+      react: path.resolve('./node_modules/react'),
+      "styled-components": path.resolve('./node_modules/styled-components'),
+    },
     extensions: ['.js'],
     modules: [
       './node_modules',
