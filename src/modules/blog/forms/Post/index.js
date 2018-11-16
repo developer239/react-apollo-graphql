@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Button } from '@michal.jarnot/ui-components'
 import { withFormik } from 'formik'
 import * as Yup from 'yup'
 import { Input, TextArea } from 'components/InputTypes'
-import { Button } from 'components'
 
 
 const PostForm = ({

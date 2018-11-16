@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Button } from '@michal.jarnot/ui-components'
 import { H2, P } from 'components/Typography'
-import { Button, Link, Query, ActionButton } from 'components'
+import { Link, Query, ActionButton } from 'components'
 import { nl2br } from 'utils/typography'
 import { ALL_POSTS, DELETE_POST } from 'modules/blog/gql'
 
@@ -27,7 +28,7 @@ const updatePostCache = (cache, { data: { deletePost } }) => {
 export const ListPostsPage = () => (
   <section>
     <Link to={`/posts/new`}>
-      <CreateNewButton bgType="success">create new post</CreateNewButton>
+      <CreateNewButton>create new post</CreateNewButton>
     </Link>
     <Query
       query={ALL_POSTS}
@@ -41,7 +42,6 @@ export const ListPostsPage = () => (
             <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
             <ActionButton
               label="delete"
-              btnBgType="error"
               mutation={DELETE_POST}
               variables={{ id }}
               update={updatePostCache}
