@@ -44,7 +44,7 @@ exports[`Navbar Components Container has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-htpNat",
           "isStatic": false,
@@ -152,7 +152,7 @@ exports[`Navbar Components Content has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bxivhb",
           "isStatic": true,
@@ -258,7 +258,7 @@ exports[`Navbar Components Links has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-ifAKCX",
           "isStatic": false,
@@ -542,7 +542,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
         forwardedClass={
           Object {
             "$$typeof": Symbol(react.forward_ref),
-            "attrs": undefined,
+            "attrs": Array [],
             "componentStyle": ComponentStyle {
               "componentId": "sc-htpNat",
               "isStatic": false,
@@ -579,7 +579,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
               forwardedClass={
                 Object {
                   "$$typeof": Symbol(react.forward_ref),
-                  "attrs": undefined,
+                  "attrs": Array [],
                   "componentStyle": ComponentStyle {
                     "componentId": "sc-bxivhb",
                     "isStatic": true,
@@ -621,7 +621,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
                     forwardedClass={
                       Object {
                         "$$typeof": Symbol(react.forward_ref),
-                        "attrs": undefined,
+                        "attrs": Array [],
                         "componentStyle": ComponentStyle {
                           "componentId": "sc-ifAKCX",
                           "isStatic": false,
@@ -1002,7 +1002,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
                       forwardedClass={
                         Object {
                           "$$typeof": Symbol(react.forward_ref),
-                          "attrs": undefined,
+                          "attrs": Array [],
                           "componentStyle": ComponentStyle {
                             "componentId": "sc-bdVaJa",
                             "isStatic": false,
@@ -1067,7 +1067,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
                             forwardedClass={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": undefined,
+                                "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bwzfXH",
                                   "isStatic": false,
@@ -1121,7 +1121,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
                             forwardedClass={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": undefined,
+                                "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bwzfXH",
                                   "isStatic": false,
@@ -1175,7 +1175,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
                             forwardedClass={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": undefined,
+                                "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bwzfXH",
                                   "isStatic": false,
@@ -1229,7 +1229,7 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
                             forwardedClass={
                               Object {
                                 "$$typeof": Symbol(react.forward_ref),
-                                "attrs": undefined,
+                                "attrs": Array [],
                                 "componentStyle": ComponentStyle {
                                   "componentId": "sc-bwzfXH",
                                   "isStatic": false,

@@ -45,7 +45,7 @@ exports[`Typography Components A has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-EHOje",
           "isStatic": false,
@@ -160,7 +160,7 @@ exports[`Typography Components H1 has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bdVaJa",
           "isStatic": false,
@@ -282,7 +282,7 @@ exports[`Typography Components H2 has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bwzfXH",
           "isStatic": false,
@@ -404,7 +404,7 @@ exports[`Typography Components H3 has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-htpNat",
           "isStatic": false,
@@ -513,7 +513,7 @@ exports[`Typography Components HR has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-ifAKCX",
           "isStatic": true,
@@ -606,7 +606,7 @@ exports[`Typography Components P has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bxivhb",
           "isStatic": false,
