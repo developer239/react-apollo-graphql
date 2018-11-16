@@ -1,5 +1,5 @@
 import React from 'react'
-import { H2, P } from 'components/Typography'
+import { Section, Typography } from '@michal.jarnot/ui-components'
 import { Query, ActionButton } from 'components'
 import {
   COUNTER_VALUE,
@@ -9,13 +9,15 @@ import {
 } from 'modules/counter/gql'
 
 
+const { H2, P } = Typography
+
 export const handleDoubleCounterComplete = ({ doubleCounterValueAsync }) => {
   // If you need to work with the counter value when the action is complete:
   console.log('new value ', doubleCounterValueAsync.counterValue)
 }
 
 export const CounterPage = () => (
-  <section>
+  <Section>
     <H2>Counter Page</H2>
     <P>
       Fusce nibh. Phasellus rhoncus. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum
@@ -38,9 +40,7 @@ export const CounterPage = () => (
       label="double (async)"
       onCompleted={handleDoubleCounterComplete}
     />
-  </section>
+  </Section>
 )
-
-CounterPage.propTypes = {}
 
 export default CounterPage

@@ -1,9 +1,11 @@
 import React from 'react'
-import { H2, P, A } from 'components/Typography'
+import { Section, Typography } from '@michal.jarnot/ui-components'
 
+
+const { H2, P, A } = Typography
 
 const HomePage = () => (
-  <section>
+  <Section>
     <H2>React Apollo GraphQl</H2>
     <P>
       The third version of minimal react apollo boilerplate. I was learning GraphQl several years
@@ -15,7 +17,7 @@ const HomePage = () => (
       Link to github repository
       <A href="https://github.com/developer239/react-redux-apollo-graphql"> is here</A>.
     </P>
-  </section>
+  </Section>
 )
 
 export default HomePage

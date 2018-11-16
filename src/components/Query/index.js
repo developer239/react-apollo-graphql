@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Query } from 'react-apollo'
-import Spinner from '../Spinner'
-import Message from '../Message'
+import { Spinner, Alert } from '@michal.jarnot/ui-components'
 
 
 export const QueryWrapper = ({ children, ...rest }) => (
@@ -13,7 +12,7 @@ export const QueryWrapper = ({ children, ...rest }) => (
       }
 
       if (error) {
-        return <Message type="error" text={`Error! ${error.message}`} />
+        return <Alert isError>`Error! {error.message}`</Alert>
       }
 
       return children({ loading, error, data })

@@ -26,7 +26,8 @@ describe('Mutation Component', () => {
       </Provider>,
     )
     wrapper.find('button').simulate('click')
-    expect(wrapper.find('SpinnerComponent').length).toEqual(1)
+    const isSpinnerVisible = wrapper.find('div').length > 0
+    expect(isSpinnerVisible).toEqual(true)
   })
 
   // TODO: Make this work

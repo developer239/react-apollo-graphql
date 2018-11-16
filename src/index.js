@@ -4,9 +4,10 @@ import { ThemeProvider } from 'styled-components'
 import { BrowserRouter } from 'react-router-dom'
 import { ApolloProvider } from 'react-apollo'
 import { renderRoutes } from 'react-router-config'
-import routes from './routes'
-import client from './apolloClient'
-import createGlobalStyles, { theme } from './styles'
+import routes from 'routes'
+import client from 'apolloClient'
+import createGlobalStyles, { theme } from 'styles'
+
 
 const GlobalStyle = createGlobalStyles()
 

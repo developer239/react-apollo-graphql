@@ -1,29 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import { Layout, NavBar } from '@michal.jarnot/ui-components'
 import { renderRoutes } from 'react-router-config'
-import { Content, Navbar } from 'components'
 
 
 const NAV_LINKS = [
-  { id: 1, to: '/', label: 'home' },
-  { id: 2, to: '/counter', label: 'counter' },
-  { id: 3, to: '/posts', label: 'blog' },
+  { id: 1, to: '/', label: 'home', component: Link },
+  { id: 2, to: '/counter', label: 'counter', component: Link },
+  { id: 3, to: '/posts', label: 'blog', component: Link },
 ]
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-`
-
 const App = ({ route, location: { pathname } }) => (
-  <Container>
-    <Navbar links={NAV_LINKS} activeRoute={pathname} />
-    <Content>
-      {renderRoutes(route.routes)}
-    </Content>
-  </Container>
+  <Layout>
+    <NavBar links={NAV_LINKS} activeRoute={pathname} />
+    {renderRoutes(route.routes)}
+  </Layout>
 )
 
 App.propTypes = {

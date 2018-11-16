@@ -38,6 +38,7 @@ const createGlobalStyles = () => createGlobalStyle`
   body,
   #__next {
     height: 100%;
+    font-size: 62.5%; 
   }
   
   body {

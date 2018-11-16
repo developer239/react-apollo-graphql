@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Mutation } from 'react-apollo'
-import Spinner from '../Spinner'
-import Message from '../Message'
+import { Spinner, Alert } from '@michal.jarnot/ui-components'
 
 
 export const MutationWrapper = ({ children, ...rest }) => (
@@ -13,7 +12,7 @@ export const MutationWrapper = ({ children, ...rest }) => (
       }
 
       if (error) {
-        return <Message type="error" text={`Error! ${error.message}`} />
+        return <Alert isError>Error! {error.message}</Alert>
       }
 
       return children(mutate, { loading, error, data })

@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { H2, P } from 'components/Typography'
+import { Section, Typography } from '@michal.jarnot/ui-components'
 import { Query } from 'components'
 import { nl2br } from 'utils/typography'
 import { POST_DETAIL } from 'modules/blog/gql'
 
 
+const { H2, P } = Typography
+
 export const PostDetailPage = ({ match: { params: { postId } } }) => (
-  <section>
+  <Section>
     <Query
       query={POST_DETAIL}
       variables={{ id: postId }}
@@ -19,7 +21,7 @@ export const PostDetailPage = ({ match: { params: { postId } } }) => (
         </Fragment>
       )}
     </Query>
-  </section>
+  </Section>
 )
 
 PostDetailPage.propTypes = {
