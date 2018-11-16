@@ -44,13 +44,6 @@ const createGlobalStyles = () => createGlobalStyle`
   body {
     min-width: 326px;
   }
-  body,
-  textarea,
-  input,
-  button,
-  label {
-    font-family: 'Open Sans', sans-serif;
-  }
 `
 
 export default createGlobalStyles
