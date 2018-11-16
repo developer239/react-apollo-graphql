@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import waitForExpect from 'wait-for-expect'
 import Provider from 'AppProvider'
-import { query_mock, query_mock_error, MOCK_QUERY } from 'gql'
+import { query_mock, MOCK_QUERY } from 'gql'
 import Query from '../index'
 
 
