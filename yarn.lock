@@ -888,11 +888,10 @@
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/samsam/-/samsam-2.1.2.tgz#16947fce5f57258d01f1688fdc32723093c55d3f"
 
-"@strv/eslint-config-javascript@9.0.0":
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/@strv/eslint-config-javascript/-/eslint-config-javascript-9.0.0.tgz#96de1c9e0f16aa20c84642dbe184342354d9d926"
+"@strv/eslint-config-javascript@9.1.0":
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/@strv/eslint-config-javascript/-/eslint-config-javascript-9.1.0.tgz#458f31199759dc3a34df7c5dfd33569095778338"
   dependencies:
-    eslint-plugin-flowtype "^3.1.4"
     eslint-plugin-import "^2.14.0"
     eslint-plugin-jsx-a11y "^6.1.2"
     eslint-plugin-mocha "^5.2.0"
@@ -3004,12 +3003,6 @@ eslint-plugin-es@^1.3.1:
   dependencies:
     eslint-utils "^1.3.0"
     regexpp "^2.0.0"
-
-eslint-plugin-flowtype@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-flowtype/-/eslint-plugin-flowtype-3.1.4.tgz#c6c9c514b8c01579e6621b51d83549d5db802cac"
-  dependencies:
-    lodash "^4.17.10"
 
 eslint-plugin-import@^2.14.0:
   version "2.14.0"
