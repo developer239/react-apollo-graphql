@@ -888,9 +888,10 @@
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@sinonjs/samsam/-/samsam-2.1.2.tgz#16947fce5f57258d01f1688fdc32723093c55d3f"
 
-"@strv/eslint-config-javascript@9.1.0":
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/@strv/eslint-config-javascript/-/eslint-config-javascript-9.1.0.tgz#458f31199759dc3a34df7c5dfd33569095778338"
+"@strv/eslint-config-javascript@9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@strv/eslint-config-javascript/-/eslint-config-javascript-9.1.1.tgz#6f9ed93aaae2691a1996c5deb64c36a0fbb477e1"
+  integrity sha512-TD9AaDl5H7LPtQyfs6NhadAs2gNvHnnpGm/BGb2qsZU1TYZzkz7uuOc6LciKCz09qPO2iis5WHbtTdt44UTCqQ==
   dependencies:
     eslint-plugin-import "^2.14.0"
     eslint-plugin-jsx-a11y "^6.1.2"
