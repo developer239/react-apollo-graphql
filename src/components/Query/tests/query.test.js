@@ -35,20 +35,4 @@ describe('Query Component', () => {
       expect(wrapper.find('ul li').length).toEqual(2)
     })
   })
-
-  // TODO: Make this test work
-  // Invariant Violation: Hooks can only be called inside the body of a function component.
-
-  // it('renders error state', async () => {
-  //   const wrapper = mount(
-  //     <Provider mocks={[query_mock_error]}>
-  //       <Query query={MOCK_QUERY} />
-  //     </Provider>,
-  //   )
-  //
-  //   await waitForExpect(() => {
-  //     wrapper.update()
-  //     expect(wrapper.find('Message').text()).toEqual('Error! Network error: Error state.')
-  //   })
-  // })
 })

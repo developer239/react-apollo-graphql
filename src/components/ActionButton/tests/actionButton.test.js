@@ -22,7 +22,8 @@ describe('ActionButton Component', () => {
       </Provider>,
     )
     wrapper.find('button').simulate('click')
-    const isLoaderVisible = wrapper.find('button div').length > 0;
-    expect(isLoaderVisible).toEqual(true)
+    wrapper.update()
+    const buttonText = wrapper.find('button').text();
+    expect(buttonText).toEqual('...')
   })
 })

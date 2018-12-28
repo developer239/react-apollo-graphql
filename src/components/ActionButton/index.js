@@ -13,7 +13,7 @@ const ActionButton = ({ label, type, ...rest }) => (
         isLoading={loading}
         type={type}
       >
-        {label}
+        {loading ? '...' : label}
       </Button>
     )}
   </Mutation>
