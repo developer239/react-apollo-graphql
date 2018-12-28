@@ -4,12 +4,12 @@ import { ThemeProvider } from 'styled-components'
 import { BrowserRouter } from 'react-router-dom'
 import { ApolloProvider } from 'react-apollo'
 import { renderRoutes } from 'react-router-config'
+import { global, theme } from 'ui-react-library'
 import routes from 'routes'
 import client from 'apolloClient'
-import createGlobalStyles, { theme } from 'styles'
 
 
-const GlobalStyle = createGlobalStyles()
+const GlobalStyle = global()
 
 const render = () => {
   ReactDOM.render(

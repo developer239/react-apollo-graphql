@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { Section, Typography } from '@michal.jarnot/ui-components'
+import { Section, Typography } from 'ui-react-library'
 import { Query } from 'components'
 import { nl2br } from 'utils/typography'
 import { POST_DETAIL } from 'modules/blog/gql'

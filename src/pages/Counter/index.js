@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, Typography } from '@michal.jarnot/ui-components'
+import { Section, Typography } from 'ui-react-library'
 import { Query, ActionButton } from 'components'
 import {
   COUNTER_VALUE,

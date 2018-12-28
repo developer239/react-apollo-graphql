@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { Layout, NavBar } from '@michal.jarnot/ui-components'
+import { Layout, NavBar } from 'ui-react-library'
 import { renderRoutes } from 'react-router-config'
 
 

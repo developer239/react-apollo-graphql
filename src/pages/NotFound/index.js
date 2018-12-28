@@ -1,15 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Section, Typography } from '@michal.jarnot/ui-components'
+import { Section, Typography } from 'ui-react-library'
 
 
-const { H2, P, A } = Typography
+const { H2, P } = Typography
 
 const NotFoundPage = () => (
   <Section>
     <H2>Page Not Found :(</H2>
     <P>
-      Please go back <A to="/" as={Link}>home</A>
+      Please go back <Link to="/" as={Link}>home</Link>
     </P>
   </Section>
 )

@@ -1,8 +1,7 @@
 import React from 'react'
-import { Section, Typography } from '@michal.jarnot/ui-components'
+import { Section, Typography } from 'ui-react-library'
 
-
-const { H2, P, A } = Typography
+const { H2, P } = Typography
 
 const HomePage = () => (
   <Section>
@@ -15,7 +14,7 @@ const HomePage = () => (
     </P>
     <P>
       Link to github repository
-      <A href="https://github.com/developer239/react-redux-apollo-graphql"> is here</A>.
+      <a href="https://github.com/developer239/react-redux-apollo-graphql"> is here</a>.
     </P>
   </Section>
 )

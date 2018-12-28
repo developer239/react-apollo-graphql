@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { Section, Typography } from '@michal.jarnot/ui-components'
+import { Section, Typography } from 'ui-react-library'
 import { Mutation } from 'components'
 import PostForm from 'modules/blog/forms/Post'
 import { CREATE_POST, ALL_POSTS } from 'modules/blog/gql'
