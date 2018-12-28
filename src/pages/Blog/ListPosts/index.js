@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Section, Button, Typography } from 'ui-react-library'
+import { Section, Button, Typography, Margin } from 'ui-react-library'
 import { Query, ActionButton } from 'components'
 import { nl2br } from 'utils/typography'
 import { ALL_POSTS, DELETE_POST } from 'modules/blog/gql'
@@ -20,9 +20,11 @@ const updatePostCache = (cache, { data: { deletePost } }) => {
 
 export const ListPostsPage = () => (
   <Section>
-    <Link to={`/posts/new`}>
-      <Button>create new post</Button>
-    </Link>
+    <Margin vertical={3}>
+      <Link to={`/posts/new`}>
+        <Button>create new post</Button>
+      </Link>
+    </Margin>
     <Query
       query={ALL_POSTS}
     >
@@ -31,14 +33,21 @@ export const ListPostsPage = () => (
           <div key={id}>
             <H2>{title}</H2>
             <P>{nl2br(text)}</P>
-            <Link to={`/posts/${id}`}><Button>detail</Button></Link>
-            <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
-            <ActionButton
-              label="delete"
-              mutation={DELETE_POST}
-              variables={{ id }}
-              update={updatePostCache}
-            />
+            <Margin right={.25} isInline>
+              <Link to={`/posts/${id}`}><Button>detail</Button></Link>
+            </Margin>
+            <Margin right={.25} isInline>
+              <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
+            </Margin>
+            <Margin isInline>
+              <ActionButton
+                label="delete"
+                mutation={DELETE_POST}
+                variables={{ id }}
+                update={updatePostCache}
+                type="error"
+              />
+            </Margin>
           </div>
         ))
       )}

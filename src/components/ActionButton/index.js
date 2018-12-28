@@ -4,13 +4,14 @@ import { Mutation } from 'react-apollo'
 import { Button } from 'ui-react-library'
 
 
-const ActionButton = ({ label, ...rest }) => (
+const ActionButton = ({ label, type, ...rest }) => (
   <Mutation {...rest}>
     {(mutate, { loading }) => (
       <Button
         disabled={loading}
         onClick={mutate}
         isLoading={loading}
+        type={type}
       >
         {label}
       </Button>
@@ -18,8 +19,13 @@ const ActionButton = ({ label, ...rest }) => (
   </Mutation>
 )
 
+ActionButton.defaultProps = {
+  type: null,
+}
+
 ActionButton.propTypes = {
   label: PropTypes.string.isRequired,
+  type: PropTypes.string,
 }
 
 export default ActionButton

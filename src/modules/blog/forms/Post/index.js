@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Button, Input, Textarea } from 'ui-react-library'
+import { Button, Input, Textarea, Margin } from 'ui-react-library'
 import { withFormik } from 'formik'
 import * as Yup from 'yup'
 
@@ -24,16 +24,21 @@ const PostForm = ({
       onChange={handleChange}
       onBlur={handleBlur}
     />
-    <Textarea
-      id="text"
-      placeholder="New Post Text"
-      value={values.text}
-      touched={touched.text}
-      error={touched.text && errors.text}
-      onChange={handleChange}
-      onBlur={handleBlur}
-    />
-    <Button>Submit</Button>
+    <Margin top={2}>
+      <Textarea
+        id="text"
+        label="Text"
+        placeholder="New Post Text"
+        value={values.text}
+        touched={touched.text}
+        error={touched.text && errors.text}
+        onChange={handleChange}
+        onBlur={handleBlur}
+      />
+    </Margin>
+    <Margin top={3}>
+      <Button>Submit</Button>
+    </Margin>
   </form>
 )
 
