@@ -1,6 +1,13 @@
 import React from 'react'
-import { H2, P } from 'components/Typography'
-import { Query, ActionButton } from 'components'
+import {
+  Section,
+  Margin,
+  Typography
+} from 'ui-react-library'
+import {
+  Query,
+  ActionButton
+} from 'components'
 import {
   COUNTER_VALUE,
   INCREMENT_COUNTER,
@@ -9,38 +16,42 @@ import {
 } from 'modules/counter/gql'
 
 
+const { H2, P, A } = Typography
+
 export const handleDoubleCounterComplete = ({ doubleCounterValueAsync }) => {
   // If you need to work with the counter value when the action is complete:
   console.log('new value ', doubleCounterValueAsync.counterValue)
 }
 
 export const CounterPage = () => (
-  <section>
+  <Section>
     <H2>Counter Page</H2>
     <P>
-      Fusce nibh. Phasellus rhoncus. Nullam justo enim, consectetuer nec, ullamcorper ac, vestibulum
-      in, elit. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Aliquam erat volutpat.
-      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-      pariatur. Nullam rhoncus aliquam metus. Curabitur sagittis hendrerit ante. Nullam faucibus mi
-      quis velit.
+      It would make more sense to use react context in this case. However, to me, it seems like a
+      simple increment/decrement counter is the easiest way to show what can{' '}
+      <A href="https://github.com/apollographql/apollo-link-state">apollo-link-state</A> do.
     </P>
     <Query query={COUNTER_VALUE}>
       {({ data: { counterValue } }) => (
         <P>
-          Current counter value is: <strong id="value">{counterValue}</strong>
+          Counter value is: <strong id="value">{counterValue}</strong>
         </P>
       )}
     </Query>
-    <ActionButton mutation={INCREMENT_COUNTER} label="increment" />
-    <ActionButton mutation={DECREMENT_COUNTER} label="decrement" />
-    <ActionButton
-      mutation={DOUBLE_COUNTER}
-      label="double (async)"
-      onCompleted={handleDoubleCounterComplete}
-    />
-  </section>
+    <Margin isInline right={0.25}>
+      <ActionButton type="primary" onButton mutation={INCREMENT_COUNTER} label="increment" />
+    </Margin>
+    <Margin isInline right={0.25}>
+      <ActionButton type="primary" mutation={DECREMENT_COUNTER} label="decrement" />
+    </Margin>
+    <Margin isInline>
+      <ActionButton
+        mutation={DOUBLE_COUNTER}
+        label="double (async)"
+        onCompleted={handleDoubleCounterComplete}
+      />
+    </Margin>
+  </Section>
 )
-
-CounterPage.propTypes = {}
 
 export default CounterPage

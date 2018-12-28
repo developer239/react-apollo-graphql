@@ -22,6 +22,8 @@ describe('ActionButton Component', () => {
       </Provider>,
     )
     wrapper.find('button').simulate('click')
-    expect(wrapper.find('button').text()).toEqual('...')
+    wrapper.update()
+    const buttonText = wrapper.find('button').text();
+    expect(buttonText).toEqual('...')
   })
 })

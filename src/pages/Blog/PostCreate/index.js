@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { Section, Typography } from 'ui-react-library'
 import { Mutation } from 'components'
 import PostForm from 'modules/blog/forms/Post'
 import { CREATE_POST, ALL_POSTS } from 'modules/blog/gql'
-import { H2 } from 'components/Typography'
 
+
+const { H2 } = Typography
 
 const updatePostCache = (cache, { data: { createPost } }) => {
   const postsCache = cache.readQuery({ query: ALL_POSTS })
@@ -17,7 +19,7 @@ const updatePostCache = (cache, { data: { createPost } }) => {
 }
 
 export const PostCreatePage = ({ history: { push } }) => (
-  <section>
+  <Section>
     <Mutation
       mutation={CREATE_POST}
       update={updatePostCache}
@@ -30,7 +32,7 @@ export const PostCreatePage = ({ history: { push } }) => (
         </Fragment>
       )}
     </Mutation>
-  </section>
+  </Section>
 )
 
 PostCreatePage.propTypes = {

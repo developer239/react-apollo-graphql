@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { H2 } from 'components/Typography'
+import { Section, Typography } from 'ui-react-library'
 import { Query, Mutation } from 'components'
 import { POST_DETAIL, UPDATE_POST } from 'modules/blog/gql'
 import PostForm from 'modules/blog/forms/Post'
 
+const { H2 } = Typography
 
 export const PostEditPage = ({ history: { push }, match: { params: { postId } } }) => (
-  <section>
+  <Section>
     <Query
       query={POST_DETAIL}
       variables={{ id: postId }}
@@ -26,7 +27,7 @@ export const PostEditPage = ({ history: { push }, match: { params: { postId } } 
         </Mutation>
       )}
     </Query>
-  </section>
+  </Section>
 )
 
 PostEditPage.propTypes = {

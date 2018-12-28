@@ -26,22 +26,7 @@ describe('Mutation Component', () => {
       </Provider>,
     )
     wrapper.find('button').simulate('click')
-    expect(wrapper.find('SpinnerComponent').length).toEqual(1)
+    const isSpinnerVisible = wrapper.find('div').length > 0
+    expect(isSpinnerVisible).toEqual(true)
   })
-
-  // TODO: Make this work
-  // it('renders error state', async () => {
-  //   const wrapper = mount(
-  //     <Provider mocks={[mutation_mock_error]}>
-  //       <Mutation mutation={MOCK_MUTATION}>
-  //         {(mutate) => <button onClick={mutate}>button</button>}
-  //       </Mutation>
-  //     </Provider>,
-  //   )
-  //   wrapper.find('button').simulate('click')
-  //   await waitForExpect(() => {
-  //     wrapper.instance().forceUpdate()
-  //     expect(wrapper).toMatchSnapshot()
-  //   })
-  // })
 })
