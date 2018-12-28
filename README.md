@@ -2,7 +2,9 @@
 
 ## React Apollo GraphQl
 
- The third version of minimal react apollo boilerplate. I was learning GraphQl several years ago. However, I couldn't find many react-apollo examples. The situation changed a lot since then, but I am trying to keep this repository alive. It is always nice to see a good example. I hope this one will make learning Apollo and GraphQl easier for you.
+ [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+ Today you have basically two ways how to start new react application: [NextJs](https://github.com/zeit/next.js/) or [Create React App](https://github.com/facebook/create-react-app). I created this repository couple of years ago and now I try to keep it alive so that I have at least some idea how to bootstrap new react application from scratch.
 
  Backend is provided by [graphq.cool](https://www.graph.cool) ❤️
 
