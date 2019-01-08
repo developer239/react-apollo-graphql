@@ -9,6 +9,8 @@ import routes from 'routes'
 import client from 'apolloClient'
 
 
+console.log('a')
+
 const GlobalStyle = global()
 
 const render = () => {
