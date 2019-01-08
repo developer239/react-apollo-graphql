@@ -12,6 +12,7 @@ import client from 'apolloClient'
 console.log('a')
 console.log('b')
 console.log('c')
+console.log('d')
 
 const GlobalStyle = global()
 
