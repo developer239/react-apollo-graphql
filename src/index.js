@@ -10,6 +10,7 @@ import client from 'apolloClient'
 
 
 console.log('a')
+console.log('b')
 
 const GlobalStyle = global()
 
