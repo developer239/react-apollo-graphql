@@ -17,7 +17,7 @@
     "test": "node ./node_modules/.bin/jest --forceExit --detectOpenHandles"
   },
   "dependencies": {
-    "@babel/runtime": "^7.3.1",
+    "@babel/runtime": "^7.3.4",
     "apollo-cache-inmemory": "1.4.3",
     "apollo-client": "2.4.12",
     "apollo-link": "1.2.6",
