@@ -1458,15 +1458,6 @@ apollo-utilities@^1.2.0:
     ts-invariant "^0.2.1"
     tslib "^1.9.3"
 
-apollo-utilities@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/apollo-utilities/-/apollo-utilities-1.2.0.tgz#ba5a1271c55e0d79069b1919c9d533164a70f9c3"
-  integrity sha512-4+vxCpEuirQjPqLCckBnOMGZxK/c+2eJtYEbh3xhccNM1pYB5Gx/lrfCdZS5MKDykuWZYY08EvidDy21nr049w==
-  dependencies:
-    fast-json-stable-stringify "^2.0.0"
-    ts-invariant "^0.2.1"
-    tslib "^1.9.3"
-
 append-transform@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/append-transform/-/append-transform-1.0.0.tgz#046a52ae582a228bd72f58acfbe2967c678759ab"
@@ -8454,10 +8445,10 @@ uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
 
-ui-react-library@1.5.27:
-  version "1.5.27"
-  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.5.27.tgz#9a38eb96fa1c68320b075e1fd74839b942e14fd3"
-  integrity sha512-9xHNScnZKY3k2qCltbPPoL/WjbJoCJ3ga96WuHGiMOthtVwhTYuFAEe1vNBh0hR5Vchy1NtaXzb+XnYRxZfJ7Q==
+ui-react-library@1.5.28:
+  version "1.5.28"
+  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.5.28.tgz#0909b0864f5deafc13fdf8251abd78298220d4f9"
+  integrity sha512-SFzREL3ZBlereUSOQm+k89rHQXCNKLmiPSbrKn0ogV1t7F+c5t8OFkpn5YylQTWlRXuv76diZ3UJ86d6+6APKA==
   dependencies:
     ramda "0.26.1"
     styled-is "1.1.5"
