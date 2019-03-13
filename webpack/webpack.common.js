@@ -1,5 +1,5 @@
 const path = require('path')
-const DllLinkPlugin = require("dll-link-webpack-plugin")
+const DllLinkPlugin = require('dll-link-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -15,7 +15,7 @@ module.exports = {
     path: path.resolve(__dirname, '..', DIST_DIR),
   },
   plugins: [
-    new CleanWebpackPlugin([DIST_DIR]),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: DIST_DIR }),
     new HtmlWebpackPlugin({
       template: 'src/static/index.html',
       inject: 'body',
@@ -58,7 +58,7 @@ module.exports = {
   resolve: {
     alias: {
       react: path.resolve('./node_modules/react'),
-      "styled-components": path.resolve('./node_modules/styled-components'),
+      'styled-components': path.resolve('./node_modules/styled-components'),
     },
     extensions: ['.js'],
     modules: [
