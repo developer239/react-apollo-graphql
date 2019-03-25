@@ -30,7 +30,7 @@
     "graphql-tag": "2.10.1",
     "invariant": "2.2.4",
     "react": "^16.8.4",
-    "react-apollo": "2.5.2",
+    "react-apollo": "2.5.3",
     "react-dom": "^16.8.4",
     "react-router-config": "4.4.0-beta.6",
     "react-router-dom": "4.4.0",
