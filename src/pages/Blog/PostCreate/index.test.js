@@ -3,6 +3,8 @@ import { fireEvent } from 'react-testing-library'
 import { renderApp } from '../../../../test/utils/render'
 import { fakeCreatePostSuccess } from '../../../../test/utils/gql-posts'
 import App from '../../../app'
+import { POST_CREATE_TEST_ID } from './index'
+import { ROUTE_PATHS } from '../../../routes'
 
 const { createPost: POST } = fakeCreatePostSuccess.result.data
 
@@ -23,13 +25,13 @@ const fillCreatePostForm = renderer => {
 
 describe('[page] Create Post', () => {
   it('should render correctly', () => {
-    const renderer = renderApp(<App />, '/posts/new')
-    expect(renderer.getByTestId('page-create-post')).toBeTruthy()
+    const renderer = renderApp(<App />, ROUTE_PATHS.createPost)
+    expect(renderer.getByTestId(POST_CREATE_TEST_ID)).toBeTruthy()
   })
 
   // TODO: Change this to when on form submit -> should handle success/error
   it('should allow to fill in form', () => {
-    const renderer = renderApp(<App />, '/posts/new')
+    const renderer = renderApp(<App />, ROUTE_PATHS.createPost)
     const { titleElement, textElement } = fillCreatePostForm(renderer)
     expect(titleElement.value).toEqual(POST.title)
     expect(textElement.value).toEqual(POST.text)
