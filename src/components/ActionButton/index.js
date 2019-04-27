@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Mutation } from 'react-apollo'
 import { Button } from 'ui-react-library'
 
-
 const ActionButton = ({ label, type, ...rest }) => (
   <Mutation {...rest}>
     {(mutate, { loading }) => (

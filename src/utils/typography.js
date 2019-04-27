@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 export const nl2br = str => {
   const newlineRegex = /(\r\n|\r|\n)/gu
 

@@ -5,17 +5,21 @@ import { Query, Mutation } from 'components'
 import { POST_DETAIL, UPDATE_POST } from 'modules/blog/gql'
 import PostForm from 'modules/blog/forms/Post'
 
-
 const { H2 } = Typography
 
-export const PostEditPage = ({ history: { push }, match: { params: { postId } } }) => (
+export const PostEditPage = ({
+  history: { push },
+  match: {
+    params: { postId },
+  },
+}) => (
   <Section>
-    <Query
-      query={POST_DETAIL}
-      variables={{ id: postId }}
-    >
+    <Query query={POST_DETAIL} variables={{ id: postId }}>
       {({ data: { Post } }) => (
-        <Mutation mutation={UPDATE_POST} onCompleted={() => push(`/posts/${postId}`)}>
+        <Mutation
+          mutation={UPDATE_POST}
+          onCompleted={() => push(`/posts/${postId}`)}
+        >
           {mutate => (
             <>
               <H2>Edit Post</H2>

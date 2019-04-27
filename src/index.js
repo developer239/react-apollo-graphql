@@ -7,22 +7,19 @@ import { global, theme } from 'ui-react-library'
 import client from 'apolloClient'
 import App from './app'
 
-
 const GlobalStyle = global()
 
 const render = () => {
   ReactDOM.render(
-    (
-      <ApolloProvider client={client}>
-        <GlobalStyle />
-        <ThemeProvider theme={theme}>
-          <BrowserRouter>
-            <App />
-          </BrowserRouter>
-        </ThemeProvider>
-      </ApolloProvider>
-    ),
-    document.getElementById('root'),
+    <ApolloProvider client={client}>
+      <GlobalStyle />
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ThemeProvider>
+    </ApolloProvider>,
+    document.getElementById('root')
   )
 }
 

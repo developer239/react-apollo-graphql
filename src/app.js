@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { Layout, NavBar } from 'ui-react-library'
 import Routes from './routes'
 
-
 const NAV_LINKS = [
   { id: 1, to: '/', label: 'home', component: Link },
   { id: 2, to: '/counter', label: 'counter', component: Link },
