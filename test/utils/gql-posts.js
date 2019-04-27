@@ -68,15 +68,17 @@ export const fakeAllPostsError = {
 export const fakeCreatePostSuccess = {
   request: {
     query: CREATE_POST,
+    variables: {
+      title: 'Mock Title',
+      text: 'Mock lorem ipsum text. And another paragraph.',
+    },
   },
   result: {
     data: {
       createPost: {
-        id: 1,
+        id: '1',
         title: 'Mock Title',
-        text: `Mock lorem ipsum text.
-      
-      And another paragraph.`,
+        text: 'Mock lorem ipsum text. And another paragraph.',
       },
     },
   },
@@ -85,6 +87,10 @@ export const fakeCreatePostSuccess = {
 export const fakeCreatePostError = {
   request: {
     query: CREATE_POST,
+    variables: {
+      title: 'Mock Title',
+      text: 'Mock lorem ipsum text. And another paragraph.',
+    },
   },
   error: new Error(ERROR_MESSAGE),
 }
