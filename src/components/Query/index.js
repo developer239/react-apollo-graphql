@@ -15,7 +15,7 @@ export const QueryWrapper = ({ children, ...rest }) => (
       }
 
       if (error) {
-        return <Alert isError>`Error! {error.message}`</Alert>
+        return <Alert isError>{error.message}</Alert>
       }
 
       return children({ loading, error, data })
