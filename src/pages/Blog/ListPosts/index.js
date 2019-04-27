@@ -21,7 +21,7 @@ const updatePostCache = (cache, { data: { deletePost } }) => {
 export const ListPostsPage = () => (
   <Section>
     <Margin vertical={3}>
-      <Link to={`/posts/new`}>
+      <Link to="/posts/new">
         <Button>create new post</Button>
       </Link>
     </Margin>

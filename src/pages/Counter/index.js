@@ -20,6 +20,7 @@ const { H2, P, A } = Typography
 
 export const handleDoubleCounterComplete = ({ doubleCounterValueAsync }) => {
   // If you need to work with the counter value when the action is complete:
+  // eslint-disable-next-line
   console.log('new value ', doubleCounterValueAsync.counterValue)
 }
 
@@ -34,7 +35,7 @@ export const CounterPage = () => (
     <Query query={COUNTER_VALUE}>
       {({ data: { counterValue } }) => (
         <P>
-          Counter value is: <strong id="value">{counterValue}</strong>
+          Counter value is: <strong>{counterValue}</strong>
         </P>
       )}
     </Query>

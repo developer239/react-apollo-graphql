@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Section, Typography } from 'ui-react-library'
 import { Mutation } from 'components'
@@ -26,10 +26,10 @@ export const PostCreatePage = ({ history: { push } }) => (
       onCompleted={({ createPost: { id }}) => push(`/posts/${id}`)}
     >
       {mutate => (
-        <Fragment>
+        <>
           <H2>Create New Post</H2>
           <PostForm submit={values => mutate({ variables: values })} />
-        </Fragment>
+        </>
       )}
     </Mutation>
   </Section>
