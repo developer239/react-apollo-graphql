@@ -4,5 +4,10 @@ module.exports = {
   modulePathIgnorePatterns: ['/public', '/.dll-link-plugin', '/test'],
   setupFilesAfterEnv: ['<rootDir>/test/jest.setup.js'],
   verbose: true,
-  collectCoverageFrom: ['src/**/*.js'],
+  collectCoverageFrom: [
+    'src/**/*.js',
+    '!src/index.js',
+    '!src/config.js',
+    '!src/apolloClient.js',
+  ],
 }
