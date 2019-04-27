@@ -1,0 +1,54 @@
+{
+  "extends": [
+    "@strv/eslint-config-react/v16",
+    "@strv/eslint-config-react/optional",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "react-hooks",
+    "cypress"
+  ],
+  "root": true,
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/jsx-boolean-value": "error",
+    "react/jsx-key": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 100
+      }
+    ],
+    "import/newline-after-import": [
+      "error",
+      {
+        "count": 2
+      }
+    ],
+    "no-shadow": [
+      2,
+      {
+        "allow": [
+          "name"
+        ]
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error"
+  }
+}
