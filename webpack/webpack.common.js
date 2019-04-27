@@ -38,12 +38,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
+        test: /\.js$/u,
+        exclude: /node_modules/u,
         loader: 'babel-loader',
       },
       {
-        test: /\.(png|jpg|gif)$/,
+        test: /\.(png|jpg|gif)$/u,
         use: [
           {
             loader: 'file-loader',

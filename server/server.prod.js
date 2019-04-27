@@ -29,5 +29,6 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, (error) => {
   invariant(!error, 'Something failed: ', error)
+  // eslint-disable-next-line
   console.info('Express is listening on PORT %s.', PORT)
 })
