@@ -16,7 +16,7 @@ const vendors = [
   'react',
   'react-apollo',
   'react-dom',
-  'react-router-config',
+  'react-router',
   'react-router-dom',
   'styled-components',
   'yup',
