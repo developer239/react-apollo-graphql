@@ -5,7 +5,6 @@ import { Mutation } from 'components'
 import PostForm from 'modules/blog/forms/Post'
 import { CREATE_POST, ALL_POSTS } from 'modules/blog/gql'
 
-
 const { H2 } = Typography
 
 const updatePostCache = (cache, { data: { createPost } }) => {
@@ -23,7 +22,7 @@ export const PostCreatePage = ({ history: { push } }) => (
     <Mutation
       mutation={CREATE_POST}
       update={updatePostCache}
-      onCompleted={({ createPost: { id }}) => push(`/posts/${id}`)}
+      onCompleted={({ createPost: { id } }) => push(`/posts/${id}`)}
     >
       {mutate => (
         <>

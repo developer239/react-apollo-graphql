@@ -3,12 +3,8 @@ import { HttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { ApolloLink } from 'apollo-link'
 import { withClientState } from 'apollo-link-state'
-import {
-  initialState,
-  mutations,
-} from 'modules/counter/clientState'
+import { initialState, mutations } from 'modules/counter/clientState'
 import { API_URL } from './config'
-
 
 const cache = new InMemoryCache()
 const httpLink = new HttpLink({ uri: API_URL })

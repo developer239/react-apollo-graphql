@@ -4,7 +4,6 @@ import { Button, Input, Textarea, Margin } from 'ui-react-library'
 import { withFormik } from 'formik'
 import * as Yup from 'yup'
 
-
 const PostForm = ({
   values,
   touched,

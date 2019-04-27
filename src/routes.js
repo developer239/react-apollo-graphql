@@ -3,13 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from 'pages/Home'
 import Counter from 'pages/Counter'
 import NotFound from 'pages/NotFound'
-import {
-  ListPosts,
-  PostCreate,
-  PostDetail,
-  PostEdit,
-} from 'pages/Blog'
-
+import { ListPosts, PostCreate, PostDetail, PostEdit } from 'pages/Blog'
 
 const Routes = () => (
   <Switch>
