@@ -15,6 +15,7 @@ const PostForm = ({
   <form onSubmit={handleSubmit}>
     <Input
       id="title"
+      name="title"
       label="Title"
       placeholder="New Post Title"
       value={values.title}
@@ -26,6 +27,7 @@ const PostForm = ({
     <Margin top={2}>
       <Textarea
         id="text"
+        name="text"
         label="Text"
         placeholder="New Post Text"
         value={values.text}
