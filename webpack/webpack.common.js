@@ -4,7 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-
 const DIST_DIR = 'public'
 const SRC_DIR = 'src'
 
@@ -31,7 +30,7 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: path.resolve(__dirname, '..', SRC_DIR, 'static'),
-        to: '.'
+        to: '.',
       },
     ]),
   ],
@@ -61,10 +60,6 @@ module.exports = {
       'styled-components': path.resolve('./node_modules/styled-components'),
     },
     extensions: ['.js'],
-    modules: [
-      './node_modules',
-      './src',
-      './__mocks__',
-    ],
+    modules: ['./node_modules', './src'],
   },
 }
