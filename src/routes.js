@@ -1,3 +1,5 @@
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 import Home from 'pages/Home'
 import Counter from 'pages/Counter'
 import NotFound from 'pages/NotFound'
@@ -7,42 +9,17 @@ import {
   PostDetail,
   PostEdit,
 } from 'pages/Blog'
-import App from './app'
 
+const Routes = () => (
+  <Switch>
+    <Route path="/" exact component={Home} />
+    <Route path="/counter" exact component={Counter} />
+    <Route path="/posts/new" exact component={PostCreate} />
+    <Route path="/posts/:postId/edit" exact component={PostEdit} />
+    <Route path="/posts/:postId" exact component={PostDetail} />
+    <Route path="/posts" exact component={ListPosts} />
+    <Route path="*" exact component={NotFound} />
+  </Switch>
+)
 
-export default [
-  {
-    component: App,
-    routes: [
-      {
-        path: '/',
-        exact: true,
-        component: Home,
-      },
-      {
-        path: '/counter',
-        component: Counter,
-      },
-      {
-        path: '/posts/new',
-        component: PostCreate,
-      },
-      {
-        path: '/posts/:postId/edit',
-        component: PostEdit,
-      },
-      {
-        path: '/posts/:postId',
-        component: PostDetail,
-      },
-      {
-        path: '/posts',
-        component: ListPosts,
-      },
-      {
-        path: '*',
-        component: NotFound,
-      },
-    ],
-  },
-]
+export default Routes
