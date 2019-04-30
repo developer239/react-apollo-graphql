@@ -932,19 +932,19 @@
   resolved "https://registry.yarnpkg.com/@sheerun/mutationobserver-shim/-/mutationobserver-shim-0.3.2.tgz#8013f2af54a2b7d735f71560ff360d3a8176a87b"
   integrity sha512-vTCdPp/T/Q3oSqwHmZ5Kpa9oI7iLtGl3RQaA/NyLHikvcrPxACkkKVr/XzkSPJWXHRhKGzVvb0urJsbMlRxi1Q==
 
-"@strv/eslint-config-base@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@strv/eslint-config-base/-/eslint-config-base-1.1.2.tgz#561cba65c81b1e34558b827a0aeb989578c1ee6c"
-  integrity sha512-GSYniIiG5s1bizD/2j2jqxxjqEbAcUXmW+E9lmky0wyRaCc2nkwtqBkQ9In3qt4JHW9+mXSgTqKO3OsrdiB32g==
+"@strv/eslint-config-base@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@strv/eslint-config-base/-/eslint-config-base-1.2.0.tgz#8b409959f91f9170e6144b82895f6e1c1533e4e8"
+  integrity sha512-QAhmMvWJtNG5Gk3gyurPZ5oTBu1DQg8GoHmcOiP70Ayb4tXkhYOnqBO8QWZJNarHS+QgOODWLoGZiKxE+UJXjQ==
   dependencies:
     eslint-plugin-import "^2.14.0"
 
-"@strv/eslint-config-react@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@strv/eslint-config-react/-/eslint-config-react-2.0.1.tgz#87e0bba150017740fea8ca1c3a5a2948a7fa65f6"
-  integrity sha512-Gu1n67anGiV+i9iAKwOAxkqw6tsWgGqoLZDkrwhGkADC56X7/2//DWnUzxL8SqthazASmt0Afd8ytZloeEOadw==
+"@strv/eslint-config-react@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@strv/eslint-config-react/-/eslint-config-react-2.1.0.tgz#7110945f0c5c7aac71a28d8279b83c75db1f0411"
+  integrity sha512-qs7BZlJ/LlI8rh3p1UJYhjK4HItxL/gXH/4jdlwVQ+7Mi/QiXxyyHiurlPeS/CrYn7OBoLH54FBnc7KSk9zN7w==
   dependencies:
-    "@strv/eslint-config-base" "^1.1.2"
+    "@strv/eslint-config-base" "^1.2.0"
     eslint-plugin-jsx-a11y "^6.1.2"
     eslint-plugin-react "^7.11.1"
     eslint-plugin-react-hooks "^1.5.1"
