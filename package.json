@@ -21,7 +21,7 @@
     "apollo-link-http": "1.5.14",
     "apollo-link-state": "0.4.2",
     "compression": "1.7.4",
-    "express": "4.16.4",
+    "express": "4.17.0",
     "formik": "1.5.4",
     "graphql": "14.3.0",
     "graphql-tag": "2.10.1",
