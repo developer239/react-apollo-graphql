@@ -22,7 +22,7 @@
     "apollo-link-state": "0.4.2",
     "compression": "1.7.4",
     "express": "4.16.4",
-    "formik": "1.5.4",
+    "formik": "1.5.5",
     "graphql": "14.3.0",
     "graphql-tag": "2.10.1",
     "invariant": "2.2.4",
