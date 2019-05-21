@@ -40,7 +40,7 @@
     "@babel/node": "7.4.5",
     "@babel/plugin-proposal-object-rest-spread": "7.4.4",
     "@babel/plugin-transform-runtime": "7.4.4",
-    "@babel/preset-env": "7.4.4",
+    "@babel/preset-env": "7.4.5",
     "@babel/preset-react": "7.0.0",
     "@strv/eslint-config-react": "2.1.0",
     "@strv/stylelint-config-styled-components": "1.0.0",
