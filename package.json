@@ -43,7 +43,7 @@
     "@babel/preset-env": "7.4.5",
     "@babel/preset-react": "7.0.0",
     "@strv/eslint-config-react": "2.1.0",
-    "@strv/stylelint-config-styled-components": "1.0.0",
+    "@strv/stylelint-config-styled-components": "1.0.1",
     "babel-eslint": "10.0.1",
     "babel-jest": "24.7.1",
     "babel-loader": "8.0.5",
