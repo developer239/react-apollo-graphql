@@ -973,10 +973,10 @@
   dependencies:
     eslint-plugin-import "^2.14.0"
 
-"@strv/eslint-config-react@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/@strv/eslint-config-react/-/eslint-config-react-2.1.0.tgz#7110945f0c5c7aac71a28d8279b83c75db1f0411"
-  integrity sha512-qs7BZlJ/LlI8rh3p1UJYhjK4HItxL/gXH/4jdlwVQ+7Mi/QiXxyyHiurlPeS/CrYn7OBoLH54FBnc7KSk9zN7w==
+"@strv/eslint-config-react@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@strv/eslint-config-react/-/eslint-config-react-2.1.1.tgz#af4bbfb07503ff8891f2bd0ad44271dba00d3ee3"
+  integrity sha512-yFrV856FWnck0JI4JkWNBMxXEb5IOZUJQXME7AHMJs/OtSoXcVq+s+ZPbqKf6FUd8d65Zl8Qr0ciA+r+qyd+2A==
   dependencies:
     "@strv/eslint-config-base" "^1.2.0"
     eslint-plugin-jsx-a11y "^6.1.2"
