@@ -31,7 +31,7 @@
     "react-dom": "16.8.6",
     "react-router": "5.0.0",
     "react-router-dom": "5.0.0",
-    "styled-components": "4.2.0",
+    "styled-components": "4.2.1",
     "ui-react-library": "1.9.8",
     "yup": "0.27.0"
   },
