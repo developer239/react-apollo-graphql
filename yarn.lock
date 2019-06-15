@@ -5333,10 +5333,10 @@ jest-snapshot@^24.7.1:
     pretty-format "^24.7.0"
     semver "^5.5.0"
 
-jest-styled-components@6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-6.3.1.tgz#fa21a89bfe8c20081c7c083cbaed2200854b60e3"
-  integrity sha512-zie3ajvJbwlbHCAq8/Bv5jdbcYCz0ZMRNNX6adL7wSRpkCVPQtiJigv1140JN1ZOJIODPn8VKrjeFCN+jlPa7w==
+jest-styled-components@6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/jest-styled-components/-/jest-styled-components-6.3.2.tgz#4380b56d242082f376daed312c8b501d1281a04f"
+  integrity sha512-tqXn0rezoJPpdw8l9e7IVqvWgX7KzHDKwIC88L7Bf0scsGPwy2c9AIMxDCNkmfFKPA9WzSgSutTPhhBeiDOFDg==
   dependencies:
     css "^2.2.4"
 
