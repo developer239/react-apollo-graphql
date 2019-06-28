@@ -32,7 +32,7 @@
     "react-router": "5.0.1",
     "react-router-dom": "5.0.1",
     "styled-components": "4.3.2",
-    "ui-react-library": "1.9.11",
+    "ui-react-library": "1.10.0",
     "yup": "0.27.0"
   },
   "devDependencies": {
