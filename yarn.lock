@@ -965,7 +965,7 @@
     pretty-format "^24.8.0"
     wait-for-expect "^1.2.0"
 
-"@testing-library/react@^8.0.4":
+"@testing-library/react@8.0.4":
   version "8.0.4"
   resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-8.0.4.tgz#6ed405ba88b625ec53d7cfa78c038a950bafc1fa"
   integrity sha512-omm4D00Z0aMaWfPRRP4X6zIaOVb0Kf1Yc1H5VE4id9D0pQRiBcTtmjbN0kZgT8rQGxHhVAuv1NuwFwMTwKzFqg==
@@ -8858,10 +8858,10 @@ uglify-js@^3.1.4:
     commander "~2.20.0"
     source-map "~0.6.1"
 
-ui-react-library@1.9.11:
-  version "1.9.11"
-  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.9.11.tgz#96a4262d5d48822b85b6f0f99fe540d6a8941ec6"
-  integrity sha512-e6m+/avdsA4oIXADNiH1rpVxPeyzZI3th5hnmXnqYlMDp+MAlYysOjcY5DphurwEfs1YX04Tg5kpJD5OLWG/Eg==
+ui-react-library@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.10.0.tgz#253e57db85b4d0df8ad739418fb89503f3ddc8a5"
+  integrity sha512-7bXaQ0rr3MZSasPC64siQwk4n08ZEPIacUKql+ldt6Kduy5suJ6ew1yUGTMAOhUg95VVOQkfrLuqk/P5TREs2Q==
   dependencies:
     ramda "0.26.1"
     styled-is "1.3.0"
