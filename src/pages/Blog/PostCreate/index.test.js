@@ -1,5 +1,5 @@
 import React from 'react'
-import { fireEvent } from 'react-testing-library'
+import { fireEvent } from '@testing-library/react'
 import { renderApp } from '../../../../test/utils/render'
 import { fakeCreatePostSuccess } from '../../../../test/utils/gql-posts'
 import App from '../../../app'
