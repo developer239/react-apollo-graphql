@@ -1,20 +1,16 @@
 import { useMutation } from '@apollo/react-hooks'
-import { ListPages } from '../gql/__generated__/ListPages'
 import {
   CreatePage,
+  CreatePage_createPage,
   CreatePageVariables,
 } from '../gql/__generated__/CreatePage'
-import { CREATE_PAGE_MUTATION, LIST_PAGES_QUERY } from '../gql'
+import { CREATE_PAGE_MUTATION } from '../gql'
+import { updateListPages } from '../cache/updateListPages'
 
 export const useCreatePage = () =>
   useMutation<CreatePage, CreatePageVariables>(CREATE_PAGE_MUTATION, {
-    update(cache, { data: { createPage: newPage } }) {
-      const { listPages } = cache.readQuery<ListPages>({
-        query: LIST_PAGES_QUERY,
-      })
-      cache.writeQuery({
-        query: LIST_PAGES_QUERY,
-        data: { listPages: listPages.concat([newPage]) },
-      })
-    },
+    update: updateListPages<CreatePage_createPage>(
+      'createPage',
+      (listPages, createPage) => listPages.concat([createPage])
+    ),
   })
