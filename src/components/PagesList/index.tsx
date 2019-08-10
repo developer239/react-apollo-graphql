@@ -4,6 +4,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { LIST_PAGES_QUERY } from 'modules/blog/gql'
 import { ListPages } from 'modules/blog/gql/__generated__/ListPages'
 import { Loader } from '../Loader'
+import { Empty } from '../Empty'
 import { ErrorComponent } from '../Error'
 
 export const PagesList = React.memo(() => {
@@ -18,7 +19,7 @@ export const PagesList = React.memo(() => {
   }
 
   if (!data.listPages.length) {
-    return <div>there are no pages 😢</div>
+    return <Empty />
   }
 
   return (
