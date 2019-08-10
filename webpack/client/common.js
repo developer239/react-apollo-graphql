@@ -1,14 +1,16 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-
-const DIST_DIR = 'build'
+const {
+  BUILD_DIR,
+  BUILD_DIR_PUBLIC
+} = require('../config')
 
 module.exports = {
   output: {
     publicPath: '/',
     filename: '[name]-[hash].min.js',
-    path: path.resolve(__dirname, '..', '..', DIST_DIR, 'public'),
+    path: path.resolve(__dirname, '..', '..', BUILD_DIR, BUILD_DIR_PUBLIC),
   },
   module: {
     rules: [

@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "nodemon",
+    "tsc": "tsc server/index.ts",
     "build:client": "webpack  --config ./webpack/client/prod.js",
     "build:server": "webpack  --config ./webpack/server/prod.js",
     "build": "npm run build:client && npm run build:server",

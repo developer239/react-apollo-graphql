@@ -6,6 +6,6 @@
     "server",
     "yarn.lock"
   ],
-  "exec": "babel-node --extensions '.ts' ./server/server.dev.ts",
+  "exec": "babel-node --extensions '.ts' ./server/dev.ts",
   "ext": "ts"
 }

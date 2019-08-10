@@ -1,10 +1,11 @@
 const path = require('path')
-
-const DIST_DIR = 'build'
+const {
+  BUILD_DIR,
+} = require('../config')
 
 module.exports = {
   mode: 'production',
-  entry: './server/server.prod.ts',
+  entry: './server/prod.ts',
   target: 'node',
   node: {
     __dirname: false,
@@ -12,10 +13,10 @@ module.exports = {
   output: {
     publicPath: '/',
     filename: 'server.js',
-    path: path.resolve(__dirname, '..', '..', DIST_DIR),
+    path: path.resolve(__dirname, '..', '..', BUILD_DIR),
   },
-  optimization: {
-    minimize: false
+  resolve: {
+    extensions: ['.ts', '.js']
   },
   module: {
     rules: [
