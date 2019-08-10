@@ -25,7 +25,9 @@ export const PagesList = React.memo(() => {
 
   return (
     <Container>
-      {data.listPages.map(page => <PageCard page={page} />)}
+      {data.listPages.map(page => (
+        <PageCard key={page.id} page={page} />
+      ))}
     </Container>
   )
 })

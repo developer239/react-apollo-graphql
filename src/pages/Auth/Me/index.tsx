@@ -29,7 +29,9 @@ export const MePage = () => {
       <Info>
         <strong>Last Name:</strong> {data.me.lastName}
       </Info>
-      <RelevantPagesList title="Your Pages" pages={data.me.pages} />
+      {Boolean(data.me.pages.length) && (
+        <RelevantPagesList title="Your Pages" pages={data.me.pages} />
+      )}
     </>
   )
 }

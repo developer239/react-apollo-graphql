@@ -2,8 +2,9 @@ import React from 'react'
 import { Layout, Menu } from 'antd'
 import { Link } from 'react-router-dom'
 import { useQuery } from '@apollo/react-hooks'
-import { Me } from '../../modules/auth/gql/__generated__/Me'
-import { ME_QUERY } from '../../modules/auth/gql'
+import { Me } from 'modules/auth/gql/__generated__/Me'
+import { ME_QUERY } from 'modules/auth/gql'
+import { StyledMenu } from './styled'
 
 const { Header } = Layout
 
@@ -26,18 +27,13 @@ export const Navigation = () => {
 
   return (
     <Header>
-      <Menu
-        theme="dark"
-        mode="horizontal"
-        defaultSelectedKeys={['1']}
-        style={{ lineHeight: '65px' }}
-      >
+      <StyledMenu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
         {menuItems.map(menuItem => (
           <Menu.Item key={menuItem.id}>
             <Link to={menuItem.to}>{menuItem.label}</Link>
           </Menu.Item>
         ))}
-      </Menu>
+      </StyledMenu>
     </Header>
   )
 }
