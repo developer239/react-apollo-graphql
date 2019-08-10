@@ -8,13 +8,13 @@ Backend is provided by [graphq.cool](https://www.graph.cool/) :heart:
 
 __Uses:__
 
- * [React Apollo](https://github.com/apollographql/react-apollo) 2.0.2
- * [React](https://github.com/facebook/react) 16.0.1
- * [React Router](https://github.com/ReactTraining/react-router) 4.2.2
- * [Recompose](https://github.com/acdlite/recompose) 0.26.0
- * [Redux](https://github.com/reactjs/redux) 3.7.2
- * [Webpack](https://github.com/webpack/webpack) 3.8.1
- * [Styled Components](https://github.com/styled-components/styled-components) 2.2.3
+ * [React Apollo](https://github.com/apollographql/react-apollo) 2.1.6
+ * [React](https://github.com/facebook/react) 16.4.1
+ * [React Router](https://github.com/ReactTraining/react-router) 4.3.1
+ * [Recompose](https://github.com/acdlite/recompose) 0.27.1
+ * [Redux](https://github.com/reactjs/redux) 4.0.0
+ * [Webpack](https://github.com/webpack/webpack) 4.12.0
+ * [Styled Components](https://github.com/styled-components/styled-components) 3.3.3
 
 #### Installing the project
  
