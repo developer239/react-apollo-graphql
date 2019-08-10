@@ -1,11 +1,9 @@
 import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
-import { useMutation } from '@apollo/react-hooks'
 import { auth } from 'services/auth'
 import { browserHistory } from 'appHistory'
-import { REGISTER_MUTATION } from '../../gql'
-import { Register, RegisterVariables } from '../../gql/__generated__/Register'
+import { useRegister } from '../../hooks/useRegister'
 
 const initialValues = {
   email: '',
@@ -27,7 +25,7 @@ const registerSchema = Yup.object().shape({
 })
 
 export const RegisterForm = () => {
-  const [register] = useMutation<Register, RegisterVariables>(REGISTER_MUTATION)
+  const [register] = useRegister()
 
   return (
     <Formik

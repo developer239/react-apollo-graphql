@@ -1,26 +1,17 @@
 import React, { FC } from 'react'
-import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
-import { useMutation, useQuery } from '@apollo/react-hooks'
-import { PAGE_DETAIL_QUERY, UPDATE_PAGE_MUTATION } from 'modules/blog/gql'
 import { RouteComponentProps } from 'react-router'
 import { Loader } from 'components/Loader'
 import { ErrorComponent } from 'components/Error'
-import {
-  UpdatePage,
-  UpdatePageVariables,
-} from 'modules/blog/gql/__generated__/UpdatePage'
-import { PageDetail } from 'modules/blog/gql/__generated__/PageDetail'
+import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
+import { usePageDetail } from 'modules/blog/hooks/usePageDetail'
+import { useUpdatePage } from 'modules/blog/hooks/useUpdatePage'
 
 export const EditPagePage: FC<
   RouteComponentProps<{ pageId: string }>
 > = props => {
   const pageId = Number(props.match.params.pageId)
-  const { data, loading, error } = useQuery<PageDetail>(PAGE_DETAIL_QUERY, {
-    variables: { id: pageId },
-  })
-  const [updatePage] = useMutation<UpdatePage, UpdatePageVariables>(
-    UPDATE_PAGE_MUTATION
-  )
+  const { data, loading, error } = usePageDetail({ pageId })
+  const [updatePage] = useUpdatePage()
 
   if (loading) {
     return <Loader />

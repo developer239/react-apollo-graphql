@@ -1,11 +1,9 @@
 import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
-import { useMutation } from '@apollo/react-hooks'
 import { browserHistory } from 'appHistory'
 import { auth } from 'services/auth'
-import { LOGIN_MUTATION } from '../../gql'
-import { Login, LoginVariables } from '../../gql/__generated__/Login'
+import { useLogin } from '../../hooks/useLogin'
 
 const initialValues = {
   email: 'email@email1.com',
@@ -23,7 +21,7 @@ const registerSchema = Yup.object().shape({
 })
 
 export const LoginForm = () => {
-  const [login] = useMutation<Login, LoginVariables>(LOGIN_MUTATION)
+  const [login] = useLogin()
 
   return (
     <Formik

@@ -1,12 +1,10 @@
 import React from 'react'
-import { useQuery } from '@apollo/react-hooks'
-import { ME_QUERY } from 'modules/auth/gql'
 import { Loader } from 'components/Loader'
 import { ErrorComponent } from 'components/Error'
-import { Me } from 'modules/auth/gql/__generated__/Me'
+import { useMe } from 'modules/auth/hooks/useMe'
 
 export const MePage = () => {
-  const { data, loading, error } = useQuery<Me>(ME_QUERY)
+  const { data, loading, error } = useMe()
 
   if (loading) {
     return <Loader />
