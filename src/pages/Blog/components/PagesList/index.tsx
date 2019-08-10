@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import { useQuery } from '@apollo/react-hooks'
 import { LIST_PAGES_QUERY } from 'modules/blog/gql'
 import { ListPages } from 'modules/blog/gql/__generated__/ListPages'
-import { Loader } from '../Loader'
-import { Empty } from '../Empty'
-import { ErrorComponent } from '../Error'
+import { Loader } from 'components/Loader'
+import { Empty } from 'components/Empty'
+import { ErrorComponent } from 'components/Error'
+import { Card } from './styled'
 
 export const PagesList = React.memo(() => {
   const { data, loading, error } = useQuery<ListPages>(LIST_PAGES_QUERY)
@@ -25,11 +26,10 @@ export const PagesList = React.memo(() => {
   return (
     <>
       {data.listPages.map(page => (
-        <div key={page.id}>
-          <h2>{page.title}</h2>
+        <Card title={page.title} bordered={false}>
           <p>{page.text}</p>
-          <Link to={`/blog/${page.id}`}>read more</Link>
-        </div>
+          <Link to={`/blog/${page.id}`}>Read More</Link>
+        </Card>
       ))}
     </>
   )
