@@ -11,7 +11,7 @@ const About = () => (
     <p>Backend is provided by <a
       href="https://www.graph.cool/" target="_blank"
       rel="noopener noreferrer"
-    >graph.cool</a>.</p>
+    ><strong>graph.cool</strong></a>.</p>
     <ul>
       <li>Hot reloading</li>
       <li><a href="https://github.com/webpack/webpack" target="_blank" rel="noopener noreferrer">Webpack2</a>

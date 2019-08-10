@@ -19,7 +19,9 @@ exports[`component renders 1`] = `
       href="https://www.graph.cool/"
       rel="noopener noreferrer"
       target="_blank">
-      graph.cool
+      <strong>
+        graph.cool
+      </strong>
     </a>
     .
   </p>
