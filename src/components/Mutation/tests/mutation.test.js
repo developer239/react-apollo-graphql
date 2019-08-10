@@ -26,7 +26,6 @@ describe('Mutation Component', () => {
       </Provider>,
     )
     wrapper.find('button').simulate('click')
-    wrapper.update()
     expect(wrapper.find('SpinnerComponent').length).toEqual(1)
   })
 
