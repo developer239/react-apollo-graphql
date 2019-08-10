@@ -2,13 +2,13 @@ const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-const DIST_DIR = 'dist'
+const DIST_DIR = 'build'
 
 module.exports = {
   output: {
     publicPath: '/',
     filename: '[name]-[hash].min.js',
-    path: path.resolve(__dirname, '..', DIST_DIR),
+    path: path.resolve(__dirname, '..', '..', DIST_DIR, 'public'),
   },
   module: {
     rules: [

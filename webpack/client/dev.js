@@ -1,6 +1,6 @@
 const webpack = require('webpack')
 const merge = require('webpack-merge')
-const common = require('./webpack.common')
+const common = require('./common')
 
 const DEV_PORT = 3000
 
@@ -15,7 +15,7 @@ module.exports = merge(common, {
   ],
   devServer: {
     hot: true,
-    contentBase: './dist',
+    contentBase: './build',
     port: DEV_PORT,
   },
 })

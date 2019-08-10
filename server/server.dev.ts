@@ -5,11 +5,11 @@ import invariant from 'invariant'
 import webpackDevMiddleware from 'webpack-dev-middleware'
 import webpackHotMiddleware from 'webpack-hot-middleware'
 
-const webpackDevConfig = require('../webpack/webpack.dev')
+const webpackDevConfig = require('../webpack/client/dev')
 const compiler = webpack(webpackDevConfig)
 
 const PORT = 3000
-const DIST_DIR = path.resolve(__dirname, '..', 'dist')
+const DIST_DIR = path.resolve(__dirname, 'public')
 
 const app = express()
 
