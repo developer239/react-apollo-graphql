@@ -12,6 +12,7 @@ __Uses:__
  * [Recompose](https://github.com/acdlite/recompose) 0.26.0
  * [Redux](https://github.com/reactjs/redux) 3.7.2
  * [Webpack](https://github.com/webpack/webpack) 3.8.1
+ * [Styled Components](https://github.com/styled-components/styled-components) 2.2.3
 
 #### Installing the project
  
