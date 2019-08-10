@@ -1,7 +1,16 @@
+const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
+const DIST_DIR = 'dist'
 
 module.exports = {
   entry: './src/index.tsx',
+  output: {
+    publicPath: '/',
+    filename: '[name]-[hash].min.js',
+    path: path.resolve(__dirname, '..', DIST_DIR),
+  },
   module: {
     rules: [
       {
@@ -27,6 +36,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: DIST_DIR }),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html'
