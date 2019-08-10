@@ -17,7 +17,7 @@ export const handleDoubleCounterComplete = ({ doubleCounterValueAsync }) => {
 }
 
 export const CounterPage = () => (
-  <Section>
+  <Section data-testid="page-counter">
     <H2>Counter Page</H2>
     <P>
       It would make more sense to use react context in this case. However, to

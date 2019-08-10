@@ -5,7 +5,7 @@ import { Section, Typography } from 'ui-react-library'
 const { H2, P, A } = Typography
 
 const HomePage = () => (
-  <Section>
+  <Section data-testid="page-home">
     <H2>React Apollo GraphQl</H2>
     <P>
       The third version of minimal react apollo boilerplate. I was learning

@@ -1,10 +1,10 @@
 import React from 'react'
 import Page from './index'
-import { renderWithRouter } from '../../../test/utils/render'
+import { renderApp } from '../../../test/utils/render'
 
 describe('[page] NotFound', () => {
   it('should render correctly', () => {
-    const renderer = renderWithRouter(<Page />, '/does-not-exist')
-    expect(renderer.container).toBeTruthy()
+    const renderer = renderApp(<Page />, '/does-not-exist')
+    expect(renderer.getByTestId('page-not-found')).toBeTruthy()
   })
 })

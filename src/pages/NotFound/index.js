@@ -5,7 +5,7 @@ import { Section, Typography } from 'ui-react-library'
 const { H2, P } = Typography
 
 const NotFoundPage = () => (
-  <Section>
+  <Section data-testid="page-not-found">
     <H2>Page Not Found :(</H2>
     <P>
       Please go back{' '}
