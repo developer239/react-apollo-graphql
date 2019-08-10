@@ -1,13 +1,10 @@
 {
   "name": "React-Redux-Apollo-GraphQL-Hot-Boilerplate",
-  "version": "1.0.0",
-  "description": "There was no boilerplate that would meet my expectations so I created my own.",
   "author": {
     "name" : "Michal Jarnot",
     "email" : "m.jarnot@yahoo.com"
   },
   "license": "MIT",
-  "main": "webpack.config.js",
   "babel": {
     "presets": [
       "es2015",
