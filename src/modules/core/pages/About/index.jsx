@@ -14,34 +14,36 @@ const About = () => (
     ><strong>graph.cool</strong></a>.</p>
     <ul>
       <li>Hot reloading</li>
-      <li><a href="https://github.com/webpack/webpack" target="_blank" rel="noopener noreferrer">Webpack2</a>
+      <li>
+        <a href="https://github.com/webpack/webpack" target="_blank" rel="noopener noreferrer">Webpack2</a>
       </li>
-      <li><a href="https://github.com/apollographql/react-apollo" target="_blank" rel="noopener noreferrer">React Apollo</a>
+      <li>
+        <a href="https://github.com/apollographql/react-apollo" target="_blank" rel="noopener noreferrer">React Apollo</a>
       </li>
-      <li><a href="https://github.com/facebook/react" target="_blank" rel="noopener noreferrer">React</a>
+      <li>
+        <a href="https://github.com/facebook/react" target="_blank" rel="noopener noreferrer">React</a>
       </li>
-      <li><a href="https://github.com/rackt/react-router" target="_blank" rel="noopener noreferrer">React
-        Router</a></li>
-      <li><a
-        href="https://github.com/rackt/redux" target="_blank"
-        rel="noopener noreferrer"
-      >Redux</a></li>
-      <li><a
-        href="https://github.com/reactjs/react-router-redux" target="_blank"
-        rel="noopener noreferrer"
-      >React Router Redux</a></li>
-      <li><a href="https://github.com/erikras/redux-form" target="_blank" rel="noopener noreferrer">Redux-form</a>
+      <li>
+        <a href="https://github.com/rackt/react-router" target="_blank" rel="noopener noreferrer">React Router</a>
       </li>
-      <li><a
-        href="https://github.com/facebook/jest" target="_blank"
-        rel="noopener noreferrer"
-      >Jest</a></li>
-      <li><a href="https://github.com/airbnb/enzyme" target="_blank" rel="noopener noreferrer">Enzyme</a>
+      <li>
+        <a href="https://github.com/rackt/redux" target="_blank" rel="noopener noreferrer">Redux</a>
       </li>
-      <li><a
-        href="https://github.com/gaearon/redux-devtools" target="_blank"
-        rel="noopener noreferrer"
-      >Redux Dev Tools</a></li>
+      <li>
+        <a href="https://github.com/reactjs/react-router-redux" target="_blank" rel="noopener noreferrer">React Router Redux</a>
+      </li>
+      <li>
+        <a href="https://github.com/erikras/redux-form" target="_blank" rel="noopener noreferrer">Redux-form</a>
+      </li>
+      <li>
+        <a href="https://github.com/facebook/jest" target="_blank" rel="noopener noreferrer">Jest</a>
+      </li>
+      <li>
+        <a href="https://github.com/airbnb/enzyme" target="_blank" rel="noopener noreferrer">Enzyme</a>
+      </li>
+      <li>
+        <a href="https://github.com/gaearon/redux-devtools" target="_blank" rel="noopener noreferrer">Redux Dev Tools</a>
+      </li>
     </ul>
     <h1>Installation</h1>
     <code className={styles.code_block}>npm run install</code>
@@ -55,15 +57,9 @@ const About = () => (
     <code className={styles.code_block}>npm run test</code>
     <h1>To do</h1>
     <span className={styles.todo_item}>
-      <input type="checkbox" disabled /> Add support for continuous integration with <a
-        href="https://github.com/jenkinsci"
-        target="_blank"
-        rel="noopener noreferrer"
-      >jenkins</a> or <a
-        href="https://github.com/travis-ci/travis-ci"
-        target="_blank"
-        rel="noopener noreferrer"
-      >travis</a>
+      <input type="checkbox" disabled /> Add support for continuous integration with
+      <a href="https://github.com/jenkinsci" target="_blank" rel="noopener noreferrer"> jenkins </a>
+      or <a href="https://github.com/travis-ci/travis-ci" target="_blank" rel="noopener noreferrer">travis</a>
     </span>
     <span className={styles.todo_item}>
       <input type="checkbox" disabled /> Add
@@ -82,16 +78,12 @@ const About = () => (
       > immutable</a>
     </span>
     <span className={styles.todo_item}>
-      <input type="checkbox" disabled /> Create separate branch with <a
-        href="https://github.com/facebook/flow" target="_blank" rel="noopener noreferrer"
-      >flow</a>
+      <input type="checkbox" disabled /> Create separate branch with
+      <a href="https://github.com/facebook/flow" target="_blank" rel="noopener noreferrer"> flow</a>
     </span>
     <span className={styles.todo_item}>
-      <input type="checkbox" disabled /> Add <a
-        href="https://github.com/stylelint/stylelint"
-        target="_blank"
-        rel="noopener noreferrer"
-      >stylelint</a>
+      <input type="checkbox" disabled /> Add
+      <a href="https://github.com/stylelint/stylelint" target="_blank" rel="noopener noreferrer"> stylelint</a>
     </span>
     <span className={styles.todo_item}>
       <input type="checkbox" disabled /> Add form validation
