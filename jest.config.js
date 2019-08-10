@@ -9,4 +9,7 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
   ],
+  moduleNameMapper: {
+    '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.ts',
+  },
 }
