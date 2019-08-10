@@ -1,0 +1,44 @@
+import path from 'path'
+import express from 'express'
+import webpack from 'webpack'
+import invariant from 'invariant'
+import webpackDevMiddleware from 'webpack-dev-middleware'
+import webpackHotMiddleware from 'webpack-hot-middleware'
+import webpackDevConfig from '../webpack/webpack.dev.babel'
+
+
+const PORT = 3000
+const DIST_DIR = path.resolve(__dirname, '..', 'public')
+
+const app = express()
+
+const compiler = webpack(webpackDevConfig)
+app.use(webpackDevMiddleware(compiler, { publicPath: webpackDevConfig.output.publicPath }))
+app.use(webpackHotMiddleware(compiler, { log: false }))
+
+// Serve static files from /public directory
+app.use(express.static(DIST_DIR))
+
+// Create route for static vendors.js file
+app.get('/vendor/vendors.js', (req, res) => {
+  res.sendFile(`${DIST_DIR}/vendor/vendors.js`)
+})
+
+// This is kind of a History Api Fallback
+app.use('*', (req, res, next) => {
+  const filename = path.join(compiler.outputPath, 'index.html')
+  // eslint-disable-next-line
+  compiler.outputFileSystem.readFile(filename, (err, result) => {
+    if (err) {
+      return next(err)
+    }
+    res.set('content-type', 'text/html')
+    res.send(result)
+    res.end()
+  })
+})
+
+app.listen(PORT, (error) => {
+  invariant(!error, 'aaa')
+  console.info('Express is listening on PORT %s.', PORT)
+})
