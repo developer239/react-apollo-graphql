@@ -1,5 +1,6 @@
 import { mediaQueries } from './styles'
 
+
 describe('Styles', () => {
   it('mediaQueries', () => {
     expect(mediaQueries).toEqual({

@@ -1,16 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Mutation } from 'react-apollo'
-import Button from 'components/Button'
+import { Button } from 'ui-react-library'
 
 
-const ActionButton = ({ mutation, variables, update, label, btnBgType, onCompleted }) => (
-  <Mutation mutation={mutation} variables={variables} update={update} onCompleted={onCompleted}>
+const ActionButton = ({ label, type, ...rest }) => (
+  <Mutation {...rest}>
     {(mutate, { loading }) => (
       <Button
         disabled={loading}
         onClick={mutate}
-        bgType={btnBgType}
+        isLoading={loading}
+        type={type}
       >
         {loading ? '...' : label}
       </Button>
@@ -19,19 +20,12 @@ const ActionButton = ({ mutation, variables, update, label, btnBgType, onComplet
 )
 
 ActionButton.defaultProps = {
-  onCompleted: null,
-  update: null,
-  variables: null,
-  btnBgType: null,
+  type: null,
 }
 
 ActionButton.propTypes = {
-  mutation: PropTypes.object.isRequired,
   label: PropTypes.string.isRequired,
-  btnBgType: PropTypes.string,
-  variables: PropTypes.object,
-  update: PropTypes.func,
-  onCompleted: PropTypes.func,
+  type: PropTypes.string,
 }
 
 export default ActionButton

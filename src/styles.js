@@ -38,17 +38,11 @@ const createGlobalStyles = () => createGlobalStyle`
   body,
   #__next {
     height: 100%;
+    font-size: 62.5%; 
   }
   
   body {
     min-width: 326px;
-  }
-  body,
-  textarea,
-  input,
-  button,
-  label {
-    font-family: 'Open Sans', sans-serif;
   }
 `
 

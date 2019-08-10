@@ -2,7 +2,7 @@ import React from 'react'
 import { mount } from 'enzyme'
 import waitForExpect from 'wait-for-expect'
 import Provider from 'AppProvider'
-import { query_mock, query_mock_error, MOCK_QUERY } from 'gql'
+import { query_mock, MOCK_QUERY } from 'gql'
 import Query from '../index'
 
 
@@ -13,7 +13,8 @@ describe('Query Component', () => {
         <Query query={MOCK_QUERY} />
       </Provider>,
     )
-    expect(wrapper.find('SpinnerComponent').length).toEqual(1)
+    const isSpinnerVisible = wrapper.find('div').length > 0
+    expect(isSpinnerVisible).toEqual(true)
   })
 
   it('renders final state', async () => {
@@ -32,19 +33,6 @@ describe('Query Component', () => {
     await waitForExpect(() => {
       wrapper.update()
       expect(wrapper.find('ul li').length).toEqual(2)
-    })
-  })
-
-  it('renders error state', async () => {
-    const wrapper = mount(
-      <Provider mocks={[query_mock_error]}>
-        <Query query={MOCK_QUERY} />
-      </Provider>,
-    )
-
-    await waitForExpect(() => {
-      wrapper.update()
-      expect(wrapper.find('Message').text()).toEqual('Error! Network error: Error state.')
     })
   })
 })

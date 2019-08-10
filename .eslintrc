@@ -12,6 +12,7 @@
     }
   },
   "rules": {
+    "require-unicode-regexp": 0,
     "react/jsx-boolean-value": "error",
     "max-classes-per-file": 0,
     "import/no-named-as-default": 0,
