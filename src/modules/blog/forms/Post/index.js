@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { compose } from 'recompose'
 import { withFormik } from 'formik'
 import * as Yup from 'yup'
 import { Input, TextArea } from 'components/InputTypes'
@@ -49,26 +48,24 @@ PostForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
 }
 
-const EnhancedForm = compose(
-  withFormik({
-    mapPropsToValues: props => {
-      if (!props.initialValues) {
-        return { title: '', text: '' }
-      }
-      return { title: props.initialValues.title, text: props.initialValues.text }
-    },
-    validationSchema: Yup.object().shape({
-      title: Yup.string().required('Title is required'),
-      text: Yup.string().required('Text is required'),
-    }),
-    handleSubmit: (values, other) => {
-      other.props.submit({
-        ...values,
-        id: other.props.initialValues && other.props.initialValues.id,
-      })
-    },
-    displayName: 'PostForm',
+const EnhancedForm = withFormik({
+  mapPropsToValues: props => {
+    if (!props.initialValues) {
+      return { title: '', text: '' }
+    }
+    return { title: props.initialValues.title, text: props.initialValues.text }
+  },
+  validationSchema: Yup.object().shape({
+    title: Yup.string().required('Title is required'),
+    text: Yup.string().required('Text is required'),
   }),
-)(PostForm)
+  handleSubmit: (values, other) => {
+    other.props.submit({
+      ...values,
+      id: other.props.initialValues && other.props.initialValues.id,
+    })
+  },
+  displayName: 'PostForm',
+})(PostForm)
 
 export default EnhancedForm

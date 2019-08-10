@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 import { theme } from 'styles'
 import 'jsdom-global/register'
 import 'jest-styled-components'
-import { H1, H2, H3, P, HR, StyledA, A } from '../index'
+import { H1, H2, H3, P, HR, A } from '../index'
 
 
 describe('Typography Components', () => {
@@ -38,13 +38,6 @@ describe('Typography Components', () => {
   it('HR has correct default styles', () => {
     const wrapper = mount(
       <HR theme={theme} />,
-    )
-    expect(wrapper).toMatchSnapshot()
-  })
-
-  it('StyledA has correct default styles', () => {
-    const wrapper = mount(
-      <StyledA theme={theme} />,
     )
     expect(wrapper).toMatchSnapshot()
   })

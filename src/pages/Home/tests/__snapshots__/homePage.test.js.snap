@@ -10,11 +10,11 @@ exports[`HomPage Component renders correctly 1`] = `
   </styled.p>
   <styled.p>
     Link to github repository
-    <withProps(styled.a)
+    <styled.a
       href="https://github.com/developer239/react-redux-apollo-graphql"
     >
        is here
-    </withProps(styled.a)>
+    </styled.a>
     .
   </styled.p>
 </section>
