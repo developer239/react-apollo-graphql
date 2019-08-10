@@ -1,9 +1,10 @@
 import React from 'react'
+import { Typography } from 'antd'
 import { PagesList } from 'components/PagesList'
 
 export const HomePage = () => (
-  <div>
-    <h1>All Pages</h1>
+  <>
+    <Typography.Title>All Pages</Typography.Title>
     <PagesList />
-  </div>
+  </>
 )
