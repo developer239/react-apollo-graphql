@@ -32,6 +32,6 @@ app.get('*', (req, res) => {
 })
 
 app.listen(PORT, (error) => {
-  invariant(!error, error)
+  invariant(!error, 'Something failed: ', error)
   console.info('Express is listening on PORT %s.', PORT)
 })
