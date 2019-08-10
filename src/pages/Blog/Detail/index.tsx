@@ -5,7 +5,7 @@ import { message, Modal } from 'antd'
 import { Link } from 'react-router-dom'
 import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
-import { ErrorComponent } from 'components/Error'
+import { ErrorAlert } from 'components/ErrorAlert'
 import { Button } from 'components/Button'
 import { useMe } from 'modules/auth/hooks/useMe'
 import { useDeletePage } from 'modules/blog/hooks/useDeletePage'
@@ -24,7 +24,7 @@ export const DetailPage: FC<
   const [deletePage, { loading: isDeleting }] = useDeletePage()
 
   if (loadingError) {
-    return <ErrorComponent>{loadingError.message}</ErrorComponent>
+    return <ErrorAlert>{loadingError.message}</ErrorAlert>
   }
 
   if (loading || isLoadingUser) {

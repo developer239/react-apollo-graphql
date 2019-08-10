@@ -1,7 +1,7 @@
 import React from 'react'
 import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
-import { ErrorComponent } from 'components/Error'
+import { ErrorAlert } from 'components/ErrorAlert'
 import { useMe } from 'modules/auth/hooks/useMe'
 import { RelevantPagesList } from 'modules/blog/components/RelevantPagesList'
 import { Info } from './styled'
@@ -14,7 +14,7 @@ export const MePage = () => {
   }
 
   if (error) {
-    return <ErrorComponent>{error.message}</ErrorComponent>
+    return <ErrorAlert>{error.message}</ErrorAlert>
   }
 
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Formik, Form } from 'formik'
 import { message } from 'antd'
+import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { auth } from 'services/auth'
 import { browserHistory } from 'appHistory'

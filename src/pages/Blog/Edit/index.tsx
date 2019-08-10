@@ -4,7 +4,7 @@ import { FormikActions } from 'formik'
 import { message } from 'antd'
 import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
-import { ErrorComponent } from 'components/Error'
+import { ErrorAlert } from 'components/ErrorAlert'
 import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { usePageDetail } from 'modules/blog/hooks/usePageDetail'
 import { useUpdatePage } from 'modules/blog/hooks/useUpdatePage'
@@ -17,7 +17,7 @@ export const EditPagePage: FC<
   const [updatePage] = useUpdatePage()
 
   if (loadingError) {
-    return <ErrorComponent>{loadingError.message}</ErrorComponent>
+    return <ErrorAlert>{loadingError.message}</ErrorAlert>
   }
 
   if (loading) {

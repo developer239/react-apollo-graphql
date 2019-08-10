@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
-import { Container, PagesContainer } from './styled'
 import { H3 } from 'components/Typography/H3'
-import { ListPages_listPages } from '../../gql/__generated__/ListPages'
+import { Container, PagesContainer } from './styled'
 import { PageCard } from '../PageCard'
+import { ListPages_listPages } from '../../gql/__generated__/ListPages'
 import { PageDetail_pageDetail_user } from '../../gql/__generated__/PageDetail'
 
 interface IProps {
