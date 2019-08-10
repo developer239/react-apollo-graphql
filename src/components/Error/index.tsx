@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
+import { Alert } from './styled'
 
 export const ErrorComponent: FC = ({ children }) => (
-  <div>{children || 'something went wrong'}</div>
+  <Alert message={children || 'something went wrong'} type="error" />
 )

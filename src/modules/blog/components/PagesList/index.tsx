@@ -12,7 +12,7 @@ export const PagesList = React.memo(() => {
   const { data, loading, error } = useQuery<ListPages>(LIST_PAGES_QUERY)
 
   if (error) {
-    return <ErrorComponent />
+    return <ErrorComponent>{error.message}</ErrorComponent>
   }
 
   if (loading) {

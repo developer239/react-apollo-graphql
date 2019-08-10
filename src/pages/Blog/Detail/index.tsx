@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { RouteComponentProps } from 'react-router'
+import { message } from 'antd'
 import { Link } from 'react-router-dom'
 import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
@@ -15,16 +16,16 @@ export const DetailPage: FC<
   RouteComponentProps<{ pageId: string }>
 > = props => {
   const pageId = Number(props.match.params.pageId)
-  const { data, loading, error } = usePageDetail({ pageId })
+  const { data, loading, error: loadingError } = usePageDetail({ pageId })
   const { data: userData, loading: isLoadingUser } = useMe()
   const [deletePage, { loading: isDeleting }] = useDeletePage()
 
-  if (loading || isLoadingUser) {
-    return <Loader />
+  if (loadingError) {
+    return <ErrorComponent>{loadingError.message}</ErrorComponent>
   }
 
-  if (error) {
-    return <ErrorComponent>{error.message}</ErrorComponent>
+  if (loading || isLoadingUser) {
+    return <Loader />
   }
 
   const morePages = data.pageDetail.user.pages.filter(
@@ -32,8 +33,12 @@ export const DetailPage: FC<
   )
 
   const handleDeletePage = async () => {
-    await deletePage({ variables: { id: Number(data.pageDetail.id) } })
-    props.history.push('/')
+    try {
+      await deletePage({ variables: { id: Number(data.pageDetail.id) } })
+      props.history.push('/')
+    } catch (error) {
+      message.error(error.message)
+    }
   }
 
   return (

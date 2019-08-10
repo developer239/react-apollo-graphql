@@ -1,5 +1,6 @@
 import React from 'react'
 import { Formik, Form } from 'formik'
+import { message } from 'antd'
 import * as Yup from 'yup'
 import { auth } from 'services/auth'
 import { browserHistory } from 'appHistory'
@@ -33,11 +34,16 @@ export const RegisterForm = () => {
     <Formik
       initialValues={initialValues}
       validationSchema={registerSchema}
-      onSubmit={async values => {
-        const result = await register({ variables: { data: values } })
-        if (result) {
-          auth.setAccessToken(result.data.register.accessToken)
-          browserHistory.push('/me')
+      onSubmit={async (values, { setSubmitting }) => {
+        try {
+          const result = await register({ variables: { data: values } })
+          if (result) {
+            auth.setAccessToken(result.data.register.accessToken)
+            browserHistory.push('/me')
+          }
+        } catch (error) {
+          setSubmitting(false)
+          message.error(error.message)
         }
       }}
     >

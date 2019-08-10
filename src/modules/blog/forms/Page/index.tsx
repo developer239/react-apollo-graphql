@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { Formik, Form } from 'formik'
+import { Formik, Form, FormikActions } from 'formik'
 import * as Yup from 'yup'
 import { TextInput } from 'components/TextInput'
 import { Textarea } from 'components/Textarea'
@@ -23,7 +23,10 @@ export interface IPageFormValues {
 
 export interface IProps {
   initialValues?: IPageFormValues
-  handleSubmit: (values: IPageFormValues) => Promise<void>
+  handleSubmit: (
+    values: IPageFormValues,
+    actions?: FormikActions<IPageFormValues>
+  ) => Promise<void>
 }
 
 export const PageForm: FC<IProps> = props => (
