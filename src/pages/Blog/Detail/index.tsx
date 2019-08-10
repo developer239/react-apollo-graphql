@@ -5,21 +5,21 @@ import {
   DELETE_PAGE_MUTATION,
   LIST_PAGES_QUERY,
   PAGE_DETAIL_QUERY,
-} from '../../../modules/blog/gql'
+} from 'modules/blog/gql'
 import {
   PageDetail,
   PageDetailVariables,
-} from '../../../modules/blog/gql/__generated__/PageDetail'
-import { Loader } from '../../../components/Loader'
-import { ErrorComponent } from '../../../components/Error'
-import { Me } from '../../../modules/auth/gql/__generated__/Me'
-import { ME_QUERY } from '../../../modules/auth/gql'
+} from 'modules/blog/gql/__generated__/PageDetail'
+import { Loader } from 'components/Loader'
+import { ErrorComponent } from 'components/Error'
+import { Me } from 'modules/auth/gql/__generated__/Me'
+import { ME_QUERY } from 'modules/auth/gql'
 import { Link } from 'react-router-dom'
 import {
   DeletePage,
   DeletePageVariables,
-} from '../../../modules/blog/gql/__generated__/DeletePage'
-import { ListPages } from '../../../modules/blog/gql/__generated__/ListPages'
+} from 'modules/blog/gql/__generated__/DeletePage'
+import { ListPages } from 'modules/blog/gql/__generated__/ListPages'
 
 export const DetailPage: FC<
   RouteComponentProps<{ pageId: string }>

@@ -16,7 +16,8 @@ module.exports = {
     path: path.resolve(__dirname, '..', '..', BUILD_DIR),
   },
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
+    modules: ['./node_modules', './src'],
   },
   module: {
     rules: [
@@ -24,9 +25,9 @@ module.exports = {
         test: /\.(ts)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
-    ]
+    ],
   },
 }

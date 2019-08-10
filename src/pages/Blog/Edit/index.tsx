@@ -1,18 +1,15 @@
 import React, { FC } from 'react'
-import { IPageFormValues, PageForm } from '../../../modules/blog/forms/Page'
+import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { useMutation, useQuery } from '@apollo/react-hooks'
-import {
-  PAGE_DETAIL_QUERY,
-  UPDATE_PAGE_MUTATION,
-} from '../../../modules/blog/gql'
+import { PAGE_DETAIL_QUERY, UPDATE_PAGE_MUTATION } from 'modules/blog/gql'
 import { RouteComponentProps } from 'react-router'
-import { Loader } from '../../../components/Loader'
-import { ErrorComponent } from '../../../components/Error'
+import { Loader } from 'components/Loader'
+import { ErrorComponent } from 'components/Error'
 import {
   UpdatePage,
   UpdatePageVariables,
-} from '../../../modules/blog/gql/__generated__/UpdatePage'
-import { PageDetail } from '../../../modules/blog/gql/__generated__/PageDetail'
+} from 'modules/blog/gql/__generated__/UpdatePage'
+import { PageDetail } from 'modules/blog/gql/__generated__/PageDetail'
 
 export const EditPagePage: FC<
   RouteComponentProps<{ pageId: string }>

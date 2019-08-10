@@ -1,9 +1,9 @@
 import React from 'react'
-import { useQuery } from '@apollo/react-hooks'
-import { Me } from '../../modules/auth/gql/__generated__/Me'
-import { ME_QUERY } from '../../modules/auth/gql'
-import { Loader } from '../Loader'
 import { Link } from 'react-router-dom'
+import { useQuery } from '@apollo/react-hooks'
+import { Me } from 'modules/auth/gql/__generated__/Me'
+import { ME_QUERY } from 'modules/auth/gql'
+import { Loader } from '../Loader'
 
 export const AuthButtons = () => {
   const { data, loading } = useQuery<Me>(ME_QUERY)

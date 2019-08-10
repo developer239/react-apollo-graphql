@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useApolloClient } from '@apollo/react-hooks'
-import { auth } from '../../../services/auth'
+import { auth } from 'services/auth'
 
 export const LogoutPage = (): null => {
   const client = useApolloClient()

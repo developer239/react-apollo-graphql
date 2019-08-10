@@ -13,7 +13,8 @@ module.exports = {
     path: path.resolve(__dirname, '..', '..', BUILD_DIR, BUILD_DIR_PUBLIC),
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js'],
+    modules: ['./node_modules', './src'],
   },
   module: {
     rules: [

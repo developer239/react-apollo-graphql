@@ -1,14 +1,14 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { HomePage } from './pages/Home'
-import { RegisterPage } from './pages/Auth/Register'
-import { MePage } from './pages/Auth/Me'
-import { NotFoundPage } from './pages/NotFound'
-import { LoginPage } from './pages/Auth/Login'
-import { LogoutPage } from './pages/Auth/Logout'
-import { CreatePagePage } from './pages/Blog/Create'
-import { EditPagePage } from './pages/Blog/Edit'
-import { DetailPage } from './pages/Blog/Detail'
+import { HomePage } from 'pages/Home'
+import { RegisterPage } from 'pages/Auth/Register'
+import { MePage } from 'pages/Auth/Me'
+import { NotFoundPage } from 'pages/NotFound'
+import { LoginPage } from 'pages/Auth/Login'
+import { LogoutPage } from 'pages/Auth/Logout'
+import { CreatePagePage } from 'pages/Blog/Create'
+import { EditPagePage } from 'pages/Blog/Edit'
+import { DetailPage } from 'pages/Blog/Detail'
 
 export const ROUTE_PATHS = {
   home: '/',

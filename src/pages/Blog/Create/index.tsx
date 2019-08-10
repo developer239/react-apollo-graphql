@@ -1,16 +1,13 @@
 import React, { FC } from 'react'
-import { IPageFormValues, PageForm } from '../../../modules/blog/forms/Page'
+import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { useMutation } from '@apollo/react-hooks'
-import {
-  CREATE_PAGE_MUTATION,
-  LIST_PAGES_QUERY,
-} from '../../../modules/blog/gql'
+import { CREATE_PAGE_MUTATION, LIST_PAGES_QUERY } from 'modules/blog/gql'
 import {
   CreatePage,
   CreatePageVariables,
-} from '../../../modules/blog/gql/__generated__/CreatePage'
+} from 'modules/blog/gql/__generated__/CreatePage'
 import { RouteComponentProps } from 'react-router'
-import { ListPages } from '../../../modules/blog/gql/__generated__/ListPages'
+import { ListPages } from 'modules/blog/gql/__generated__/ListPages'
 
 export const CreatePagePage: FC<RouteComponentProps> = props => {
   const [createPage] = useMutation<CreatePage, CreatePageVariables>(

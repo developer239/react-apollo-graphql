@@ -2,9 +2,9 @@ import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { useMutation } from '@apollo/react-hooks'
+import { auth } from 'services/auth'
+import { browserHistory } from 'index'
 import { LOGIN_MUTATION } from '../../gql'
-import { auth } from '../../../../services/auth'
-import { browserHistory } from '../../../../index'
 import { Login, LoginVariables } from '../../gql/__generated__/Login'
 
 const initialValues = {

@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom'
 import { Router } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { ApolloProvider } from '@apollo/react-hooks'
-import { App } from './app'
-import { apolloClient } from './apolloClient'
+import { App } from 'app'
+import { apolloClient } from 'apolloClient'
 
 export const browserHistory = createBrowserHistory()
 
