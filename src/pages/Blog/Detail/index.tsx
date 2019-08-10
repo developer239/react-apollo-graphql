@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { RouteComponentProps } from 'react-router'
-import { message } from 'antd'
+import { message, Modal } from 'antd'
 import { Link } from 'react-router-dom'
 import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
@@ -11,6 +11,8 @@ import { useDeletePage } from 'modules/blog/hooks/useDeletePage'
 import { usePageDetail } from 'modules/blog/hooks/usePageDetail'
 import { RelevantPagesList } from 'modules/blog/components/RelevantPagesList'
 import { DetailContainer, ControlButtonsContainer } from './styled'
+
+const { confirm: antConfirm } = Modal
 
 export const DetailPage: FC<
   RouteComponentProps<{ pageId: string }>
@@ -32,13 +34,21 @@ export const DetailPage: FC<
     page => page.id !== String(pageId)
   )
 
-  const handleDeletePage = async () => {
-    try {
-      await deletePage({ variables: { id: Number(data.pageDetail.id) } })
-      props.history.push('/')
-    } catch (error) {
-      message.error(error.message)
-    }
+  const handleDeletePage = () => {
+    antConfirm({
+      title: 'Are you sure delete this page?',
+      okText: 'Yes',
+      okType: 'danger',
+      cancelText: 'No',
+      onOk: async () => {
+        try {
+          await deletePage({ variables: { id: Number(data.pageDetail.id) } })
+          props.history.push('/')
+        } catch (error) {
+          message.error(error.message)
+        }
+      },
+    })
   }
 
   return (
