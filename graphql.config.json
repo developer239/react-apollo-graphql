@@ -1,0 +1,15 @@
+{
+  "schema": {
+    "request": {
+      "url" : "https://api.graph.cool/simple/v1/ciwqxsma42cvh0125th9cn6q2",
+      "method" : "POST",
+      "postIntrospectionQuery" : true
+    }
+  },
+  "endpoints" : [
+    {
+      "name": "Default",
+      "url": "https://api.graph.cool/simple/v1/ciwqxsma42cvh0125th9cn6q2"
+    }
+  ]
+}
