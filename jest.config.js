@@ -13,7 +13,7 @@ module.exports = {
     '/node_modules',
     '/release-builds',
   ],
-  setupTestFrameworkScriptFile: '<rootDir>/jest.setup.js',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   verbose: true,
   snapshotSerializers: [
     'enzyme-to-json/serializer',
