@@ -5,14 +5,10 @@ export const Navigation = () => (
   <div>
     <ul>
       <li>
-        <Link to="/">
-          Home
-        </Link>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <Link to="/about">
-          About
-        </Link>
+        <Link to="/register">Register</Link>
       </li>
     </ul>
   </div>

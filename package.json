@@ -26,6 +26,7 @@
     "apollo-boost": "^0.4.3",
     "compression": "^1.7.4",
     "express": "^4.17.1",
+    "formik": "^1.5.8",
     "graphql": "^14.4.2",
     "invariant": "^2.2.4",
     "react": "^16.8.6",
@@ -33,7 +34,8 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "styled-components": "^4.3.2",
-    "webpack-dev-middleware": "^3.7.0"
+    "webpack-dev-middleware": "^3.7.0",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -62,6 +64,7 @@
     "@types/webpack-env": "^1.14.0",
     "@types/webpack-hot-middleware": "^2.16.5",
     "@types/webpack-merge": "^4.1.5",
+    "@types/yup": "^0.26.22",
     "@typescript-eslint/parser": "^1.13.0",
     "apollo": "^2.17.2",
     "babel-loader": "^8.0.6",
