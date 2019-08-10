@@ -6,6 +6,7 @@ module.exports = (env) => {
   const nodeEnv = env && env.prod ? 'production' : 'develop'
   const isProd = nodeEnv === 'production'
 
+  let entry = []
   const plugins = [
     new webpack.DefinePlugin({
       'process.env': {
@@ -13,10 +14,12 @@ module.exports = (env) => {
       },
     }),
     new webpack.NamedModulesPlugin(),
-  ];
+  ]
 
-  let entry = [];
   if (isProd) {
+    entry = [
+      './index.jsx',
+    ]
     plugins.push(
       new webpack.LoaderOptionsPlugin({
         minimize: true,
@@ -39,20 +42,17 @@ module.exports = (env) => {
           comments: false,
         },
       })
-    );
-    entry = [
-      './index.jsx',
-    ];
-  } else {
-    plugins.push(
-      new webpack.HotModuleReplacementPlugin()
     )
+  } else {
     entry = [
       'react-hot-loader/patch',
       'webpack-dev-server/client?http://localhost:8080',
       'webpack/hot/only-dev-server',
       './index.jsx',
-    ];
+    ]
+    plugins.push(
+      new webpack.HotModuleReplacementPlugin()
+    )
   }
 
   return {
@@ -151,5 +151,5 @@ module.exports = (env) => {
         },
       },
     },
-  };
+  }
 }
