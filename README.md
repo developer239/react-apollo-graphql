@@ -19,8 +19,9 @@
  * [Styled Components](https://github.com/styled-components/styled-components) 3.3.3
  * [Formik](https://github.com/jaredpalmer/formik) 1.0.2
  * [Yup](https://github.com/jquense/yup) 0.26.0
- * [Recompose](https://github.com/acdlite/recompose) 0.27.1
- * [Webpack](https://github.com/webpack/webpack) 4.16.3  
+ * [Recompose](https://github.com/acdlite/recompose) 0.30.0
+ * [Webpack](https://github.com/webpack/webpack) 4.17.1
+ * [Babel](https://github.com/babel/babel) 7.0.0
 
 #### Code Quality Tools
 
