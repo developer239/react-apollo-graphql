@@ -12,27 +12,11 @@
 
  You can try the application [here](https://react-apollo-graphql.herokuapp.com) (it might take a while before the free server wakes up)
 
+#### Custom UI Library 📚
 
-#### Main Dependencies
+I was slowly getting lost in all of my side projects. Every time I wanted to learn something new I had to spend a lot of time on a basic UI for my application. So I decided to create my own components library.
 
- * [React](https://github.com/facebook/react)
- * [React Router](https://github.com/ReactTraining/react-router)
- * [Apollo](https://github.com/apollographql/react-apollo)
- * [Styled Components](https://github.com/styled-components/styled-components)
- * [Formik](https://github.com/jaredpalmer/formik)
- * [Yup](https://github.com/jquense/yup)
- * [Recompose](https://github.com/acdlite/recompose)
- * [Webpack](https://github.com/webpack/webpack)
- * [Babel](https://github.com/babel/babel)
-
-#### Code Quality Tools
-
- * [eslint](https://github.com/eslint/eslint)
- * [stylelint](https://github.com/stylelint/stylelint)
- * [jest](https://github.com/facebook/jest)
- * [enzyme](https://github.com/airbnb/enzyme)
- * [.editorconfig](http://editorconfig.org/)
-
+You can find the repository [here](https://github.com/developer239/ui-react-library)
 
 #### Data Flow (no redux 🎉)
 
