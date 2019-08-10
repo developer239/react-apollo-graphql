@@ -1,6 +1,6 @@
 const clientHelper = require('../helpers/client')
 const assertHelper = require('../helpers/assert')
-const selectors = require('../selectors')
+const home = require('../selectors/home')
 
 
 module.exports = {
@@ -12,10 +12,14 @@ module.exports = {
     done()
   },
 
+  // Home page
   'Required elements exist': () => {
     this.client.goToPage('/')
-    this.assert.containsText(selectors.home.header, 'React Redux Apollo GraphQL Hot Boilerplate 2.0')
-    this.client.waitForElementVisible(selectors.home.dummyImg)
+    this.assert.containsText(home.header, 'React Redux Apollo GraphQL Hot Boilerplate 2.0')
+    this.client.waitForElementVisible(home.dummyImg)
+  },
+
+  'End testing home': () => {
     this.client.end()
   },
 }
