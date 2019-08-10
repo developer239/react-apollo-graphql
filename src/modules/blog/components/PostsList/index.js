@@ -9,9 +9,9 @@ import { Button } from 'components'
 
 
 export const PostListComponent = ({ items, handlePrefetchDetail }) => (
-  <div>
+  <div id="posts">
     {items.map(item => (
-      <div key={item.id} className="post">
+      <div key={item.id}>
         <h3>{item.title}</h3>
         <p>{nl2br(item.text)}</p>
         <Link to={`/posts/${item.id}`}>
