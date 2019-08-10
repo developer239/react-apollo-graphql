@@ -7,6 +7,6 @@
     "webpack",
     "yarn.lock"
   ],
-  "exec": "babel-node --extensions '.ts,.tsx' ./server/dev.ts",
-  "ext": "ts,tsx"
+  "exec": "babel-node --extensions '.ts' ./server/dev.ts",
+  "ext": "ts"
 }

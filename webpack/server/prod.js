@@ -16,12 +16,12 @@ module.exports = {
     path: path.resolve(__dirname, '..', '..', BUILD_DIR),
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.js']
   },
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/,
+        test: /\.(ts)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader'
