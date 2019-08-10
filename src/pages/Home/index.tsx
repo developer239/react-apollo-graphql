@@ -3,7 +3,7 @@ import { PagesList } from '../../components/PagesList'
 
 export const HomePage = () => (
   <div>
-    Home Page
+    <h1>All Pages</h1>
     <PagesList />
   </div>
 )

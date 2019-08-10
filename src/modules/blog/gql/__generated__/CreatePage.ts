@@ -2,17 +2,23 @@
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
+import { CreatePageInput } from "./../../../../../__generated__/globalTypes";
+
 // ====================================================
-// GraphQL query operation: ListPages
+// GraphQL mutation operation: CreatePage
 // ====================================================
 
-export interface ListPages_listPages {
+export interface CreatePage_createPage {
   __typename: "Page";
   id: string;
   title: string;
   text: string;
 }
 
-export interface ListPages {
-  listPages: ListPages_listPages[];
+export interface CreatePage {
+  createPage: CreatePage_createPage;
+}
+
+export interface CreatePageVariables {
+  data: CreatePageInput;
 }

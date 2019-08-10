@@ -1,5 +1,6 @@
 import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
+import { Link } from 'react-router-dom'
 import { Loader } from '../Loader'
 import { ErrorComponent } from '../Error'
 import { LIST_PAGES_QUERY } from '../../modules/blog/gql'
@@ -18,12 +19,13 @@ export const PagesList = React.memo(() => {
 
   return (
     <>
-      <h1>Pages List</h1>
-      <ul>
-        {data.listPages.map(page => (
-          <li key={page.id}>{page.title}</li>
-        ))}
-      </ul>
+      {data.listPages.map(page => (
+        <div key={page.id}>
+          <h2>{page.title}</h2>
+          <p>{page.text}</p>
+          <Link to={`/blog/${page.id}`}>read more</Link>
+        </div>
+      ))}
     </>
   )
 })

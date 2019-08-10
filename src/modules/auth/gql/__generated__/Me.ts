@@ -7,13 +7,13 @@
 // ====================================================
 
 export interface Me_me {
-  __typename: 'User'
-  id: string
-  email: string
-  firstName: string
-  lastName: string
+  __typename: "User";
+  id: string;
+  email: string;
+  firstName: string;
+  lastName: string;
 }
 
 export interface Me {
-  me: Me_me | null
+  me: Me_me | null;
 }

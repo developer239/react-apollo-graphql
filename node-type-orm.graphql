@@ -27,6 +27,7 @@ type Query {
   accessToken(refreshToken: String!, userId: Float!): String!
   listPages: [Page!]!
   me: User
+  pageDetail(id: Float!): Page!
 }
 
 type RefreshToken {

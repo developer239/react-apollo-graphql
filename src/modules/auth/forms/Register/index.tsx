@@ -10,8 +10,8 @@ import { browserHistory } from '../../../../index'
 const initialValues = {
   email: '',
   password: '',
-  firstName: '',
-  lastName: '',
+  firstName: 'first name',
+  lastName: 'last name',
 }
 
 const registerSchema = Yup.object().shape({

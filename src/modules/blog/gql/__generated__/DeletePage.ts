@@ -3,16 +3,20 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: ListPages
+// GraphQL mutation operation: DeletePage
 // ====================================================
 
-export interface ListPages_listPages {
+export interface DeletePage_deletePage {
   __typename: "Page";
   id: string;
   title: string;
   text: string;
 }
 
-export interface ListPages {
-  listPages: ListPages_listPages[];
+export interface DeletePage {
+  deletePage: DeletePage_deletePage;
+}
+
+export interface DeletePageVariables {
+  id: number;
 }

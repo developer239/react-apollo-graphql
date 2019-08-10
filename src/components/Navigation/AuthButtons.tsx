@@ -16,6 +16,9 @@ export const AuthButtons = () => {
     return (
       <>
         <li>
+          <Link to="/blog/create">Create</Link>
+        </li>
+        <li>
           <Link to="/me">Me</Link>
         </li>
         <li>
