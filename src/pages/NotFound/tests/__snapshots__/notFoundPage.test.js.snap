@@ -2,9 +2,9 @@
 
 exports[`NotFoundPage Component renders correctly 1`] = `
 <section>
-  <styled.h1>
+  <styled.h2>
     Page Not Found :(
-  </styled.h1>
+  </styled.h2>
   <styled.p>
     Please go back 
     <Link
