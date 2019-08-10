@@ -19,4 +19,11 @@ const App = () => {
   )
 }
 
-ReactDOM.render(<App />, document.querySelector('#root'))
+const renderApp = () =>
+  ReactDOM.render(<App />, document.querySelector('#root'))
+
+renderApp()
+
+if (module.hot) {
+  module.hot.accept()
+}

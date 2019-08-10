@@ -3,18 +3,21 @@ import express from 'express'
 import webpack from 'webpack'
 import invariant from 'invariant'
 import webpackDevMiddleware from 'webpack-dev-middleware'
+import webpackHotMiddleware from 'webpack-hot-middleware'
 
 const webpackDevConfig = require('../webpack/webpack.dev')
 const compiler = webpack(webpackDevConfig)
 
 const PORT = 3000
-const DIST_DIR = path.resolve(__dirname, '..', 'public')
+const DIST_DIR = path.resolve(__dirname, '..', 'dist')
 
 const app = express()
 
 app.use(webpackDevMiddleware(compiler, {
   publicPath: webpackDevConfig.output.publicPath,
 }))
+
+app.use(webpackHotMiddleware(compiler, { log: false }))
 
 app.use(express.static(DIST_DIR))
 

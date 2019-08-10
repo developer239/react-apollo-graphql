@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const DIST_DIR = 'dist'
 
 module.exports = {
-  entry: './src/index.tsx',
   output: {
     publicPath: '/',
     filename: '[name]-[hash].min.js',
