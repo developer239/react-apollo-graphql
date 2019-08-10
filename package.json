@@ -34,7 +34,6 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "styled-components": "^4.3.2",
-    "webpack-dev-middleware": "^3.7.0",
     "yup": "^0.27.0"
   },
   "devDependencies": {
@@ -85,6 +84,7 @@
     "typescript": "^3.5.3",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
+    "webpack-dev-middleware": "^3.7.0",
     "webpack-dev-server": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-merge": "^4.2.1"
