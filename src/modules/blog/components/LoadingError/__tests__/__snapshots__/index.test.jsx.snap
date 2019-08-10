@@ -1,0 +1,16 @@
+exports[`component renders 1`] = `
+<Grid
+  bsClass="container"
+  componentClass="div"
+  fluid={false}>
+  <Alert
+    bsClass="alert"
+    bsStyle="danger"
+    closeLabel="Close alert">
+    <strong>
+      Error!
+    </strong>
+     Fetching data from GraphQl server was not successful.
+  </Alert>
+</Grid>
+`;

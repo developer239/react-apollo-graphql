@@ -1,0 +1,35 @@
+exports[`component renders with all props 1`] = `
+<Grid
+  bsClass="container"
+  componentClass="div"
+  fluid={false}>
+  <Row
+    bsClass="row"
+    componentClass="div">
+    <Col
+      bsClass="col"
+      componentClass="div">
+      <h3>
+        Item title
+      </h3>
+      <p>
+        Item text
+      </p>
+      <Link
+        onlyActiveOnIndex={false}
+        style={Object {}}
+        to="/posts/1">
+        <Button
+          active={false}
+          block={false}
+          bsClass="btn"
+          bsStyle="primary"
+          disabled={false}
+          onMouseOver={[Function]}>
+          Detail
+        </Button>
+      </Link>
+    </Col>
+  </Row>
+</Grid>
+`;

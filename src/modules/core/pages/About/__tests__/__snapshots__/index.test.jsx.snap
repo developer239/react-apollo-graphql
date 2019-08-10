@@ -1,0 +1,221 @@
+exports[`component renders 1`] = `
+<Grid
+  bsClass="container"
+  componentClass="div"
+  fluid={false}>
+  <PageHeader
+    bsClass="page-header">
+    React Redux Apollo GraphQL Hot Boilerplate
+  </PageHeader>
+  <h1>
+    About
+  </h1>
+  <p>
+    There was no boilerplate that would meet my expectations so I created my own.
+  </p>
+  <p>
+    Backend is provided by 
+    <a
+      href="https://www.graph.cool/"
+      rel="noopener noreferrer"
+      target="_blank">
+      graph.cool
+    </a>
+    .
+  </p>
+  <ul>
+    <li>
+      Hot reloading
+    </li>
+    <li>
+      <a
+        href="https://github.com/webpack/webpack"
+        rel="noopener noreferrer"
+        target="_blank">
+        Webpack2
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/facebook/react"
+        rel="noopener noreferrer"
+        target="_blank">
+        React
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/rackt/react-router"
+        rel="noopener noreferrer"
+        target="_blank">
+        React Router
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/rackt/redux"
+        rel="noopener noreferrer"
+        target="_blank">
+        Redux
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/reactjs/react-router-redux"
+        rel="noopener noreferrer"
+        target="_blank">
+        React Router Redux
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/erikras/redux-form"
+        rel="noopener noreferrer"
+        target="_blank">
+        Redux-form
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/facebook/jest"
+        rel="noopener noreferrer"
+        target="_blank">
+        Jest
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/airbnb/enzyme"
+        rel="noopener noreferrer"
+        target="_blank">
+        Enzyme
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://github.com/gaearon/redux-devtools"
+        rel="noopener noreferrer"
+        target="_blank">
+        Redux Dev Tools
+      </a>
+    </li>
+  </ul>
+  <h1>
+    Installation
+  </h1>
+  <code>
+    npm run install
+  </code>
+  <h1>
+    Running dev server
+  </h1>
+  <p>
+    You do 
+    <strong>
+      NOT
+    </strong>
+     need to run your own GraphQL server. Simply run the 
+    <code>
+      npm run dev
+    </code>
+     command. If you want to work with your own backend change the 
+    <code>
+      API_URL
+    </code>
+     value in 
+    <code>
+      src/config/index.js
+    </code>
+    .
+  </p>
+  <h1>
+    Running tests
+  </h1>
+  <code>
+    npm run test
+  </code>
+  <h1>
+    To do
+  </h1>
+  <span>
+    <input
+      disabled={true}
+      type="checkbox" />
+     Add support for continuous integration with 
+    <a
+      href="https://github.com/jenkinsci"
+      rel="noopener noreferrer"
+      target="_blank">
+      jenkins
+    </a>
+     or 
+    <a
+      href="https://github.com/travis-ci/travis-ci"
+      rel="noopener noreferrer"
+      target="_blank">
+      travis
+    </a>
+  </span>
+  <span>
+    <input
+      disabled={true}
+      type="checkbox" />
+     Add
+    <a
+      href="https://github.com/nightwatchjs/nightwatch"
+      rel="noopener noreferrer"
+      target="_blank">
+       nightwatch
+    </a>
+     in order to support E2E testing
+  </span>
+  <span>
+    <input
+      disabled={true}
+      type="checkbox" />
+     Create separate branch with
+    <a
+      href="https://github.com/facebook/immutable-js"
+      rel="noopener noreferrer"
+      target="_blank">
+       immutable
+    </a>
+  </span>
+  <span>
+    <input
+      disabled={true}
+      type="checkbox" />
+     Create separate branch with 
+    <a
+      href="https://github.com/facebook/flow"
+      rel="noopener noreferrer"
+      target="_blank">
+      flow
+    </a>
+  </span>
+  <span>
+    <input
+      disabled={true}
+      type="checkbox" />
+     Add 
+    <a
+      href="https://github.com/stylelint/stylelint"
+      rel="noopener noreferrer"
+      target="_blank">
+      stylelint
+    </a>
+  </span>
+  <span>
+    <input
+      disabled={true}
+      type="checkbox" />
+     Add form validation
+  </span>
+  <span>
+    <input
+      disabled={true}
+      type="checkbox" />
+     Create webpack config file for production
+  </span>
+</Grid>
+`;
