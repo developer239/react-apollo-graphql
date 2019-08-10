@@ -7,8 +7,14 @@ interface IProps {
   page: Omit<ListPages_listPages, '__typename'>
 }
 
+export const COMPONENT_PAGE_CARD_TEST_ID = 'page-card-component'
+
 export const PageCard: FC<IProps> = ({ page }) => (
-  <Card title={page.title} bordered={false}>
+  <Card
+    data-testid={COMPONENT_PAGE_CARD_TEST_ID}
+    title={page.title}
+    bordered={false}
+  >
     <LinesEllipsis text={page.text} maxLine={3} ellipsis="..." />
     <CardLink to={`/blog/${page.id}`}>Read More</CardLink>
   </Card>
