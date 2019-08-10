@@ -4,7 +4,7 @@ import { H2, P, A } from 'components/Typography'
 
 const HomePage = () => (
   <section>
-    <H2>React Apollo GraphQl fixed</H2>
+    <H2>React Apollo GraphQl</H2>
     <P>
       The third version of minimal react apollo boilerplate. I was learning GraphQl several years
       ago. However, I couldn't find many react-apollo examples. The situation changed a lot since
