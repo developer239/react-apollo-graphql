@@ -70,14 +70,13 @@ module.exports = {
   },
 
   'Can edit existing post': () => {
-    this.client.pause(500)
     this.client
       .clearValue(blog.create.inputTitle)
       .clearValue(blog.create.inputDescription)
       .setValue(blog.create.inputTitle, editedPost.title)
       .setValue(blog.create.inputDescription, editedPost.description)
     this.client.click(blog.create.buttonSubmit)
-    this.client.pause(1000)
+    this.client.pause(500)
     // TODO: Find out why is post detail not being updated
     // this.assert.containsText(blog.detail.title, editedPost.title)
     // this.assert.containsText(blog.detail.description, editedPost.description)
