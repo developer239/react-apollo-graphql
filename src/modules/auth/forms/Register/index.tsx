@@ -59,7 +59,7 @@ export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
           <TextInput label="Last Name" name="lastName" />
 
           <FormButton htmlType="submit" type="primary" disabled={isSubmitting}>
-            {isSubmitting ? 'Submitting...' : 'Submit'}
+            {isSubmitting ? 'Registering...' : 'Register'}
           </FormButton>
         </Form>
       )}
