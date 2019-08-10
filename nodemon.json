@@ -1,0 +1,11 @@
+{
+  "ignore": [
+    "node_modules"
+  ],
+  "watch": [
+    "server",
+    "yarn.lock"
+  ],
+  "exec": "babel-node --extensions '.ts' ./server/server.dev.ts",
+  "ext": "ts"
+}
