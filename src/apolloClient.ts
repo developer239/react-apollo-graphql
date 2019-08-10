@@ -3,9 +3,10 @@ import { createHttpLink } from 'apollo-link-http'
 import { setContext } from 'apollo-link-context'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { auth } from 'services/auth'
+import { SERVER_URL } from 'config'
 
 const httpLink = createHttpLink({
-  uri: 'https://node-type-orm-graphql.herokuapp.com/graphql',
+  uri: SERVER_URL,
 })
 
 const authLink = setContext((_, { headers }) => {

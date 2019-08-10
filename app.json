@@ -16,6 +16,10 @@
   ],
   "website": "https://react-apollo-graphql.herokuapp.com",
   "env": {
+    "SERVER_URL": {
+      "description": "This is where our GraphQL backend lives.",
+      "value": "https://node-type-orm-graphql.herokuapp.com/graphql"
+    },
     "NODE_ENV": {
       "description": "We want to run the app in production mode.",
       "value": "production"

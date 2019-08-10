@@ -1,9 +1,10 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const Dotenv = require('dotenv-webpack')
 const {
   BUILD_DIR,
-  BUILD_DIR_PUBLIC
+  BUILD_DIR_PUBLIC,
 } = require('../config')
 
 module.exports = {
@@ -22,13 +23,13 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
+          loader: 'babel-loader',
+        },
       },
       {
         test: /\.js$/,
         use: ['source-map-loader'],
-        enforce: 'pre'
+        enforce: 'pre',
       },
       {
         test: /\.css$/i,
@@ -38,17 +39,20 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: 'html-loader'
-          }
-        ]
-      }
-    ]
+            loader: 'html-loader',
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './src/index.html',
-      filename: './index.html'
-    })
-  ]
+      filename: './index.html',
+    }),
+    new Dotenv({
+      path: path.resolve(__dirname, '..', '..', '.env.development'),
+    }),
+  ],
 }
