@@ -6,6 +6,7 @@
     "module": "commonjs",
     "target": "es6",
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "src"
   }
 }
