@@ -12,7 +12,7 @@ export const PostDetailPage = ({
     params: { postId },
   },
 }) => (
-  <Section>
+  <Section data-testid="page-post-detail">
     <Query query={POST_DETAIL} variables={{ id: postId }}>
       {({
         data: {

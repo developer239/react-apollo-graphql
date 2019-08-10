@@ -18,7 +18,7 @@ const updatePostCache = (cache, { data: { createPost } }) => {
 }
 
 export const PostCreatePage = ({ history: { push } }) => (
-  <Section>
+  <Section data-testid="page-create-post">
     <Mutation
       mutation={CREATE_POST}
       update={updatePostCache}

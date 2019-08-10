@@ -8,8 +8,8 @@ import ApolloProvider from '../../__mocks__/ApolloProvider'
 export const renderApp = (component, uri, mocks = []) =>
   render(
     <MemoryRouter initialEntries={[uri]}>
-      <ApolloProvider mocks={mocks}>
-        <ThemeProvider theme={theme}>{component}</ThemeProvider>
-      </ApolloProvider>
+      <ThemeProvider theme={theme}>
+        <ApolloProvider mocks={mocks}>{component}</ApolloProvider>
+      </ThemeProvider>
     </MemoryRouter>
   )
