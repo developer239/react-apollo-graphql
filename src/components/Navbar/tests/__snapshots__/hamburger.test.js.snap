@@ -61,7 +61,7 @@ exports[`Hamburger Components Hamburger has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bdVaJa",
           "isStatic": false,
@@ -225,7 +225,7 @@ exports[`Hamburger Components Hamburger has correct default styles when open 1`]
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bdVaJa",
           "isStatic": false,
@@ -372,7 +372,7 @@ exports[`Hamburger Components HamburgerLine has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bwzfXH",
           "isStatic": false,

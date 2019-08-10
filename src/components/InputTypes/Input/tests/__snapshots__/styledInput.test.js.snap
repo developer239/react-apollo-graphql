@@ -32,7 +32,7 @@ exports[`StyledInput Component has correct default styles 1`] = `
     forwardedClass={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "attrs": undefined,
+        "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-htpNat",
           "isStatic": false,
