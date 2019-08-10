@@ -19,7 +19,8 @@
     "apollo:generate-types": " apollo client:codegen --target=typescript",
     "apollo:generate-types:watch": "npm run apollo:generate-types -- --watch",
     "apollo:remove-all-types": "find . -regex './src/.*__generated__.*' -type d -prune -exec rm -r \"{}\" \\;",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.0.0",
