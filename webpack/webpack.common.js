@@ -1,16 +1,16 @@
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import path from 'path';
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const path = require('path')
 
-import dllManifest from '../public/vendor/vendor-manifest.json';
+const dllManifest = require('../public/vendor/vendor-manifest.json')
 
 
-const DIST_DIR = 'public';
-const SRC_DIR = 'src';
+const DIST_DIR = 'public'
+const SRC_DIR = 'src'
 
-export default {
+module.exports = {
   output: {
     publicPath: '/',
     filename: '[name]-[hash].min.js',
@@ -62,4 +62,4 @@ export default {
       './src',
     ],
   },
-};
+}
