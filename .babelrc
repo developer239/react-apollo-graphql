@@ -1,7 +1,17 @@
 {
   "presets": [
     "react",
-    "env"
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "defaults"
+          ]
+        },
+        "useBuiltIns": "entry"
+      }
+    ]
   ],
   "plugins": [
     "transform-object-rest-spread"
