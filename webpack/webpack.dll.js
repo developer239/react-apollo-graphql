@@ -19,19 +19,20 @@ const vendors = [
   'react-router',
   'react-router-dom',
   'styled-components',
+  'ui-react-library',
   'yup',
 ]
 
 module.exports = {
   mode: MODE,
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   entry: {
     vendors,
   },
   module: {
     rules: [
       {
-        test: /\.json$/,
+        test: /\.json$/u,
         use: 'json-loader',
       },
     ],

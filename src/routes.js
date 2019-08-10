@@ -10,6 +10,7 @@ import {
   PostEdit,
 } from 'pages/Blog'
 
+
 const Routes = () => (
   <Switch>
     <Route path="/" exact component={Home} />

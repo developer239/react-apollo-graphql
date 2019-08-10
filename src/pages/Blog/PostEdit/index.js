@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Section, Typography } from 'ui-react-library'
 import { Query, Mutation } from 'components'
 import { POST_DETAIL, UPDATE_POST } from 'modules/blog/gql'
 import PostForm from 'modules/blog/forms/Post'
+
 
 const { H2 } = Typography
 
@@ -16,13 +17,13 @@ export const PostEditPage = ({ history: { push }, match: { params: { postId } } 
       {({ data: { Post } }) => (
         <Mutation mutation={UPDATE_POST} onCompleted={() => push(`/posts/${postId}`)}>
           {mutate => (
-            <Fragment>
+            <>
               <H2>Edit Post</H2>
               <PostForm
                 initialValues={Post}
                 submit={values => mutate({ variables: values })}
               />
-            </Fragment>
+            </>
           )}
         </Mutation>
       )}

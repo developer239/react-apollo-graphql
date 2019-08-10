@@ -1,10 +1,19 @@
 {
   "extends": [
-    "@strv/eslint-config-react/v16",
+    "@strv/eslint-config-react",
     "@strv/eslint-config-react/optional",
     "prettier",
     "prettier/react"
   ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  },
   "plugins": [
     "react-hooks"
   ],
@@ -25,6 +34,7 @@
     }
   },
   "rules": {
+    "react/jsx-curly-brace-presence": "error",
     "react/jsx-boolean-value": "error",
     "react/jsx-key": "error",
     "max-len": [

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { Section, Typography } from 'ui-react-library'
 import { Query } from 'components'
@@ -15,10 +15,10 @@ export const PostDetailPage = ({ match: { params: { postId } } }) => (
       variables={{ id: postId }}
     >
       {({ data: { Post: { title, text } } }) => (
-        <Fragment>
+        <>
           <H2>{title}</H2>
           <P>{nl2br(text)}</P>
-        </Fragment>
+        </>
       )}
     </Query>
   </Section>
