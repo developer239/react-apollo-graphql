@@ -4,6 +4,7 @@
   ],
   "watch": [
     "server",
+    "webpack",
     "yarn.lock"
   ],
   "exec": "babel-node --extensions '.ts' ./server/dev.ts",
