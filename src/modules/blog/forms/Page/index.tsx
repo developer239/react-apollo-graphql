@@ -1,6 +1,9 @@
 import React, { FC } from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
+import { TextInput } from 'components/TextInput'
+import { Textarea } from 'components/Textarea'
+import { FormButton } from 'components/FormButton'
 
 const initialValues = {
   title: '',
@@ -31,25 +34,12 @@ export const PageForm: FC<IProps> = props => (
   >
     {({ isSubmitting }) => (
       <Form>
-        <div>
-          <label>
-            Title:
-            <Field name="title" />
-          </label>
-          <ErrorMessage name="title" />
-        </div>
+        <TextInput label="Title" name="title" />
+        <Textarea label="Text" name="text" />
 
-        <div>
-          <label>
-            Text:
-            <Field name="text" type="text" />
-            <ErrorMessage name="text" />
-          </label>
-        </div>
-
-        <button type="submit" disabled={isSubmitting}>
+        <FormButton htmlType="submit" type="primary" disabled={isSubmitting}>
           {isSubmitting ? 'Submitting...' : 'Submit'}
-        </button>
+        </FormButton>
       </Form>
     )}
   </Formik>

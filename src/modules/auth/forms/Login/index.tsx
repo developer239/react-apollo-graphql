@@ -1,9 +1,11 @@
 import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { browserHistory } from 'appHistory'
 import { auth } from 'services/auth'
 import { useLogin } from '../../hooks/useLogin'
+import { TextInput } from 'components/TextInput'
+import { FormButton } from 'components/FormButton'
 
 const initialValues = {
   email: 'email@email1.com',
@@ -37,25 +39,12 @@ export const LoginForm = () => {
     >
       {({ isSubmitting }) => (
         <Form>
-          <div>
-            <label>
-              Email:
-              <Field name="email" />
-            </label>
-            <ErrorMessage name="email" />
-          </div>
+          <TextInput iconType="user" label="Email" name="email" />
+          <TextInput iconType="lock" label="Password" name="password" />
 
-          <div>
-            <label>
-              Password:
-              <Field name="password" type="password" />
-              <ErrorMessage name="password" />
-            </label>
-          </div>
-
-          <button type="submit" disabled={isSubmitting}>
-            {isSubmitting ? 'Submitting...' : 'Submit'}
-          </button>
+          <FormButton htmlType="submit" type="primary" disabled={isSubmitting}>
+            {isSubmitting ? 'Logging in...' : 'Login'}
+          </FormButton>
         </Form>
       )}
     </Formik>

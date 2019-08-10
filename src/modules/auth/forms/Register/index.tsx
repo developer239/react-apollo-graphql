@@ -1,15 +1,17 @@
 import React from 'react'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { auth } from 'services/auth'
 import { browserHistory } from 'appHistory'
+import { TextInput } from 'components/TextInput'
+import { FormButton } from 'components/FormButton'
 import { useRegister } from '../../hooks/useRegister'
 
 const initialValues = {
   email: '',
   password: '',
-  firstName: 'first name',
-  lastName: 'last name',
+  firstName: 'John',
+  lastName: 'Doe',
 }
 
 const registerSchema = Yup.object().shape({
@@ -41,41 +43,14 @@ export const RegisterForm = () => {
     >
       {({ isSubmitting }) => (
         <Form>
-          <div>
-            <label>
-              Email:
-              <Field name="email" />
-            </label>
-            <ErrorMessage name="email" />
-          </div>
+          <TextInput label="Email" name="email" />
+          <TextInput label="Password" name="password" />
+          <TextInput label="First Name" name="firstName" />
+          <TextInput label="Last Name" name="lastName" />
 
-          <div>
-            <label>
-              Password:
-              <Field name="password" type="password" />
-              <ErrorMessage name="password" />
-            </label>
-          </div>
-
-          <div>
-            <label>
-              First Name
-              <Field name="firstName" type="firstName" />
-              <ErrorMessage name="firstName" />
-            </label>
-          </div>
-
-          <div>
-            <label>
-              Last Name
-              <Field name="lastName" type="lastName" />
-              <ErrorMessage name="lastName" />
-            </label>
-          </div>
-
-          <button type="submit" disabled={isSubmitting}>
+          <FormButton htmlType="submit" type="primary" disabled={isSubmitting}>
             {isSubmitting ? 'Submitting...' : 'Submit'}
-          </button>
+          </FormButton>
         </Form>
       )}
     </Formik>
