@@ -14,7 +14,7 @@
 
 #### Custom UI Library 📚
 
-I was slowly getting lost in all of my side projects. Every time I wanted to learn something new I had to spend a lot of time on a basic UI for my application. So I decided to create my own components library.
+I was slowly getting lost in all of my side projects. Every time I wanted to learn something new I had to create a basic UI for my application. So I decided to create my own components library.
 
 You can find the repository [here](https://github.com/developer239/ui-react-library)
 
