@@ -13,7 +13,7 @@ __Uses:__
  * [React Router](https://github.com/ReactTraining/react-router) 4.3.1
  * [Recompose](https://github.com/acdlite/recompose) 0.27.1
  * [Redux](https://github.com/reactjs/redux) 4.0.0
- * [Webpack](https://github.com/webpack/webpack) 4.12.0
+ * [Webpack](https://github.com/webpack/webpack) 3.8.1
  * [Styled Components](https://github.com/styled-components/styled-components) 3.3.3
 
 #### Installing the project
