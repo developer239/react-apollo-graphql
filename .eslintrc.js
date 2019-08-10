@@ -36,6 +36,7 @@ module.exports = {
     },
   },
   'rules': {
+    '@typescript-eslint/explicit-function-return-type': 0,
     'react/no-did-mount-set-state': 'error',
     'import/no-default-export': 'error',
     'react-hooks/rules-of-hooks': 'error',
