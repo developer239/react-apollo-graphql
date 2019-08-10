@@ -57,9 +57,85 @@ exports[`Hamburger Components Hamburger has correct default styles 1`] = `
     }
   }
 >
-  <div
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  align-self: flex-end;
+  margin: 14px;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(0deg);
+  transition: 0.25s ease;
+  cursor: pointer;
+  display: block;
+  
+  span:nth-child(1) {
+    top: 0;
+  }
+  
+  span:nth-child(2),
+  span:nth-child(3) {
+    top: 0.6rem;
+  }
+  
+  span:nth-child(4) {
+    top: 1.2rem;
+  }
+  
+  ",
+            [Function],
+            ";
+  
+  ",
+            "@media (min-width: 62.5rem)",
+            " {
+    display: none;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -145,9 +221,86 @@ exports[`Hamburger Components Hamburger has correct default styles when open 1`]
     }
   }
 >
-  <div
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  align-self: flex-end;
+  margin: 14px;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(0deg);
+  transition: 0.25s ease;
+  cursor: pointer;
+  display: block;
+  
+  span:nth-child(1) {
+    top: 0;
+  }
+  
+  span:nth-child(2),
+  span:nth-child(3) {
+    top: 0.6rem;
+  }
+  
+  span:nth-child(4) {
+    top: 1.2rem;
+  }
+  
+  ",
+            [Function],
+            ";
+  
+  ",
+            "@media (min-width: 62.5rem)",
+            " {
+    display: none;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    isOpen={true}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -215,8 +368,73 @@ exports[`Hamburger Components HamburgerLine has correct default styles 1`] = `
     }
   }
 >
-  <span
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  display: block;
+  position: absolute;
+  border-radius: 1.6rem;
+  height: 0.2rem;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: ",
+            [Function],
+            ";
+  
+  ",
+            "@media (min-width: 48rem)",
+            " {
+    background: ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.span",
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "span",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <span
+      className="c0"
+    />
+  </StyledComponent>
 </styled.span>
 `;

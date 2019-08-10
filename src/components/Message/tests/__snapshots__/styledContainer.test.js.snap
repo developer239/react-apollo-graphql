@@ -29,8 +29,61 @@ exports[`Container Component has correct default styles 1`] = `
     }
   }
 >
-  <div
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  background-color: ",
+            [Function],
+            ";
+  color: ",
+            [Function],
+            ";
+  font-size: 14px;
+  padding: 15px 20px;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
 </styled.div>
 `;

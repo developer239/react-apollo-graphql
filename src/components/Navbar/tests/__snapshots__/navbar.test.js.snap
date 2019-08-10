@@ -40,9 +40,62 @@ exports[`Navbar Components Container has correct default styles 1`] = `
     }
   }
 >
-  <nav
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: ",
+            [Function],
+            ";
+",
+          ],
+        },
+        "displayName": "styled.nav",
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "nav",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <nav
+      className="c0"
+    />
+  </StyledComponent>
 </styled.nav>
 `;
 
@@ -95,9 +148,65 @@ exports[`Navbar Components Content has correct default styles 1`] = `
     }
   }
 >
-  <div
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bxivhb",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+  ",
+            "@media (min-width: 62.5rem)",
+            " {
+    flex-direction: row;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bxivhb",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -145,9 +254,68 @@ exports[`Navbar Components Links has correct default styles 1`] = `
     }
   }
 >
-  <div
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-ifAKCX",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  display: ",
+            [Function],
+            ";
+  flex-direction: column;
+  top: 60px;
+  width: 100%;
+    
+  ",
+            "@media (min-width: 62.5rem)",
+            " {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-ifAKCX",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
 </styled.div>
 `;
 
@@ -420,118 +588,753 @@ exports[`Navbar Components Navbar renders with all props 1`] = `
         toggleOpen={[Function]}
       >
         <styled.nav>
-          <nav
-            className="c0"
+          <StyledComponent
+            forwardedClass={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": undefined,
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-htpNat",
+                  "isStatic": false,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: ",
+                    [Function],
+                    ";
+",
+                  ],
+                },
+                "displayName": "styled.nav",
+                "render": [Function],
+                "styledComponentId": "sc-htpNat",
+                "target": "nav",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
-            <styled.div>
-              <div
-                className="c1"
-              >
-                <styled.div
-                  isOpen={false}
+            <nav
+              className="c0"
+            >
+              <styled.div>
+                <StyledComponent
+                  forwardedClass={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": undefined,
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bxivhb",
+                        "isStatic": true,
+                        "lastClassName": "c1",
+                        "rules": Array [
+                          "
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+  ",
+                          "@media (min-width: 62.5rem)",
+                          " {
+    flex-direction: row;
+  }
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "render": [Function],
+                      "styledComponentId": "sc-bxivhb",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
                 >
                   <div
-                    className="c2"
+                    className="c1"
                   >
-                    <Styled(mockConstructor)
-                      isActive={true}
-                      key="1"
-                      onClick={[Function]}
-                      to="/"
+                    <styled.div
+                      isOpen={false}
                     >
-                      <mockConstructor
-                        className="c3"
-                        isActive={true}
-                        onClick={[Function]}
-                        to="/"
+                      <StyledComponent
+                        forwardedClass={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": undefined,
+                            "componentStyle": ComponentStyle {
+                              "componentId": "sc-ifAKCX",
+                              "isStatic": false,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "
+  display: ",
+                                [Function],
+                                ";
+  flex-direction: column;
+  top: 60px;
+  width: 100%;
+    
+  ",
+                                "@media (min-width: 62.5rem)",
+                                " {
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+  }
+",
+                              ],
+                            },
+                            "displayName": "styled.div",
+                            "render": [Function],
+                            "styledComponentId": "sc-ifAKCX",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                        isOpen={false}
                       >
-                        <span>
-                          mock link
-                        </span>
-                      </mockConstructor>
-                    </Styled(mockConstructor)>
-                    <Styled(mockConstructor)
-                      isActive={false}
-                      key="2"
-                      onClick={[Function]}
-                      to="/first"
+                        <div
+                          className="c2"
+                        >
+                          <Styled(mockConstructor)
+                            isActive={true}
+                            key="1"
+                            onClick={[Function]}
+                            to="/"
+                          >
+                            <StyledComponent
+                              forwardedClass={
+                                [MockFunction] {
+                                  "calls": Array [
+                                    Array [
+                                      Object {
+                                        "className": "sc-EHOje c4",
+                                        "theme": Object {
+                                          "color": Object {
+                                            "black": "#000",
+                                            "darkGreen": "#37bc9b",
+                                            "darkGrey": "#aab2bd",
+                                            "darkRed": "#da4453",
+                                            "lightGreen": "#48cfad",
+                                            "lightGrey": "#ccd1d9",
+                                            "lightRed": "#ed5565",
+                                            "primary": "#5d9cec",
+                                            "secondary": "#4a89dc",
+                                            "white": "#fff",
+                                          },
+                                          "layout": Object {
+                                            "maxWidth": "62.5rem",
+                                          },
+                                        },
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "Home",
+                                        "className": "sc-EHOje c3",
+                                        "isActive": true,
+                                        "onClick": [Function],
+                                        "to": "/",
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "First",
+                                        "className": "sc-EHOje c4",
+                                        "isActive": false,
+                                        "onClick": [Function],
+                                        "to": "/first",
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "Second",
+                                        "className": "sc-EHOje c4",
+                                        "isActive": false,
+                                        "onClick": [Function],
+                                        "to": "/second",
+                                      },
+                                      Object {},
+                                    ],
+                                  ],
+                                  "results": Array [
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                  ],
+                                }
+                              }
+                              forwardedRef={null}
+                              isActive={true}
+                              onClick={[Function]}
+                              to="/"
+                            >
+                              <mockConstructor
+                                className="c3"
+                                isActive={true}
+                                onClick={[Function]}
+                                to="/"
+                              >
+                                <span>
+                                  mock link
+                                </span>
+                              </mockConstructor>
+                            </StyledComponent>
+                          </Styled(mockConstructor)>
+                          <Styled(mockConstructor)
+                            isActive={false}
+                            key="2"
+                            onClick={[Function]}
+                            to="/first"
+                          >
+                            <StyledComponent
+                              forwardedClass={
+                                [MockFunction] {
+                                  "calls": Array [
+                                    Array [
+                                      Object {
+                                        "className": "sc-EHOje c4",
+                                        "theme": Object {
+                                          "color": Object {
+                                            "black": "#000",
+                                            "darkGreen": "#37bc9b",
+                                            "darkGrey": "#aab2bd",
+                                            "darkRed": "#da4453",
+                                            "lightGreen": "#48cfad",
+                                            "lightGrey": "#ccd1d9",
+                                            "lightRed": "#ed5565",
+                                            "primary": "#5d9cec",
+                                            "secondary": "#4a89dc",
+                                            "white": "#fff",
+                                          },
+                                          "layout": Object {
+                                            "maxWidth": "62.5rem",
+                                          },
+                                        },
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "Home",
+                                        "className": "sc-EHOje c3",
+                                        "isActive": true,
+                                        "onClick": [Function],
+                                        "to": "/",
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "First",
+                                        "className": "sc-EHOje c4",
+                                        "isActive": false,
+                                        "onClick": [Function],
+                                        "to": "/first",
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "Second",
+                                        "className": "sc-EHOje c4",
+                                        "isActive": false,
+                                        "onClick": [Function],
+                                        "to": "/second",
+                                      },
+                                      Object {},
+                                    ],
+                                  ],
+                                  "results": Array [
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                  ],
+                                }
+                              }
+                              forwardedRef={null}
+                              isActive={false}
+                              onClick={[Function]}
+                              to="/first"
+                            >
+                              <mockConstructor
+                                className="c4"
+                                isActive={false}
+                                onClick={[Function]}
+                                to="/first"
+                              >
+                                <span>
+                                  mock link
+                                </span>
+                              </mockConstructor>
+                            </StyledComponent>
+                          </Styled(mockConstructor)>
+                          <Styled(mockConstructor)
+                            isActive={false}
+                            key="3"
+                            onClick={[Function]}
+                            to="/second"
+                          >
+                            <StyledComponent
+                              forwardedClass={
+                                [MockFunction] {
+                                  "calls": Array [
+                                    Array [
+                                      Object {
+                                        "className": "sc-EHOje c4",
+                                        "theme": Object {
+                                          "color": Object {
+                                            "black": "#000",
+                                            "darkGreen": "#37bc9b",
+                                            "darkGrey": "#aab2bd",
+                                            "darkRed": "#da4453",
+                                            "lightGreen": "#48cfad",
+                                            "lightGrey": "#ccd1d9",
+                                            "lightRed": "#ed5565",
+                                            "primary": "#5d9cec",
+                                            "secondary": "#4a89dc",
+                                            "white": "#fff",
+                                          },
+                                          "layout": Object {
+                                            "maxWidth": "62.5rem",
+                                          },
+                                        },
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "Home",
+                                        "className": "sc-EHOje c3",
+                                        "isActive": true,
+                                        "onClick": [Function],
+                                        "to": "/",
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "First",
+                                        "className": "sc-EHOje c4",
+                                        "isActive": false,
+                                        "onClick": [Function],
+                                        "to": "/first",
+                                      },
+                                      Object {},
+                                    ],
+                                    Array [
+                                      Object {
+                                        "children": "Second",
+                                        "className": "sc-EHOje c4",
+                                        "isActive": false,
+                                        "onClick": [Function],
+                                        "to": "/second",
+                                      },
+                                      Object {},
+                                    ],
+                                  ],
+                                  "results": Array [
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                    Object {
+                                      "isThrow": false,
+                                      "value": <span>
+                                        mock link
+                                      </span>,
+                                    },
+                                  ],
+                                }
+                              }
+                              forwardedRef={null}
+                              isActive={false}
+                              onClick={[Function]}
+                              to="/second"
+                            >
+                              <mockConstructor
+                                className="c4"
+                                isActive={false}
+                                onClick={[Function]}
+                                to="/second"
+                              >
+                                <span>
+                                  mock link
+                                </span>
+                              </mockConstructor>
+                            </StyledComponent>
+                          </Styled(mockConstructor)>
+                        </div>
+                      </StyledComponent>
+                    </styled.div>
+                    <HamburgerComponent
+                      isOpen={false}
+                      toggleIsOpen={[Function]}
                     >
-                      <mockConstructor
-                        className="c4"
-                        isActive={false}
+                      <styled.div
+                        isOpen={false}
                         onClick={[Function]}
-                        to="/first"
                       >
-                        <span>
-                          mock link
-                        </span>
-                      </mockConstructor>
-                    </Styled(mockConstructor)>
-                    <Styled(mockConstructor)
-                      isActive={false}
-                      key="3"
-                      onClick={[Function]}
-                      to="/second"
-                    >
-                      <mockConstructor
-                        className="c4"
-                        isActive={false}
-                        onClick={[Function]}
-                        to="/second"
-                      >
-                        <span>
-                          mock link
-                        </span>
-                      </mockConstructor>
-                    </Styled(mockConstructor)>
+                        <StyledComponent
+                          forwardedClass={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": undefined,
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-bdVaJa",
+                                "isStatic": false,
+                                "lastClassName": "c5",
+                                "rules": Array [
+                                  "
+  align-self: flex-end;
+  margin: 14px;
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(0deg);
+  transition: 0.25s ease;
+  cursor: pointer;
+  display: block;
+  
+  span:nth-child(1) {
+    top: 0;
+  }
+  
+  span:nth-child(2),
+  span:nth-child(3) {
+    top: 0.6rem;
+  }
+  
+  span:nth-child(4) {
+    top: 1.2rem;
+  }
+  
+  ",
+                                  [Function],
+                                  ";
+  
+  ",
+                                  "@media (min-width: 62.5rem)",
+                                  " {
+    display: none;
+  }
+",
+                                ],
+                              },
+                              "displayName": "styled.div",
+                              "render": [Function],
+                              "styledComponentId": "sc-bdVaJa",
+                              "target": "div",
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          isOpen={false}
+                          onClick={[Function]}
+                        >
+                          <div
+                            className="c5"
+                            onClick={[Function]}
+                          >
+                            <styled.span
+                              isOpen={false}
+                            >
+                              <StyledComponent
+                                forwardedClass={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": undefined,
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": false,
+                                      "lastClassName": "c6",
+                                      "rules": Array [
+                                        "
+  display: block;
+  position: absolute;
+  border-radius: 1.6rem;
+  height: 0.2rem;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: ",
+                                        [Function],
+                                        ";
+  
+  ",
+                                        "@media (min-width: 48rem)",
+                                        " {
+    background: ",
+                                        [Function],
+                                        ";
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.span",
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                isOpen={false}
+                              >
+                                <span
+                                  className="c6"
+                                />
+                              </StyledComponent>
+                            </styled.span>
+                            <styled.span
+                              isOpen={false}
+                            >
+                              <StyledComponent
+                                forwardedClass={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": undefined,
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": false,
+                                      "lastClassName": "c6",
+                                      "rules": Array [
+                                        "
+  display: block;
+  position: absolute;
+  border-radius: 1.6rem;
+  height: 0.2rem;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: ",
+                                        [Function],
+                                        ";
+  
+  ",
+                                        "@media (min-width: 48rem)",
+                                        " {
+    background: ",
+                                        [Function],
+                                        ";
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.span",
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                isOpen={false}
+                              >
+                                <span
+                                  className="c6"
+                                />
+                              </StyledComponent>
+                            </styled.span>
+                            <styled.span
+                              isOpen={false}
+                            >
+                              <StyledComponent
+                                forwardedClass={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": undefined,
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": false,
+                                      "lastClassName": "c6",
+                                      "rules": Array [
+                                        "
+  display: block;
+  position: absolute;
+  border-radius: 1.6rem;
+  height: 0.2rem;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: ",
+                                        [Function],
+                                        ";
+  
+  ",
+                                        "@media (min-width: 48rem)",
+                                        " {
+    background: ",
+                                        [Function],
+                                        ";
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.span",
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                isOpen={false}
+                              >
+                                <span
+                                  className="c6"
+                                />
+                              </StyledComponent>
+                            </styled.span>
+                            <styled.span
+                              isOpen={false}
+                            >
+                              <StyledComponent
+                                forwardedClass={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": undefined,
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": false,
+                                      "lastClassName": "c6",
+                                      "rules": Array [
+                                        "
+  display: block;
+  position: absolute;
+  border-radius: 1.6rem;
+  height: 0.2rem;
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  background: ",
+                                        [Function],
+                                        ";
+  
+  ",
+                                        "@media (min-width: 48rem)",
+                                        " {
+    background: ",
+                                        [Function],
+                                        ";
+  }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.span",
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "span",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                isOpen={false}
+                              >
+                                <span
+                                  className="c6"
+                                />
+                              </StyledComponent>
+                            </styled.span>
+                          </div>
+                        </StyledComponent>
+                      </styled.div>
+                    </HamburgerComponent>
                   </div>
-                </styled.div>
-                <HamburgerComponent
-                  isOpen={false}
-                  toggleIsOpen={[Function]}
-                >
-                  <styled.div
-                    isOpen={false}
-                    onClick={[Function]}
-                  >
-                    <div
-                      className="c5"
-                      onClick={[Function]}
-                    >
-                      <styled.span
-                        isOpen={false}
-                      >
-                        <span
-                          className="c6"
-                        />
-                      </styled.span>
-                      <styled.span
-                        isOpen={false}
-                      >
-                        <span
-                          className="c6"
-                        />
-                      </styled.span>
-                      <styled.span
-                        isOpen={false}
-                      >
-                        <span
-                          className="c6"
-                        />
-                      </styled.span>
-                      <styled.span
-                        isOpen={false}
-                      >
-                        <span
-                          className="c6"
-                        />
-                      </styled.span>
-                    </div>
-                  </styled.div>
-                </HamburgerComponent>
-              </div>
-            </styled.div>
-          </nav>
+                </StyledComponent>
+              </styled.div>
+            </nav>
+          </StyledComponent>
         </styled.nav>
       </Navbar>
     </withHandlers(Navbar)>
@@ -585,8 +1388,45 @@ exports[`Navbar Components StyledLink has correct default styles 1`] = `
     }
   }
 >
-  <mockConstructor
-    className="c0"
+  <StyledComponent
+    forwardedClass={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "className": "sc-EHOje c0",
+              "theme": Object {
+                "color": Object {
+                  "black": "#000",
+                  "darkGreen": "#37bc9b",
+                  "darkGrey": "#aab2bd",
+                  "darkRed": "#da4453",
+                  "lightGreen": "#48cfad",
+                  "lightGrey": "#ccd1d9",
+                  "lightRed": "#ed5565",
+                  "primary": "#5d9cec",
+                  "secondary": "#4a89dc",
+                  "white": "#fff",
+                },
+                "layout": Object {
+                  "maxWidth": "62.5rem",
+                },
+              },
+            },
+            Object {},
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": <span>
+              mock link
+            </span>,
+          },
+        ],
+      }
+    }
+    forwardedRef={null}
     theme={
       Object {
         "color": Object {
@@ -607,9 +1447,32 @@ exports[`Navbar Components StyledLink has correct default styles 1`] = `
       }
     }
   >
-    <span>
-      mock link
-    </span>
-  </mockConstructor>
+    <mockConstructor
+      className="c0"
+      theme={
+        Object {
+          "color": Object {
+            "black": "#000",
+            "darkGreen": "#37bc9b",
+            "darkGrey": "#aab2bd",
+            "darkRed": "#da4453",
+            "lightGreen": "#48cfad",
+            "lightGrey": "#ccd1d9",
+            "lightRed": "#ed5565",
+            "primary": "#5d9cec",
+            "secondary": "#4a89dc",
+            "white": "#fff",
+          },
+          "layout": Object {
+            "maxWidth": "62.5rem",
+          },
+        }
+      }
+    >
+      <span>
+        mock link
+      </span>
+    </mockConstructor>
+  </StyledComponent>
 </Styled(mockConstructor)>
 `;

@@ -47,8 +47,86 @@ exports[`Spinner Component has correct default styles 1`] = `
     }
   }
 >
-  <div
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  height: 100%;
+  text-align: center;
+    
+  & > div {
+    width: 12px;
+    height: 12px;
+    background-color: ",
+            [Function],
+            ";
+  
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  & div:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  & div:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+      transform: scale(0);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
 </styled.div>
 `;

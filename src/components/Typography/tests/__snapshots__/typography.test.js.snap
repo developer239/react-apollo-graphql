@@ -64,11 +64,75 @@ exports[`Typography Components A has correct default styles 1`] = `
       }
     }
   >
-    <a
-      className="c0"
+    <StyledComponent
+      forwardedClass={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": undefined,
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-EHOje",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  color: ",
+              [Function],
+              ";
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: ",
+              [Function],
+              ";
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+",
+            ],
+          },
+          "displayName": "styled.a",
+          "render": [Function],
+          "styledComponentId": "sc-EHOje",
+          "target": "a",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
       rel="noopener noreferrer"
       target="_blank"
-    />
+      theme={
+        Object {
+          "color": Object {
+            "black": "#000",
+            "darkGreen": "#37bc9b",
+            "darkGrey": "#aab2bd",
+            "darkRed": "#da4453",
+            "lightGreen": "#48cfad",
+            "lightGrey": "#ccd1d9",
+            "lightRed": "#ed5565",
+            "primary": "#5d9cec",
+            "secondary": "#4a89dc",
+            "white": "#fff",
+          },
+          "layout": Object {
+            "maxWidth": "62.5rem",
+          },
+        }
+      }
+    >
+      <a
+        className="c0"
+        rel="noopener noreferrer"
+        target="_blank"
+      />
+    </StyledComponent>
   </styled.a>
 </withProps(styled.a)>
 `;
@@ -120,9 +184,78 @@ exports[`Typography Components H1 has correct default styles 1`] = `
     }
   }
 >
-  <h1
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  font-weight: 500;
+  margin: 0 0 24px  0;
+  font-size: 21px;
+  line-height: 24px;
+  
+  &::selection {
+    background: ",
+            [Function],
+            ";
+  }
+    
+  ",
+            "@media (min-width: 34.375rem)",
+            " {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  
+  ",
+            "@media (min-width: 48rem)",
+            " {
+    font-size: 36px;
+    line-height: 48px;
+  }
+",
+          ],
+        },
+        "displayName": "styled.h1",
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "h1",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <h1
+      className="c0"
+    />
+  </StyledComponent>
 </styled.h1>
 `;
 
@@ -173,9 +306,78 @@ exports[`Typography Components H2 has correct default styles 1`] = `
     }
   }
 >
-  <h2
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bwzfXH",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  font-weight: 500;
+  margin: 0 0 24px  0;
+  font-size: 18px;
+  line-height: 24px;
+  
+  &::selection {
+    background: ",
+            [Function],
+            ";
+  }
+  
+  ",
+            "@media (min-width: 34.375rem)",
+            " {
+    font-size: 21px;
+    line-height: 36px;
+  }
+  
+  ",
+            "@media (min-width: 48rem)",
+            " {
+    font-size: 24px;
+    line-height: 24px;
+  }
+",
+          ],
+        },
+        "displayName": "styled.h2",
+        "render": [Function],
+        "styledComponentId": "sc-bwzfXH",
+        "target": "h2",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <h2
+      className="c0"
+    />
+  </StyledComponent>
 </styled.h2>
 `;
 
@@ -226,9 +428,78 @@ exports[`Typography Components H3 has correct default styles 1`] = `
     }
   }
 >
-  <h3
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  font-weight: 500;
+  margin: 0 0 24px  0;
+  font-size: 16px;
+  line-height: 24px;
+  
+  &::selection {
+    background: ",
+            [Function],
+            ";
+  }
+  
+  ",
+            "@media (min-width: 34.375rem)",
+            " {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  
+  ",
+            "@media (min-width: 48rem)",
+            " {
+    font-size: 21px;
+    line-height: 24px;
+  }
+",
+          ],
+        },
+        "displayName": "styled.h3",
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "h3",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <h3
+      className="c0"
+    />
+  </StyledComponent>
 </styled.h3>
 `;
 
@@ -266,9 +537,63 @@ exports[`Typography Components HR has correct default styles 1`] = `
     }
   }
 >
-  <hr
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-ifAKCX",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  box-sizing: content-box;
+  height: 0;
+  display: block;
+  unicode-bidi: isolate;
+  overflow: hidden;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 0;
+  border-top: 1px solid #f2f2f4;
+",
+          ],
+        },
+        "displayName": "styled.hr",
+        "render": [Function],
+        "styledComponentId": "sc-ifAKCX",
+        "target": "hr",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <hr
+      className="c0"
+    />
+  </StyledComponent>
 </styled.hr>
 `;
 
@@ -305,9 +630,64 @@ exports[`Typography Components P has correct default styles 1`] = `
     }
   }
 >
-  <p
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bxivhb",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  font-weight: lighter;
+  margin: 0 0 25px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  &::selection {
+    background: ",
+            [Function],
+            ";
+  }
+",
+          ],
+        },
+        "displayName": "styled.p",
+        "render": [Function],
+        "styledComponentId": "sc-bxivhb",
+        "target": "p",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <p
+      className="c0"
+    />
+  </StyledComponent>
 </styled.p>
 `;
 
@@ -352,8 +732,70 @@ exports[`Typography Components StyledA has correct default styles 1`] = `
     }
   }
 >
-  <a
-    className="c0"
-  />
+  <StyledComponent
+    forwardedClass={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": undefined,
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-EHOje",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  color: ",
+            [Function],
+            ";
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    color: ",
+            [Function],
+            ";
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+  }
+",
+          ],
+        },
+        "displayName": "styled.a",
+        "render": [Function],
+        "styledComponentId": "sc-EHOje",
+        "target": "a",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <a
+      className="c0"
+    />
+  </StyledComponent>
 </styled.a>
 `;
