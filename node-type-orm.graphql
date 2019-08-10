@@ -1,0 +1,82 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Mutation {
+  changePassword(data: ChangePasswordInput!): Session
+  createPage(data: CreatePageInput!): Page!
+  deletePage(id: Float!): Page!
+  forgotPassword(email: String!): Boolean!
+  login(email: String!, password: String!): Session!
+  register(data: RegisterInput!): Session!
+  updatePage(data: UpdatePageInput!): Page!
+}
+
+type Page {
+  id: ID!
+  text: String!
+  title: String!
+  uri: String!
+  user: User!
+}
+
+type Query {
+  accessToken(refreshToken: String!, userId: Float!): String!
+  listPages: [Page!]!
+  me: User
+}
+
+type RefreshToken {
+  id: ID!
+  token: String!
+}
+
+type ResetPasswordToken {
+  expires: DateTime!
+  id: ID!
+  token: String!
+}
+
+type Session {
+  accessToken: String!
+  refreshToken: String!
+  user: User!
+}
+
+type User {
+  email: String!
+  firstName: String!
+  id: ID!
+  lastName: String!
+  pages: [Page!]
+}
+
+input ChangePasswordInput {
+  password: String!
+  token: String!
+}
+
+input CreatePageInput {
+  text: String!
+  title: String!
+}
+
+input RegisterInput {
+  email: String!
+  firstName: String!
+  lastName: String!
+  password: String!
+}
+
+input UpdatePageInput {
+  id: Float!
+  text: String!
+  title: String!
+}
+
+
+"The javascript `Date` as string. Type represents date and time as the ISO Date string."
+scalar DateTime

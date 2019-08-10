@@ -1,11 +1,12 @@
 import React from 'react'
-import { IPage, QUERY } from './data'
+import { QUERY } from './data'
 import { useQuery } from '@apollo/react-hooks'
 import { Loader } from '../Loader'
 import { ErrorComponent } from '../Error'
+import { ListPages } from './__generated__/ListPages'
 
 export const PagesList = React.memo(() => {
-  const { data, loading, error } = useQuery(QUERY)
+  const { data, loading, error } = useQuery<ListPages>(QUERY)
 
   if (error) {
     return <ErrorComponent />
@@ -19,7 +20,7 @@ export const PagesList = React.memo(() => {
     <>
       <h1>Pages List</h1>
       <ul>
-        {data.listPages.map((page: IPage) => (
+        {data.listPages.map(page => (
           <li key={page.title}>{page.title}</li>
         ))}
       </ul>

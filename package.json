@@ -15,7 +15,11 @@
     "type-check": "tsc --noEmit",
     "format": "prettier --write '*/**/*.{ts,tsx,css,md,json}'",
     "lint:ts": "eslint '{server,src}/**/*.{ts,tsx}'",
-    "lint:css": "stylelint 'src/**/*.{ts,tsx}'"
+    "lint:css": "stylelint 'src/**/*.{ts,tsx}'",
+    "apollo:download-schema": " apollo client:download-schema schema.json",
+    "apollo:generate-types": " apollo client:codegen --target=typescript",
+    "apollo:generate-types:watch": "npm run apollo:generate-types -- --watch",
+    "apollo:remove-all-types": "find . -regex './src/.*__generated__.*' -type d -prune -exec rm -r \"{}\" \\;"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.0.0",
@@ -59,6 +63,7 @@
     "@types/webpack-hot-middleware": "^2.16.5",
     "@types/webpack-merge": "^4.1.5",
     "@typescript-eslint/parser": "^1.13.0",
+    "apollo": "^2.17.2",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "eslint": "^6.1.0",

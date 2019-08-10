@@ -1,0 +1,12 @@
+{
+  "name": "Node Type ORM GraphQL Schema",
+  "schemaPath": "node-type-orm.graphql",
+  "extensions": {
+    "endpoints": {
+      "Default Endpoint": {
+        "url": "https://node-type-orm-graphql.herokuapp.com/graphql",
+        "introspect": true
+      }
+    }
+  }
+}
