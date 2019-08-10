@@ -7,6 +7,11 @@
     "target": "es6",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "src"
-  }
+    "baseUrl": "src",
+    "esModuleInterop": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
