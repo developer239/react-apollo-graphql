@@ -34,7 +34,7 @@
     "react-router-config": "4.4.0-beta.1",
     "react-router-dom": "4.3.1",
     "recompose": "0.30.0",
-    "styled-components": "3.4.9",
+    "styled-components": "3.4.10",
     "yup": "0.26.6"
   },
   "devDependencies": {
