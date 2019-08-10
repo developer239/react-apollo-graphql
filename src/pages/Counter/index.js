@@ -9,6 +9,11 @@ import {
 } from 'modules/counter/gql'
 
 
+export const handleDoubleCounterComplete = ({ doubleCounterValueAsync }) => {
+  // If you need to work with the counter value when the action is complete:
+  console.log('new value ', doubleCounterValueAsync.counterValue)
+}
+
 export const CounterPage = () => (
   <section>
     <H2>Counter Page</H2>
@@ -31,10 +36,7 @@ export const CounterPage = () => (
     <ActionButton
       mutation={DOUBLE_COUNTER}
       label="double (async)"
-      onCompleted={({ doubleCounterValueAsync }) => {
-        // If you need to work with the counter value when the action is complete:
-        console.log('new value ', doubleCounterValueAsync.counterValue)
-      }}
+      onCompleted={handleDoubleCounterComplete}
     />
   </section>
 )
