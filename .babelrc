@@ -1,31 +1,14 @@
 {
   "presets": [
-    "react",
+    "@babel/preset-react",
     [
-      "env",
+      "@babel/preset-env",
       {
-        "targets": {
-          "browsers": [
-            "defaults"
-          ]
-        },
         "useBuiltIns": "entry"
       }
     ]
   ],
   "plugins": [
-    "transform-object-rest-spread"
-  ],
-  "env": {
-    "production": {
-      "only": [
-        "src"
-      ],
-      "plugins": [
-        "transform-react-remove-prop-types",
-        "transform-react-inline-elements",
-        "transform-react-constant-elements"
-      ]
-    }
-  }
+    "@babel/plugin-proposal-object-rest-spread"
+  ]
 }

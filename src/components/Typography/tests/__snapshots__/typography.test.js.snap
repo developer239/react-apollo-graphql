@@ -1,9 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Typography Components A has correct default styles 1`] = `
-<styled.a
-  rel="noopener noreferrer"
-  target="_blank"
+.c0 {
+  color: #4a89dc;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: #5d9cec;
+}
+
+.c0:active,
+.c0:focus {
+  outline: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<withProps(styled.a)
   theme={
     Object {
       "color": Object {
@@ -23,7 +40,37 @@ exports[`Typography Components A has correct default styles 1`] = `
       },
     }
   }
-/>
+>
+  <styled.a
+    rel="noopener noreferrer"
+    target="_blank"
+    theme={
+      Object {
+        "color": Object {
+          "black": "#000",
+          "darkGreen": "#37bc9b",
+          "darkGrey": "#aab2bd",
+          "darkRed": "#da4453",
+          "lightGreen": "#48cfad",
+          "lightGrey": "#ccd1d9",
+          "lightRed": "#ed5565",
+          "primary": "#5d9cec",
+          "secondary": "#4a89dc",
+          "white": "#fff",
+        },
+        "layout": Object {
+          "maxWidth": "62.5rem",
+        },
+      }
+    }
+  >
+    <a
+      className="c0"
+      rel="noopener noreferrer"
+      target="_blank"
+    />
+  </styled.a>
+</withProps(styled.a)>
 `;
 
 exports[`Typography Components H1 has correct default styles 1`] = `
@@ -52,9 +99,31 @@ exports[`Typography Components H1 has correct default styles 1`] = `
   }
 }
 
-<h1
-  className="c0"
-/>
+<styled.h1
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <h1
+    className="c0"
+  />
+</styled.h1>
 `;
 
 exports[`Typography Components H2 has correct default styles 1`] = `
@@ -83,9 +152,31 @@ exports[`Typography Components H2 has correct default styles 1`] = `
   }
 }
 
-<h2
-  className="c0"
-/>
+<styled.h2
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <h2
+    className="c0"
+  />
+</styled.h2>
 `;
 
 exports[`Typography Components H3 has correct default styles 1`] = `
@@ -114,9 +205,31 @@ exports[`Typography Components H3 has correct default styles 1`] = `
   }
 }
 
-<h3
-  className="c0"
-/>
+<styled.h3
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <h3
+    className="c0"
+  />
+</styled.h3>
 `;
 
 exports[`Typography Components HR has correct default styles 1`] = `
@@ -132,9 +245,31 @@ exports[`Typography Components HR has correct default styles 1`] = `
   border-top: 1px solid #f2f2f4;
 }
 
-<hr
-  className="c0"
-/>
+<styled.hr
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <hr
+    className="c0"
+  />
+</styled.hr>
 `;
 
 exports[`Typography Components P has correct default styles 1`] = `
@@ -149,9 +284,31 @@ exports[`Typography Components P has correct default styles 1`] = `
   background: #5d9cec;
 }
 
-<p
-  className="c0"
-/>
+<styled.p
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <p
+    className="c0"
+  />
+</styled.p>
 `;
 
 exports[`Typography Components StyledA has correct default styles 1`] = `
@@ -174,7 +331,29 @@ exports[`Typography Components StyledA has correct default styles 1`] = `
   text-decoration: none;
 }
 
-<a
-  className="c0"
-/>
+<styled.a
+  theme={
+    Object {
+      "color": Object {
+        "black": "#000",
+        "darkGreen": "#37bc9b",
+        "darkGrey": "#aab2bd",
+        "darkRed": "#da4453",
+        "lightGreen": "#48cfad",
+        "lightGrey": "#ccd1d9",
+        "lightRed": "#ed5565",
+        "primary": "#5d9cec",
+        "secondary": "#4a89dc",
+        "white": "#fff",
+      },
+      "layout": Object {
+        "maxWidth": "62.5rem",
+      },
+    }
+  }
+>
+  <a
+    className="c0"
+  />
+</styled.a>
 `;

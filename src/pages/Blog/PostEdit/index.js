@@ -6,14 +6,14 @@ import { POST_DETAIL, UPDATE_POST } from 'modules/blog/gql'
 import PostForm from 'modules/blog/forms/Post'
 
 
-export const PostEditPage = ({ history, match: { params: { postId } } }) => (
+export const PostEditPage = ({ history: { push }, match: { params: { postId } } }) => (
   <section>
     <Query
       query={POST_DETAIL}
       variables={{ id: postId }}
     >
       {({ data: { Post } }) => (
-        <Mutation mutation={UPDATE_POST} onCompleted={() => history.push(`/posts/${postId}`)}>
+        <Mutation mutation={UPDATE_POST} onCompleted={() => push(`/posts/${postId}`)}>
           {mutate => (
             <Fragment>
               <H2>Edit Post</H2>
