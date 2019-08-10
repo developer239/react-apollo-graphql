@@ -36,6 +36,7 @@ Run development server:
 
 - `yarn lint:ts` lint TS files
 - `yarn lint:css` lint CSS
+- `yarn lint:circular-dependencies` detects circular dependencies
 - `yarn apollo:generate-types` generate TS definitions from GraphQL schema
 - `yarn apollo:remove-all-types` remove all automatically generated TS definitions
 - `yarn test` run jest
