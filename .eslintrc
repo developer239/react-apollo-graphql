@@ -6,8 +6,7 @@
     "prettier/react"
   ],
   "plugins": [
-    "react-hooks",
-    "cypress"
+    "react-hooks"
   ],
   "root": true,
   "env": {

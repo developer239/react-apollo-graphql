@@ -1,9 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import { Layout, NavBar } from 'ui-react-library'
-import { renderRoutes } from 'react-router-config'
-
+import Routes from './routes'
 
 const NAV_LINKS = [
   { id: 1, to: '/', label: 'home', component: Link },
@@ -11,20 +9,13 @@ const NAV_LINKS = [
   { id: 3, to: '/posts', label: 'blog', component: Link },
 ]
 
-const App = ({ route, location: { pathname } }) => (
+const App = () => (
   <Layout>
-    <NavBar links={NAV_LINKS} activeRoute={pathname} />
-    {renderRoutes(route.routes)}
+    <NavBar links={NAV_LINKS} activeRoute="/" />
+    <Routes />
   </Layout>
 )
 
-App.propTypes = {
-  route: PropTypes.shape({
-    routes: PropTypes.array.isRequired,
-  }).isRequired,
-  location: PropTypes.shape({
-    pathname: PropTypes.string.isRequired,
-  }).isRequired,
-}
+App.propTypes = {}
 
 export default App

@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom'
 import { ThemeProvider } from 'styled-components'
 import { BrowserRouter } from 'react-router-dom'
 import { ApolloProvider } from 'react-apollo'
-import { renderRoutes } from 'react-router-config'
 import { global, theme } from 'ui-react-library'
-import routes from 'routes'
 import client from 'apolloClient'
+import App from './app'
 
 
 const GlobalStyle = global()
@@ -18,7 +17,7 @@ const render = () => {
         <GlobalStyle />
         <ThemeProvider theme={theme}>
           <BrowserRouter>
-            {renderRoutes(routes)}
+            <App />
           </BrowserRouter>
         </ThemeProvider>
       </ApolloProvider>
