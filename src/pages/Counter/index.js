@@ -31,7 +31,8 @@ export const CounterPage = () => (
     <Query query={COUNTER_VALUE}>
       {({ data: { counterValue } }) => (
         <P>
-          Counter value is: <strong>{counterValue}</strong>
+          Counter value is:{' '}
+          <strong data-testid="counter-value">{counterValue}</strong>
         </P>
       )}
     </Query>
