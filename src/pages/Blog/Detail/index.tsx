@@ -15,6 +15,9 @@ import { DetailContainer, ControlButtonsContainer } from './styled'
 
 const { confirm: antConfirm } = Modal
 
+export const COMPONENT_DELETE_PAGE_TEST_ID = 'component-delete-post'
+export const COMPONENT_EDIT_PAGE_TEST_ID = 'component-edit-page'
+
 export const DetailPage: FC<
   RouteComponentProps<{ pageId: string }>
 > = props => {
@@ -62,9 +65,12 @@ export const DetailPage: FC<
       {userData && userData.me && userData.me.id === data.pageDetail.user.id && (
         <ControlButtonsContainer>
           <Link to={`/blog/${data.pageDetail.id}/edit`}>
-            <Button type="primary">edit page</Button>
+            <Button data-testid={COMPONENT_EDIT_PAGE_TEST_ID} type="primary">
+              edit page
+            </Button>
           </Link>
           <Button
+            data-testid={COMPONENT_DELETE_PAGE_TEST_ID}
             onClick={handleDeletePage}
             disabled={isDeleting}
             type="danger"

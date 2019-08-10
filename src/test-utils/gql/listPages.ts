@@ -1,4 +1,8 @@
-import { LIST_PAGES_QUERY, PAGE_DETAIL_QUERY } from 'modules/blog/gql'
+import {
+  DELETE_PAGE_MUTATION,
+  LIST_PAGES_QUERY,
+  PAGE_DETAIL_QUERY,
+} from 'modules/blog/gql'
 import {
   MockPageType,
   MockPageWithUserType,
@@ -80,4 +84,21 @@ export const mockMeError = () => ({
     query: ME_QUERY,
   },
   error: new Error(ME_ERROR_MESSAGE),
+})
+
+//
+// Delete Post
+
+export const mockDeletePageSuccess = (data: MockPageType) => ({
+  request: {
+    query: DELETE_PAGE_MUTATION,
+    variables: {
+      id: data.id,
+    },
+  },
+  result: {
+    data: {
+      deletePage: data,
+    },
+  },
 })
