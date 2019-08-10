@@ -2,6 +2,8 @@
 
 # React Redux Apollo GraphQL Hot Boilerplate
 
+You can try this app **[here](http://react-redux-apollographql-hot-boilerplate.jut02.vas-server.cz)**.
+
 ## About
 
 Backend is provided by **[graph.cool](https://www.graph.cool/)**.
