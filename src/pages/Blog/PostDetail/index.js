@@ -5,16 +5,20 @@ import { Query } from 'components'
 import { nl2br } from 'utils/typography'
 import { POST_DETAIL } from 'modules/blog/gql'
 
-
 const { H2, P } = Typography
 
-export const PostDetailPage = ({ match: { params: { postId } } }) => (
+export const PostDetailPage = ({
+  match: {
+    params: { postId },
+  },
+}) => (
   <Section>
-    <Query
-      query={POST_DETAIL}
-      variables={{ id: postId }}
-    >
-      {({ data: { Post: { title, text } } }) => (
+    <Query query={POST_DETAIL} variables={{ id: postId }}>
+      {({
+        data: {
+          Post: { title, text },
+        },
+      }) => (
         <>
           <H2>{title}</H2>
           <P>{nl2br(text)}</P>

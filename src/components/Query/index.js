@@ -3,12 +3,15 @@ import PropTypes from 'prop-types'
 import { Query } from 'react-apollo'
 import { Spinner, Alert, Margin } from 'ui-react-library'
 
-
 export const QueryWrapper = ({ children, ...rest }) => (
   <Query {...rest}>
     {({ loading, error, data }) => {
       if (loading) {
-        return <Margin top={3}><Spinner /></Margin>
+        return (
+          <Margin top={3}>
+            <Spinner />
+          </Margin>
+        )
       }
 
       if (error) {

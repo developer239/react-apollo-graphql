@@ -1,6 +1,6 @@
 {
   "*.js": [
-    "eslint --fix",
+    "eslint",
     "prettier --write",
     "stylelint",
     "git add"
