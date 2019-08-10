@@ -1,4 +1,5 @@
 import React, { FC } from 'react'
+import nl2br from 'react-nl2br'
 import { RouteComponentProps } from 'react-router'
 import { message, Modal } from 'antd'
 import { Link } from 'react-router-dom'
@@ -55,7 +56,7 @@ export const DetailPage: FC<
     <>
       <DetailContainer>
         <H1>{data.pageDetail.title}</H1>
-        <p>{data.pageDetail.text}</p>
+        <p>{nl2br(data.pageDetail.text)}</p>
       </DetailContainer>
 
       {userData && userData.me && userData.me.id === data.pageDetail.user.id && (
