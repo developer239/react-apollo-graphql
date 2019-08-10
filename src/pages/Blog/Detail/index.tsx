@@ -55,6 +55,10 @@ export const DetailPage: FC<
     return <ErrorComponent>{error.message}</ErrorComponent>
   }
 
+  const moreFromTheAuthor = data.pageDetail.user.pages.filter(
+    page => page.id !== String(pageId)
+  )
+
   const handleDeletePage = async () => {
     await deletePage({ variables: { id: Number(data.pageDetail.id) } })
     props.history.push('/')
@@ -64,8 +68,19 @@ export const DetailPage: FC<
     <div>
       <h1>{data.pageDetail.title}</h1>
       <p>{data.pageDetail.text}</p>
-      <hr />
-      author: {data.pageDetail.user.email}
+      {Boolean(moreFromTheAuthor.length) && (
+        <div>
+          <h4>More from {data.pageDetail.user.email}</h4>
+          <ul>
+            {moreFromTheAuthor.map(anotherPage => (
+              <li>
+                <Link to={`/blog/${anotherPage.id}`}>{anotherPage.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {userData && userData.me && userData.me.id === data.pageDetail.user.id && (
         <div>
           <Link to={`/blog/${data.pageDetail.id}/edit`}>

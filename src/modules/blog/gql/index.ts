@@ -19,6 +19,10 @@ export const PAGE_DETAIL_QUERY = gql`
       user {
         id
         email
+        pages {
+          id
+          title
+        }
       }
     }
   }
