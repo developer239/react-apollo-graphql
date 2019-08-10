@@ -1,5 +1,8 @@
 FROM node:alpine
 
+ENV NODE_ENV='production'
+ENV SERVER_URL='https://node-type-orm-graphql.herokuapp.com/graphql'
+
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app

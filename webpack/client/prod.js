@@ -7,7 +7,8 @@ module.exports = merge(common, {
   entry: './src/index.tsx',
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      'process.env.SERVER_URL': JSON.stringify(process.env.SERVER_URL),
     }),
   ],
   optimization: {

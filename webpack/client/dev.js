@@ -1,5 +1,7 @@
 const webpack = require('webpack')
+const path = require('path')
 const merge = require('webpack-merge')
+const Dotenv = require('dotenv-webpack')
 const common = require('./common')
 const {
   PORT,
@@ -13,6 +15,9 @@ module.exports = merge(common, {
   ],
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new Dotenv({
+      path: path.resolve(__dirname, '..', '..', '.env.development'),
+    }),
   ],
   devServer: {
     hot: true,

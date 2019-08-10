@@ -1,7 +1,6 @@
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
-const Dotenv = require('dotenv-webpack')
 const {
   BUILD_DIR,
   BUILD_DIR_PUBLIC,
@@ -50,9 +49,6 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
-    }),
-    new Dotenv({
-      path: path.resolve(__dirname, '..', '..', '.env.development'),
     }),
   ],
 }
