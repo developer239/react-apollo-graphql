@@ -1,15 +1,11 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { Layout } from './components/Layout'
 import { Navigation } from './components/Navigation'
-import { renderRoutes, RouteConfig } from 'react-router-config'
+import { Routes } from './routes'
 
-interface IProps {
-  route: RouteConfig
-}
-
-export const App: FC<IProps> = ({ route }) => (
+export const App = () => (
   <Layout>
     <Navigation />
-    {renderRoutes(route.routes)}
+    <Routes />
   </Layout>
 )

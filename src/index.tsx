@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import { renderRoutes } from 'react-router-config'
-import { routes } from './routes'
+import { App } from './app'
 
 const renderApp = () => {
   ReactDOM.render(
-    <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>,
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
     document.querySelector('#root')
   )
 }

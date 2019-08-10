@@ -1,26 +1,19 @@
+import React from 'react'
+import { Switch, Route } from 'react-router-dom'
 import { HomePage } from './pages/Home'
 import { AboutPage } from './pages/About'
 import { NotFoundPage } from './pages/NotFound'
-import { App } from './app'
 
-export const routes = [
-  {
-    component: App,
-    routes: [
-      {
-        component: HomePage,
-        path: '/',
-        exact: true,
-      },
-      {
-        component: AboutPage,
-        path: '/about',
-        exact: true,
-      },
-      {
-        component: NotFoundPage,
-        path: '*',
-      },
-    ],
-  },
-]
+export const ROUTE_PATHS = {
+  home: '/',
+  about: '/about',
+  notFound: '*',
+}
+
+export const Routes = () => (
+  <Switch>
+    <Route path={ROUTE_PATHS.home} exact component={HomePage} />
+    <Route path={ROUTE_PATHS.about} exact component={AboutPage} />
+    <Route path={ROUTE_PATHS.notFound} exact component={NotFoundPage} />
+  </Switch>
+)
