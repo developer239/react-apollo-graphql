@@ -5,6 +5,10 @@
   "repository": "https://github.com/developer239/react-apollo-graphql.git",
   "author": "Michal Jarnot <m.jarnot@yahoo.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --open --hot --mode development",
+    "build": "webpack --mode production"
+  },
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -15,6 +19,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
     "webpack": "^4.39.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
   }
 }
