@@ -12,7 +12,7 @@ module.exports = {
     done()
   },
 
-  'Shows Basic Home Page Content': () => {
+  'Required elements exist': () => {
     this.client.goToPage('/')
     this.assert.containsText(selectors.home.header, 'React Redux Apollo GraphQL Hot Boilerplate 2.0')
     this.client.waitForElementVisible(selectors.home.dummyImg)

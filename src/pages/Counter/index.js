@@ -11,10 +11,10 @@ export const CounterPage = ({ increment, decrement, counterValue }) => (
   <Grid>
     <PageHeader>Redux Counter</PageHeader>
     <p>
-      Current counter value is: <strong>{counterValue}</strong>
+      Current counter value is: <strong id="value">{counterValue}</strong>
     </p>
-    <Button onClick={increment}>Increment</Button>
-    <Button onClick={decrement}>Decrement</Button>
+    <Button id="increment" onClick={increment}>Increment</Button>
+    <Button id="decrement" onClick={decrement}>Decrement</Button>
   </Grid>
 )
 
