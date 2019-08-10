@@ -7,12 +7,14 @@ import { POST_DETAIL } from 'modules/blog/gql'
 
 const { H2, P } = Typography
 
+export const POST_DETAIL_TEST_ID = 'page-post-detail'
+
 export const PostDetailPage = ({
   match: {
     params: { postId },
   },
 }) => (
-  <Section data-testid="page-post-detail">
+  <Section data-testid={POST_DETAIL_TEST_ID}>
     <Query query={POST_DETAIL} variables={{ id: postId }}>
       {({
         data: {
