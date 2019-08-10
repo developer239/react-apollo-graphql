@@ -1,6 +1,6 @@
 import { gql } from 'apollo-boost'
 
-export const QUERY = gql`
+export const LIST_PAGES_QUERY = gql`
   query ListPages {
     listPages {
       id

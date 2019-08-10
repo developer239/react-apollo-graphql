@@ -1,12 +1,12 @@
 import React from 'react'
-import { QUERY } from './data'
 import { useQuery } from '@apollo/react-hooks'
 import { Loader } from '../Loader'
 import { ErrorComponent } from '../Error'
-import { ListPages } from './__generated__/ListPages'
+import { LIST_PAGES_QUERY } from '../../modules/blog/gql'
+import { ListPages } from '../../modules/blog/gql/__generated__/ListPages'
 
 export const PagesList = React.memo(() => {
-  const { data, loading, error } = useQuery<ListPages>(QUERY)
+  const { data, loading, error } = useQuery<ListPages>(LIST_PAGES_QUERY)
 
   if (error) {
     return <ErrorComponent />
