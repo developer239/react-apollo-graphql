@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundPage Component renders correctly 1`] = `
+<section>
+  <styled.h1>
+    Page Not Found :(
+  </styled.h1>
+  <styled.p>
+    Please go back 
+    <Link
+      to="/"
+    >
+      home
+    </Link>
+  </styled.p>
+</section>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Typography nl2br renders with new lines replaced by br elements 1`] = `
+<div>
+  Some simple
+  <br
+    key="1"
+  />
+  <br
+    key="3"
+  />
+  text.
+</div>
+`;
+
+exports[`Typography nl2br renders without any new lines 1`] = `
+<div>
+  Some simple text.
+</div>
+`;
