@@ -12,6 +12,7 @@
     }
   },
   "rules": {
+    "object-curly-newline": 0,
     "function-paren-newline": 0,
     "semi": 0,
     "react/jsx-filename-extension": 0,
