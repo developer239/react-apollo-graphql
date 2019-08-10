@@ -8,9 +8,9 @@ const StyledFormControl = styled(FormControl)`
   min-height: 15rem;
 `
 
-const TextArea = ({ className, id, componentProps, label, placeholder, type }) => {
-  const { input, meta } = componentProps
+const TextArea = ({ className, id, input, meta, label, placeholder, type }) => {
   const hasInvalidState = meta.invalid && meta.touched
+
   return (
     <FormGroup className={className} validationState={hasInvalidState ? 'error' : null}>
       {!!label && <ControlLabel htmlFor={id}>{label}:</ControlLabel>}
@@ -34,21 +34,19 @@ TextArea.defaultProps = {
 }
 
 TextArea.propTypes = {
-  componentProps: PropTypes.shape({
-    input: PropTypes.shape({
-      value: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.number,
-      ]).isRequired,
-      onChange: PropTypes.func.isRequired,
-      onBlur: PropTypes.func.isRequired,
-    }).isRequired,
-    meta: PropTypes.shape({
-      error: PropTypes.string,
-      dirty: PropTypes.bool,
-      invalid: PropTypes.bool,
-    }),
+  input: PropTypes.shape({
+    value: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number,
+    ]).isRequired,
+    onChange: PropTypes.func.isRequired,
+    onBlur: PropTypes.func.isRequired,
   }).isRequired,
+  meta: PropTypes.shape({
+    error: PropTypes.string,
+    dirty: PropTypes.bool,
+    invalid: PropTypes.bool,
+  }),
   label: PropTypes.string,
   placeholder: PropTypes.string,
   type: PropTypes.string,
