@@ -4,5 +4,9 @@
   "description": "JavaScript meets web. React in tandem with Apollo. Minimal implementation that will help you get started with GraphQL.",
   "repository": "https://github.com/developer239/react-apollo-graphql.git",
   "author": "Michal Jarnot <m.jarnot@yahoo.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
 }
