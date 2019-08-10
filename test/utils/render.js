@@ -1,6 +1,6 @@
 import React from 'react'
 import { MemoryRouter } from 'react-router-dom'
-import { render } from 'react-testing-library'
+import { render } from '@testing-library/react'
 import { ThemeProvider } from 'styled-components'
 import { theme } from 'ui-react-library'
 import ApolloProvider from '../../__mocks__/ApolloProvider'

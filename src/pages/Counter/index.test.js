@@ -1,5 +1,5 @@
 import React from 'react'
-import { waitForElement } from 'react-testing-library'
+import { waitForElement } from '@testing-library/react'
 import { renderApp } from '../../../test/utils/render'
 import { fakeDefaultCounterValue } from '../../../test/utils/gql-counter'
 import App from '../../app'
