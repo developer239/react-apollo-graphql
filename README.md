@@ -60,3 +60,10 @@
  
  This application is Heroku ready. All you have to do is set `config:set NPM_CONFIG_PRODUCTION=false` in your your config. Everything else is prepared.
  
+ ## Docker
+ 
+ The development process is not dockerized. However, it is possible to run a production application from docker container:
+ 
+ ```
+ docker-compose up
+ ```

@@ -16,7 +16,7 @@ describe('Hamburger Components', () => {
 
     it('has correct default styles when open', () => {
       const wrapper = shallow(
-        <Hamburger isOpen={true} theme={theme} />,
+        <Hamburger isOpen theme={theme} />,
       )
       expect(wrapper).toMatchSnapshot()
     })
