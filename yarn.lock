@@ -2551,9 +2551,9 @@ discontinuous-range@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/discontinuous-range/-/discontinuous-range-1.0.0.tgz#e38331f0844bba49b9a9cb71c771585aab1bc65a"
 
-dll-link-webpack-plugin@3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/dll-link-webpack-plugin/-/dll-link-webpack-plugin-3.0.5.tgz#7a7387753c21434d19e232ebe801afef9708194e"
+dll-link-webpack-plugin@3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/dll-link-webpack-plugin/-/dll-link-webpack-plugin-3.0.6.tgz#44423a551ceda3599af75706de48b81872ef5029"
   dependencies:
     chalk "^1.1.3"
     fs-extra "^5.0.0"
