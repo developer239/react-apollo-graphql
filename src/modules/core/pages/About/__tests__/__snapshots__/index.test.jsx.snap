@@ -39,6 +39,14 @@ exports[`component renders 1`] = `
     </li>
     <li>
       <a
+        href="https://github.com/apollographql/react-apollo"
+        rel="noopener noreferrer"
+        target="_blank">
+        React Apollo
+      </a>
+    </li>
+    <li>
+      <a
         href="https://github.com/facebook/react"
         rel="noopener noreferrer"
         target="_blank">

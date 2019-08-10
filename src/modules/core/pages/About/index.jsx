@@ -16,6 +16,8 @@ const About = () => (
       <li>Hot reloading</li>
       <li><a href="https://github.com/webpack/webpack" target="_blank" rel="noopener noreferrer">Webpack2</a>
       </li>
+      <li><a href="https://github.com/apollographql/react-apollo" target="_blank" rel="noopener noreferrer">React Apollo</a>
+      </li>
       <li><a href="https://github.com/facebook/react" target="_blank" rel="noopener noreferrer">React</a>
       </li>
       <li><a href="https://github.com/rackt/react-router" target="_blank" rel="noopener noreferrer">React
