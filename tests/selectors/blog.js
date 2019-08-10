@@ -19,5 +19,6 @@ module.exports = {
     title: 'h1',
     description: 'p',
     buttonDelete: '#deletePost',
+    buttonEdit: '#editPost',
   },
 }
