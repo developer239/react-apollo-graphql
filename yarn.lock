@@ -9037,10 +9037,10 @@ uglify-js@^3.1.4:
     commander "~2.17.1"
     source-map "~0.6.1"
 
-ui-react-library@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.8.1.tgz#19d94d5293b2e20d68d2bc2e13347cd3aef2e130"
-  integrity sha512-vc3jOcqwwr5ogYdrqFbRjp9S/ZNEr2jEunZhZYVvW6h6VqHwVAIJHTKsqlOgGI7mprIF2BFfwDva+AMkVAqY3w==
+ui-react-library@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.9.0.tgz#296af17a13e4fa7e859fecf55db0ebd147f1069b"
+  integrity sha512-NGnVbEdNo2/Gz1u5mSuEYH8jpKpBBDYFsSxTa/XWm3fGJOyKN4qU8QvyKQdQVuuX9kSsdqdU2D4dddhxceYwoA==
   dependencies:
     ramda "0.26.1"
     styled-is "1.3.0"
