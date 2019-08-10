@@ -18,7 +18,7 @@ export const MePage = () => {
 
   return (
     <div>
-      <h1>Me Page</h1>
+      <h1>Me</h1>
       email: {data.me.email} <br />
       name: {data.me.firstName} {data.me.lastName}
     </div>
