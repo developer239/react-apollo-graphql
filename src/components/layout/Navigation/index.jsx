@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
@@ -27,12 +28,12 @@ const Navigation = props => (
 )
 
 Navigation.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  links: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      id: React.PropTypes.number.isRequired,
-      href: React.PropTypes.string.isRequired,
-      label: React.PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      href: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
     })
   ).isRequired,
 }

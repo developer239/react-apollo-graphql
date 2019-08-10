@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router'
 import { graphql } from 'react-apollo'
 import { Grid, PageHeader } from 'react-bootstrap'
@@ -31,13 +32,13 @@ export const ListPosts = ({ data }) => {
 }
 
 ListPosts.propTypes = {
-  data: React.PropTypes.shape({
-    loading: React.PropTypes.bool,
-    error: React.PropTypes.object,
-    allPosts: React.PropTypes.arrayOf(
-      React.PropTypes.shape({
-        title: React.PropTypes.string.isRequired,
-        text: React.PropTypes.string.isRequired,
+  data: PropTypes.shape({
+    loading: PropTypes.bool,
+    error: PropTypes.object,
+    allPosts: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        text: PropTypes.string.isRequired,
       })
     ),
   }).isRequired,
