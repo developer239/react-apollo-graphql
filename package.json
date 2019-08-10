@@ -90,6 +90,9 @@
     "redux",
     "redux-form",
     "react-redux",
+    "nightwatch",
+    "selenium",
+    "selenium-download",
     "webpack",
     "babel",
     "eslint"
