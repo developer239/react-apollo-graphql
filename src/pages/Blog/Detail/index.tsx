@@ -32,7 +32,7 @@ export const DetailPage: FC<
   }
 
   const morePages = data.pageDetail.user.pages.filter(
-    page => page.id !== String(pageId)
+    page => String(page.id) !== String(pageId)
   )
 
   const handleDeletePage = () => {
