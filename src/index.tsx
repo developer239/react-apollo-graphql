@@ -1,16 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter } from 'react-router-dom'
+import { Router } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
 import { ApolloProvider } from '@apollo/react-hooks'
 import { App } from './app'
 import { apolloClient } from './apolloClient'
 
+export const browserHistory = createBrowserHistory()
+
 const renderApp = () => {
   ReactDOM.render(
     <ApolloProvider client={apolloClient}>
-      <BrowserRouter>
+      <Router history={browserHistory}>
         <App />
-      </BrowserRouter>
+      </Router>
     </ApolloProvider>,
     document.querySelector('#root')
   )

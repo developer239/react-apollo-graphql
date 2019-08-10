@@ -21,7 +21,7 @@ export const PagesList = React.memo(() => {
       <h1>Pages List</h1>
       <ul>
         {data.listPages.map(page => (
-          <li key={page.title}>{page.title}</li>
+          <li key={page.id}>{page.title}</li>
         ))}
       </ul>
     </>

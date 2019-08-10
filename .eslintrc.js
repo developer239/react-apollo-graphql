@@ -30,6 +30,7 @@ module.exports = {
     'react/no-did-mount-set-state': 'error',
     'import/no-default-export': 'error',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'error'
+    'react-hooks/exhaustive-deps': 0,
+    'react/prop-types': 0
   }
 }

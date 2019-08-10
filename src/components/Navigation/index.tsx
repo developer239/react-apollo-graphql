@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { AuthButtons } from './AuthButtons'
 
 export const Navigation = () => (
   <div>
@@ -7,9 +8,7 @@ export const Navigation = () => (
       <li>
         <Link to="/">Home</Link>
       </li>
-      <li>
-        <Link to="/register">Register</Link>
-      </li>
+      <AuthButtons />
     </ul>
   </div>
 )

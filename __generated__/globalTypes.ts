@@ -6,6 +6,13 @@
 // START Enums and Input Objects
 //==============================================================
 
+export interface RegisterInput {
+  email: string
+  firstName: string
+  lastName: string
+  password: string
+}
+
 //==============================================================
 // END Enums and Input Objects
 //==============================================================

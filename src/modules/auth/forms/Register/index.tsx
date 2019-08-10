@@ -1,6 +1,11 @@
 import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
+import { useMutation } from '@apollo/react-hooks'
+import { REGISTER_MUTATION } from '../../gql'
+import { auth } from '../../../../services/auth'
+import { Register, RegisterVariables } from '../../gql/__generated__/Register'
+import { browserHistory } from '../../../../index'
 
 const initialValues = {
   email: '',
@@ -21,50 +26,60 @@ const registerSchema = Yup.object().shape({
   lastName: Yup.string().required('Required'),
 })
 
-export const RegisterForm = () => (
-  <Formik
-    initialValues={initialValues}
-    validationSchema={registerSchema}
-    onSubmit={values => {
-      console.log(values)
-    }}
-  >
-    {() => (
-      <Form>
-        <div>
-          <label>
-            Email:
-            <Field name="email" />
-          </label>
-          <ErrorMessage name="email" />
-        </div>
+export const RegisterForm = () => {
+  const [register] = useMutation<Register, RegisterVariables>(REGISTER_MUTATION)
 
-        <div>
-          <label>
-            Password:
-            <Field name="password" type="password" />
-            <ErrorMessage name="password" />
-          </label>
-        </div>
+  return (
+    <Formik
+      initialValues={initialValues}
+      validationSchema={registerSchema}
+      onSubmit={async values => {
+        const result = await register({ variables: { data: values } })
+        if (result) {
+          auth.setAccessToken(result.data.register.accessToken)
+          browserHistory.push('/me')
+        }
+      }}
+    >
+      {({ isSubmitting }) => (
+        <Form>
+          <div>
+            <label>
+              Email:
+              <Field name="email" />
+            </label>
+            <ErrorMessage name="email" />
+          </div>
 
-        <div>
-          <label>
-            First Name
-            <Field name="firstName" type="firstName" />
-            <ErrorMessage name="firstName" />
-          </label>
-        </div>
+          <div>
+            <label>
+              Password:
+              <Field name="password" type="password" />
+              <ErrorMessage name="password" />
+            </label>
+          </div>
 
-        <div>
-          <label>
-            Last Name
-            <Field name="lastName" type="lastName" />
-            <ErrorMessage name="lastName" />
-          </label>
-        </div>
+          <div>
+            <label>
+              First Name
+              <Field name="firstName" type="firstName" />
+              <ErrorMessage name="firstName" />
+            </label>
+          </div>
 
-        <button type="submit">Submit</button>
-      </Form>
-    )}
-  </Formik>
-)
+          <div>
+            <label>
+              Last Name
+              <Field name="lastName" type="lastName" />
+              <ErrorMessage name="lastName" />
+            </label>
+          </div>
+
+          <button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Submitting...' : 'Submit'}
+          </button>
+        </Form>
+      )}
+    </Formik>
+  )
+}

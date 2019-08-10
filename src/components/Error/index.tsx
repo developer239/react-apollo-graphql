@@ -1,3 +1,5 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-export const ErrorComponent = () => <div>something went wrong</div>
+export const ErrorComponent: FC = ({ children }) => (
+  <div>{children || 'something went wrong'}</div>
+)
