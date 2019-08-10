@@ -1,3 +1,5 @@
+[![Build Status](http://jut02.vas-server.cz:8081/buildStatus/icon?job=ReactReduxApolloGraphQLHotBoilerplate)](http://jut02.vas-server.cz:8081/job/ReactReduxApolloGraphQLHotBoilerplate/)
+
 # React Redux Apollo GraphQL Hot Boilerplate
 
 ## About
@@ -48,7 +50,7 @@ npm run test
 
 ## To do
 
-- [ ] Add support for continuous integration with [jenkins](https://github.com/jenkinsci)  or [travis](https://github.com/travis-ci/travis-ci)
+- [x] Add support for continuous integration with [jenkins](https://github.com/jenkinsci)  or [travis](https://github.com/travis-ci/travis-ci)
 - [ ] Add [nightwatch](https://github.com/nightwatchjs/nightwatch) in order to support E2E testing
 - [ ] Create separate branch with [immutable](https://github.com/facebook/immutable-js)
 - [ ] Create separate branch with [flow](https://github.com/facebook/flow)
