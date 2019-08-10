@@ -1,26 +1,67 @@
 import React from 'react'
-import { Button } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 
-const StyledButton = styled(Button)`
-  margin-right: 0.5rem;
+export const getButtonColor = ({ bgType, theme: { color } }) => {
+  switch (bgType) {
+    case 'success':
+      return {
+        background: color.lightGreen,
+        hover: color.darkGreen,
+      }
+    case 'error':
+      return {
+        background: color.lightRed,
+        hover: color.darkRed,
+      }
+    default:
+      return {
+        background: color.lightGrey,
+        hover: color.darkGrey,
+      }
+  }
+}
+
+export const StyledButton = styled.button`
+  background-color: ${props => getButtonColor(props).background};
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 150ms linear;
+  margin-right: 2px;
+  
+  &:hover {
+    background-color: ${props => getButtonColor(props).hover};
+  }
+  
+  &:focus {
+    outline: 0;
+  }
+  
+  &:active {
+    background-color: ${({ bgType, theme: { color } }) => bgType ? color.lightGrey : color.primary};
+  }
 `
 
-const ButtonComponent = ({ children, bsStyle, ...rest }) => (
-  <StyledButton {...rest} bsStyle={bsStyle}>
+const Button = ({ bgType, children, ...rest }) => (
+  <StyledButton bgType={bgType} {...rest}>
     {children}
   </StyledButton>
 )
 
-ButtonComponent.defaultProps = {
-  bsStyle: 'default',
+Button.defaultProps = {
+  bgType: null,
 }
 
-ButtonComponent.propTypes = {
-  children: PropTypes.node,
-  bsStyle: PropTypes.string,
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  bgType: PropTypes.oneOf(['success', 'error']),
 }
 
-export default ButtonComponent
+export default Button

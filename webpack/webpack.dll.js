@@ -2,26 +2,29 @@ const webpack = require('webpack')
 const path = require('path')
 
 
+const MODE = process.env.NODE_ENV === 'production' ? 'production' : 'development'
+
+// These libraries are built only once.
 const vendors = [
-  'apollo-cache-inmemory',
   'apollo-client',
+  'apollo-link',
   'apollo-link-http',
+  'apollo-link-state',
+  'formik',
   'graphql',
   'graphql-tag',
   'react',
   'react-apollo',
-  'react-bootstrap',
   'react-dom',
-  'react-nl2br',
-  'react-redux',
-  'react-router-bootstrap',
+  'react-router-config',
   'react-router-dom',
   'recompose',
-  'redux',
-  'redux-form',
+  'styled-components',
+  'yup',
 ]
 
 module.exports = {
+  mode: MODE,
   devtool: 'source-map',
   entry: {
     vendors,
@@ -35,7 +38,8 @@ module.exports = {
     ],
   },
   output: {
-    filename: 'vendors.js',
+    publicPath: '/',
+    filename: 'vendors-[hash].js',
     path: path.resolve(__dirname, '..', 'public', 'vendor'),
     library: 'vendor',
   },

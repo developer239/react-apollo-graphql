@@ -1,42 +1,56 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router-dom'
-import { compose } from 'recompose'
-import { graphql } from 'react-apollo'
-import { Grid, PageHeader } from 'react-bootstrap'
-import { Button } from 'components'
-import { showSpinnerWhileApolloLoading, showApolloError, showNoData } from 'common/helpers'
-import List from 'modules/blog/components/PostsList'
-import { queryAllPosts } from 'modules/blog/qql'
+import styled from 'styled-components'
+import { H2, P } from 'components/Typography'
+import { Button, Link, Query, ActionButton } from 'components'
+import { nl2br } from 'utils/typography'
+import { ALL_POSTS, DELETE_POST } from 'modules/blog/gql'
 
 
-export const ListPostsPage = ({ data: { allPosts } }) => (
-  <Grid>
-    <PageHeader>All posts</PageHeader>
-    <Link id="createNewPost" to="/posts/create">
-      <Button bsStyle="primary">Create New Post</Button>
-    </Link>
-    <List items={allPosts} />
-  </Grid>
-)
+const PostContainer = styled.div`
+  margin-bottom: 25px;
+`
 
-ListPostsPage.propTypes = {
-  data: PropTypes.shape({
-    loading: PropTypes.bool,
-    error: PropTypes.shape({
-      message: PropTypes.string.isRequired,
-    }),
-    allPosts: PropTypes.arrayOf(PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-    })),
-  }).isRequired,
+const CreateNewButton = styled(Button)`
+  margin-bottom: 25px;
+`
+
+const updatePostCache = (cache, { data: { deletePost } }) => {
+  const postsCache = cache.readQuery({ query: ALL_POSTS })
+  cache.writeQuery({
+    query: ALL_POSTS,
+    data: {
+      allPosts: postsCache.allPosts.filter(post => post.id !== deletePost.id),
+    },
+  })
 }
 
-const enhance = compose(
-  graphql(queryAllPosts),
-  showApolloError(),
-  showSpinnerWhileApolloLoading(),
+export const ListPostsPage = () => (
+  <section>
+    <Link to={`/posts/new`}>
+      <CreateNewButton bgType="success">create new post</CreateNewButton>
+    </Link>
+    <Query
+      query={ALL_POSTS}
+    >
+      {({ data: { allPosts } }) => (
+        allPosts.map(({ id, title, text }) => (
+          <PostContainer key={id}>
+            <H2>{title}</H2>
+            <P>{nl2br(text)}</P>
+            <Link to={`/posts/${id}`}><Button>detail</Button></Link>
+            <Link to={`/posts/${id}/edit`}><Button>edit</Button></Link>
+            <ActionButton
+              label="delete"
+              btnBgType="error"
+              mutation={DELETE_POST}
+              variables={{ id }}
+              update={updatePostCache}
+            />
+          </PostContainer>
+        ))
+      )}
+    </Query>
+  </section>
 )
 
-export default enhance(ListPostsPage)
+export default ListPostsPage

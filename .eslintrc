@@ -1,32 +1,41 @@
 {
   "parser": "babel-eslint",
-  "extends": "airbnb",
-  "plugins": [
-    "react"
+  "extends": [
+    "@strv/javascript/environments/react/v16",
+    "@strv/javascript/environments/react/v15"
   ],
   "settings": {
     "import/resolver": {
       "webpack": {
-        "config": "webpack/webpack.common.babel.js"
+        "config": "webpack/webpack.common.js"
       }
     }
   },
   "rules": {
-    "object-curly-newline": 0,
-    "function-paren-newline": 0,
-    "semi": 0,
-    "react/jsx-filename-extension": 0,
-    "jsx-a11y/href-no-hash": 0,
-    "jsx-a11y/anchor-is-valid": [
-      "warn",
+    "max-classes-per-file": 0,
+    "import/no-named-as-default": 0,
+    "react/jsx-key": "error",
+    "max-len": [
+      "error",
       {
-        "aspects": [
-          "invalidHref"
-        ]
+        "code": 100
       }
     ],
-    "react/require-default-props": 0,
-    "import/no-extraneous-dependencies": 0,
-    "import/prefer-default-export": 0
+    "import/newline-after-import": [
+      "error",
+      {
+        "count": 2
+      }
+    ]
+  },
+  "globals": {
+    "require": true,
+    "process": true,
+    "module": true,
+    "__dirname": true,
+    "describe": true,
+    "it": true,
+    "expect": true,
+    "jest": true
   }
 }

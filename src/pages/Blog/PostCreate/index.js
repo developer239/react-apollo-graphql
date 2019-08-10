@@ -1,39 +1,42 @@
-import React from 'react'
-import { graphql } from 'react-apollo'
-import { Grid, PageHeader } from 'react-bootstrap'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
+import { Mutation } from 'components'
 import PostForm from 'modules/blog/forms/Post'
-import { compose, withHandlers } from 'recompose'
-import { createPost, queryAllPosts } from 'modules/blog/qql'
+import { CREATE_POST, ALL_POSTS } from 'modules/blog/gql'
+import { H2 } from 'components/Typography'
 
 
-const PostCreatePage = ({ handleOnSubmit }) => (
-  <Grid>
-    <PageHeader>Create Posts</PageHeader>
-    <PostForm onSubmit={handleOnSubmit} />
-  </Grid>
+const updatePostCache = (cache, { data: { createPost } }) => {
+  const postsCache = cache.readQuery({ query: ALL_POSTS })
+  cache.writeQuery({
+    query: ALL_POSTS,
+    data: {
+      allPosts: [createPost, ...postsCache.allPosts],
+    },
+  })
+}
+
+export const PostCreatePage = ({ history }) => (
+  <section>
+    <Mutation
+      mutation={CREATE_POST}
+      update={updatePostCache}
+      onCompleted={({ createPost: { id }}) => history.push(`/posts/${id}`)}
+    >
+      {mutate => (
+        <Fragment>
+          <H2>Create New Post</H2>
+          <PostForm submit={values => mutate({ variables: values })} />
+        </Fragment>
+      )}
+    </Mutation>
+  </section>
 )
 
 PostCreatePage.propTypes = {
-  handleOnSubmit: PropTypes.func.isRequired,
-  mutate: PropTypes.func.isRequired, // eslint-disable-line
-  history: PropTypes.shape({ // eslint-disable-line
+  history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
 }
 
-const enhance = compose(
-  graphql(createPost),
-  withHandlers({
-    handleOnSubmit: ({ history, mutate }) =>
-      data =>
-        mutate({
-          variables: data,
-          refetchQueries: [{ query: queryAllPosts }],
-        })
-          .then(response => history.push(`/posts/${response.data.createPost.id}`))
-          .catch(() => global.alert('There was an error while creating your post.')),
-  }),
-)
-
-export default enhance(PostCreatePage)
+export default PostCreatePage

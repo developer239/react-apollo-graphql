@@ -22,15 +22,9 @@ app.use(webpackHotMiddleware(compiler, { log: false }))
 // Serve static files from /public directory
 app.use(express.static(DIST_DIR))
 
-// Create route for static vendors.js file
-app.get('/vendor/vendors.js', (req, res) => {
-  res.sendFile(`${DIST_DIR}/vendor/vendors.js`)
-})
-
 // This is kind of a History Api Fallback
 app.use('*', (req, res, next) => {
   const filename = path.join(compiler.outputPath, 'index.html')
-  // eslint-disable-next-line
   compiler.outputFileSystem.readFile(filename, (err, result) => {
     if (err) {
       return next(err)
