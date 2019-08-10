@@ -31,6 +31,10 @@ module.exports = {
         enforce: 'pre'
       },
       {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.html$/,
         use: [
           {
