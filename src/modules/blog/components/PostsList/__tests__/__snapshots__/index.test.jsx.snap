@@ -15,7 +15,7 @@ exports[`component renders with all props 1`] = `
       <p>
         Item text
       </p>
-      <Link
+      <Component
         onlyActiveOnIndex={false}
         style={Object {}}
         to="/posts/1">
@@ -28,7 +28,7 @@ exports[`component renders with all props 1`] = `
           onMouseOver={[Function]}>
           Detail
         </Button>
-      </Link>
+      </Component>
     </Col>
   </Row>
 </Grid>

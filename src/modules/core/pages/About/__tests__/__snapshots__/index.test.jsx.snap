@@ -165,6 +165,7 @@ exports[`component renders 1`] = `
   </h1>
   <span>
     <input
+      checked={true}
       disabled={true}
       type="checkbox" />
      Add support for continuous integration with
