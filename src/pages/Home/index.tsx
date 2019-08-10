@@ -1,10 +1,10 @@
 import React from 'react'
-import { Typography } from 'antd'
-import { PagesList } from 'pages/Blog/components/PagesList'
+import { H1 } from 'components/Typography/H1'
+import { PagesList } from 'modules/blog/components/PagesList'
 
 export const HomePage = () => (
   <>
-    <Typography.Title level={2}>All Pages</Typography.Title>
+    <H1>All Pages</H1>
     <PagesList />
   </>
 )

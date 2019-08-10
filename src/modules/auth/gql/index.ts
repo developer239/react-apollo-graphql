@@ -7,6 +7,11 @@ export const ME_QUERY = gql`
       email
       firstName
       lastName
+      pages {
+        id
+        title
+        text
+      }
     }
   }
 `

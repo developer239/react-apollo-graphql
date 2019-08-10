@@ -1,11 +1,15 @@
 import React, { FC } from 'react'
 import { RouteComponentProps } from 'react-router'
 import { Link } from 'react-router-dom'
+import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
 import { ErrorComponent } from 'components/Error'
+import { Button } from 'components/Button'
 import { useMe } from 'modules/auth/hooks/useMe'
 import { useDeletePage } from 'modules/blog/hooks/useDeletePage'
 import { usePageDetail } from 'modules/blog/hooks/usePageDetail'
+import { RelevantPagesList } from 'modules/blog/components/RelevantPagesList'
+import { DetailContainer, ControlButtonsContainer } from './styled'
 
 export const DetailPage: FC<
   RouteComponentProps<{ pageId: string }>
@@ -23,7 +27,7 @@ export const DetailPage: FC<
     return <ErrorComponent>{error.message}</ErrorComponent>
   }
 
-  const moreFromTheAuthor = data.pageDetail.user.pages.filter(
+  const morePages = data.pageDetail.user.pages.filter(
     page => page.id !== String(pageId)
   )
 
@@ -33,32 +37,30 @@ export const DetailPage: FC<
   }
 
   return (
-    <div>
-      <h1>{data.pageDetail.title}</h1>
-      <p>{data.pageDetail.text}</p>
-      {Boolean(moreFromTheAuthor.length) && (
-        <div>
-          <h4>More from {data.pageDetail.user.email}</h4>
-          <ul>
-            {moreFromTheAuthor.map(anotherPage => (
-              <li>
-                <Link to={`/blog/${anotherPage.id}`}>{anotherPage.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+    <>
+      <DetailContainer>
+        <H1>{data.pageDetail.title}</H1>
+        <p>{data.pageDetail.text}</p>
+      </DetailContainer>
 
       {userData && userData.me && userData.me.id === data.pageDetail.user.id && (
-        <div>
+        <ControlButtonsContainer>
           <Link to={`/blog/${data.pageDetail.id}/edit`}>
-            <button>edit page</button>
+            <Button type="primary">edit page</Button>
           </Link>
-          <button onClick={handleDeletePage} disabled={isDeleting}>
+          <Button
+            onClick={handleDeletePage}
+            disabled={isDeleting}
+            type="danger"
+          >
             {isDeleting ? 'deleting page...' : 'delete page'}
-          </button>
-        </div>
+          </Button>
+        </ControlButtonsContainer>
       )}
-    </div>
+
+      {Boolean(morePages.length) && (
+        <RelevantPagesList user={data.pageDetail.user} pages={morePages} />
+      )}
+    </>
   )
 }

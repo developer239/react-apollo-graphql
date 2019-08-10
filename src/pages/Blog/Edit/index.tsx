@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { RouteComponentProps } from 'react-router'
+import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
 import { ErrorComponent } from 'components/Error'
 import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
@@ -31,8 +32,8 @@ export const EditPagePage: FC<
   }
 
   return (
-    <div>
-      <h1>Edit Page</h1>
+    <>
+      <H1>Edit Page</H1>
       <PageForm
         handleSubmit={handleSubmit}
         initialValues={{
@@ -41,6 +42,6 @@ export const EditPagePage: FC<
           text: data.pageDetail.text,
         }}
       />
-    </div>
+    </>
   )
 }

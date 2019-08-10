@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 import { RouteComponentProps } from 'react-router'
+import { H1 } from 'components/Typography/H1'
 import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { useCreatePage } from 'modules/blog/hooks/useCreatePage'
 
@@ -14,9 +15,9 @@ export const CreatePagePage: FC<RouteComponentProps> = props => {
   }
 
   return (
-    <div>
-      <h1>Create Page</h1>
+    <>
+      <H1>Create Page</H1>
       <PageForm handleSubmit={handleSubmit} />
-    </div>
+    </>
   )
 }

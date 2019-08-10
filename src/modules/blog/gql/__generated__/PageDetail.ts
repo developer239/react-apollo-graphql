@@ -10,6 +10,7 @@ export interface PageDetail_pageDetail_user_pages {
   __typename: 'Page'
   id: string
   title: string
+  text: string
 }
 
 export interface PageDetail_pageDetail_user {

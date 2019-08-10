@@ -22,6 +22,7 @@ export const PAGE_DETAIL_QUERY = gql`
         pages {
           id
           title
+          text
         }
       }
     }
