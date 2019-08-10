@@ -4,12 +4,12 @@ import { BrowserRouter } from 'react-router-dom'
 import { renderRoutes } from 'react-router-config'
 import { routes } from './routes'
 
-const renderApp = () =>
-  ReactDOM.render((
-    <BrowserRouter>
-      {renderRoutes(routes)}
-    </BrowserRouter>
-  ), document.querySelector('#root'))
+const renderApp = () => {
+  ReactDOM.render(
+    <BrowserRouter>{renderRoutes(routes)}</BrowserRouter>,
+    document.querySelector('#root')
+  )
+}
 
 renderApp()
 

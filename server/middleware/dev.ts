@@ -5,12 +5,16 @@ import webpackDevMiddleware from 'webpack-dev-middleware'
 import webpackHotMiddleware from 'webpack-hot-middleware'
 
 export const handleWebpackDevServer = (app: Express) => {
+  // eslint-disable-next-line
   const webpackDevConfig = require('../../webpack/client/dev')
+
   const compiler = webpack(webpackDevConfig)
 
-  app.use(webpackDevMiddleware(compiler, {
-    publicPath: webpackDevConfig.output.publicPath,
-  }))
+  app.use(
+    webpackDevMiddleware(compiler, {
+      publicPath: webpackDevConfig.output.publicPath,
+    })
+  )
 
   app.use(webpackHotMiddleware(compiler, { log: false }))
 
@@ -20,7 +24,10 @@ export const handleWebpackDevServer = (app: Express) => {
 export const handleServeBaseRouteDev = ({
   compiler,
   app,
-}: { app: Express, compiler: Compiler }) => {
+}: {
+  app: Express
+  compiler: Compiler
+}) => {
   app.use('*', (req, res, next) => {
     const filename = path.join(compiler.outputPath, 'index.html')
 
