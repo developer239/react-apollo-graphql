@@ -17,8 +17,12 @@ const updatePostCache = (cache, { data: { deletePost } }) => {
   })
 }
 
+export const POSTS_LIST_TEST_ID = 'page-list-posts'
+
+export const POST_IN_LIST_TEST_ID = 'post-in-list'
+
 export const ListPostsPage = () => (
-  <Section data-testid="page-list-posts">
+  <Section data-testid={POSTS_LIST_TEST_ID}>
     <Margin vertical={3}>
       <Link to="/posts/new">
         <Button>create new post</Button>
@@ -27,7 +31,7 @@ export const ListPostsPage = () => (
     <Query query={ALL_POSTS}>
       {({ data: { allPosts } }) =>
         allPosts.map(({ id, title, text }) => (
-          <div data-testid="post-in-list" key={id}>
+          <div data-testid={POST_IN_LIST_TEST_ID} key={id}>
             <H2>{title}</H2>
             <P>{nl2br(text)}</P>
             <Margin right={0.25} isInline>

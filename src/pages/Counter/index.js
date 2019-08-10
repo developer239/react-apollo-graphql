@@ -16,8 +16,12 @@ export const handleDoubleCounterComplete = ({ doubleCounterValueAsync }) => {
   console.log('new value ', doubleCounterValueAsync.counterValue)
 }
 
+export const COUNTER_TEST_ID = 'page-counter'
+
+export const COUNTER_VALUE_TEST_ID = 'counter-value'
+
 export const CounterPage = () => (
-  <Section data-testid="page-counter">
+  <Section data-testid={COUNTER_TEST_ID}>
     <H2>Counter Page</H2>
     <P>
       It would make more sense to use react context in this case. However, to
@@ -32,7 +36,7 @@ export const CounterPage = () => (
       {({ data: { counterValue } }) => (
         <P>
           Counter value is:{' '}
-          <strong data-testid="counter-value">{counterValue}</strong>
+          <strong data-testid={COUNTER_VALUE_TEST_ID}>{counterValue}</strong>
         </P>
       )}
     </Query>
