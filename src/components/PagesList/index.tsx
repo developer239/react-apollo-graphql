@@ -17,6 +17,10 @@ export const PagesList = React.memo(() => {
     return <Loader />
   }
 
+  if (!data.listPages.length) {
+    return <div>there are no pages 😢</div>
+  }
+
   return (
     <>
       {data.listPages.map(page => (
