@@ -4,10 +4,7 @@ import { ROUTE_PATHS } from 'routes'
 import { App } from 'app'
 import { COMPONENT_PAGE_CARD_TEST_ID } from 'modules/blog/components/PageCard'
 import { renderWithRouter } from 'test-utils/render'
-import {
-  mockListPagesError,
-  mockListPagesSuccess,
-} from 'test-utils/gql/listPages'
+import { mockListPagesError, mockListPagesSuccess } from 'test-utils/gql'
 import { createPage, MockPageType } from 'test-utils/generators'
 import { COMPONENT_LOADER_TEST_ID } from 'components/Loader'
 import { PAGE_HOME_TEST_ID } from '../index'

@@ -9,7 +9,7 @@ import {
   MockUserType,
   MockUserWithPages,
 } from '../generators'
-import { ME_QUERY } from '../../modules/auth/gql'
+import { LOGIN_MUTATION, ME_QUERY } from '../../modules/auth/gql'
 
 //
 // List Pages
@@ -99,6 +99,27 @@ export const mockDeletePageSuccess = (data: MockPageType) => ({
   result: {
     data: {
       deletePage: data,
+    },
+  },
+})
+
+
+//
+// Log In
+
+export const mockLoginSuccess = (data: MockUserType | MockUserWithPages, accessToken = 'randomToken') => ({
+  request: {
+    query: LOGIN_MUTATION,
+    variables: {
+      email: data.email,
+      password: data.password,
+    },
+  },
+  result: {
+    data: {
+      login: {
+        accessToken
+      },
     },
   },
 })

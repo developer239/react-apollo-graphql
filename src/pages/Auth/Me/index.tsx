@@ -6,6 +6,8 @@ import { useMe } from 'modules/auth/hooks/useMe'
 import { RelevantPagesList } from 'modules/blog/components/RelevantPagesList'
 import { Info } from './styled'
 
+export const PAGE_ME_TEST_ID = 'me-page'
+
 export const MePage = () => {
   const { data, loading, error } = useMe()
 
@@ -18,7 +20,7 @@ export const MePage = () => {
   }
 
   return (
-    <>
+    <div data-testid={PAGE_ME_TEST_ID}>
       <H1>Me</H1>
       <Info>
         <strong>Email:</strong> {data.me.email}
@@ -32,6 +34,6 @@ export const MePage = () => {
       {Boolean(data.me.pages.length) && (
         <RelevantPagesList title="Your Pages" pages={data.me.pages} />
       )}
-    </>
+    </div>
   )
 }

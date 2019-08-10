@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { message } from 'antd'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
+import { History as RouterHistory } from 'history'
 import { auth } from 'services/auth'
-import { browserHistory } from 'appHistory'
 import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
 import { useRegister } from '../../hooks/useRegister'
@@ -27,7 +27,11 @@ const registerSchema = Yup.object().shape({
   lastName: Yup.string().required('Required'),
 })
 
-export const RegisterForm = () => {
+interface IProps {
+  routerHistory: RouterHistory
+}
+
+export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
   const [register] = useRegister()
 
   return (
@@ -39,7 +43,7 @@ export const RegisterForm = () => {
           const result = await register({ variables: { data: values } })
           if (result) {
             auth.setAccessToken(result.data.register.accessToken)
-            browserHistory.push('/me')
+            routerHistory.push('/me')
           }
         } catch (error) {
           setSubmitting(false)

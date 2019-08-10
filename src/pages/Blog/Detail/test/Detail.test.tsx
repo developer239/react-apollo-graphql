@@ -10,7 +10,7 @@ import {
   mockMeError,
   mockMeSuccess,
   mockPageDetailSuccess,
-} from 'test-utils/gql/listPages'
+} from 'test-utils/gql'
 import {
   createPageWithUser,
   createUser,

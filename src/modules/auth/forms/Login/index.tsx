@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { message } from 'antd'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
-import { browserHistory } from 'appHistory'
+import { History as RouterHistory } from 'history'
 import { auth } from 'services/auth'
 import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
@@ -23,7 +23,11 @@ const registerSchema = Yup.object().shape({
     .required('Required'),
 })
 
-export const LoginForm = () => {
+interface IProps {
+  routerHistory: RouterHistory
+}
+
+export const LoginForm: FC<IProps> = ({ routerHistory }) => {
   const [login] = useLogin()
 
   return (
@@ -35,7 +39,7 @@ export const LoginForm = () => {
           const result = await login({ variables: { ...values } })
           if (result) {
             auth.setAccessToken(result.data.login.accessToken)
-            browserHistory.push('/me')
+            routerHistory.push('/me')
           }
         } catch (error) {
           setSubmitting(false)

@@ -6,7 +6,7 @@ import { COMPONENT_LOADER_TEST_ID } from 'components/Loader'
 import { COMPONENT_ERROR_ALERT_TEST_ID } from 'components/ErrorAlert'
 import { COMPONENT_PAGE_CARD_TEST_ID } from 'modules/blog/components/PageCard'
 import { renderWithRouter } from 'test-utils/render'
-import { mockMeError, mockMeSuccess } from 'test-utils/gql/listPages'
+import { mockMeError, mockMeSuccess } from 'test-utils/gql'
 import { createUserWithPages } from 'test-utils/generators'
 
 describe('[page] Me', () => {
