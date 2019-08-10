@@ -8391,10 +8391,10 @@ uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
 
-ui-react-library@1.5.17:
-  version "1.5.17"
-  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.5.17.tgz#82a086d6c3136bfe8b0ee17a3f5dbf1227ba2807"
-  integrity sha512-5X9Hx5EgrAhBfXYAcit9AjLZR8kDhqFlKhZdM6u9oLTCY7cwbPbvxakYulhx0C5qWnvRf5yFFsuDNT5bEBAXQw==
+ui-react-library@1.5.18:
+  version "1.5.18"
+  resolved "https://registry.yarnpkg.com/ui-react-library/-/ui-react-library-1.5.18.tgz#2da1347b8d136ed6762f417ebd449b8e21bc6b99"
+  integrity sha512-G5yUDZDtS72rHAXgoY7SsFl2g7pmh3yZ3sCJ9ara1sJNs8Pp/Fo3R/5wEHI8ShYUekH5E3As/VeWwpprHFFDbA==
   dependencies:
     ramda "0.26.1"
     styled-is "1.1.5"
