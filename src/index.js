@@ -6,15 +6,15 @@ import { ApolloProvider } from 'react-apollo'
 import { renderRoutes } from 'react-router-config'
 import routes from './routes'
 import client from './apolloClient'
-import injectGlobal, { theme } from './styles'
+import createGlobalStyles, { theme } from './styles'
 
-
-injectGlobal()
+const GlobalStyle = createGlobalStyles()
 
 const render = () => {
   ReactDOM.render(
     (
       <ApolloProvider client={client}>
+        <GlobalStyle />
         <ThemeProvider theme={theme}>
           <BrowserRouter>
             {renderRoutes(routes)}
