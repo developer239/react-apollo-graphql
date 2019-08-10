@@ -5,7 +5,7 @@
   "env": {
     "NPM_CONFIG_PRODUCTION": {
       "description": "Makes npm install dev modules. (babel for webpack)",
-      "value": false
+      "value": "false"
     }
   }
 }
