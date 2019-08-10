@@ -1,7 +1,7 @@
-import fs from 'fs'
 import path from 'path'
 import { Express } from 'express'
 import compression from 'compression'
+import { BUILD_DIR_PUBLIC } from '../config'
 
 export const handleHttpsRedirect = (app: Express) => app.use((req, res, next) => {
   if (req.hostname !== 'localhost' && req.get('X-Forwarded-Proto') !== 'https') {
@@ -15,8 +15,5 @@ export const handleCompression = (app: Express) =>
 
 export const handleServeBaseRoute = (app: Express) =>
   app.get('*', (req, res) => {
-    fs.readdirSync(__dirname).forEach(file => {
-      console.log(file)
-    })
-    res.sendFile(path.resolve(__dirname, 'index.html'))
+    res.sendFile(path.resolve(__dirname, BUILD_DIR_PUBLIC, 'index.html'))
   })

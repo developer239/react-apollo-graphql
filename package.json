@@ -15,11 +15,15 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@types/react-router-config": "^5.0.0",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "invariant": "^2.2.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-config": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "styled-components": "^4.3.2",
     "webpack-dev-middleware": "^3.7.0"
   },
   "devDependencies": {
@@ -35,6 +39,7 @@
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
     "@types/react-router-dom": "^4.3.4",
+    "@types/styled-components": "^4.1.18",
     "@types/webpack-dev-middleware": "^2.0.3",
     "@types/webpack-env": "^1.14.0",
     "@types/webpack-hot-middleware": "^2.16.5",

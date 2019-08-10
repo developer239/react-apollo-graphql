@@ -1,10 +1,8 @@
-const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const common = require('./common')
 const {
   PORT,
-  BUILD_DIR,
 } = require('../config')
 
 module.exports = merge(common, {
@@ -18,7 +16,6 @@ module.exports = merge(common, {
   ],
   devServer: {
     hot: true,
-    contentBase: path.resolve(__dirname, BUILD_DIR),
     port: PORT,
   },
 })

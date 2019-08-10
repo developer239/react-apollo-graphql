@@ -12,6 +12,9 @@ module.exports = {
     filename: '[name]-[hash].min.js',
     path: path.resolve(__dirname, '..', '..', BUILD_DIR, BUILD_DIR_PUBLIC),
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js']
+  },
   module: {
     rules: [
       {

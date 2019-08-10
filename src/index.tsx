@@ -1,26 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-
-interface Hello {
-  world: string
-}
-
-const hello: Hello = {
-  world: 'Michal'
-}
-
-const App = () => {
-  return (
-    <div>
-      Hello React,Webpack 4 & Babel 7! <br />
-      <br />
-      Hello {hello.world}!
-    </div>
-  )
-}
+import { BrowserRouter } from 'react-router-dom'
+import { renderRoutes } from 'react-router-config'
+import { routes } from './routes'
 
 const renderApp = () =>
-  ReactDOM.render(<App />, document.querySelector('#root'))
+  ReactDOM.render((
+    <BrowserRouter>
+      {renderRoutes(routes)}
+    </BrowserRouter>
+  ), document.querySelector('#root'))
 
 renderApp()
 
