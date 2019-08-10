@@ -10,7 +10,7 @@ export const ROUTE_PATHS = {
   counter: '/counter',
   createPost: '/posts/new',
   editPost: (id = ':postId') => `/posts/${id}/edit`,
-  updatePost: (id = ':postId') => `/posts/${id}`,
+  postDetail: (id = ':postId') => `/posts/${id}`,
   listPosts: '/posts',
 }
 
@@ -20,7 +20,7 @@ const Routes = () => (
     <Route path={ROUTE_PATHS.counter} exact component={Counter} />
     <Route path={ROUTE_PATHS.createPost} exact component={PostCreate} />
     <Route path={ROUTE_PATHS.editPost()} exact component={PostEdit} />
-    <Route path={ROUTE_PATHS.updatePost()} exact component={PostDetail} />
+    <Route path={ROUTE_PATHS.postDetail()} exact component={PostDetail} />
     <Route path={ROUTE_PATHS.listPosts} exact component={ListPosts} />
     <Route path="*" exact component={NotFound} />
   </Switch>

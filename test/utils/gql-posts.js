@@ -1,6 +1,36 @@
-import { ALL_POSTS, CREATE_POST } from '../../src/modules/blog/gql'
+import { ALL_POSTS, CREATE_POST, POST_DETAIL } from '../../src/modules/blog/gql'
 
 export const ERROR_MESSAGE = 'Something went wrong.'
+
+// GET Post Detail
+
+export const fakePostDetailSuccess = {
+  request: {
+    query: POST_DETAIL,
+    variables: {
+      id: '1',
+    },
+  },
+  result: {
+    data: {
+      Post: {
+        id: '1',
+        title: 'Mock Title',
+        text: 'Mock lorem ipsum text.',
+      },
+    },
+  },
+}
+
+export const fakePostDetailError = {
+  request: {
+    query: POST_DETAIL,
+    variables: {
+      id: '1',
+    },
+  },
+  error: new Error(ERROR_MESSAGE),
+}
 
 // GET All Posts
 
