@@ -20,7 +20,8 @@
     "apollo:generate-types:watch": "npm run apollo:generate-types -- --watch",
     "apollo:remove-all-types": "find . -regex './src/.*__generated__.*' -type d -prune -exec rm -r \"{}\" \\;",
     "test": "jest",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.0.0",
@@ -111,5 +112,17 @@
     "webpack-dev-server": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0",
     "webpack-merge": "^4.2.1"
-  }
+  },
+  "keywords": [
+    "node",
+    "apollo",
+    "react",
+    "react-apollo",
+    "graphql",
+    "typescript",
+    "react-router",
+    "express",
+    "formik",
+    "yup"
+  ]
 }

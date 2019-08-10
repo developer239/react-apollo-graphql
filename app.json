@@ -1,0 +1,28 @@
+{
+  "name": "React Apollo GraphQl",
+  "description": "React in tandem with Apollo. Minimal implementation that will help you get started with GraphQL.",
+  "repository": "https://github.com/developer239/react-apollo-graphql",
+  "keywords": [
+    "node",
+    "apollo",
+    "react",
+    "react-apollo",
+    "graphql",
+    "typescript",
+    "react-router",
+    "express",
+    "formik",
+    "yup"
+  ],
+  "website": "https://react-apollo-graphql.herokuapp.com",
+  "env": {
+    "NODE_ENV": {
+      "description": "We want to run the app in production mode.",
+      "value": "production"
+    },
+    "YARN_PRODUCTION": {
+      "description": "We want to keep dev dependencies.",
+      "value": "false"
+    }
+  }
+}
