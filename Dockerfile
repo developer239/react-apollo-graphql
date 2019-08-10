@@ -11,6 +11,6 @@ RUN yarn install
 
 # Bundle app source
 COPY . /usr/src/app
-RUN yarn build:production
+RUN yarn build
 EXPOSE 3000
 CMD [ "yarn", "prod" ]
