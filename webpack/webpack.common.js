@@ -35,7 +35,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: DIST_DIR }),
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html'
