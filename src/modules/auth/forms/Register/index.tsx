@@ -54,7 +54,7 @@ export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
       {({ isSubmitting }) => (
         <Form>
           <TextInput label="Email" name="email" />
-          <TextInput label="Password" name="password" />
+          <TextInput label="Password" name="password" type="password" />
           <TextInput label="First Name" name="firstName" />
           <TextInput label="Last Name" name="lastName" />
 

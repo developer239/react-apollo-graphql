@@ -8,9 +8,10 @@ interface IProps {
   iconType?: string
   name: string
   label: string
+  type?: 'password'
 }
 
-export const TextInput: FC<IProps> = ({ iconType, name, label }) => (
+export const TextInput: FC<IProps> = ({ iconType, name, label, type }) => (
   <FormElementLabel>
     {label}:
     <Field
@@ -20,6 +21,7 @@ export const TextInput: FC<IProps> = ({ iconType, name, label }) => (
           size="large"
           prefix={iconType && <Icon type={iconType} />}
           placeholder={label.toLowerCase() || name}
+          type={type}
           {...field}
         />
       )}

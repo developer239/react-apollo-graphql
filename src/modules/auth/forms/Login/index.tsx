@@ -52,7 +52,12 @@ export const LoginForm: FC<IProps> = ({ routerHistory }) => {
       {({ isSubmitting }) => (
         <Form>
           <TextInput iconType="user" label="Email" name="email" />
-          <TextInput iconType="lock" label="Password" name="password" />
+          <TextInput
+            iconType="lock"
+            label="Password"
+            name="password"
+            type="password"
+          />
 
           <FormButton htmlType="submit" type="primary" disabled={isSubmitting}>
             {isSubmitting ? 'Logging in...' : 'Login'}
