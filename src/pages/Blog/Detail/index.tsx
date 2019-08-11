@@ -17,6 +17,7 @@ const { confirm: antConfirm } = Modal
 
 export const COMPONENT_DELETE_PAGE_TEST_ID = 'component-delete-post'
 export const COMPONENT_EDIT_PAGE_TEST_ID = 'component-edit-page'
+export const PAGE_DETAIL_TEST_ID = 'detail-page'
 
 export const DetailPage: FC<
   RouteComponentProps<{ pageId: string }>
@@ -56,7 +57,7 @@ export const DetailPage: FC<
   }
 
   return (
-    <>
+    <div data-testid={PAGE_DETAIL_TEST_ID}>
       <DetailContainer>
         <H1>{data.pageDetail.title}</H1>
         <p>{nl2br(data.pageDetail.text)}</p>
@@ -83,6 +84,6 @@ export const DetailPage: FC<
       {Boolean(morePages.length) && (
         <RelevantPagesList user={data.pageDetail.user} pages={morePages} />
       )}
-    </>
+    </div>
   )
 }

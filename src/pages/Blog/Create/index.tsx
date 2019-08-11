@@ -6,6 +6,8 @@ import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { useCreatePage } from 'modules/blog/hooks/useCreatePage'
 import { FormikActions } from 'formik'
 
+export const PAGE_CREATE_TEST_ID = 'create-page'
+
 export const CreatePagePage: FC<RouteComponentProps> = props => {
   const [createPage] = useCreatePage()
 
@@ -25,9 +27,9 @@ export const CreatePagePage: FC<RouteComponentProps> = props => {
   }
 
   return (
-    <>
+    <div data-testid={PAGE_CREATE_TEST_ID}>
       <H1>Create Page</H1>
       <PageForm handleSubmit={handleSubmit} />
-    </>
+    </div>
   )
 }

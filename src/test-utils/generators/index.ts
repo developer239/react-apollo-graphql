@@ -28,7 +28,7 @@ export type MockUserWithPages = ReturnType<typeof createUserWithPages>
 export const createPageWithUser = (
   pageId: number,
   userId: number,
-  pagesIds: number[]
+  pagesIds: number[] = []
 ) => ({
   ...createPage(pageId),
   user: createUserWithPages(userId, pagesIds),

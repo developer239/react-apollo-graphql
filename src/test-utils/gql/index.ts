@@ -1,4 +1,5 @@
 import {
+  CREATE_PAGE_MUTATION,
   DELETE_PAGE_MUTATION,
   LIST_PAGES_QUERY,
   PAGE_DETAIL_QUERY,
@@ -152,6 +153,31 @@ export const mockRegisterSuccess = (
     data: {
       register: {
         accessToken,
+      },
+    },
+  },
+})
+
+//
+// Create Page
+
+export const mockCreatePageSuccess = (page: MockPageWithUserType) => ({
+  request: {
+    query: CREATE_PAGE_MUTATION,
+    variables: {
+      data: {
+        title: page.title,
+        text: page.text,
+      },
+    },
+  },
+  result: {
+    data: {
+      createPage: {
+        id: page.id,
+        title: page.title,
+        text: page.text,
+        user: page.user,
       },
     },
   },
