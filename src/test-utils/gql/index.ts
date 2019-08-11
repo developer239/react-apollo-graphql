@@ -3,6 +3,7 @@ import {
   DELETE_PAGE_MUTATION,
   LIST_PAGES_QUERY,
   PAGE_DETAIL_QUERY,
+  UPDATE_PAGE_MUTATION,
 } from 'modules/blog/gql'
 import {
   MockPageType,
@@ -174,6 +175,32 @@ export const mockCreatePageSuccess = (page: MockPageWithUserType) => ({
   result: {
     data: {
       createPage: {
+        id: page.id,
+        title: page.title,
+        text: page.text,
+        user: page.user,
+      },
+    },
+  },
+})
+
+//
+// Edit Page
+
+export const mockUpdatePageSuccess = (page: MockPageWithUserType) => ({
+  request: {
+    query: UPDATE_PAGE_MUTATION,
+    variables: {
+      data: {
+        id: page.id,
+        title: page.title,
+        text: page.text,
+      },
+    },
+  },
+  result: {
+    data: {
+      updatePage: {
         id: page.id,
         title: page.title,
         text: page.text,

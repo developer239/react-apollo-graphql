@@ -9,6 +9,8 @@ import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { usePageDetail } from 'modules/blog/hooks/usePageDetail'
 import { useUpdatePage } from 'modules/blog/hooks/useUpdatePage'
 
+export const PAGE_EDIT_TEST_ID = 'edit-page'
+
 export const EditPagePage: FC<
   RouteComponentProps<{ pageId: string }>
 > = props => {
@@ -42,7 +44,7 @@ export const EditPagePage: FC<
   }
 
   return (
-    <>
+    <div data-testid={PAGE_EDIT_TEST_ID}>
       <H1>Edit Page</H1>
       <PageForm
         handleSubmit={handleSubmit}
@@ -52,6 +54,6 @@ export const EditPagePage: FC<
           text: data.pageDetail.text,
         }}
       />
-    </>
+    </div>
   )
 }
