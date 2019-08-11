@@ -53,5 +53,5 @@ Run development server:
 
 Keep in mind that `main` and `vendors` packages **are huge**. I plan to implement [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import) and [DllPlugin](https://webpack.js.org/plugins/dll-plugin/) in the future.
 
-1. `yarn build`
-1. `yarn prod`
+1. `SERVER_URL=https://node-type-orm-graphql.herokuapp.com/graphql yarn build`
+2. `yarn prod`
