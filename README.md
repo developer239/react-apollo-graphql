@@ -32,13 +32,6 @@ Run development server:
 2. `yarn apollo:generate-types:watch`
 3. `yarn watch`
 
-# Production
-
-Keep in mind that `main` and `vendors` packages **are huge**. I plan to implement [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import) and [DllPlugin](https://webpack.js.org/plugins/dll-plugin/) in the future.
-
-1. `yarn build`
-1. `yarn prod`
-
 ## Useful Commands
 
 - `yarn lint:ts` lint TS files
@@ -55,3 +48,10 @@ Keep in mind that `main` and `vendors` packages **are huge**. I plan to implemen
 - [ ] Create custom vendors config with [DllPlugin](https://webpack.js.org/plugins/dll-plugin/)
 - [ ] Implement _request password reset_ + _request password change_
 - [ ] Implement _automatic token refresh_
+
+# Production
+
+Keep in mind that `main` and `vendors` packages **are huge**. I plan to implement [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import) and [DllPlugin](https://webpack.js.org/plugins/dll-plugin/) in the future.
+
+1. `yarn build`
+1. `yarn prod`
