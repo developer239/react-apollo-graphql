@@ -9,15 +9,15 @@
 
 Today you have basically two ways how to start new React application: [NextJs](https://github.com/zeit/next.js/) or [Create React App](https://github.com/facebook/create-react-app). 
 
-This application was created from scratch. If you ever wondered how to create your own boilerplate. This is a good place to start.
+However, there is no fun in using other peoples frameworks so I created this application from scratch. If you ever wondered how to set up your own boilerplate. This is a good place to start.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Demo
 
- You can try the application [here](https://react-apollo-graphql.herokuapp.com) (it might take a while before the free server wakes up)
+You can try the application [here](https://react-apollo-graphql.herokuapp.com) (it might take a while before the free server wakes up)
  
- 📘 Backend API is running [here](https://node-type-orm-graphql.herokuapp.com/graphql). You can find the source code of the backend application [here](https://github.com/developer239/node-type-orm-graphql).
+📘 Backend API is running [here](https://node-type-orm-graphql.herokuapp.com/graphql). You can find the source code of the backend application [here](https://github.com/developer239/node-type-orm-graphql).
 
 # Development
 
