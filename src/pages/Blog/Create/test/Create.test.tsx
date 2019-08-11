@@ -10,10 +10,19 @@ import {
   mockMeSuccess,
   mockPageDetailSuccess,
 } from 'test-utils/gql'
+import { auth } from 'services/auth'
 import { PAGE_CREATE_TEST_ID } from '../index'
 import { PAGE_DETAIL_TEST_ID } from '../../Detail'
 
 describe('[page] Create Page', () => {
+  beforeEach(() => {
+    auth.setAccessToken('mockAccessToken')
+  })
+
+  afterEach(() => {
+    auth.removeAccessToken()
+  })
+
   it('should render correctly', () => {
     const renderer = renderWithRouter(<App />, ROUTE_PATHS.blog.create)
     const renderedElement = renderer.getByTestId(PAGE_CREATE_TEST_ID)

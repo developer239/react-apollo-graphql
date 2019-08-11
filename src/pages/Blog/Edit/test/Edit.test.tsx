@@ -10,10 +10,19 @@ import {
   mockPageDetailSuccess,
   mockUpdatePageSuccess,
 } from 'test-utils/gql'
+import { auth } from 'services/auth'
 import { PAGE_EDIT_TEST_ID } from '../index'
 import { PAGE_DETAIL_TEST_ID } from '../../Detail'
 
 describe('[page] Edit Page', () => {
+  beforeEach(() => {
+    auth.setAccessToken('mockAccessToken')
+  })
+
+  afterEach(() => {
+    auth.removeAccessToken()
+  })
+
   describe('when page is loaded', () => {
     it('it should render correctly', async () => {
       const page = createPageWithUser(1, 1)

@@ -18,7 +18,10 @@ export const createUser = (id: number) => ({
 
 export type MockUserType = ReturnType<typeof createUser>
 
-export const createUserWithPages = (userId: number, pagesIds: number[]) => ({
+export const createUserWithPages = (
+  userId: number,
+  pagesIds: number[] = []
+) => ({
   ...createUser(userId),
   pages: pagesIds.map(createPage),
 })

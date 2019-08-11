@@ -7,6 +7,7 @@ import { auth } from 'services/auth'
 import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
 import { useLogin } from '../../hooks/useLogin'
+import { previousLocation } from '../../../router/previousLocation'
 
 const initialValues = {
   email: 'email@email1.com',
@@ -39,7 +40,8 @@ export const LoginForm: FC<IProps> = ({ routerHistory }) => {
           const result = await login({ variables: { ...values } })
           if (result) {
             auth.setAccessToken(result.data.login.accessToken)
-            routerHistory.push('/me')
+            const targetPath = previousLocation(routerHistory.location)
+            routerHistory.push(targetPath)
           }
         } catch (error) {
           setSubmitting(false)

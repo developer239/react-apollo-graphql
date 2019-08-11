@@ -9,6 +9,7 @@ import { LogoutPage } from 'pages/Auth/Logout'
 import { CreatePagePage } from 'pages/Blog/Create'
 import { EditPagePage } from 'pages/Blog/Edit'
 import { DetailPage } from 'pages/Blog/Detail'
+import { ProtectedRoute } from 'modules/router/routes/Protected'
 
 export const ROUTE_PATHS = {
   home: '/',
@@ -29,13 +30,25 @@ export const ROUTE_PATHS = {
 export const Routes = () => (
   <Switch>
     <Route path={ROUTE_PATHS.home} exact component={HomePage} />
-    <Route path={ROUTE_PATHS.blog.create} exact component={CreatePagePage} />
-    <Route path={ROUTE_PATHS.blog.edit()} exact component={EditPagePage} />
+    <ProtectedRoute
+      path={ROUTE_PATHS.blog.create}
+      exact
+      component={CreatePagePage}
+    />
+    <ProtectedRoute
+      path={ROUTE_PATHS.blog.edit()}
+      exact
+      component={EditPagePage}
+    />
     <Route path={ROUTE_PATHS.blog.detail()} exact component={DetailPage} />
-    <Route path={ROUTE_PATHS.auth.me} exact component={MePage} />
+    <ProtectedRoute path={ROUTE_PATHS.auth.me} exact component={MePage} />
     <Route path={ROUTE_PATHS.auth.register} exact component={RegisterPage} />
     <Route path={ROUTE_PATHS.auth.login} exact component={LoginPage} />
-    <Route path={ROUTE_PATHS.auth.logout} exact component={LogoutPage} />
+    <ProtectedRoute
+      path={ROUTE_PATHS.auth.logout}
+      exact
+      component={LogoutPage}
+    />
     <Route path={ROUTE_PATHS.notFound} exact component={NotFoundPage} />
   </Switch>
 )

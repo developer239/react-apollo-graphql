@@ -18,7 +18,7 @@ describe('[page] Login Page', () => {
 
   describe('when form is submitted', () => {
     it('should handle success', async () => {
-      const user = createUserWithPages(1, [1, 2])
+      const user = createUserWithPages(1)
       const renderer = renderWithRouter(<App />, ROUTE_PATHS.auth.login, [
         mockLoginSuccess(user),
         mockMeSuccess(user),

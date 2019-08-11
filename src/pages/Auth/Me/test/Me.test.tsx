@@ -8,8 +8,17 @@ import { COMPONENT_PAGE_CARD_TEST_ID } from 'modules/blog/components/PageCard'
 import { renderWithRouter } from 'test-utils/render'
 import { mockMeError, mockMeSuccess } from 'test-utils/gql'
 import { createUserWithPages } from 'test-utils/generators'
+import { auth } from 'services/auth'
 
 describe('[page] Me', () => {
+  beforeEach(() => {
+    auth.setAccessToken('mockAccessToken')
+  })
+
+  afterEach(() => {
+    auth.removeAccessToken()
+  })
+
   it('should render correctly', () => {
     const renderer = renderWithRouter(<App />, ROUTE_PATHS.auth.me)
     const spinnerElement = renderer.getByTestId(COMPONENT_LOADER_TEST_ID)
