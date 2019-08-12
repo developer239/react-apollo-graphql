@@ -46,7 +46,7 @@ Run development server:
 
 - [ ] Optimize [antd](https://ant.design/docs/react/introduce) package with [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import)
 - [ ] Create custom vendors config with [DllPlugin](https://webpack.js.org/plugins/dll-plugin/)
-- [ ] Implement _request password reset_ + _request password change_
+- [x] Implement _request password reset_ + _request password change_
 - [ ] Implement _automatic token refresh_
 
 # Production
