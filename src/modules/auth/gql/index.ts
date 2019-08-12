@@ -31,3 +31,17 @@ export const LOGIN_MUTATION = gql`
     }
   }
 `
+
+export const FORGOT_PASSWORD_MUTATION = gql`
+  mutation ForgotPassword($email: String!) {
+    forgotPassword(email: $email)
+  }
+`
+
+export const CHANGE_PASSWORD_MUTATION = gql`
+  mutation ChangePassword($data: ChangePasswordInput!) {
+    changePassword(data: $data) {
+      accessToken
+    }
+  }
+`

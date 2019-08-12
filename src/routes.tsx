@@ -10,6 +10,8 @@ import { CreatePagePage } from 'pages/Blog/Create'
 import { EditPagePage } from 'pages/Blog/Edit'
 import { DetailPage } from 'pages/Blog/Detail'
 import { ProtectedRoute } from 'modules/router/routes/Protected'
+import { PasswordForgotPage } from './pages/Auth/PasswordForgot'
+import { PasswordResetPage } from './pages/Auth/PasswordReset'
 
 export const ROUTE_PATHS = {
   home: '/',
@@ -24,6 +26,8 @@ export const ROUTE_PATHS = {
     register: '/register',
     login: '/login',
     logout: '/logout',
+    passwordForgot: '/password-forgot',
+    passwordReset: '/password-reset/:token',
   },
 }
 
@@ -44,6 +48,16 @@ export const Routes = () => (
     <ProtectedRoute path={ROUTE_PATHS.auth.me} exact component={MePage} />
     <Route path={ROUTE_PATHS.auth.register} exact component={RegisterPage} />
     <Route path={ROUTE_PATHS.auth.login} exact component={LoginPage} />
+    <Route
+      exact
+      path={ROUTE_PATHS.auth.passwordForgot}
+      component={PasswordForgotPage}
+    />
+    <Route
+      exact
+      path={ROUTE_PATHS.auth.passwordReset}
+      component={PasswordResetPage}
+    />
     <ProtectedRoute
       path={ROUTE_PATHS.auth.logout}
       exact

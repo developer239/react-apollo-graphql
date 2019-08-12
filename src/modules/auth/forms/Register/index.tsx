@@ -1,11 +1,14 @@
 import React, { FC } from 'react'
 import { message } from 'antd'
+import { Link } from 'react-router-dom'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { History as RouterHistory } from 'history'
 import { auth } from 'services/auth'
+import { ROUTE_PATHS } from 'routes'
 import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
+import { ElementLink } from 'components/FormElementLink'
 import { useRegister } from '../../hooks/useRegister'
 
 const initialValues = {
@@ -61,6 +64,10 @@ export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
           <FormButton htmlType="submit" type="primary" disabled={isSubmitting}>
             {isSubmitting ? 'Registering...' : 'Register'}
           </FormButton>
+          <ElementLink>
+            Or you can use existing account to{' '}
+            <Link to={ROUTE_PATHS.auth.login}>login!</Link>
+          </ElementLink>
         </Form>
       )}
     </Formik>
