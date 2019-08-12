@@ -20,7 +20,8 @@
     "apollo:remove-all-types": "find . -regex './src/.*__generated__.*' -type d -prune -exec rm -r \"{}\" \\;",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@apollo/react-hooks": "3.0.0",

@@ -8,7 +8,8 @@
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "baseUrl": "src",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipLibCheck": true
   },
   "include": [
     "**/*.ts",
