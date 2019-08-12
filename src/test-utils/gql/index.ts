@@ -12,6 +12,8 @@ import {
   MockUserWithPages,
 } from '../generators'
 import {
+  CHANGE_PASSWORD_MUTATION,
+  FORGOT_PASSWORD_MUTATION,
   LOGIN_MUTATION,
   ME_QUERY,
   REGISTER_MUTATION,
@@ -205,6 +207,48 @@ export const mockUpdatePageSuccess = (page: MockPageWithUserType) => ({
         title: page.title,
         text: page.text,
         user: page.user,
+      },
+    },
+  },
+})
+
+//
+// Mock Password Forgot
+
+export const mockPasswordForgotSuccess = (email: string) => ({
+  request: {
+    query: FORGOT_PASSWORD_MUTATION,
+    variables: {
+      email,
+    },
+  },
+  result: {
+    data: {
+      forgotPassword: true,
+    },
+  },
+})
+
+//
+// Mock Password Change
+
+export const mockPasswordChangeSuccess = (
+  data: { password: string; token: string },
+  accessToken = 'mock-token'
+) => ({
+  request: {
+    query: CHANGE_PASSWORD_MUTATION,
+    variables: {
+      data: {
+        password: data.password,
+        token: data.token,
+      },
+    },
+  },
+  result: {
+    data: {
+      changePassword: {
+        accessToken: accessToken,
       },
     },
   },

@@ -7,12 +7,12 @@ import { FormElementLabel } from '../FormElementLabel'
 interface IProps {
   iconType?: string
   name: string
-  label: string
-  type?: 'password'
+  label?: string
+  type?: 'password' | 'hidden'
 }
 
 export const TextInput: FC<IProps> = ({ iconType, name, label, type }) => (
-  <FormElementLabel>
+  <FormElementLabel isHidden={type === 'hidden'}>
     {label}:
     <Field
       name={name}
@@ -20,7 +20,7 @@ export const TextInput: FC<IProps> = ({ iconType, name, label, type }) => (
         <Input
           size="large"
           prefix={iconType && <Icon type={iconType} />}
-          placeholder={label.toLowerCase() || name}
+          placeholder={(label && label.toLowerCase()) || name}
           type={type}
           {...field}
         />
