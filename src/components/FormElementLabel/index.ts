@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const FormElementLabel = styled.label<{ isHidden: boolean }>`
+export const FormElementLabel = styled.label<{ isHidden?: boolean }>`
   display: ${props => (props.isHidden ? 'none' : 'block')};
 
   & + & {
