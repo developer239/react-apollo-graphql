@@ -1834,7 +1834,7 @@
   resolved "https://registry.yarnpkg.com/@types/yup/-/yup-0.26.22.tgz#66da181bfddaf797192f5fc2795583e033568407"
   integrity sha512-AhUPifCc7j2BEfp+wye3Mj7v3mMhbtu5BbO7n0zpwC/NVSETc8+MHENRmoxjE8wLC8AmFr5+uEhg5cvqusaRFQ==
 
-"@types/zen-observable@0.8.0", "@types/zen-observable@^0.8.0":
+"@types/zen-observable@^0.8.0":
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
@@ -2436,15 +2436,6 @@ apollo-link-http@1.5.15, apollo-link-http@^1.5.5:
   dependencies:
     apollo-link "^1.2.12"
     apollo-link-http-common "^0.2.14"
-    tslib "^1.9.3"
-
-apollo-link-retry@^2.2.14:
-  version "2.2.14"
-  resolved "https://registry.yarnpkg.com/apollo-link-retry/-/apollo-link-retry-2.2.14.tgz#0f9febb5a5b84ed2cf6d8122c75d16a11ab254c6"
-  integrity sha512-i2DlitM/KaKcllKgettnyh5qTHUm3Z1s9PMtU8uk96X92KYRQU9pLly/KCBkmAU+txt9NAc1ZyR5b6Ki3YH79w==
-  dependencies:
-    "@types/zen-observable" "0.8.0"
-    apollo-link "^1.2.12"
     tslib "^1.9.3"
 
 apollo-link@1.2.12, apollo-link@^1.0.0, apollo-link@^1.2.12, apollo-link@^1.2.3:
