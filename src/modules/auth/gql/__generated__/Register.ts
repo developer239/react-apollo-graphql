@@ -2,21 +2,22 @@
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
-import { RegisterInput } from "./../../../../../__generated__/globalTypes";
+import { RegisterInput } from './../../../../../__generated__/globalTypes'
 
 // ====================================================
 // GraphQL mutation operation: Register
 // ====================================================
 
 export interface Register_register {
-  __typename: "Session";
-  accessToken: string;
+  __typename: 'Session'
+  accessToken: string
+  refreshToken: string
 }
 
 export interface Register {
-  register: Register_register;
+  register: Register_register
 }
 
 export interface RegisterVariables {
-  data: RegisterInput;
+  data: RegisterInput
 }

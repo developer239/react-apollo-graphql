@@ -45,7 +45,10 @@ export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
         try {
           const result = await register({ variables: { data: values } })
           if (result) {
-            auth.setAccessToken(result.data.register.accessToken)
+            auth.logIn(
+              result.data.register.accessToken,
+              result.data.register.refreshToken
+            )
             routerHistory.push('/me')
           }
         } catch (error) {

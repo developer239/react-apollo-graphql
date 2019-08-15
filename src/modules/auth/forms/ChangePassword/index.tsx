@@ -45,7 +45,10 @@ export const ChangePasswordForm: FC<IProps> = props => {
             'Password reset was successful. You were automatically logged in.',
             10
           )
-          auth.setAccessToken(result.data.changePassword.accessToken)
+          auth.logIn(
+            result.data.changePassword.accessToken,
+            result.data.changePassword.refreshToken
+          )
           props.routerHistory.push('/me')
         } else {
           setSubmitting(false)

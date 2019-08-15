@@ -20,6 +20,7 @@ export const REGISTER_MUTATION = gql`
   mutation Register($data: RegisterInput!) {
     register(data: $data) {
       accessToken
+      refreshToken
     }
   }
 `
@@ -28,6 +29,7 @@ export const LOGIN_MUTATION = gql`
   mutation Login($email: String!, $password: String!) {
     login(email: $email, password: $password) {
       accessToken
+      refreshToken
     }
   }
 `
@@ -42,6 +44,13 @@ export const CHANGE_PASSWORD_MUTATION = gql`
   mutation ChangePassword($data: ChangePasswordInput!) {
     changePassword(data: $data) {
       accessToken
+      refreshToken
     }
+  }
+`
+
+export const ACCESS_TOKEN_QUERY = gql`
+  query AccessToken($refreshToken: String!) {
+    accessToken(refreshToken: $refreshToken)
   }
 `

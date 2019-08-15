@@ -8,7 +8,7 @@ export const LogoutPage: FC<RouteComponentProps> = (props): null => {
   const client = useApolloClient()
 
   const handleLogOut = async () => {
-    await auth.removeAccessToken()
+    await auth.logOut()
     props.history.push('/')
     message.info('You are now logged out.')
     await client.resetStore()
