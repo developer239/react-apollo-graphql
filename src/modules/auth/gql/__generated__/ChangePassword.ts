@@ -11,6 +11,7 @@ import { ChangePasswordInput } from './../../../../../__generated__/globalTypes'
 export interface ChangePassword_changePassword {
   __typename: 'Session'
   accessToken: string
+  refreshToken: string
 }
 
 export interface ChangePassword {

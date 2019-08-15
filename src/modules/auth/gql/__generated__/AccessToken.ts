@@ -3,20 +3,13 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL mutation operation: Login
+// GraphQL query operation: AccessToken
 // ====================================================
 
-export interface Login_login {
-  __typename: 'Session'
+export interface AccessToken {
   accessToken: string
+}
+
+export interface AccessTokenVariables {
   refreshToken: string
-}
-
-export interface Login {
-  login: Login_login
-}
-
-export interface LoginVariables {
-  email: string
-  password: string
 }

@@ -42,7 +42,10 @@ export const LoginForm: FC<IProps> = ({ routerHistory }) => {
         try {
           const result = await login({ variables: { ...values } })
           if (result) {
-            auth.setAccessToken(result.data.login.accessToken)
+            auth.logIn(
+              result.data.login.accessToken,
+              result.data.login.refreshToken
+            )
             const targetPath = previousLocation(routerHistory.location)
             routerHistory.push(targetPath)
           }

@@ -82,7 +82,10 @@ export const mockMeSuccess = (data: MockUserType | MockUserWithPages) => ({
   },
   result: {
     data: {
-      me: data,
+      me: {
+        pages: [] as MockPageType[],
+        ...data,
+      },
     },
   },
 })
@@ -116,7 +119,8 @@ export const mockDeletePageSuccess = (data: MockPageType) => ({
 
 export const mockLoginSuccess = (
   data: MockUserType | MockUserWithPages,
-  accessToken = 'randomToken'
+  accessToken = 'randomToken',
+  refreshToken = 'randomToken'
 ) => ({
   request: {
     query: LOGIN_MUTATION,
@@ -129,6 +133,7 @@ export const mockLoginSuccess = (
     data: {
       login: {
         accessToken,
+        refreshToken,
       },
     },
   },
@@ -139,7 +144,8 @@ export const mockLoginSuccess = (
 
 export const mockRegisterSuccess = (
   data: MockUserType | MockUserWithPages,
-  accessToken = 'randomToken'
+  accessToken = 'randomToken',
+  refreshToken = 'randomToken'
 ) => ({
   request: {
     query: REGISTER_MUTATION,
@@ -156,6 +162,7 @@ export const mockRegisterSuccess = (
     data: {
       register: {
         accessToken,
+        refreshToken,
       },
     },
   },
@@ -180,7 +187,10 @@ export const mockCreatePageSuccess = (page: MockPageWithUserType) => ({
         id: page.id,
         title: page.title,
         text: page.text,
-        user: page.user,
+        user: {
+          pages: [] as MockPageType[],
+          ...page.user,
+        },
       },
     },
   },
@@ -206,7 +216,10 @@ export const mockUpdatePageSuccess = (page: MockPageWithUserType) => ({
         id: page.id,
         title: page.title,
         text: page.text,
-        user: page.user,
+        user: {
+          pages: [] as MockPageType[],
+          ...page.user,
+        },
       },
     },
   },
@@ -234,7 +247,8 @@ export const mockPasswordForgotSuccess = (email: string) => ({
 
 export const mockPasswordChangeSuccess = (
   data: { password: string; token: string },
-  accessToken = 'mock-token'
+  accessToken = 'mock-token',
+  refreshToken = 'mock-refresh-token'
 ) => ({
   request: {
     query: CHANGE_PASSWORD_MUTATION,
@@ -249,6 +263,7 @@ export const mockPasswordChangeSuccess = (
     data: {
       changePassword: {
         accessToken: accessToken,
+        refreshToken: refreshToken,
       },
     },
   },
