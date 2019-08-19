@@ -67,7 +67,7 @@
     "@testing-library/react": "9.1.1",
     "@types/clean-webpack-plugin": "0.1.3",
     "@types/compression": "1.0.0",
-    "@types/express": "4.17.0",
+    "@types/express": "4.17.1",
     "@types/faker": "4.1.5",
     "@types/graphql": "14.2.3",
     "@types/history": "4.7.2",
