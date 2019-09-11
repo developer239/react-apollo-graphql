@@ -38,7 +38,7 @@
     "formik": "1.5.8",
     "graphql": "14.4.2",
     "graphql-tag": "2.10.1",
-    "history": "4.9.0",
+    "history": "4.10.0",
     "invariant": "2.2.4",
     "js-cookie": "2.2.1",
     "react": "16.9.0",
