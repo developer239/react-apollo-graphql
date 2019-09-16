@@ -59,7 +59,7 @@
     "@babel/preset-react": "7.0.0",
     "@babel/preset-typescript": "7.3.3",
     "@commitlint/cli": "8.2.0",
-    "@commitlint/config-conventional": "8.1.0",
+    "@commitlint/config-conventional": "8.2.0",
     "@strv/eslint-config-node": "2.0.0",
     "@strv/eslint-config-react": "3.0.0",
     "@strv/eslint-config-typescript": "2.0.0",
