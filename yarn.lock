@@ -1429,10 +1429,10 @@
     "@typescript-eslint/eslint-plugin" "^1.6.0"
     "@typescript-eslint/parser" "^1.6.0"
 
-"@strv/stylelint-config-styled-components@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@strv/stylelint-config-styled-components/-/stylelint-config-styled-components-1.1.0.tgz#7286b67b76bdc46f7229009409e1676d8620490a"
-  integrity sha512-7NkLilTC2unEDrgg6+cwDWsFPCa2/g7Jt3IcU1TDzQm/AVemFkeC3dZ/wY1p9JdQoLmr+06/5S4OhnzHUv1ZJw==
+"@strv/stylelint-config-styled-components@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@strv/stylelint-config-styled-components/-/stylelint-config-styled-components-1.1.1.tgz#71e6f1e50a805d33f94f605bef6dba090fefe26a"
+  integrity sha512-HpUf+npdatJYq3NRrBZTx/SsY9XUFYatxOQU7c30tGVo6DsAl8VHoSrtKSG1kds0aNGeoqjwf+btQyPXpUP5mg==
   dependencies:
     stylelint-config-standard "^18.2.0"
     stylelint-config-styled-components "^0.1.1"
