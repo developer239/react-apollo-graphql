@@ -61,7 +61,7 @@
     "@commitlint/cli": "8.1.0",
     "@commitlint/config-conventional": "8.1.0",
     "@strv/eslint-config-node": "2.0.0",
-    "@strv/eslint-config-react": "3.0.0",
+    "@strv/eslint-config-react": "3.0.3",
     "@strv/eslint-config-typescript": "2.0.0",
     "@strv/stylelint-config-styled-components": "1.1.0",
     "@testing-library/react": "9.1.1",
