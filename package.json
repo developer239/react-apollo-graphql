@@ -42,7 +42,7 @@
     "invariant": "2.2.4",
     "js-cookie": "2.2.1",
     "react": "16.10.1",
-    "react-dom": "16.9.0",
+    "react-dom": "16.10.1",
     "react-lines-ellipsis": "0.14.1",
     "react-nl2br": "0.4.1",
     "react-router": "5.0.1",
