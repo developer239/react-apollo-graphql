@@ -10360,10 +10360,10 @@ react-lines-ellipsis@0.14.1:
   resolved "https://registry.yarnpkg.com/react-lines-ellipsis/-/react-lines-ellipsis-0.14.1.tgz#dbc045b9c3bd0c46d2c1dee893d46e9260d53969"
   integrity sha512-4nEDEzzfXy2bqRhLc00DWYb39FKIpGqaIIh/YT3KdHyM9pqD8cSfDSCdGy657sB12alCdT7cKK48Uk0OsRMvHQ==
 
-react-nl2br@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/react-nl2br/-/react-nl2br-0.4.1.tgz#bf7b0508aa51711d6f4e8aeb90e4345d82314a9a"
-  integrity sha512-Bs5rQEkQvF4Dk5uK6Ihsh0xUfJDBD/Ca6Qw/VHGSbTj54yCiKn7etPmNDfPNWQnGydZFcyfFxpEUChHk9idaEQ==
+react-nl2br@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/react-nl2br/-/react-nl2br-0.5.1.tgz#748f5b63da52fe2b4a81a5597e149f9c6b54f943"
+  integrity sha512-wsMpKYbQVv+aV6Coi1mVRrJK+hRWpLTMNaZJX8zc7pO0L1EC8hspJxAQY+i0Nub7oXMPhGs2fk29lUSfOcoXtQ==
 
 react-router-dom@5.0.1:
   version "5.0.1"
