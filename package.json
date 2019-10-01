@@ -44,7 +44,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-lines-ellipsis": "0.14.1",
-    "react-nl2br": "0.4.1",
+    "react-nl2br": "0.5.1",
     "react-router": "5.0.1",
     "react-router-dom": "5.0.1",
     "styled-components": "4.3.2",
