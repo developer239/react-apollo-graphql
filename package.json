@@ -80,7 +80,7 @@
     "@types/react-router-dom": "4.3.4",
     "@types/styled-components": "4.1.18",
     "@types/webpack-dev-middleware": "2.0.3",
-    "@types/webpack-env": "1.14.0",
+    "@types/webpack-env": "1.14.1",
     "@types/webpack-hot-middleware": "2.16.5",
     "@types/webpack-merge": "4.1.5",
     "@types/yup": "0.26.22",
