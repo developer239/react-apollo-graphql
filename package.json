@@ -103,7 +103,7 @@
     "jest": "24.8.0",
     "lint-staged": "9.2.1",
     "madge": "3.4.4",
-    "nodemon": "1.19.1",
+    "nodemon": "1.19.4",
     "prettier": "1.18.2",
     "source-map-loader": "0.2.4",
     "style-loader": "1.0.0",
