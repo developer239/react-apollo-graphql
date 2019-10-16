@@ -1714,10 +1714,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@16.9.1":
-  version "16.9.1"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.1.tgz#862c83b4c9d5cd116e42fd9a4f3694843cd2c051"
-  integrity sha512-jGM2x8F7m7/r+81N/BOaUKVwbC5Cdw6ExlWEUpr77XPwVeNvAppnPEnMMLMfxRDYL8FPEX8MHjwtD2NQMJ0yyQ==
+"@types/react@16.9.8":
+  version "16.9.8"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.8.tgz#6b01592193213263300f8b242a08b172cc49f63f"
+  integrity sha512-FlifFL8nuWkLqXG3F7UhjglhlONeIUbt+PZOz3fUEba85azJwXGxR18WYnOUfaLW6jt7fMykYO9TTM980em34A==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
