@@ -85,7 +85,7 @@
     "@types/webpack-merge": "4.1.5",
     "@types/yup": "0.26.22",
     "@typescript-eslint/parser": "1.13.0",
-    "apollo": "2.17.4",
+    "apollo": "2.21.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
     "clean-webpack-plugin": "3.0.0",
