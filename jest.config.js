@@ -12,4 +12,9 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.ts',
   },
+  globals: {
+    'ts-jest': {
+      'diagnostics': false,
+    },
+  },
 }

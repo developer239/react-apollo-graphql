@@ -28,13 +28,6 @@ module.exports = {
     'node': true,
   },
   'parser': '@typescript-eslint/parser',
-  'parserOptions': {
-    'ecmaVersion': 2018,
-    'sourceType': 'module',
-    'ecmaFeatures': {
-      'jsx': true,
-    },
-  },
   'rules': {
     '@typescript-eslint/explicit-function-return-type': 0,
     'react/no-did-mount-set-state': 'error',
@@ -42,5 +35,10 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 0,
     'react/prop-types': 0,
+  },
+  'parserOptions': {
+    // The project field is required in order for some TS-syntax-specific rules to function at all
+    // @see https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser#configuration
+    'project': './tsconfig.json',
   },
 }
