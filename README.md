@@ -1,5 +1,8 @@
+[![Actions Status](https://github.com/developer239/react-apollo-graphql/workflows/CI/badge.svg)](https://github.com/developer239/react-apollo-graphql/actions?query=workflow%3A%22CI%22)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/8b605e0fb1af6dc86063/test_coverage)](https://codeclimate.com/github/developer239/react-apollo-graphql/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/8b605e0fb1af6dc86063/maintainability)](https://codeclimate.com/github/developer239/react-apollo-graphql/maintainability)
+[![Dependabot](https://badgen.net/dependabot/developer239/react-apollo-graphql/84358471?icon=dependabot)](https://dependabot.com/)
+[![Mergify Status](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/developer239/react-apollo-graphql&style=flat)](https://mergify.io)
 
 ## React Apollo GraphQL [from scratch]
 
