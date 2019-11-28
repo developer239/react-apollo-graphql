@@ -2,7 +2,7 @@
   "*.{ts,tsx}": [
     "tsc",
     "eslint --fix",
-    "prettier  --write",
+    "prettier --write",
     "stylelint",
     "git add"
   ],
