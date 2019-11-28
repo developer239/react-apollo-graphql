@@ -16,7 +16,7 @@ jobs:
       - name: Lint TS Files
         run: yarn lint:ts
       - name: Lint CSS Files
-        run: yarn lint:ts
+        run: yarn lint:css
       - name: Run type check
         run: yarn type-check
       - name: Test & publish code coverage
