@@ -7,26 +7,26 @@
 //==============================================================
 
 export interface ChangePasswordInput {
-  password: string
-  token: string
+  password: string;
+  token: string;
 }
 
 export interface CreatePageInput {
-  text: string
-  title: string
+  text: string;
+  title: string;
 }
 
 export interface RegisterInput {
-  email: string
-  firstName: string
-  lastName: string
-  password: string
+  email: string;
+  firstName: string;
+  lastName: string;
+  password: string;
 }
 
 export interface UpdatePageInput {
-  id: number
-  text: string
-  title: string
+  id: number;
+  text: string;
+  title: string;
 }
 
 //==============================================================

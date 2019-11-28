@@ -1,5 +1,6 @@
 {
   "*.{ts,tsx}": [
+    "tsc",
     "eslint --fix",
     "prettier  --write",
     "stylelint",

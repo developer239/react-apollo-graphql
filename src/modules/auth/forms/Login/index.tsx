@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { Link } from 'react-router-dom'
-import { message } from 'antd'
+import { showAllGraphQLErrors } from 'services/messages'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { History as RouterHistory } from 'history'
@@ -18,13 +18,8 @@ const initialValues = {
 }
 
 const loginSchema = Yup.object().shape({
-  email: Yup.string()
-    .email('Invalid email')
-    .required('Required'),
-  password: Yup.string()
-    .min(5, 'Too Short!')
-    .max(70, 'Too Long!')
-    .required('Required'),
+  email: Yup.string(),
+  password: Yup.string(),
 })
 
 interface IProps {
@@ -51,7 +46,7 @@ export const LoginForm: FC<IProps> = ({ routerHistory }) => {
           }
         } catch (error) {
           setSubmitting(false)
-          message.error(error.message)
+          showAllGraphQLErrors(error.graphQLErrors)
         }
       }}
     >

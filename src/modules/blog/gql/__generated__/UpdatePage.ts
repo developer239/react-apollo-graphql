@@ -2,23 +2,23 @@
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
-import { UpdatePageInput } from "./../../../../../__generated__/globalTypes";
+import { UpdatePageInput } from './../../../../globalTypes'
 
 // ====================================================
 // GraphQL mutation operation: UpdatePage
 // ====================================================
 
 export interface UpdatePage_updatePage {
-  __typename: "Page";
-  id: string;
-  title: string;
-  text: string;
+  __typename: 'Page'
+  id: string
+  title: string
+  text: string
 }
 
 export interface UpdatePage {
-  updatePage: UpdatePage_updatePage;
+  updatePage: UpdatePage_updatePage
 }
 
 export interface UpdatePageVariables {
-  data: UpdatePageInput;
+  data: UpdatePageInput
 }

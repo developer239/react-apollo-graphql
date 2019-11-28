@@ -2,7 +2,7 @@
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
-import { ChangePasswordInput } from './../../../../../__generated__/globalTypes'
+import { ChangePasswordInput } from './../../../../globalTypes'
 
 // ====================================================
 // GraphQL mutation operation: ChangePassword

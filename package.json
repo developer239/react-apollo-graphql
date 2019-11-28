@@ -15,7 +15,7 @@
     "lint:ts": "eslint '{server,src}/**/*.{ts,tsx}'",
     "lint:css": "stylelint 'src/**/*.{ts,tsx}'",
     "lint:circular-dependencies": "madge --circular --extensions ts,tsx ./src",
-    "apollo:generate-types": " apollo client:codegen --target=typescript",
+    "apollo:generate-types": " apollo client:codegen --target=typescript --globalTypesFile src/globalTypes.ts",
     "apollo:generate-types:watch": "npm run apollo:generate-types -- --watch",
     "apollo:remove-all-types": "find . -regex './src/.*__generated__.*' -type d -prune -exec rm -r \"{}\" \\;",
     "test": "jest",
