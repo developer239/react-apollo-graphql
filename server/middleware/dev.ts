@@ -31,14 +31,16 @@ export const handleServeBaseRouteDev = ({
   app.use('*', (req, res, next) => {
     const filename = path.join(compiler.outputPath, 'index.html')
 
-    // @ts-ignore
-    compiler.outputFileSystem.readFile(filename, (err: Error, result: any) => {
-      if (err) {
-        return next(err)
+    compiler.inputFileSystem.readFile(
+      filename,
+      (err: Error, result: unknown) => {
+        if (err) {
+          return next(err)
+        }
+        res.set('content-type', 'text/html')
+        res.send(result)
+        res.end()
       }
-      res.set('content-type', 'text/html')
-      res.send(result)
-      res.end()
-    })
+    )
   })
 }
