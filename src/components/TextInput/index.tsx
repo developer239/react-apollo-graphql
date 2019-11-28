@@ -37,7 +37,7 @@ export const TextInput: FC<IProps> = ({
               prefix={iconType && <Icon type={iconType} />}
               placeholder={(label && label.toLowerCase()) || name}
               type={type}
-              {...field}
+              {...(field as any)}
             />
           </label>
           {description && <Description>{description}</Description>}

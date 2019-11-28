@@ -4,7 +4,7 @@ import { message } from 'antd'
 import { H1 } from 'components/Typography/H1'
 import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { useCreatePage } from 'modules/blog/hooks/useCreatePage'
-import { FormikActions } from 'formik'
+import { FormikHelpers } from 'formik'
 
 export const PAGE_CREATE_TEST_ID = 'create-page'
 
@@ -13,7 +13,7 @@ export const CreatePagePage: FC<RouteComponentProps> = props => {
 
   const handleSubmit = async (
     values: IPageFormValues,
-    { setSubmitting }: FormikActions<IPageFormValues>
+    { setSubmitting }: FormikHelpers<IPageFormValues>
   ) => {
     try {
       const result = await createPage({ variables: { data: values } })
