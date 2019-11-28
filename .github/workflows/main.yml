@@ -15,11 +15,13 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org
       - name: Install Dependencies
-        - run: yarn install
-      - name: Lint Files
-        - run: yarn lint:ts
-        - run: yarn lint:css
-        - run: yarn type-check
+        run: yarn install
+      - name: Lint TS Files
+        run: yarn lint:ts
+      - name: Lint CSS Files
+        run: yarn lint:ts
+      - name: Run type check
+        run: yarn type-check
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v2.3.0
         env:
