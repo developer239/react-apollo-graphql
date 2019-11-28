@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { message } from 'antd'
+import { showAllGraphQLErrors } from 'services/messages'
 import { Link } from 'react-router-dom'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
@@ -53,7 +53,7 @@ export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
           }
         } catch (error) {
           setSubmitting(false)
-          message.error(error.message)
+          showAllGraphQLErrors(error.graphQLErrors)
         }
       }}
     >

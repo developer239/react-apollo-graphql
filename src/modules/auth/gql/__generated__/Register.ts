@@ -2,7 +2,7 @@
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
-import { RegisterInput } from './../../../../../__generated__/globalTypes'
+import { RegisterInput } from './../../../../globalTypes'
 
 // ====================================================
 // GraphQL mutation operation: Register
