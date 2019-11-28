@@ -25,7 +25,7 @@ export const TextInput: FC<IProps> = ({
     render={({
       field,
       form: { errors, touched },
-    }: FieldProps<{ [key: string]: string }>) => (
+    }: FieldProps<string>) => (
       <>
         <FormElementLabel
           validateStatus={errors[name] && touched[name] && 'error'}
