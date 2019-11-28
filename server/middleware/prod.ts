@@ -3,15 +3,19 @@ import { Express } from 'express'
 import compression from 'compression'
 import { BUILD_DIR_PUBLIC } from '../config'
 
-export const handleHttpsRedirect = (app: Express) => app.use((req, res, next) => {
-  if (req.hostname !== 'localhost' && req.get('X-Forwarded-Proto') !== 'https') {
-    return res.redirect(`https://${req.hostname}${req.url}`)
-  }
-  return next()
-})
+export const handleHttpsRedirect = (app: Express) =>
+  app.use((req, res, next) => {
+    if (
+      req.hostname !== 'localhost' &&
+      req.get('X-Forwarded-Proto') !== 'https'
+    ) {
+      return res.redirect(`https://${req.hostname}${req.url}`)
+    }
+    return next()
+  })
 
-export const handleCompression = (app: Express) =>
-  app.use(compression())
+// TODO: Fix typescript error
+export const handleCompression = (app: Express) => app.use(compression() as any)
 
 export const handleServeBaseRoute = (app: Express) =>
   app.get('*', (req, res) => {
