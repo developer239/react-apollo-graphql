@@ -945,10 +945,10 @@
   resolved "https://registry.yarnpkg.com/@code-quality/prettier-config/-/prettier-config-2.0.1.tgz#ef2706dfba3fcdb9a159835c53874f251d094555"
   integrity sha512-rLvxIfLuyzgoE6QiqzdxAdHA95UrblglPi3FkyoC2mc5Of+IHefyp0oqJXBhqvUtLxDEEr3tJTbwKLZxraN9cA==
 
-"@code-quality/stylelint-styled-components-config@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@code-quality/stylelint-styled-components-config/-/stylelint-styled-components-config-1.0.2.tgz#33a83f6019390c3baceeda7d988a24fad25af446"
-  integrity sha512-bn9PMkHJlpRMxTrkY9uoxPUEAtb3JkQRWPXZGZcyACWtCqMr9j1YVJgQzUmZrJa4vt+4b/zino53YOsIGzwpGQ==
+"@code-quality/stylelint-styled-components-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@code-quality/stylelint-styled-components-config/-/stylelint-styled-components-config-1.1.0.tgz#a53d4e0dadee3bbe3873bc0d956c4aa74ba71c4f"
+  integrity sha512-JszWyvK0RiGBB/uP9tF7SRRdIp1Lm/mMdNTOi4hg+y22rTloDZWH8TNqC5ai0YExMFys3MTO5VYUcXO2/FeANQ==
   dependencies:
     stylelint-config-standard "^19.0.0"
     stylelint-config-styled-components "^0.1.1"
