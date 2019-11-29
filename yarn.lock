@@ -941,10 +941,10 @@
     "@commitlint/cli" "^8.2.0"
     "@commitlint/config-conventional" "^8.1.0"
 
-"@code-quality/prettier-config@2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@code-quality/prettier-config/-/prettier-config-2.0.1.tgz#ef2706dfba3fcdb9a159835c53874f251d094555"
-  integrity sha512-rLvxIfLuyzgoE6QiqzdxAdHA95UrblglPi3FkyoC2mc5Of+IHefyp0oqJXBhqvUtLxDEEr3tJTbwKLZxraN9cA==
+"@code-quality/prettier-config@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@code-quality/prettier-config/-/prettier-config-2.1.0.tgz#8ee34776d9209e593647163bb51a3dbf8ff3741a"
+  integrity sha512-KV9Nq4Rs6CipEe8Jft5hlJv+jqROtfrQPqBoAnPTRCwnEUiiC1iQjWK0+unQ22JnUlWQdPQQIJuApJXvyx/jkQ==
 
 "@code-quality/stylelint-styled-components-config@^1.1.0":
   version "1.1.0"
