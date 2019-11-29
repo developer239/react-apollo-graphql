@@ -933,11 +933,12 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@code-quality/commitlint-config@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@code-quality/commitlint-config/-/commitlint-config-1.0.1.tgz#6b183411be728141df561ef9ce8c18c7d0f2e0f8"
-  integrity sha512-SEQdYMStgAXXhBzHKGGFxdtynL3C1hX+ikLg2zjXvJBZ82NEhiy5p+UpL08iPtzTcdU02Txmj9wTaSF2rT3P0w==
+"@code-quality/commitlint-config@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@code-quality/commitlint-config/-/commitlint-config-1.1.0.tgz#fbc400b084a2822fe4113b722084ed3689f56fe7"
+  integrity sha512-FyTXX/ah8bUFDtak8sbYcq1A1uVtyeoNrOl6P+J0aXKH95yXQ/QW9z82xwEGEQV+8L6Woo5qcDixk6Dgf1PP0g==
   dependencies:
+    "@commitlint/cli" "^8.2.0"
     "@commitlint/config-conventional" "^8.1.0"
 
 "@code-quality/prettier-config@2.0.1":
