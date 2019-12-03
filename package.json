@@ -85,7 +85,7 @@
     "@types/webpack-hot-middleware": "2.16.5",
     "@types/webpack-merge": "4.1.5",
     "@types/yup": "0.26.26",
-    "@typescript-eslint/parser": "2.9.0",
+    "@typescript-eslint/parser": "2.10.0",
     "apollo": "2.21.1",
     "babel-jest": "24.9.0",
     "babel-loader": "8.0.6",
