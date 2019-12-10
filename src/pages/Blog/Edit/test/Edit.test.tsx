@@ -1,12 +1,12 @@
 import React from 'react'
+import { waitForElement } from '@testing-library/react'
+import { PAGE_EDIT_TEST_ID } from '../index'
 import { App } from 'app'
 import { ROUTE_PATHS } from 'routes'
-import { waitForElement } from '@testing-library/react'
 import { renderWithRouter } from 'test-utils/render'
 import { createPageWithUser } from 'test-utils/generators'
 import { mockPageDetailSuccess } from 'test-utils/gql'
 import { auth } from 'services/auth'
-import { PAGE_EDIT_TEST_ID } from '../index'
 
 describe('[page] Edit Page', () => {
   beforeEach(() => {

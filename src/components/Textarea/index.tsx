@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 import { ErrorMessage, Field, FieldProps } from 'formik'
-import { StyledTextArea } from './styled'
 import { FormElementError } from '../FormElementError'
 import { FormElementLabel } from '../FormElementLabel'
+import { StyledTextArea } from './styled'
 
 interface IProps {
   name: string
@@ -11,7 +11,8 @@ interface IProps {
 
 export const Textarea: FC<IProps> = ({ name, label }) => (
   <FormElementLabel>
-    {label}:
+    {label}
+    :
     <Field
       name={name}
       render={({ field }: FieldProps<string>) => (

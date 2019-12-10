@@ -1,12 +1,12 @@
 import React from 'react'
-import { renderWithRouter } from 'test-utils/render'
 import { waitForElement } from '@testing-library/react'
+import { PAGE_ME_TEST_ID } from '../../Me'
+import { PAGE_PASSWORD_RESET_TEST_ID } from '../index'
+import { renderWithRouter } from 'test-utils/render'
 import { App } from 'app'
 import { changeInput, submitForm } from 'test-utils/form/input'
 import { mockMeSuccess, mockPasswordChangeSuccess } from 'test-utils/gql'
 import { createUserWithPages } from 'test-utils/generators'
-import { PAGE_ME_TEST_ID } from '../../Me'
-import { PAGE_PASSWORD_RESET_TEST_ID } from '../index'
 
 describe('[page] PasswordReset', () => {
   const mockFormData = {

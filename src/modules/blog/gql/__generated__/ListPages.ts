@@ -1,4 +1,4 @@
-/* tslint:disable */
+/* Tslint:disable */
 /* eslint-disable */
 // This file was automatically generated and should not be edited.
 
@@ -7,12 +7,12 @@
 // ====================================================
 
 export interface ListPages_listPages {
-  __typename: "Page";
-  id: string;
-  title: string;
-  text: string;
+  __typename: 'Page'
+  id: string
+  title: string
+  text: string
 }
 
 export interface ListPages {
-  listPages: ListPages_listPages[];
+  listPages: ListPages_listPages[]
 }

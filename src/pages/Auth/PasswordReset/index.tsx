@@ -5,17 +5,17 @@ import { ChangePasswordForm } from 'modules/auth/forms/ChangePassword'
 
 export const PAGE_PASSWORD_RESET_TEST_ID = 'password-reset-page'
 
-// get token from router props
-// don't render the form if token doesn't exist and render alertError instead
-export const PasswordResetPage: FC<
-  RouteComponentProps<{ token: string }>
-> = props => {
-  const resetToken = props.match.params.token
+// Get token from router props
+// Don't render the form if token doesn't exist and render alertError instead
+export const PasswordResetPage: FC<RouteComponentProps<{
+  token: string
+}>> = ({ history, match }) => {
+  const resetToken = match.params.token
 
   return (
     <div data-testid={PAGE_PASSWORD_RESET_TEST_ID}>
       <H1>Password Reset</H1>
-      <ChangePasswordForm routerHistory={props.history} token={resetToken} />
+      <ChangePasswordForm routerHistory={history} token={resetToken} />
     </div>
   )
 }

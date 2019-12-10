@@ -1,6 +1,6 @@
 import React from 'react'
-import { ROUTE_PATHS } from 'routes'
 import { waitForElement } from '@testing-library/react'
+import { ROUTE_PATHS } from 'routes'
 import { App } from 'app'
 import { COMPONENT_LOADER_TEST_ID } from 'components/Loader'
 import { COMPONENT_ERROR_ALERT_TEST_ID } from 'components/ErrorAlert'

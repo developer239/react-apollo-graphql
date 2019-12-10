@@ -1,10 +1,10 @@
 import React from 'react'
+import { Info } from './styled'
 import { H1 } from 'components/Typography/H1'
 import { Loader } from 'components/Loader'
 import { ErrorAlert } from 'components/ErrorAlert'
 import { useMe } from 'modules/auth/hooks/useMe'
 import { RelevantPagesList } from 'modules/blog/components/RelevantPagesList'
-import { Info } from './styled'
 
 export const PAGE_ME_TEST_ID = 'me-page'
 
@@ -32,7 +32,7 @@ export const MePage = () => {
         <strong>Last Name:</strong> {data.me.lastName}
       </Info>
       {Boolean(data.me.pages.length) && (
-        <RelevantPagesList title="Your Pages" pages={data.me.pages} />
+        <RelevantPagesList pages={data.me.pages} title="Your Pages" />
       )}
     </div>
   )

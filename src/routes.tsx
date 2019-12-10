@@ -1,5 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
+import { PasswordForgotPage } from './pages/Auth/PasswordForgot'
+import { PasswordResetPage } from './pages/Auth/PasswordReset'
 import { HomePage } from 'pages/Home'
 import { RegisterPage } from 'pages/Auth/Register'
 import { MePage } from 'pages/Auth/Me'
@@ -10,8 +12,6 @@ import { CreatePagePage } from 'pages/Blog/Create'
 import { EditPagePage } from 'pages/Blog/Edit'
 import { DetailPage } from 'pages/Blog/Detail'
 import { ProtectedRoute } from 'modules/router/routes/Protected'
-import { PasswordForgotPage } from './pages/Auth/PasswordForgot'
-import { PasswordResetPage } from './pages/Auth/PasswordReset'
 
 export const ROUTE_PATHS = {
   home: '/',

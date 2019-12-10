@@ -4,12 +4,12 @@ import { message } from 'antd'
 import { History as RouterHistory } from 'history'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
+import { useChangePassword } from '../../hooks/useChangePassword'
+import { auth } from '../../../../services/auth'
 import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
 import { ElementLink } from 'components/FormElementLink'
 import { ROUTE_PATHS } from 'routes'
-import { useChangePassword } from '../../hooks/useChangePassword'
-import { auth } from '../../../../services/auth'
 
 const initialValues = {
   password: '',
@@ -25,23 +25,22 @@ interface IProps {
   routerHistory: RouterHistory
 }
 
-export const ChangePasswordForm: FC<IProps> = props => {
+export const ChangePasswordForm: FC<IProps> = ({ token, routerHistory }) => {
   const [changePassword] = useChangePassword()
 
   return (
     <Formik
       initialValues={{
-        token: props.token,
+        token,
         ...initialValues,
       }}
-      validationSchema={forgotPasswordSchema}
       onSubmit={async (values, { setSubmitting }) => {
         const result = await changePassword({
           variables: { data: { ...values } },
         })
 
-        if (result && result.data.changePassword) {
-          message.success(
+        if (result?.data.changePassword) {
+          await message.success(
             'Password reset was successful. You were automatically logged in.',
             10
           )
@@ -49,12 +48,13 @@ export const ChangePasswordForm: FC<IProps> = props => {
             result.data.changePassword.accessToken,
             result.data.changePassword.refreshToken
           )
-          props.routerHistory.push('/me')
+          routerHistory.push('/me')
         } else {
           setSubmitting(false)
-          message.error('Invali password reset token.')
+          await message.error('Invalid password reset token.')
         }
       }}
+      validationSchema={forgotPasswordSchema}
     >
       {({ isSubmitting }) => (
         <Form>

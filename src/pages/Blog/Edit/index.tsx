@@ -13,8 +13,8 @@ export const PAGE_EDIT_TEST_ID = 'edit-page'
 
 export const EditPagePage: FC<RouteComponentProps<{
   pageId: string
-}>> = props => {
-  const pageId = Number(props.match.params.pageId)
+}>> = ({ match, history }) => {
+  const pageId = Number(match.params.pageId)
   const { data, loading, error: loadingError } = usePageDetail({ pageId })
   const [updatePage] = useUpdatePage()
 
@@ -35,11 +35,11 @@ export const EditPagePage: FC<RouteComponentProps<{
         variables: { data: { id: pageId, ...values } },
       })
       if (result) {
-        props.history.push(`/blog/${result.data.updatePage.id}`)
+        history.push(`/blog/${result.data.updatePage.id}`)
       }
     } catch (error) {
       setSubmitting(false)
-      message.error(error.message)
+      await message.error(error.message)
     }
   }
 

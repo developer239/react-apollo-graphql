@@ -2,11 +2,11 @@ import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
 import { setContext } from 'apollo-link-context'
 import { InMemoryCache } from 'apollo-cache-inmemory'
+import { ApolloLink } from 'apollo-link'
+import { onError } from 'apollo-link-error'
 import { auth } from 'services/auth'
 import { handleRefreshToken } from 'services/token'
 import { SERVER_URL } from 'config'
-import { ApolloLink } from 'apollo-link'
-import { onError } from 'apollo-link-error'
 
 const httpLink = createHttpLink({
   uri: SERVER_URL,

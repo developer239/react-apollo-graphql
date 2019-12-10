@@ -25,6 +25,6 @@ export const auth = {
   // Refresh Token
   setRefreshToken: (token: string) =>
     Cookie.set(STORAGE.REFRESH_TOKEN, token, { expires: 365 }),
-  getRefreshToken: () => Cookie.get(STORAGE.REFRESH_TOKEN),
+  getRefreshToken: () => Cookie.get(STORAGE.REFRESH_TOKEN) || '',
   removeRefreshToken: () => Cookie.remove(STORAGE.REFRESH_TOKEN),
 }

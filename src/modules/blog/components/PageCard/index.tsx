@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import LinesEllipsis from 'react-lines-ellipsis'
-import { Card, CardLink } from './styled'
 import { ListPages_listPages } from '../../gql/__generated__/ListPages'
+import { Card, CardLink } from './styled'
 
 interface IProps {
   page: Omit<ListPages_listPages, '__typename'>

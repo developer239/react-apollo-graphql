@@ -1,3 +1,4 @@
+/* eslint-disable */
 import path from 'path'
 import { Express } from 'express'
 import webpack, { Compiler } from 'webpack'

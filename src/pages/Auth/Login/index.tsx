@@ -5,9 +5,9 @@ import { LoginForm } from 'modules/auth/forms/Login'
 
 export const PAGE_LOGIN_TEST_ID = 'login-page'
 
-export const LoginPage: FC<RouteComponentProps> = props => (
+export const LoginPage: FC<RouteComponentProps> = ({ history }) => (
   <div data-testid={PAGE_LOGIN_TEST_ID}>
     <H1>Login Page</H1>
-    <LoginForm routerHistory={props.history} />
+    <LoginForm routerHistory={history} />
   </div>
 )

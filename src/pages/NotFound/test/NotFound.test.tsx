@@ -1,7 +1,7 @@
 import React from 'react'
+import { PAGE_NOT_FOUND_TEST_ID } from '../index'
 import { renderWithRouter } from 'test-utils/render'
 import { App } from 'app'
-import { PAGE_NOT_FOUND_TEST_ID } from '../index'
 
 describe('[page] NotFound', () => {
   it('should render correctly', () => {

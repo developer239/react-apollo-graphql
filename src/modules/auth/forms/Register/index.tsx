@@ -1,15 +1,15 @@
 import React, { FC } from 'react'
-import { showAllGraphQLErrors } from 'services/messages'
 import { Link } from 'react-router-dom'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 import { History as RouterHistory } from 'history'
+import { useRegister } from '../../hooks/useRegister'
+import { showAllGraphQLErrors } from 'services/messages'
 import { auth } from 'services/auth'
 import { ROUTE_PATHS } from 'routes'
 import { TextInput } from 'components/TextInput'
 import { FormButton } from 'components/FormButton'
 import { ElementLink } from 'components/FormElementLink'
-import { useRegister } from '../../hooks/useRegister'
 
 const initialValues = {
   email: '',
@@ -40,7 +40,6 @@ export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
   return (
     <Formik
       initialValues={initialValues}
-      validationSchema={registerSchema}
       onSubmit={async (values, { setSubmitting }) => {
         try {
           const result = await register({ variables: { data: values } })
@@ -56,6 +55,7 @@ export const RegisterForm: FC<IProps> = ({ routerHistory }) => {
           showAllGraphQLErrors(error.graphQLErrors)
         }
       }}
+      validationSchema={registerSchema}
     >
       {({ isSubmitting }) => (
         <Form>

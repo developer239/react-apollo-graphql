@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 import { MemoryRouter } from 'react-router-dom'
-import { ApolloProvider } from './ApolloProvider'
 import { MockedResponse } from '@apollo/react-testing'
+import { ApolloProvider } from './ApolloProvider'
 
 export const renderWithRouter = (
   component: JSX.Element,

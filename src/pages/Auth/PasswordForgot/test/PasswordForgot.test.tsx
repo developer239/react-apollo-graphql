@@ -1,11 +1,11 @@
 import React from 'react'
-import { renderWithRouter } from 'test-utils/render'
 import { waitForElement } from '@testing-library/react'
+import { PAGE_PASSWORD_FORGOT_TEST_ID } from '../index'
+import { renderWithRouter } from 'test-utils/render'
 import { App } from 'app'
 import { changeInput, submitForm } from 'test-utils/form/input'
 import { SUCCESS_MESSAGE } from 'modules/auth/forms/ForgotPassword'
 import { mockPasswordForgotSuccess } from 'test-utils/gql'
-import { PAGE_PASSWORD_FORGOT_TEST_ID } from '../index'
 
 describe('[page] PasswordForgot', () => {
   const mockEmail = 'email@email.com'

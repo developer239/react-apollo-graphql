@@ -12,25 +12,23 @@ type IProps = IOuterProps & RouteProps
 export const ProtectedRoute: FunctionComponent<IProps> = ({
   component: TargetComponent,
   ...rest
-}) => {
-  return (
-    <Route
-      {...rest}
-      render={props => {
-        const accessToken = auth.getAccessToken()
-        if (accessToken) {
-          return <TargetComponent {...props} />
-        }
+}) => (
+  <Route
+    {...rest}
+    render={props => {
+      const accessToken = auth.getAccessToken()
+      if (accessToken) {
+        return <TargetComponent {...props} />
+      }
 
-        return (
-          <Redirect
-            to={{
-              pathname: ROUTE_PATHS.auth.login,
-              state: { from: props.location },
-            }}
-          />
-        )
-      }}
-    />
-  )
-}
+      return (
+        <Redirect
+          to={{
+            pathname: ROUTE_PATHS.auth.login,
+            state: { from: props.location },
+          }}
+        />
+      )
+    }}
+  />
+)

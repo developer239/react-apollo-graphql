@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 import { ErrorMessage, Field, FieldProps } from 'formik'
-import { Description } from 'components/FormElementDescription'
-import { Input, Icon } from './styled'
 import { FormElementError } from '../FormElementError'
 import { FormElementLabel } from '../FormElementLabel'
+import { Input, Icon } from './styled'
+import { Description } from 'components/FormElementDescription'
 
 interface IProps {
   iconType?: string
@@ -31,11 +31,12 @@ export const TextInput: FC<IProps> = ({
           validateStatus={errors[name] && touched[name] && 'error'}
         >
           <label>
-            {label}:
+            {label}
+            :
             <Input
               size="large"
               prefix={iconType && <Icon type={iconType} />}
-              placeholder={(label && label.toLowerCase()) || name}
+              placeholder={label && (label.toLowerCase() || name)}
               type={type}
               {...(field as any)}
             />

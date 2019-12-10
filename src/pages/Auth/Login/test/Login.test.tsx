@@ -1,13 +1,13 @@
 import React from 'react'
+import { waitForElement } from '@testing-library/react'
+import { PAGE_ME_TEST_ID } from '../../Me'
+import { PAGE_LOGIN_TEST_ID } from '../index'
 import { App } from 'app'
 import { ROUTE_PATHS } from 'routes'
-import { waitForElement } from '@testing-library/react'
 import { renderWithRouter } from 'test-utils/render'
 import { changeInput, submitForm } from 'test-utils/form/input'
 import { createUserWithPages } from 'test-utils/generators'
 import { mockLoginSuccess, mockMeSuccess } from 'test-utils/gql'
-import { PAGE_ME_TEST_ID } from '../../Me'
-import { PAGE_LOGIN_TEST_ID } from '../index'
 
 describe('[page] Login Page', () => {
   it('should render correctly', () => {

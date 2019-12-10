@@ -5,11 +5,6 @@ import { TextInput } from 'components/TextInput'
 import { Textarea } from 'components/Textarea'
 import { FormButton } from 'components/FormButton'
 
-const initialValues = {
-  title: '',
-  text: '',
-}
-
 const registerSchema = Yup.object().shape({
   title: Yup.string().required('Required'),
   text: Yup.string().required('Required'),
@@ -29,11 +24,11 @@ export interface IProps {
   ) => Promise<void>
 }
 
-export const PageForm: FC<IProps> = props => (
+export const PageForm: FC<IProps> = ({ initialValues, handleSubmit }) => (
   <Formik
-    initialValues={props.initialValues || initialValues}
+    initialValues={initialValues || initialValues}
     validationSchema={registerSchema}
-    onSubmit={props.handleSubmit}
+    onSubmit={handleSubmit}
   >
     {({ isSubmitting }) => (
       <Form>

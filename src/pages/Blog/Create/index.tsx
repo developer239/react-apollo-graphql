@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 import { RouteComponentProps } from 'react-router'
 import { message } from 'antd'
+import { FormikHelpers } from 'formik'
 import { H1 } from 'components/Typography/H1'
 import { IPageFormValues, PageForm } from 'modules/blog/forms/Page'
 import { useCreatePage } from 'modules/blog/hooks/useCreatePage'
-import { FormikHelpers } from 'formik'
 
 export const PAGE_CREATE_TEST_ID = 'create-page'
 
@@ -22,7 +22,7 @@ export const CreatePagePage: FC<RouteComponentProps> = props => {
       }
     } catch (error) {
       setSubmitting(false)
-      message.error(error.message)
+      await message.error(error.message)
     }
   }
 

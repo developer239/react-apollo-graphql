@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import express from 'express'
 import { PATH_TO_BUILD_DIR_PUBLIC, PORT } from './config'
 import {

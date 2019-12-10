@@ -1,11 +1,4 @@
 import {
-  CREATE_PAGE_MUTATION,
-  DELETE_PAGE_MUTATION,
-  LIST_PAGES_QUERY,
-  PAGE_DETAIL_QUERY,
-  UPDATE_PAGE_MUTATION,
-} from 'modules/blog/gql'
-import {
   MockPageType,
   MockPageWithUserType,
   MockUserType,
@@ -18,6 +11,13 @@ import {
   ME_QUERY,
   REGISTER_MUTATION,
 } from '../../modules/auth/gql'
+import {
+  CREATE_PAGE_MUTATION,
+  DELETE_PAGE_MUTATION,
+  LIST_PAGES_QUERY,
+  PAGE_DETAIL_QUERY,
+  UPDATE_PAGE_MUTATION,
+} from 'modules/blog/gql'
 
 //
 // List Pages
@@ -61,7 +61,7 @@ export const mockPageDetailSuccess = (data: MockPageWithUserType) => ({
   },
 })
 
-export const mockPageDetailError = (id: number = 1) => ({
+export const mockPageDetailError = (id = 1) => ({
   request: {
     query: PAGE_DETAIL_QUERY,
     variables: {
@@ -262,8 +262,8 @@ export const mockPasswordChangeSuccess = (
   result: {
     data: {
       changePassword: {
-        accessToken: accessToken,
-        refreshToken: refreshToken,
+        accessToken,
+        refreshToken,
       },
     },
   },
