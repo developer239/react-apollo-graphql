@@ -925,17 +925,17 @@
   resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-base/-/eslint-config-base-1.7.0.tgz#d3a2264b76330eb34f666ea1aad809bf109d16e4"
   integrity sha512-+DxfkNZMYPM1UMHna1ND5y4SAiB0Jkzw3JZNKpPyoBSfTUD7J4sHzxgIQtqfwVgpv5tK3eESKhI3cKSuZEIKtg==
 
-"@code-quality/eslint-config-base@1.8.1", "@code-quality/eslint-config-base@^1.6.0":
+"@code-quality/eslint-config-base@1.8.1", "@code-quality/eslint-config-base@^1.7.1":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-base/-/eslint-config-base-1.8.1.tgz#da6abe41392697198d601eb10f3a8c57c7849640"
   integrity sha512-LfZpgu5NWnC0MkESmIwvlm7Q42QS03nlQ3H7Oq+/Wp4wJKX6O/SWesDwnjec0aw25exj0UjQU3cl1vb1DovCDw==
 
-"@code-quality/eslint-config-node@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-node/-/eslint-config-node-1.4.0.tgz#c394687af883d3fffe2f8c3dd62b2445450bc987"
-  integrity sha512-2zEAZZRolspUCub+7f9Pb9hoDx6mtr9qrq8o8qikF1SIj+NzcEZXQaDvfGJz4J5BRWEidWdw6xiTaxzDIzEQEg==
+"@code-quality/eslint-config-node@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-node/-/eslint-config-node-1.5.0.tgz#dbb0c06c71b30144f82c01576154364e9c61675d"
+  integrity sha512-dHEO0adX6DaK3JKN/T2OzQf3Y49HZ1/oja3Svxepqgp23ajuej2VoxcjGJ/GOeeV1AXGWDk595N1dUdHREUjcw==
   dependencies:
-    "@code-quality/eslint-config-base" "^1.6.0"
+    "@code-quality/eslint-config-base" "^1.7.1"
     eslint-plugin-node "^10.0.0"
     eslint-plugin-security "^1.4.0"
 
