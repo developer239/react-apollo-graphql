@@ -61,7 +61,7 @@
     "@code-quality/commitlint-config": "^1.1.0",
     "@code-quality/eslint-config-node": "^1.5.0",
     "@code-quality/eslint-config-react": "^1.6.1",
-    "@code-quality/eslint-config-typescript": "^1.5.0",
+    "@code-quality/eslint-config-typescript": "^1.5.2",
     "@code-quality/prettier-config": "2.1.0",
     "@code-quality/stylelint-styled-components-config": "^1.1.0",
     "@commitlint/cli": "^8.2.0",

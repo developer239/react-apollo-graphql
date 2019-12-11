@@ -920,11 +920,6 @@
     "@commitlint/cli" "^8.2.0"
     "@commitlint/config-conventional" "^8.1.0"
 
-"@code-quality/eslint-config-base@1.7.0":
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-base/-/eslint-config-base-1.7.0.tgz#d3a2264b76330eb34f666ea1aad809bf109d16e4"
-  integrity sha512-+DxfkNZMYPM1UMHna1ND5y4SAiB0Jkzw3JZNKpPyoBSfTUD7J4sHzxgIQtqfwVgpv5tK3eESKhI3cKSuZEIKtg==
-
 "@code-quality/eslint-config-base@1.8.1", "@code-quality/eslint-config-base@^1.7.1":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-base/-/eslint-config-base-1.8.1.tgz#da6abe41392697198d601eb10f3a8c57c7849640"
@@ -949,12 +944,12 @@
     eslint-plugin-react "7.17.0"
     eslint-plugin-react-hooks "2.3.0"
 
-"@code-quality/eslint-config-typescript@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-typescript/-/eslint-config-typescript-1.5.0.tgz#78901f235f5f03c7dbd3fc7127840020c25f77b3"
-  integrity sha512-WEv9n3CibZQ2/4WWeIu5LTyUI7MG8YjRaYx3QR1z7BUP2Wh0DjPlXo0CiV07hHI240niDEjMI3wa6DFnGkQHVA==
+"@code-quality/eslint-config-typescript@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-typescript/-/eslint-config-typescript-1.5.2.tgz#a53be4b7a22db0a35fc8ee1f0e338ed59a8bb879"
+  integrity sha512-8pkSA8t64blRQ1KBWNSd5NLuWRsm/aYWolOIU+1/lxyIIr3PaEOH+hcb4m9HGEs26nCwMV9FCNiLJ7x+ba5oSQ==
   dependencies:
-    "@code-quality/eslint-config-base" "1.7.0"
+    "@code-quality/eslint-config-base" "1.8.1"
     "@typescript-eslint/eslint-plugin" "2.11.0"
     "@typescript-eslint/parser" "2.11.0"
 
