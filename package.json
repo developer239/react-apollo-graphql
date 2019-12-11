@@ -60,7 +60,7 @@
     "@babel/preset-typescript": "7.7.4",
     "@code-quality/commitlint-config": "^1.1.0",
     "@code-quality/eslint-config-node": "^1.4.0",
-    "@code-quality/eslint-config-react": "^1.5.0",
+    "@code-quality/eslint-config-react": "^1.6.1",
     "@code-quality/eslint-config-typescript": "^1.5.0",
     "@code-quality/prettier-config": "2.1.0",
     "@code-quality/stylelint-styled-components-config": "^1.1.0",
