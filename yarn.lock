@@ -5682,10 +5682,10 @@ form-data@~2.3.2:
     combined-stream "^1.0.6"
     mime-types "^2.1.12"
 
-formik@2.0.10:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/formik/-/formik-2.0.10.tgz#fa5009bfec4f739938a08aa9b22fed98adf7a745"
-  integrity sha512-a8S8oHkXXDrXaj1494yP9WqhpTtYivaFU2l20SmoaB9Xo5bHeRvelH2tngk3CzKPHpZqVkjlCLzpSl1s/Qs7jg==
+formik@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/formik/-/formik-2.1.0.tgz#5a59b358170049cebcaf03e661f5f9c6588714d1"
+  integrity sha512-GxH9uMX55UKQcX0hNBd/FuoYnYXKQY0nS9FH00vHyZzEvIfvvt+JMRWU515JbCvR9P2Sx3ZWMFgszjMugF3zNg==
   dependencies:
     deepmerge "^2.1.1"
     hoist-non-react-statics "^3.3.0"
