@@ -64,7 +64,7 @@
     "@code-quality/eslint-config-typescript": "^1.5.2",
     "@code-quality/prettier-config": "2.1.0",
     "@code-quality/stylelint-styled-components-config": "^1.1.0",
-    "@commitlint/cli": "^8.2.0",
+    "@commitlint/cli": "^8.3.4",
     "@testing-library/react": "9.4.0",
     "@types/clean-webpack-plugin": "0.1.3",
     "@types/compression": "1.0.1",
