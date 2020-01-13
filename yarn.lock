@@ -923,11 +923,6 @@
     "@commitlint/cli" "^8.2.0"
     "@commitlint/config-conventional" "^8.1.0"
 
-"@code-quality/eslint-config-base@1.8.1":
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-base/-/eslint-config-base-1.8.1.tgz#da6abe41392697198d601eb10f3a8c57c7849640"
-  integrity sha512-LfZpgu5NWnC0MkESmIwvlm7Q42QS03nlQ3H7Oq+/Wp4wJKX6O/SWesDwnjec0aw25exj0UjQU3cl1vb1DovCDw==
-
 "@code-quality/eslint-config-base@1.9.0", "@code-quality/eslint-config-base@^1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-base/-/eslint-config-base-1.9.0.tgz#ca5dd58b243304412b97950184a9fd8780988e9d"
@@ -942,12 +937,12 @@
     eslint-plugin-node "^11.0.0"
     eslint-plugin-security "^1.4.0"
 
-"@code-quality/eslint-config-react@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-react/-/eslint-config-react-1.6.1.tgz#e5f4a640d94c909b96817ed69e8399efb9334005"
-  integrity sha512-A0KOIPHQvof7wLVwwxzNq8IHjKxylRgnveBUwcqnVpOq6eG8v4pwd37P0cmuZJ2AkLLbhv9wtxwEV7F60unIUA==
+"@code-quality/eslint-config-react@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@code-quality/eslint-config-react/-/eslint-config-react-1.7.0.tgz#3c63138a14b94b91790c74713decafa91ec5fbd0"
+  integrity sha512-rrDYpRelHPd+/I5ukduEqLohbhQM1aJuSk/OKBaTvYEMHY5g+ThW684uxRmZh1ur5uAGjRVLQY4kz/JqkTP/Wg==
   dependencies:
-    "@code-quality/eslint-config-base" "1.8.1"
+    "@code-quality/eslint-config-base" "1.9.0"
     babel-eslint "^10.0.3"
     eslint-plugin-react "7.17.0"
     eslint-plugin-react-hooks "2.3.0"
