@@ -109,7 +109,7 @@
     "stylelint": "13.0.0",
     "stylelint-config-prettier": "^8.0.1",
     "ts-jest": "24.3.0",
-    "typescript": "3.7.4",
+    "typescript": "3.7.5",
     "webpack": "4.41.5",
     "webpack-cli": "3.3.10",
     "webpack-dev-middleware": "3.7.2",
