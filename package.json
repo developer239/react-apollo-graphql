@@ -84,7 +84,7 @@
     "@types/webpack-env": "1.15.1",
     "@types/webpack-hot-middleware": "2.25.0",
     "@types/webpack-merge": "4.1.5",
-    "@types/yup": "0.26.29",
+    "@types/yup": "0.26.30",
     "apollo": "2.22.0",
     "babel-jest": "25.1.0",
     "babel-loader": "8.0.6",
